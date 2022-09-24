@@ -44,7 +44,7 @@
       "id": "hl7tx",
       "uri": "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
       "packageId": "hl7.terminology.r4",
-      "version": "3.1.0"
+      "version": "4.0.0"
     }
   ],
   "definition": {
@@ -71,19 +71,6 @@
           {
             "url": "value",
             "valueString": "CI Build"
-          }
-        ],
-        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension": [
-          {
-            "url": "code",
-            "valueString": "autoload-resources"
-          },
-          {
-            "url": "value",
-            "valueString": "true"
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -349,137 +336,369 @@
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
       }
     ],
+    "resource": [
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/VHPatient2"
+        },
+        "name": "VHPatient2",
+        "description": "VH Patient",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/FatherName"
+        },
+        "name": "FatherName",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/MotherName"
+        },
+        "name": "MotherName",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:logical"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/ViralHepatitisCareFormModel"
+        },
+        "name": "Viral Hepatitis Care Form Logical Model",
+        "description": "Viral Hepatitis Care Form Information model",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:logical"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/ViralHepatitisCaseReportFormModel"
+        },
+        "name": "Viral Hepatitis Case Report Form Logical Model",
+        "description": "Viral Hepatitis Case Report Form Logical Model",
+        "exampleBoolean": false
+      }
+    ],
     "page": {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl": "toc.html"
+        }
+      ],
       "nameUrl": "toc.html",
       "title": "Table of Contents",
       "generation": "html",
       "page": [
         {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl": "index.html"
+            }
+          ],
           "nameUrl": "index.html",
           "title": "Home",
           "generation": "html"
         },
         {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl": "actors.html"
+            }
+          ],
           "nameUrl": "actors.html",
           "title": "Actors",
           "generation": "html"
         },
         {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl": "background.html"
+            }
+          ],
           "nameUrl": "background.html",
           "title": "Background",
           "generation": "html"
         },
         {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl": "changes.html"
+            }
+          ],
           "nameUrl": "changes.html",
           "title": "Changes",
           "generation": "html"
         },
         {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl": "checklist.html"
+            }
+          ],
           "nameUrl": "checklist.html",
           "title": "Checklist",
           "generation": "html"
         },
         {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl": "concepts.html"
+            }
+          ],
           "nameUrl": "concepts.html",
           "title": "Concepts",
           "generation": "html"
         },
         {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl": "content_profiles.html"
+            }
+          ],
           "nameUrl": "content_profiles.html",
           "title": "Content Profiles",
           "generation": "html"
         },
         {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl": "data_exchange.html"
+            }
+          ],
           "nameUrl": "data_exchange.html",
           "title": "Data Exchange",
           "generation": "html"
         },
         {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl": "dependencies.html"
+            }
+          ],
           "nameUrl": "dependencies.html",
           "title": "Dependencies",
           "generation": "html"
         },
         {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl": "deployment.html"
+            }
+          ],
           "nameUrl": "deployment.html",
           "title": "Deployment",
           "generation": "html"
         },
         {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl": "dictionary.html"
+            }
+          ],
           "nameUrl": "dictionary.html",
           "title": "Dictionary",
           "generation": "html"
         },
         {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl": "disclaimer.html"
+            }
+          ],
           "nameUrl": "disclaimer.html",
           "title": "Disclaimer",
           "generation": "html"
         },
         {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl": "downloads.html"
+            }
+          ],
           "nameUrl": "downloads.html",
           "title": "Downloads",
           "generation": "html"
         },
         {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl": "feedback.html"
+            }
+          ],
           "nameUrl": "feedback.html",
           "title": "Feedback",
           "generation": "html"
         },
         {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl": "functional.html"
+            }
+          ],
           "nameUrl": "functional.html",
           "title": "Functional",
           "generation": "html"
         },
         {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl": "instructions.html"
+            }
+          ],
           "nameUrl": "instructions.html",
           "title": "Instructions",
           "generation": "html"
         },
         {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl": "layers.html"
+            }
+          ],
           "nameUrl": "layers.html",
           "title": "Layers",
           "generation": "html"
         },
         {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl": "maps.html"
+            }
+          ],
           "nameUrl": "maps.html",
           "title": "Maps",
           "generation": "html"
         },
         {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl": "personas.html"
+            }
+          ],
           "nameUrl": "personas.html",
           "title": "Personas",
           "generation": "html"
         },
         {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl": "references.html"
+            }
+          ],
           "nameUrl": "references.html",
           "title": "References",
           "generation": "html"
         },
         {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl": "requirements.html"
+            }
+          ],
           "nameUrl": "requirements.html",
           "title": "Requirements",
           "generation": "html"
         },
         {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl": "security_privacy.html"
+            }
+          ],
           "nameUrl": "security_privacy.html",
           "title": "Security Privacy",
           "generation": "html"
         },
         {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl": "testing.html"
+            }
+          ],
           "nameUrl": "testing.html",
           "title": "Testing",
           "generation": "html"
         },
         {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl": "transactions.html"
+            }
+          ],
           "nameUrl": "transactions.html",
           "title": "Transactions",
           "generation": "html"
         },
         {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl": "usecases.html"
+            }
+          ],
           "nameUrl": "usecases.html",
           "title": "Usecases",
           "generation": "html"
         },
         {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl": "workflows.html"
+            }
+          ],
           "nameUrl": "workflows.html",
           "title": "Workflows",
           "generation": "html"
