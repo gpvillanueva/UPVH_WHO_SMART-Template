@@ -1,0 +1,128 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: RIM Mapping"
+"ViralHepatitisCareFormModel","ViralHepatitisCareFormModel","","","",0,*,"","","","","Viral Hepatitis Care Form Logical Model","Viral Hepatitis Care Form Information model","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"ViralHepatitisCareFormModel.ConsultDate","ViralHepatitisCareFormModel.ConsultDate","","","",1,1,"","","","dateTime {[]} {[]}
+","Consult Date (MM/DD/YYYY)","Consult Date (MM/DD/YYYY)","","","","","","","","","",,,,,"",,,,"ViralHepatitisCareFormModel.ConsultDate",1,1,"",""
+"ViralHepatitisCareFormModel.PatientCode","ViralHepatitisCareFormModel.PatientCode","","","",1,1,"","","","Identifier {[]} {[]}
+","Patient Code","Patient Identifier","","","","","","","","","",,,,,"",,,,"ViralHepatitisCareFormModel.PatientCode",1,1,"",""
+"ViralHepatitisCareFormModel.FacilityName","ViralHepatitisCareFormModel.FacilityName","","","",1,1,"","","","Reference {[]} {[]}
+","Testing Facility Name","The location where the encounter takes place.","","","","","","","","","",,,,,"",,,,"ViralHepatitisCareFormModel.FacilityName",1,1,"",""
+"ViralHepatitisCareFormModel.UniqueIdentifierCode","ViralHepatitisCareFormModel.UniqueIdentifierCode","","","",1,1,"","","","id {[]} {[]}
+","Unique Identifier Code for the patient","First two letters of mother's name, First two letters of father's name, birth order, and Birthdate (MM/FF/BO/MM/DD/YYYY)","","","","","","","","","",,,,,"",,,,"ViralHepatitisCareFormModel.UniqueIdentifierCode",1,1,"",""
+"ViralHepatitisCareFormModel.TestedPositiveForHepatitisB","ViralHepatitisCareFormModel.TestedPositiveForHepatitisB","","","",0,1,"","","","BackboneElement {[]} {[]}
+","If patient tested positive for Hepatitis B","If patient tested positive for Hepatitis B","","","","","","","","","",,,,,"",,,,"ViralHepatitisCareFormModel.TestedPositiveForHepatitisB",0,1,"",""
+"ViralHepatitisCareFormModel.TestedPositiveForHepatitisC","ViralHepatitisCareFormModel.TestedPositiveForHepatitisC","","","",0,1,"","","","BackboneElement {[]} {[]}
+","If patient tested positive for Hepatitis C","If patient tested positive for Hepatitis C","","","","","","","","","",,,,,"",,,,"ViralHepatitisCareFormModel.TestedPositiveForHepatitisC",0,1,"",""
+"ViralHepatitisCareFormModel.FirstName","ViralHepatitisCareFormModel.FirstName","","","",0,*,"","","","HumanName {[]} {[]}
+","First Name","First Name of the Patient","","","","","","","","","",,,,,"",,,,"ViralHepatitisCareFormModel.FirstName",0,*,"",""
+"ViralHepatitisCareFormModel.MiddleName","ViralHepatitisCareFormModel.MiddleName","","","",0,*,"","","","HumanName {[]} {[]}
+","Middle Name","Middle Name of the Patient","","","","","","","","","",,,,,"",,,,"ViralHepatitisCareFormModel.MiddleName",0,*,"",""
+"ViralHepatitisCareFormModel.LastName","ViralHepatitisCareFormModel.LastName","","","",1,1,"","","","HumanName {[]} {[]}
+","Last Name","Last Name of the Patient","","","","","","","","","",,,,,"",,,,"ViralHepatitisCareFormModel.LastName",1,1,"",""
+"ViralHepatitisCareFormModel.Suffix","ViralHepatitisCareFormModel.Suffix","","","",0,*,"","","","HumanName {[]} {[]}
+","Suffix","Suffix of the Patient","","","","","","","","","",,,,,"",,,,"ViralHepatitisCareFormModel.Suffix",0,*,"",""
+"ViralHepatitisCareFormModel.SexAssignedAtBirth","ViralHepatitisCareFormModel.SexAssignedAtBirth","","","",0,1,"","","","code {[]} {[]}
+","Sex Assigned at Birth","Sex Assigned at Birth","","","","","","","","","",,,,,"",,,,"ViralHepatitisCareFormModel.SexAssignedAtBirth",0,1,"",""
+"ViralHepatitisCareFormModel.AgeInYears","ViralHepatitisCareFormModel.AgeInYears","","","",1,1,"","","","Age {[]} {[]}
+","Age of Patient in Years","Age of Patient in Years","","","","","","","","","",,,,,"",,,,"ViralHepatitisCareFormModel.AgeInYears",1,1,"",""
+"ViralHepatitisCareFormModel.WeightInKg","ViralHepatitisCareFormModel.WeightInKg","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Patient weight in kg","What is the weigh of the patient in kg?","","","","","","","","","",,,,,"",,,,"ViralHepatitisCareFormModel.WeightInKg",1,1,"",""
+"ViralHepatitisCareFormModel.HeightInCM","ViralHepatitisCareFormModel.HeightInCM","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Patient heigh in CM","What is the height of the patient in cm?","","","","","","","","","",,,,,"",,,,"ViralHepatitisCareFormModel.HeightInCM",1,1,"",""
+"ViralHepatitisCareFormModel.IsShePregnant","ViralHepatitisCareFormModel.IsShePregnant","","","",0,*,"","","","code {[]} {[]}
+","If female, is she pregnant?","If female, is she pregnant?","","","","","","","","","",,,,,"",,,,"ViralHepatitisCareFormModel.IsShePregnant",0,*,"",""
+"ViralHepatitisCareFormModel.IsShePregnant.IsShePregnant","ViralHepatitisCareFormModel.IsShePregnant.IsShePregnant","","","",0,*,"","","","CodeableConcept {[]} {[]}
+","If female, is she pregnant?","If female, is she pregnant?","","","","","","","","","",,,,,"",,,,"ViralHepatitisCareFormModel.IsShePregnant.IsShePregnant",0,*,"",""
+"ViralHepatitisCareFormModel.Nationality","ViralHepatitisCareFormModel.Nationality","","","",0,*,"","","","CodeableConcept {[]} {[]}
+","Nationality","Nationality","","","","","","","","","",,,,,"",,,,"ViralHepatitisCareFormModel.Nationality",0,*,"",""
+"ViralHepatitisCareFormModel.Jaundice","ViralHepatitisCareFormModel.Jaundice","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Signs and symptoms of Jaundice","Does the patient show signs and symptoms of Jaundice?","","","","","","","","","",,,,,"",,,,"ViralHepatitisCareFormModel.Jaundice",1,1,"",""
+"ViralHepatitisCareFormModel.Coagulopathy","ViralHepatitisCareFormModel.Coagulopathy","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Signs and symptoms of Coagulopathy","Does the patient show signs and symptoms of Coagulopathy?","","","","","","","","","",,,,,"",,,,"ViralHepatitisCareFormModel.Coagulopathy",1,1,"",""
+"ViralHepatitisCareFormModel.Ascites","ViralHepatitisCareFormModel.Ascites","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Signs and symptoms of Ascites","Does the patient show signs and symptoms of Ascites?","","","","","","","","","",,,,,"",,,,"ViralHepatitisCareFormModel.Ascites",1,1,"",""
+"ViralHepatitisCareFormModel.VaricealHemorrhage","ViralHepatitisCareFormModel.VaricealHemorrhage","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Signs and symptoms of Variceal Hemorrhage","Does the patient show signs and symptoms of Variceal Hemorrhage?","","","","","","","","","",,,,,"",,,,"ViralHepatitisCareFormModel.VaricealHemorrhage",1,1,"",""
+"ViralHepatitisCareFormModel.HepaticEncephalopathy","ViralHepatitisCareFormModel.HepaticEncephalopathy","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Signs and symptoms of Hepatic Encephalopathy","Does the patient show signs and symptoms of Hepatic Encephalopathy?","","","","","","","","","",,,,,"",,,,"ViralHepatitisCareFormModel.HepaticEncephalopathy",1,1,"",""
+"ViralHepatitisCareFormModel.Hepatomegaly","ViralHepatitisCareFormModel.Hepatomegaly","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Signs and symptoms of Hepatomegaly","Does the patient show signs and symptoms of Hepatomegaly?","","","","","","","","","",,,,,"",,,,"ViralHepatitisCareFormModel.Hepatomegaly",1,1,"",""
+"ViralHepatitisCareFormModel.Splenomegaly","ViralHepatitisCareFormModel.Splenomegaly","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Signs and symptoms of Splenomegaly","Does the patient show signs and symptoms of Splenomegaly?","","","","","","","","","",,,,,"",,,,"ViralHepatitisCareFormModel.Splenomegaly",1,1,"",""
+"ViralHepatitisCareFormModel.Pruritus","ViralHepatitisCareFormModel.Pruritus","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Signs and symptoms of Pruritus","Does the patient show signs and symptoms of Pruritus?","","","","","","","","","",,,,,"",,,,"ViralHepatitisCareFormModel.Pruritus",1,1,"",""
+"ViralHepatitisCareFormModel.Fatigue","ViralHepatitisCareFormModel.Fatigue","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Signs and symptoms of Fatigue","Does the patient show signs and symptoms of Fatigue?","","","","","","","","","",,,,,"",,,,"ViralHepatitisCareFormModel.Fatigue",1,1,"",""
+"ViralHepatitisCareFormModel.SpiderAngiomata","ViralHepatitisCareFormModel.SpiderAngiomata","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Signs and symptoms of  Spider Angiomata","Does the patient show signs and symptoms of Spider Angiomata?","","","","","","","","","",,,,,"",,,,"ViralHepatitisCareFormModel.SpiderAngiomata",1,1,"",""
+"ViralHepatitisCareFormModel.PalmarErythema","ViralHepatitisCareFormModel.PalmarErythema","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Signs and symptoms of Palmar Erythema","Does the patient show signs and symptoms of Palmar Erythema?","","","","","","","","","",,,,,"",,,,"ViralHepatitisCareFormModel.PalmarErythema",1,1,"",""
+"ViralHepatitisCareFormModel.Other","ViralHepatitisCareFormModel.Other","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Other signs and symptoms","Does the patient show other signs and symptoms not included in the list?","","","","","","","","","",,,,,"",,,,"ViralHepatitisCareFormModel.Other",1,1,"",""
+"ViralHepatitisCareFormModel.HBsAgDateDone","ViralHepatitisCareFormModel.HBsAgDateDone","","","",1,1,"","","","dateTime {[]} {[]}
+","Date when the HBsAG Test was done","Date when the HBsAG Test was done","","","","","","","","","",,,,,"",,,,"ViralHepatitisCareFormModel.HBsAgDateDone",1,1,"",""
+"ViralHepatitisCareFormModel.HBsAgResult","ViralHepatitisCareFormModel.HBsAgResult","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","HBsAG Test Result (Positive or Negative)","HBsAG Test Result (Positive or Negative)","","","","","","","","","",,,,,"",,,,"ViralHepatitisCareFormModel.HBsAgResult",1,1,"",""
+"ViralHepatitisCareFormModel.HBeAgDateDone","ViralHepatitisCareFormModel.HBeAgDateDone","","","",1,1,"","","","dateTime {[]} {[]}
+","Date when the HBeAG Test was done","Date when the HBeAG Test was done","","","","","","","","","",,,,,"",,,,"ViralHepatitisCareFormModel.HBeAgDateDone",1,1,"",""
+"ViralHepatitisCareFormModel.HBeAgResult","ViralHepatitisCareFormModel.HBeAgResult","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","HBeAg Test Result (Positive or Negative)","HBeAg Test Result (Positive or Negative)","","","","","","","","","",,,,,"",,,,"ViralHepatitisCareFormModel.HBeAgResult",1,1,"",""
+"ViralHepatitisCareFormModel.AntiHCVDateDone","ViralHepatitisCareFormModel.AntiHCVDateDone","","","",1,1,"","","","dateTime {[]} {[]}
+","Date when the Anti-HCV Test was done","Date when the Anti-HCV Test was done","","","","","","","","","",,,,,"",,,,"ViralHepatitisCareFormModel.AntiHCVDateDone",1,1,"",""
+"ViralHepatitisCareFormModel.AntiHCVResult","ViralHepatitisCareFormModel.AntiHCVResult","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","AntiHCV Test Result (Reactive or Non-reactive)","AntiHCV Test Result (Reactive or Non-reactive)","","","","","","","","","",,,,,"",,,,"ViralHepatitisCareFormModel.AntiHCVResult",1,1,"",""
+"ViralHepatitisCareFormModel.HCVRNAQualitativeDateDone","ViralHepatitisCareFormModel.HCVRNAQualitativeDateDone","","","",1,1,"","","","dateTime {[]} {[]}
+","Date when the HCV-RNA (Quali) Test was done","Date when the HCV-RNA (Quali) Test was done","","","","","","","","","",,,,,"",,,,"ViralHepatitisCareFormModel.HCVRNAQualitativeDateDone",1,1,"",""
+"ViralHepatitisCareFormModel.HCVRNAQualitativeResult","ViralHepatitisCareFormModel.HCVRNAQualitativeResult","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","HCV-RNA (Quali) Test Result (Positive or Negative)","HCV-RNA (Quali) Test Result (Positive or Negative)","","","","","","","","","",,,,,"",,,,"ViralHepatitisCareFormModel.HCVRNAQualitativeResult",1,1,"",""
+"ViralHepatitisCareFormModel.HCVRNAQuantitativeDateDone","ViralHepatitisCareFormModel.HCVRNAQuantitativeDateDone","","","",1,1,"","","","dateTime {[]} {[]}
+","Date when the HCV-RNA (Quanti) IU/mL Test was done","Date when the HCV-RNA (Quanti) IU/mL Test was done","","","","","","","","","",,,,,"",,,,"ViralHepatitisCareFormModel.HCVRNAQuantitativeDateDone",1,1,"",""
+"ViralHepatitisCareFormModel.HCVRNAQuantitativeResult","ViralHepatitisCareFormModel.HCVRNAQuantitativeResult","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","HCV-RNA (Quali) Test Result (IU/mL)","HCV-RNA (Quali) Test Result (IU/mL)","","","","","","","","","",,,,,"",,,,"ViralHepatitisCareFormModel.HCVRNAQuantitativeResult",1,1,"",""
+"ViralHepatitisCareFormModel.HBVDNADateDone","ViralHepatitisCareFormModel.HBVDNADateDone","","","",1,1,"","","","dateTime {[]} {[]}
+","Date when the HBV DNA (IU/mL) Test was done","Date when the HBV DNA (IU/mL) Test was done","","","","","","","","","",,,,,"",,,,"ViralHepatitisCareFormModel.HBVDNADateDone",1,1,"",""
+"ViralHepatitisCareFormModel.HBVDNAResult","ViralHepatitisCareFormModel.HBVDNAResult","","","",1,1,"","","","CodeableConcept {[]} {[]}
+"," HBV DNA Test Result (IU/mL)"," HBV DNA Test Result (IU/mL)","","","","","","","","","",,,,,"",,,,"ViralHepatitisCareFormModel.HBVDNAResult",1,1,"",""
+"ViralHepatitisCareFormModel.ASTSGOTDateDone","ViralHepatitisCareFormModel.ASTSGOTDateDone","","","",1,1,"","","","dateTime {[]} {[]}
+","Date when the AST (SGOT) (IU/L) Test was done","Date when the AST (SGOT) (IU/L) Test was done","","","","","","","","","",,,,,"",,,,"ViralHepatitisCareFormModel.ASTSGOTDateDone",1,1,"",""
+"ViralHepatitisCareFormModel.ASTSGOTResult","ViralHepatitisCareFormModel.ASTSGOTResult","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","AST (SGOT) Test Result (IU/L)","AST (SGOT) Test Result (IU/L)","","","","","","","","","",,,,,"",,,,"ViralHepatitisCareFormModel.ASTSGOTResult",1,1,"",""
+"ViralHepatitisCareFormModel.ALTSGPTDateDone","ViralHepatitisCareFormModel.ALTSGPTDateDone","","","",1,1,"","","","dateTime {[]} {[]}
+","Date when the ALT (SGPT) (IU/L) Test was done","Date when the ALT (SGPT) (IU/L) Test was done","","","","","","","","","",,,,,"",,,,"ViralHepatitisCareFormModel.ALTSGPTDateDone",1,1,"",""
+"ViralHepatitisCareFormModel.ALTSGPTResult","ViralHepatitisCareFormModel.ALTSGPTResult","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","ALT (SGPT) Test Result (IU/L) ","ALT (SGPT) Test Result (IU/L) ","","","","","","","","","",,,,,"",,,,"ViralHepatitisCareFormModel.ALTSGPTResult",1,1,"",""
+"ViralHepatitisCareFormModel.TotalBilirubinDateDone","ViralHepatitisCareFormModel.TotalBilirubinDateDone","","","",1,1,"","","","dateTime {[]} {[]}
+","Date when the Total Bilirubin (mg/dL) Test was done","Date when the Total Bilirubin (mg/dL) Test was done","","","","","","","","","",,,,,"",,,,"ViralHepatitisCareFormModel.TotalBilirubinDateDone",1,1,"",""
+"ViralHepatitisCareFormModel.TotalBilirubinResult","ViralHepatitisCareFormModel.TotalBilirubinResult","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Total Bilirubin Test Result (mg/dL)","Total Bilirubin Test Result (mg/dL)","","","","","","","","","",,,,,"",,,,"ViralHepatitisCareFormModel.TotalBilirubinResult",1,1,"",""
+"ViralHepatitisCareFormModel.AlbuminDateDone","ViralHepatitisCareFormModel.AlbuminDateDone","","","",1,1,"","","","dateTime {[]} {[]}
+","Date when the Albumin Test was done","Date when the Albumin Test was done","","","","","","","","","",,,,,"",,,,"ViralHepatitisCareFormModel.AlbuminDateDone",1,1,"",""
+"ViralHepatitisCareFormModel.AlbuminResult","ViralHepatitisCareFormModel.AlbuminResult","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Albumin Test Result (g/dL)","Albumin Test Result (g/dL)","","","","","","","","","",,,,,"",,,,"ViralHepatitisCareFormModel.AlbuminResult",1,1,"",""
+"ViralHepatitisCareFormModel.PlateletCountDateDone","ViralHepatitisCareFormModel.PlateletCountDateDone","","","",1,1,"","","","dateTime {[]} {[]}
+","Date when the Platelet Count Test was done","Date when the Platelet Count Test was done","","","","","","","","","",,,,,"",,,,"ViralHepatitisCareFormModel.PlateletCountDateDone",1,1,"",""
+"ViralHepatitisCareFormModel.PlateletCountResult","ViralHepatitisCareFormModel.PlateletCountResult","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Platelet Count Test Result (10*9/L)","Platelet Count Test Result (10*9/L)","","","","","","","","","",,,,,"",,,,"ViralHepatitisCareFormModel.PlateletCountResult",1,1,"",""
+"ViralHepatitisCareFormModel.PTINRDateDone","ViralHepatitisCareFormModel.PTINRDateDone","","","",1,1,"","","","dateTime {[]} {[]}
+","Date when the PT INR Test was done","Date when the PT INR Test was done","","","","","","","","","",,,,,"",,,,"ViralHepatitisCareFormModel.PTINRDateDone",1,1,"",""
+"ViralHepatitisCareFormModel.PTINRResult","ViralHepatitisCareFormModel.PTINRResult","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","PT INR Test Result (sec)","PT INR Test Result (sec)","","","","","","","","","",,,,,"",,,,"ViralHepatitisCareFormModel.PTINRResult",1,1,"",""
+"ViralHepatitisCareFormModel.AminotransferaseOrPlateletRatioIndexScoreDateDone","ViralHepatitisCareFormModel.AminotransferaseOrPlateletRatioIndexScoreDateDone","","","",1,1,"","","","dateTime {[]} {[]}
+","Date when the Test for Aminotransferase / Platelet Ratio Index Score was done","Date when the Test for Aminotransferase / Platelet Ratio Index Score was done","","","","","","","","","",,,,,"",,,,"ViralHepatitisCareFormModel.AminotransferaseOrPlateletRatioIndexScoreDateDone",1,1,"",""
+"ViralHepatitisCareFormModel.AminotransferaseOrPlateletRatioIndexScoreResult","ViralHepatitisCareFormModel.AminotransferaseOrPlateletRatioIndexScoreResult","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Aminotransferase / Platelet Ratio Index Score Test Result","Aminotransferase / Platelet Ratio Index Score Test Result","","","","","","","","","",,,,,"",,,,"ViralHepatitisCareFormModel.AminotransferaseOrPlateletRatioIndexScoreResult",1,1,"",""
+"ViralHepatitisCareFormModel.Fibrosis4orFIB4ScoreDateDone","ViralHepatitisCareFormModel.Fibrosis4orFIB4ScoreDateDone","","","",1,1,"","","","dateTime {[]} {[]}
+","Date when the Test for Fibrosis 4 / FIB-4 was done","Date when the Test for Fibrosis 4 / FIB-4 was done","","","","","","","","","",,,,,"",,,,"ViralHepatitisCareFormModel.Fibrosis4orFIB4ScoreDateDone",1,1,"",""
+"ViralHepatitisCareFormModel.Fibrosis4orFIB4ScoreResult","ViralHepatitisCareFormModel.Fibrosis4orFIB4ScoreResult","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Fibrosis 4 / FIB-4 Test Result","Fibrosis 4 / FIB-4 Test Result","","","","","","","","","",,,,,"",,,,"ViralHepatitisCareFormModel.Fibrosis4orFIB4ScoreResult",1,1,"",""
+"ViralHepatitisCareFormModel.TransientElastographyDateDone","ViralHepatitisCareFormModel.TransientElastographyDateDone","","","",1,1,"","","","dateTime {[]} {[]}
+","Date when the Transient Elastography Test was done","Date when the Transient Elastography Test was done","","","","","","","","","",,,,,"",,,,"ViralHepatitisCareFormModel.TransientElastographyDateDone",1,1,"",""
+"ViralHepatitisCareFormModel.TransientElastographyResult","ViralHepatitisCareFormModel.TransientElastographyResult","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Transient Elastography Test Result","Transient Elastography Test Result","","","","","","","","","",,,,,"",,,,"ViralHepatitisCareFormModel.TransientElastographyResult",1,1,"",""
+"ViralHepatitisCareFormModel.ImagingUTZCTMRIDateDone","ViralHepatitisCareFormModel.ImagingUTZCTMRIDateDone","","","",1,1,"","","","dateTime {[]} {[]}
+","Date when the Test for Imaging (UTZ/CT/MRI) was done","Date when the Test for Imaging (UTZ/CT/MRI) was done","","","","","","","","","",,,,,"",,,,"ViralHepatitisCareFormModel.ImagingUTZCTMRIDateDone",1,1,"",""
+"ViralHepatitisCareFormModel.ImagingUTZCTMRIDateResult","ViralHepatitisCareFormModel.ImagingUTZCTMRIDateResult","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Imaging Test Result (UTZ/CT/MRI)","Imaging Test Result (UTZ/CT/MRI)","","","","","","","","","",,,,,"",,,,"ViralHepatitisCareFormModel.ImagingUTZCTMRIDateResult",1,1,"",""
+"ViralHepatitisCareFormModel.ChildTurcottePughClassScoreDateDone","ViralHepatitisCareFormModel.ChildTurcottePughClassScoreDateDone","","","",1,1,"","","","dateTime {[]} {[]}
+","Date when the Child-Turcotte-Pugh Class Score was done","Date when the Child-Turcotte-Pugh Class Score was done","","","","","","","","","",,,,,"",,,,"ViralHepatitisCareFormModel.ChildTurcottePughClassScoreDateDone",1,1,"",""
+"ViralHepatitisCareFormModel.ChildTurcottePughClassScoreResult","ViralHepatitisCareFormModel.ChildTurcottePughClassScoreResult","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","ChildTurcotte Pugh Class Score Test Result","ChildTurcotte Pugh Class Score Test Result","","","","","","","","","",,,,,"",,,,"ViralHepatitisCareFormModel.ChildTurcottePughClassScoreResult",1,1,"",""
