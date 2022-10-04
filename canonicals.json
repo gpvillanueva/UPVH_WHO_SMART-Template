@@ -7,6 +7,13 @@
     "name": "smartigempty"
   },
   {
+    "id": "2156",
+    "type": "StructureDefinition",
+    "url": "http://worldhealthorganization.github.io/smart-ig-empty/StructureDefinition/2156",
+    "version": "0.2.1",
+    "name": "VHCEncounter"
+  },
+  {
     "id": "ViralHepatitisCareFormModel",
     "type": "StructureDefinition",
     "url": "http://worldhealthorganization.github.io/smart-ig-empty/StructureDefinition/ViralHepatitisCareFormModel",

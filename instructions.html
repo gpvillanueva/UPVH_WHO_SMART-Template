@@ -57,17 +57,7 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">WHO SMART Guideline: IG Template</span>
-            <br/>
-            <span style="display:inline-block;">0.2.1 - CI Build
-
-
-
-  <img src="assets/images/001.svg" alt="International flag" title="International" height="16"/>
-
-
-            </span>
-          </p>
+          <p><span style="font-size:12pt;font-weight:bold">WHO SMART Guideline: IG Template</span><br/>0.2.1 - CI Build</p>
         </div>
       </div>   <!-- /container -->
     </div>    <!-- /segment-header -->
@@ -170,8 +160,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <!-- ReleaseHeader --><p id="publish-box">WHO SMART Guideline: IG Template - Local Development build (v0.2.1). See the <a href="http://worldhealthorganization.github.io/smart-ig-empty/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   <h2>Instructions</h2>
   
-  
-  
   <div lang="en"><div class="markdown-toc"><p>Contents:</p><ul><li><a href="#1">Creating a new WHO SMART Guidline</a></li><li><a href="#2">Country adaptation of an existing guide</a></li><li><a href="#3">Directory layout for content</a></li><li><a href="#4">Generating an implmentation guide</a></li></ul></div>
   <a name="scope">   </a>
 
@@ -268,11 +256,11 @@ git checkout main</pre>
   
   <a name="3"></a><h3>Directory layout for content</h3><a name="directory-structure">  </a>
   <ul>
-    <li><a name="l613">​</a>
+    <li><a name="l607">​</a>
       Create your content following the <a href="#checklist">Smart Guidelines IG checklist</a> and using the following directory and file structure:
       <dl>
 	<dt>input/fsh</dt>
-	<dd><a name="l623">​</a>
+	<dd><a name="l617">​</a>
 	  put any <a href="hl7.org/fhir/uv/shorthand/">FHIR Shorthand</a> (or fsh) files in this directory.
 	</dd>
 	<dt>input/images</dt>
@@ -284,7 +272,7 @@ git checkout main</pre>
 	  put UML, sequence diagrams, etc in this directory as <a href="https://plantuml.com/">plantUML</a> diagrams.  A UML diagram named XXXX.plantuml can be referenced in a xml file under input/pagecontent as  'include XXXX.svg' <mark>TODO: figure out how to esacpe jekyll control sequences </mark>
 	</dd>
 	<dt>input/pagecontent</dt>
-	<dd><a name="l650">​</a>
+	<dd><a name="l644">​</a>
 	  Edit the following pages by providing content according to the <a href="#checklist">Smart Guidelines IG checklist</a> below.
 	  <dl>
 	    <dt>actors.xml</dt>
@@ -437,16 +425,16 @@ npm install -g sushi</pre></blockquote>
     <div class="container">    <!-- container -->
 
       <div class="inner-wrapper">
-        <p><a name="l898">​</a>
-          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package fhir.who.smart-ig-empty#0.2.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Sep 24, 2022 06:44+0000">2022-09-24</span>
+        <p>
+          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package fhir.who.smart-ig-empty#0.2.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Oct 4, 2022 12:47+0000">2022-10-04</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                   | <a style="color: var(--footer-hyperlink-text-color)" href="https://github.com/WorldHealthOrganization/smart-ig-empty/projects/1" target="_blank">Issues</a>
                 
-| <a style="color: #81BEF7" href="http://worldhealthorganization.github.io/smart-ig-empty/history.html" target="_blank">Version History</a> | <a rel="license" style="color: #81BEF7" href="license.html">License</a>
-  <!-- <a style="color: #81BEF7" href="todo.html">Search</a> | -->
+                 | <a style="color: #81BEF7" href="http://worldhealthorganization.github.io/smart-ig-empty/history.html" target="_blank">Version History <img src="external.png" alt="external" style="vertical-align: baseline"/></a> |
+                   <!-- <a style="color: #81BEF7" href="todo.html">Search</a> | --> 
           
         </p>
       </div>    <!-- /inner-wrapper -->
@@ -465,8 +453,6 @@ npm install -g sushi</pre></blockquote>
   <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
   <script src="assets/js/respond.min.js" type="text/javascript"> </script>
   <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
-  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
-  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
   <script>anchors.options.visible = 'hover'
 anchors.add()</script>
   

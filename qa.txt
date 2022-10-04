@@ -1,11 +1,12 @@
 ﻿smartigempty : Validation Results
 =========================================
 
-err = 8, warn = 257, info = 0
-IG Publisher Version: 1.2.3
-Generated Sat Sep 24 06:45:21 UTC 2022. FHIR version 4.0.1 for fhir.who.smart-ig-empty#0.2.1 (canonical = http://worldhealthorganization.github.io/smart-ig-empty)
- Build Errors : 69 / 2 / 0
+err = 8, warn = 258, info = 0
+IG Publisher Version: 1.2.4
+Generated Tue Oct 04 12:47:33 UTC 2022. FHIR version 4.0.1 for fhir.who.smart-ig-empty#0.2.1 (canonical = http://worldhealthorganization.github.io/smart-ig-empty)
+ Build Errors : 3 / 3 / 0
  /github/workspace/fsh-generated/resources/ImplementationGuide-fhir.who.smart-ig-empty : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-2156 : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-FatherName : 2 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-MotherName : 2 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-VHPatient2 : 2 / 1 / 1
@@ -13,79 +14,15 @@ Generated Sat Sep 24 06:45:21 UTC 2022. FHIR version 4.0.1 for fhir.who.smart-ig
  /github/workspace/fsh-generated/resources/StructureDefinition-ViralHepatitisCaseReportFormModel : 1 / 121 / 1
 </table>
 == n/a ==
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/2156.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/FatherName.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/MotherName.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: /github/workspace/output/StructureDefinition-FatherName-definitions.html#/html/body/div/div/div/p/a at Line 351, column 145: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-FatherName-mappings.html#/html/body/div/div/div/p/a at Line 321, column 145: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-FatherName.html#/html/body/div/div/div/p/a at Line 563, column 145: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-FatherName.profile.history.html#/html/body/div/div/div/p/a at Line 304, column 145: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-FatherName.profile.json.html#/html/body/div/div/div/p/a at Line 597, column 145: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-FatherName.profile.ttl.html#/html/body/div/div/div/p/a at Line 569, column 145: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-FatherName.profile.xml.html#/html/body/div/div/div/p/a at Line 553, column 145: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-MotherName-definitions.html#/html/body/div/div/div/p/a at Line 351, column 145: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-MotherName-mappings.html#/html/body/div/div/div/p/a at Line 321, column 145: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-MotherName.html#/html/body/div/div/div/p/a at Line 563, column 145: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-MotherName.profile.history.html#/html/body/div/div/div/p/a at Line 304, column 145: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-MotherName.profile.json.html#/html/body/div/div/div/p/a at Line 597, column 145: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-MotherName.profile.ttl.html#/html/body/div/div/div/p/a at Line 569, column 145: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-MotherName.profile.xml.html#/html/body/div/div/div/p/a at Line 553, column 145: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-VHPatient2-definitions.html#/html/body/div/div/div/p/a at Line 1401, column 145: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-VHPatient2-examples.html#/html/body/div/div/div/p/a at Line 315, column 145: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-VHPatient2-mappings.html#/html/body/div/div/div/p/a at Line 532, column 145: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-VHPatient2.html#/html/body/div/div/div/p/a at Line 1293, column 145: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-VHPatient2.profile.history.html#/html/body/div/div/div/p/a at Line 304, column 145: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-VHPatient2.profile.json.html#/html/body/div/div/div/p/a at Line 5682, column 145: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-VHPatient2.profile.ttl.html#/html/body/div/div/div/p/a at Line 4868, column 145: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-VHPatient2.profile.xml.html#/html/body/div/div/div/p/a at Line 5178, column 145: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-ViralHepatitisCareFormModel-definitions.html#/html/body/div/div/div/p/a at Line 635, column 145: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-ViralHepatitisCareFormModel-examples.html#/html/body/div/div/div/p/a at Line 315, column 145: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-ViralHepatitisCareFormModel-mappings.html#/html/body/div/div/div/p/a at Line 317, column 145: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-ViralHepatitisCareFormModel.html#/html/body/div/div/div/p/a at Line 936, column 145: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-ViralHepatitisCareFormModel.profile.history.html#/html/body/div/div/div/p/a at Line 304, column 145: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-ViralHepatitisCareFormModel.profile.json.html#/html/body/div/div/div/p/a at Line 2352, column 145: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-ViralHepatitisCareFormModel.profile.ttl.html#/html/body/div/div/div/p/a at Line 1916, column 145: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-ViralHepatitisCareFormModel.profile.xml.html#/html/body/div/div/div/p/a at Line 2092, column 145: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-ViralHepatitisCaseReportFormModel-definitions.html#/html/body/div/div/div/p/a at Line 620, column 145: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-ViralHepatitisCaseReportFormModel-examples.html#/html/body/div/div/div/p/a at Line 315, column 145: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-ViralHepatitisCaseReportFormModel-mappings.html#/html/body/div/div/div/p/a at Line 317, column 145: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-ViralHepatitisCaseReportFormModel.html#/html/body/div/div/div/p/a at Line 926, column 145: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-ViralHepatitisCaseReportFormModel.profile.history.html#/html/body/div/div/div/p/a at Line 304, column 145: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-ViralHepatitisCaseReportFormModel.profile.json.html#/html/body/div/div/div/p/a at Line 2259, column 145: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-ViralHepatitisCaseReportFormModel.profile.ttl.html#/html/body/div/div/div/p/a at Line 1844, column 145: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-ViralHepatitisCaseReportFormModel.profile.xml.html#/html/body/div/div/div/p/a at Line 2202, column 145: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/actors.html#/html/body/div/div/div/p/a at Line 208, column 145: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/p/a at Line 302, column 145: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/background.html#/html/body/div/div/div/p/a at Line 206, column 145: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/changes.html#/html/body/div/div/div/p/a at Line 217, column 145: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/checklist.html#/html/body/div/div/div/p/a at Line 370, column 145: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/concepts.html#/html/body/div/div/div/p/a at Line 207, column 145: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/content_profiles.html#/html/body/div/div/div/p/a at Line 208, column 145: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/data_exchange.html#/html/body/div/div/div/p/a at Line 216, column 145: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/dependencies.html#/html/body/div/div/div/p/a at Line 210, column 145: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/deployment.html#/html/body/div/div/div/p/a at Line 219, column 145: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/dictionary.html#/html/body/div/div/div/p/a at Line 207, column 145: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/disclaimer.html#/html/body/div/div/div/p/a at Line 211, column 145: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/downloads.html#/html/body/div/div/div/p/a at Line 252, column 145: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/feedback.html#/html/body/div/div/div/p/a at Line 214, column 145: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/functional.html#/html/body/div/div/div/p/a at Line 208, column 145: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/index.html#/html/body/div/div/div/p/a at Line 318, column 145: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/instructions.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 272, column 42: The link '#checklist' for "Smart Guidelines IG checklist" cannot be resolved (valid targets: [instructions, publish-box, segment-post-footer, new-smart, adaptation, creating-a-new-github-repository, family-logo, top, scope, country-adaptation-of-an-existing-guide, stripe, segment-footer, creating-a-new-who-smart-guidline, segment-content, generation, github, generating-an-implmentation-guide, segment-header, bottom, directory-structure, family-nav, ig-status, 1, modify, 2, 3, 4, modifying-the-template-repository, directory-layout-for-content, segment-navbar, segment-breadcrumb])
-ERROR: /github/workspace/output/instructions.html#/html/body/div/div/div/div/div/div/ul/li/dl/dd/a at Line 276, column 13: The link 'hl7.org/fhir/uv/shorthand/' for "FHIR Shorthand" cannot be resolved
-ERROR: /github/workspace/output/instructions.html#/html/body/div/div/div/div/div/div/ul/li/dl/dd/a at Line 288, column 68: The link '#checklist' for "Smart Guidelines IG checklist" cannot be resolved (valid targets: [instructions, publish-box, segment-post-footer, new-smart, adaptation, creating-a-new-github-repository, family-logo, top, scope, country-adaptation-of-an-existing-guide, stripe, segment-footer, creating-a-new-who-smart-guidline, segment-content, generation, github, generating-an-implmentation-guide, segment-header, bottom, directory-structure, family-nav, ig-status, 1, modify, 2, 3, 4, modifying-the-template-repository, directory-layout-for-content, segment-navbar, segment-breadcrumb])
-ERROR: /github/workspace/output/instructions.html#/html/body/div/div/div/p/a at Line 448, column 145: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/layers.html#/html/body/div/div/div/p/a at Line 224, column 145: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/maps.html#/html/body/div/div/div/p/a at Line 212, column 145: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/personas.html#/html/body/div/div/div/p/a at Line 208, column 145: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/references.html#/html/body/div/div/div/p/a at Line 227, column 145: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/requirements.html#/html/body/div/div/div/p/a at Line 218, column 145: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/security_privacy.html#/html/body/div/div/div/p/a at Line 208, column 145: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/testing.html#/html/body/div/div/div/p/a at Line 208, column 145: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/toc.html#/html/body/div/div/div/p/a at Line 205, column 145: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/transactions.html#/html/body/div/div/div/p/a at Line 207, column 145: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/usecases.html#/html/body/div/div/div/p/a at Line 208, column 145: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/workflows.html#/html/body/div/div/div/p/a at Line 209, column 145: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/instructions.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 260, column 42: The link '#checklist' for "Smart Guidelines IG checklist" cannot be resolved (valid targets: [instructions, publish-box, segment-post-footer, new-smart, adaptation, creating-a-new-github-repository, family-logo, top, scope, country-adaptation-of-an-existing-guide, stripe, segment-footer, creating-a-new-who-smart-guidline, segment-content, generation, github, generating-an-implmentation-guide, segment-header, bottom, directory-structure, family-nav, ig-status, 1, modify, 2, 3, 4, modifying-the-template-repository, directory-layout-for-content, segment-navbar, segment-breadcrumb])
+ERROR: /github/workspace/output/instructions.html#/html/body/div/div/div/div/div/div/ul/li/dl/dd/a at Line 264, column 13: The link 'hl7.org/fhir/uv/shorthand/' for "FHIR Shorthand" cannot be resolved
+ERROR: /github/workspace/output/instructions.html#/html/body/div/div/div/div/div/div/ul/li/dl/dd/a at Line 276, column 68: The link '#checklist' for "Smart Guidelines IG checklist" cannot be resolved (valid targets: [instructions, publish-box, segment-post-footer, new-smart, adaptation, creating-a-new-github-repository, family-logo, top, scope, country-adaptation-of-an-existing-guide, stripe, segment-footer, creating-a-new-who-smart-guidline, segment-content, generation, github, generating-an-implmentation-guide, segment-header, bottom, directory-structure, family-nav, ig-status, 1, modify, 2, 3, 4, modifying-the-template-repository, directory-layout-for-content, segment-navbar, segment-breadcrumb])
 == fsh-generated/resources/ImplementationGuide-fhir.who.smart-ig-empty.json ==
 WARNING: ImplementationGuide/fhir.who.smart-ig-empty: ImplementationGuide: Rule ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated/resources/StructureDefinition-2156.json ==
 == fsh-generated/resources/StructureDefinition-FatherName.json ==
 ERROR: StructureDefinition.where(url = 'https://up.smilecdr.com:8000/StructureDefinition/2131'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-FatherName.json - the canonical URL (http://worldhealthorganization.github.io/smart-ig-empty/StructureDefinition/FatherName) does not match the URL (https://up.smilecdr.com:8000/StructureDefinition/2131)
 WARNING: StructureDefinition.where(url = 'https://up.smilecdr.com:8000/StructureDefinition/2131'): The Implementation Guide contains no examples for this extension
