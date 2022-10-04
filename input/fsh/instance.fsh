@@ -74,3 +74,26 @@ Description: "VH Patient"
 * maritalStatus ^short = "Civil Status"
 * maritalStatus ^definition = "Civil status"
 * managingOrganization 1..
+
+
+Profile: VHCEncounter
+Parent: Encounter
+Id: 2156
+* ^meta.versionId = "2"
+* ^meta.lastUpdated = "2022-10-03T16:05:09.644+00:00"
+* ^status = #draft
+* class.system = "http://terminology.hl7.org/CodeSystem/v3-ActCode" (exactly)
+* class.system ^short = "Inpatient Encounter"
+* class.code = #IMP (exactly)
+* class.code ^short = "Fixed value is IMP"
+* class.display = "Inpatient Encounter" (exactly)
+* period 1..
+* diagnosis 1..2
+* diagnosis ^slicing.discriminator.type = #value
+* diagnosis ^slicing.discriminator.path = "condition.reference"
+* diagnosis ^slicing.rules = #open
+* diagnosis contains
+    HepB 0..2 and
+    HepC 0..2
+* location 1..1
+* serviceProvider 1..
