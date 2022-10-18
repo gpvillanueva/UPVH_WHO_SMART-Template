@@ -45,15 +45,6 @@
   ];
   fhir:ImplementationGuide.dependsOn [
      fhir:index 0;
-     fhir:Element.id [ fhir:value "higtools" ];
-     fhir:ImplementationGuide.dependsOn.uri [
-       fhir:value "http://hl7.org/fhir/tools/ImplementationGuide/hl7.fhir.uv.tools";
-       fhir:link <http://hl7.org/fhir/tools/ImplementationGuide/hl7.fhir.uv.tools>
-     ];
-     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.uv.tools" ];
-     fhir:ImplementationGuide.dependsOn.version [ fhir:value "current" ]
-  ], [
-     fhir:index 1;
      fhir:Element.id [ fhir:value "hl7tx" ];
      fhir:ImplementationGuide.dependsOn.uri [
        fhir:value "http://terminology.hl7.org/ImplementationGuide/hl7.terminology";
@@ -300,13 +291,41 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://worldhealthorganization.github.io/smart-ig-empty/StructureDefinition/2158>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/2158" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ConditionHepB" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Hepatitis B surface antigen condition" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 1;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://worldhealthorganization.github.io/smart-ig-empty/StructureDefinition/2159>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/2159" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ConditionHepC" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Hepatitis C antibody test positive" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 2;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <http://worldhealthorganization.github.io/smart-ig-empty/StructureDefinition/2156>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/2156" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "VHCEncounter" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 1;
+       fhir:index 3;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -320,7 +339,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "VH Patient" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 2;
+       fhir:index 4;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -333,7 +352,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "FatherName" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 3;
+       fhir:index 5;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -346,7 +365,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "MotherName" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 4;
+       fhir:index 6;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -360,7 +379,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Viral Hepatitis Care Form Information model" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 5;
+       fhir:index 7;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];

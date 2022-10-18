@@ -1,28 +1,36 @@
 ﻿smartigempty : Validation Results
 =========================================
 
-err = 8, warn = 258, info = 0
-IG Publisher Version: 1.2.4
-Generated Tue Oct 04 12:47:33 UTC 2022. FHIR version 4.0.1 for fhir.who.smart-ig-empty#0.2.1 (canonical = http://worldhealthorganization.github.io/smart-ig-empty)
- Build Errors : 3 / 3 / 0
+err = 6, warn = 260, info = 0
+IG Publisher Version: 1.2.7
+Generated Tue Oct 18 08:57:11 UTC 2022. FHIR version 4.0.1 for fhir.who.smart-ig-empty#0.2.1 (canonical = http://worldhealthorganization.github.io/smart-ig-empty)
+ Build Errors : 3 / 7 / 0
  /github/workspace/fsh-generated/resources/ImplementationGuide-fhir.who.smart-ig-empty : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-2156 : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-2158 : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-2159 : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-FatherName : 2 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-MotherName : 2 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-VHPatient2 : 2 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-ViralHepatitisCareFormModel : 1 / 131 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-ViralHepatitisCaseReportFormModel : 1 / 121 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-ViralHepatitisCareFormModel : 0 / 130 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-ViralHepatitisCaseReportFormModel : 0 / 120 / 1
 </table>
 == n/a ==
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/2156.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/FatherName.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/MotherName.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: /github/workspace/output/instructions.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 260, column 42: The link '#checklist' for "Smart Guidelines IG checklist" cannot be resolved (valid targets: [instructions, publish-box, segment-post-footer, new-smart, adaptation, creating-a-new-github-repository, family-logo, top, scope, country-adaptation-of-an-existing-guide, stripe, segment-footer, creating-a-new-who-smart-guidline, segment-content, generation, github, generating-an-implmentation-guide, segment-header, bottom, directory-structure, family-nav, ig-status, 1, modify, 2, 3, 4, modifying-the-template-repository, directory-layout-for-content, segment-navbar, segment-breadcrumb])
-ERROR: /github/workspace/output/instructions.html#/html/body/div/div/div/div/div/div/ul/li/dl/dd/a at Line 264, column 13: The link 'hl7.org/fhir/uv/shorthand/' for "FHIR Shorthand" cannot be resolved
-ERROR: /github/workspace/output/instructions.html#/html/body/div/div/div/div/div/div/ul/li/dl/dd/a at Line 276, column 68: The link '#checklist' for "Smart Guidelines IG checklist" cannot be resolved (valid targets: [instructions, publish-box, segment-post-footer, new-smart, adaptation, creating-a-new-github-repository, family-logo, top, scope, country-adaptation-of-an-existing-guide, stripe, segment-footer, creating-a-new-who-smart-guidline, segment-content, generation, github, generating-an-implmentation-guide, segment-header, bottom, directory-structure, family-nav, ig-status, 1, modify, 2, 3, 4, modifying-the-template-repository, directory-layout-for-content, segment-navbar, segment-breadcrumb])
+ERROR: /github/workspace/output/instructions.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 267, column 42: The link '#checklist' for "Smart Guidelines IG checklist" cannot be resolved (valid targets: [instructions, publish-box, segment-post-footer, new-smart, adaptation, creating-a-new-github-repository, family-logo, top, scope, country-adaptation-of-an-existing-guide, stripe, segment-footer, creating-a-new-who-smart-guidline, segment-content, generation, github, generating-an-implmentation-guide, segment-header, bottom, directory-structure, family-nav, ig-status, 1, modify, 2, 3, 4, modifying-the-template-repository, directory-layout-for-content, segment-navbar, segment-breadcrumb])
+ERROR: /github/workspace/output/instructions.html#/html/body/div/div/div/div/div/div/ul/li/dl/dd/a at Line 271, column 13: The link 'hl7.org/fhir/uv/shorthand/' for "FHIR Shorthand" cannot be resolved
+ERROR: /github/workspace/output/instructions.html#/html/body/div/div/div/div/div/div/ul/li/dl/dd/a at Line 283, column 68: The link '#checklist' for "Smart Guidelines IG checklist" cannot be resolved (valid targets: [instructions, publish-box, segment-post-footer, new-smart, adaptation, creating-a-new-github-repository, family-logo, top, scope, country-adaptation-of-an-existing-guide, stripe, segment-footer, creating-a-new-who-smart-guidline, segment-content, generation, github, generating-an-implmentation-guide, segment-header, bottom, directory-structure, family-nav, ig-status, 1, modify, 2, 3, 4, modifying-the-template-repository, directory-layout-for-content, segment-navbar, segment-breadcrumb])
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 2: The HTML fragment 'cross-version-analysis.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 3: The HTML fragment 'dependency-table.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 == fsh-generated/resources/ImplementationGuide-fhir.who.smart-ig-empty.json ==
 WARNING: ImplementationGuide/fhir.who.smart-ig-empty: ImplementationGuide: Rule ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated/resources/StructureDefinition-2156.json ==
+== fsh-generated/resources/StructureDefinition-2158.json ==
+== fsh-generated/resources/StructureDefinition-2159.json ==
 == fsh-generated/resources/StructureDefinition-FatherName.json ==
 ERROR: StructureDefinition.where(url = 'https://up.smilecdr.com:8000/StructureDefinition/2131'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-FatherName.json - the canonical URL (http://worldhealthorganization.github.io/smart-ig-empty/StructureDefinition/FatherName) does not match the URL (https://up.smilecdr.com:8000/StructureDefinition/2131)
 WARNING: StructureDefinition.where(url = 'https://up.smilecdr.com:8000/StructureDefinition/2131'): The Implementation Guide contains no examples for this extension
@@ -35,7 +43,6 @@ ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-MotherName:
 ERROR: StructureDefinition.where(url = 'https://up.smilecdr.com:8000/StructureDefinition/2137'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-VHPatient2.json - the canonical URL (http://worldhealthorganization.github.io/smart-ig-empty/StructureDefinition/VHPatient2) does not match the URL (https://up.smilecdr.com:8000/StructureDefinition/2137)
 ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-VHPatient2: URL Mismatch http://worldhealthorganization.github.io/smart-ig-empty/StructureDefinition/VHPatient2 vs https://up.smilecdr.com:8000/StructureDefinition/2137
 == fsh-generated/resources/StructureDefinition-ViralHepatitisCareFormModel.json ==
-ERROR: StructureDefinition/ViralHepatitisCareFormModel: StructureDefinition.baseDefinition: Canonical URL 'http://hl7.org/fhir/StructureDefinition/Base' does not resolve
 WARNING: StructureDefinition/ViralHepatitisCareFormModel: StructureDefinition.snapshot.element[1]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
 WARNING: StructureDefinition/ViralHepatitisCareFormModel: StructureDefinition.snapshot.element[2]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
 WARNING: StructureDefinition/ViralHepatitisCareFormModel: StructureDefinition.snapshot.element[3]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
@@ -166,9 +173,7 @@ WARNING: StructureDefinition/ViralHepatitisCareFormModel: StructureDefinition.di
 WARNING: StructureDefinition/ViralHepatitisCareFormModel: StructureDefinition.differential.element[61]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
 WARNING: StructureDefinition/ViralHepatitisCareFormModel: StructureDefinition.differential.element[62]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
 WARNING: StructureDefinition/ViralHepatitisCareFormModel: StructureDefinition.differential.element[63]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
-WARNING: StructureDefinition/ViralHepatitisCareFormModel: StructureDefinition: Unable to find base http://hl7.org/fhir/StructureDefinition/Base for StructureDefinition, so can't check the differential
 == fsh-generated/resources/StructureDefinition-ViralHepatitisCaseReportFormModel.json ==
-ERROR: StructureDefinition/ViralHepatitisCaseReportFormModel: StructureDefinition.baseDefinition: Canonical URL 'http://hl7.org/fhir/StructureDefinition/Base' does not resolve
 WARNING: StructureDefinition/ViralHepatitisCaseReportFormModel: StructureDefinition.snapshot.element[1]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
 WARNING: StructureDefinition/ViralHepatitisCaseReportFormModel: StructureDefinition.snapshot.element[2]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
 WARNING: StructureDefinition/ViralHepatitisCaseReportFormModel: StructureDefinition.snapshot.element[3]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
@@ -289,4 +294,3 @@ WARNING: StructureDefinition/ViralHepatitisCaseReportFormModel: StructureDefinit
 WARNING: StructureDefinition/ViralHepatitisCaseReportFormModel: StructureDefinition.differential.element[58]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
 WARNING: StructureDefinition/ViralHepatitisCaseReportFormModel: StructureDefinition.differential.element[59]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
 WARNING: StructureDefinition/ViralHepatitisCaseReportFormModel: StructureDefinition.differential.element[60]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
-WARNING: StructureDefinition/ViralHepatitisCaseReportFormModel: StructureDefinition: Unable to find base http://hl7.org/fhir/StructureDefinition/Base for StructureDefinition, so can't check the differential
