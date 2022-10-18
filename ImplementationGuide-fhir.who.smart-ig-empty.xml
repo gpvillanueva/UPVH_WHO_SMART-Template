@@ -30,11 +30,6 @@
   <packageId value="fhir.who.smart-ig-empty"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.1"/>
-  <dependsOn id="higtools">
-    <uri value="http://hl7.org/fhir/tools/ImplementationGuide/hl7.fhir.uv.tools"/>
-    <packageId value="hl7.fhir.uv.tools"/>
-    <version value="current"/>
-  </dependsOn>
   <dependsOn id="hl7tx">
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r4"/>
@@ -193,6 +188,28 @@
         <valueString value="true"/>
       </extension>
     </extension>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/2158"/>
+      </reference>
+      <name value="ConditionHepB"/>
+      <description value="Hepatitis B surface antigen condition"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/2159"/>
+      </reference>
+      <name value="ConditionHepC"/>
+      <description value="Hepatitis C antibody test positive"/>
+      <exampleBoolean value="false"/>
+    </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>

@@ -41,12 +41,6 @@
   ],
   "dependsOn": [
     {
-      "id": "higtools",
-      "uri": "http://hl7.org/fhir/tools/ImplementationGuide/hl7.fhir.uv.tools",
-      "packageId": "hl7.fhir.uv.tools",
-      "version": "current"
-    },
-    {
       "id": "hl7tx",
       "uri": "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
       "packageId": "hl7.terminology.r4",
@@ -304,6 +298,34 @@
       }
     ],
     "resource": [
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/2158"
+        },
+        "name": "ConditionHepB",
+        "description": "Hepatitis B surface antigen condition",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/2159"
+        },
+        "name": "ConditionHepC",
+        "description": "Hepatitis C antibody test positive",
+        "exampleBoolean": false
+      },
       {
         "extension": [
           {
