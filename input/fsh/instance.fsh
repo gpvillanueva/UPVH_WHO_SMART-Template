@@ -97,3 +97,25 @@ Id: 2156
     HepC 0..2
 * location 1..1
 * serviceProvider 1..
+
+
+Profile: ConditionHepB
+Parent: Condition
+Id: 2158
+Description: "Hepatitis B surface antigen condition"
+* ^meta.versionId = "4"
+* ^meta.lastUpdated = "2022-10-18T06:58:43.612+00:00"
+* ^status = #draft
+* verificationStatus.coding ^code[0] = http://snomed.info/sct#165806002 "Hepatitis B surface antigen positive"
+* verificationStatus.coding ^code[+] = http://snomed.info/sct#406010001 "Hepatitis B surface antigen negative"
+
+
+Profile: ConditionHepC
+Parent: Condition
+Id: 2159
+Description: "Hepatitis C antibody test positive"
+* ^meta.versionId = "3"
+* ^meta.lastUpdated = "2022-10-18T06:59:48.150+00:00"
+* ^status = #draft
+* verificationStatus.coding ^code[0] = http://snomed.info/sct#314707006 "Hepatitis C antibody test negative"
+* verificationStatus.coding ^code[+] = http://snomed.info/sct#314706002 "Hepatitis C antibody test positive"
