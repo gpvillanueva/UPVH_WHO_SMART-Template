@@ -19,7 +19,7 @@
   "version": "0.2.1",
   "name": "VHPatient2",
   "status": "draft",
-  "date": "2022-10-25T10:50:26+00:00",
+  "date": "2022-10-25T11:01:47+00:00",
   "publisher": "UP Manila Viral Hepatitis Project",
   "contact": [
     {
@@ -27,7 +27,7 @@
       "telecom": [
         {
           "system": "url",
-          "value": "info@ehealth4hepainformatics.ph"
+          "value": "http://ehealth4hepatitis.ph"
         }
       ]
     }

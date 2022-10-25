@@ -25,7 +25,7 @@
      fhir:ContactDetail.telecom [
        fhir:index 0;
        fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "info@ehealth4hepainformatics.ph" ]
+       fhir:ContactPoint.value [ fhir:value "http://ehealth4hepatitis.ph" ]
      ]
   ];
   fhir:ImplementationGuide.description [ fhir:value "This is a FHIR Implementation Guide for the project of University of the Philippines Manila entitled Monitoring the Chronic Viral Hepatitis Treatment Cascade Through Electronic Medical Records in the Philippines which is being funded by Gilead Sciences, coursed through the UP Manila Development Fund"];
