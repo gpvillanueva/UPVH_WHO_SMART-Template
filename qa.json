@@ -1,9 +1,9 @@
 {
-  "url": "http://worldhealthorganization.github.io/smart-ig-empty/ImplementationGuide/fhir.who.smart-ig-empty",
-  "name": "smartigempty",
-  "package-id": "fhir.who.smart-ig-empty",
+  "url": "http://worldhealthorganization.github.io/smart-ig-upvhproject/ImplementationGuide/fhir.who.smart-ig-upvhproject",
+  "name": "smartigupvhproject",
+  "package-id": "fhir.who.smart-ig-upvhproject",
   "ig-ver": "0.2.1",
-  "date": "Tue, 18 Oct, 2022 08:56:45 +0000",
+  "date": "Tue, 25 Oct, 2022 10:50:26 +0000",
   "errs": 6,
   "warnings": 260,
   "hints": 0,

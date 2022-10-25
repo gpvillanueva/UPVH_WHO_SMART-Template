@@ -19,19 +19,19 @@
       "valueCode": "patient"
     }
   ],
-  "url": "http://worldhealthorganization.github.io/smart-ig-empty/StructureDefinition/2158",
+  "url": "http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/2158",
   "version": "0.2.1",
   "name": "ConditionHepB",
   "status": "draft",
-  "date": "2022-10-18T08:56:45+00:00",
-  "publisher": "WHO",
+  "date": "2022-10-25T10:50:26+00:00",
+  "publisher": "UP Manila Viral Hepatitis Project",
   "contact": [
     {
-      "name": "WHO",
+      "name": "UP Manila Viral Hepatitis Project",
       "telecom": [
         {
           "system": "url",
-          "value": "http://who.int"
+          "value": "info@ehealth4hepainformatics.ph"
         }
       ]
     }

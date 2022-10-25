@@ -1,5 +1,5 @@
 {
-  "package": "fhir.who.smart-ig-empty",
+  "package": "fhir.who.smart-ig-upvhproject",
   "version": "0.2.1",
   "fhirVersion": "4.0.1",
   "jurisdiction": "001",
@@ -22,17 +22,17 @@
   "profiles": {
     "Encounter": [
       {
-        "url": "http://worldhealthorganization.github.io/smart-ig-empty/StructureDefinition/2156",
+        "url": "http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/2156",
         "title": "VHCEncounter"
       }
     ],
     "Condition": [
       {
-        "url": "http://worldhealthorganization.github.io/smart-ig-empty/StructureDefinition/2158",
+        "url": "http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/2158",
         "title": "ConditionHepB"
       },
       {
-        "url": "http://worldhealthorganization.github.io/smart-ig-empty/StructureDefinition/2159",
+        "url": "http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/2159",
         "title": "ConditionHepC"
       }
     ],

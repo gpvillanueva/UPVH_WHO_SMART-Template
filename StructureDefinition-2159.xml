@@ -18,17 +18,17 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category">
     <valueCode value="patient"/>
   </extension>
-  <url value="http://worldhealthorganization.github.io/smart-ig-empty/StructureDefinition/2159"/>
+  <url value="http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/2159"/>
   <version value="0.2.1"/>
   <name value="ConditionHepC"/>
   <status value="draft"/>
-  <date value="2022-10-18T08:56:45+00:00"/>
-  <publisher value="WHO"/>
+  <date value="2022-10-25T10:50:26+00:00"/>
+  <publisher value="UP Manila Viral Hepatitis Project"/>
   <contact>
-    <name value="WHO"/>
+    <name value="UP Manila Viral Hepatitis Project"/>
     <telecom>
       <system value="url"/>
-      <value value="http://who.int"/>
+      <value value="info@ehealth4hepainformatics.ph"/>
     </telecom>
   </contact>
   <description value="Hepatitis C antibody test positive"/>
