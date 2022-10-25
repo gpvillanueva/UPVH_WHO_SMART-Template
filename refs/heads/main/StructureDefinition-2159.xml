@@ -22,13 +22,13 @@
   <version value="0.2.1"/>
   <name value="ConditionHepC"/>
   <status value="draft"/>
-  <date value="2022-10-25T10:50:26+00:00"/>
+  <date value="2022-10-25T11:01:47+00:00"/>
   <publisher value="UP Manila Viral Hepatitis Project"/>
   <contact>
     <name value="UP Manila Viral Hepatitis Project"/>
     <telecom>
       <system value="url"/>
-      <value value="info@ehealth4hepainformatics.ph"/>
+      <value value="http://ehealth4hepatitis.ph"/>
     </telecom>
   </contact>
   <description value="Hepatitis C antibody test positive"/>

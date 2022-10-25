@@ -29,7 +29,7 @@
   fhir:StructureDefinition.version [ fhir:value "0.2.1"];
   fhir:StructureDefinition.name [ fhir:value "VHCEncounter"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2022-10-25T10:50:26+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-10-25T11:01:47+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "UP Manila Viral Hepatitis Project"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -37,7 +37,7 @@
      fhir:ContactDetail.telecom [
        fhir:index 0;
        fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "info@ehealth4hepainformatics.ph" ]
+       fhir:ContactPoint.value [ fhir:value "http://ehealth4hepatitis.ph" ]
      ]
   ];
   fhir:StructureDefinition.jurisdiction [
