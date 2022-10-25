@@ -6,7 +6,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://worldhealthorganization.github.io/smart-ig-empty/StructureDefinition/2158> a fhir:StructureDefinition;
+<http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/2158> a fhir:StructureDefinition;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "2158"];
   fhir:Resource.meta [
@@ -26,19 +26,19 @@
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category" ];
      fhir:Extension.valueCode [ fhir:value "patient" ]
   ];
-  fhir:StructureDefinition.url [ fhir:value "http://worldhealthorganization.github.io/smart-ig-empty/StructureDefinition/2158"];
+  fhir:StructureDefinition.url [ fhir:value "http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/2158"];
   fhir:StructureDefinition.version [ fhir:value "0.2.1"];
   fhir:StructureDefinition.name [ fhir:value "ConditionHepB"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2022-10-18T08:56:45+00:00"^^xsd:dateTime];
-  fhir:StructureDefinition.publisher [ fhir:value "WHO"];
+  fhir:StructureDefinition.date [ fhir:value "2022-10-25T10:50:26+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.publisher [ fhir:value "UP Manila Viral Hepatitis Project"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
-     fhir:ContactDetail.name [ fhir:value "WHO" ];
+     fhir:ContactDetail.name [ fhir:value "UP Manila Viral Hepatitis Project" ];
      fhir:ContactDetail.telecom [
        fhir:index 0;
        fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "http://who.int" ]
+       fhir:ContactPoint.value [ fhir:value "info@ehealth4hepainformatics.ph" ]
      ]
   ];
   fhir:StructureDefinition.description [ fhir:value "Hepatitis B surface antigen condition"];
@@ -2372,7 +2372,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://worldhealthorganization.github.io/smart-ig-empty/StructureDefinition/2158.ttl> a owl:Ontology;
+<http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/2158.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
