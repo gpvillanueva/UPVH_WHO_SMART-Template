@@ -2,24 +2,25 @@
 # │  The properties below are used to create the ImplementationGuide resource. For a list of       │
 # │  supported properties, see: https://fshschool.org/sushi/configuration/                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: fhir.who.smart-ig-empty
-canonical: http://worldhealthorganization.github.io/smart-ig-empty
-name: smart-ig-empty
+id: fhir.who.smart-ig-upvhproject
+canonical: http://worldhealthorganization.github.io/smart-ig-upvhproject
+name: smart-ig-upvhproject
 status: draft
 version: 0.2.1
 fhirVersion: 4.0.1
-date: 2021-06-03
+date: 2022-10-25
 # copyright:
 copyrightYear: 2021+
 releaseLabel: "CI Build"
-title: "WHO SMART Guideline: IG Template"
-description: "SMART Guidlines Implemenation Guide Template"
+title: "University of the Philippines Manila Viral Hepatitis Project Implementation Guide"
+description: "This is a FHIR Implementation Guide for the project of University of the Philippines Manila entitled Monitoring the Chronic Viral Hepatitis Treatment Cascade Through Electronic Medical Records in the Philippines which is being funded by Gilead Sciences, coursed through the UP Manila Development Fund"
 license: CC0-1.0
 publisher:
-  name: WHO
-  url: http://who.int
-email: leitnerc@who.int
+  name: UP Manila Viral Hepatitis Project
+  url: info@ehealth4hepainformatics.ph
+email: info@ehealth4hepainformatics.ph
 # contact:
 jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001
 # experimental: true
 dependencies:
+ 

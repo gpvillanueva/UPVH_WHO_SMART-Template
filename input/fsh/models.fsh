@@ -1,5 +1,5 @@
 Logical: ViralHepatitisCaseReportFormModel
-Title: "Viral Hepatitis Case Report Form Logical Model"
+Title: "VH Case Report Form Logical Model"
 Description: "Viral Hepatitis Case Report Form Logical Model"
 * ConsultDate 1..1 dateTime "Consult Date (MM/DD/YYYY)"
 * PatientCode 1..1 Identifier "Patient Code" "Patient Identifier"
@@ -65,7 +65,7 @@ Description: "Viral Hepatitis Case Report Form Logical Model"
 
 
 Logical: ViralHepatitisCareFormModel
-Title: "Viral Hepatitis Care Form Logical Model"
+Title: "VH Care Form Logical Model"
 Description: "Viral Hepatitis Care Form Information model"
 
 * ConsultDate 1..1 dateTime "Consult Date (MM/DD/YYYY)"
