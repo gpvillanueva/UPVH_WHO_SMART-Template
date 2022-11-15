@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "ViralHepatitisCareFormModel"];
   fhir:StructureDefinition.title [ fhir:value "VH Care Form Logical Model"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-10-25T11:01:47+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-11-15T08:01:14+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "UP Manila Viral Hepatitis Project"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -321,9 +321,131 @@
        fhir:ElementDefinition.type [
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "code" ]
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
        ]
      ], [
        fhir:index 16;
+       fhir:Element.id [ fhir:value "ViralHepatitisCareFormModel.IsShePregnant.id" ];
+       fhir:ElementDefinition.path [ fhir:value "ViralHepatitisCareFormModel.IsShePregnant.id" ];
+       fhir:ElementDefinition.representation [
+         fhir:value "xmlAttr";
+         fhir:index 0
+       ];
+       fhir:ElementDefinition.short [ fhir:value "xml:id (or equivalent in JSON)" ];
+       fhir:ElementDefinition.definition [ fhir:value "unique id for the element within a resource (for internal references)" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Element.id" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type" ];
+           fhir:Extension.valueUrl [ fhir:value "string" ]
+         ];
+         fhir:ElementDefinition.type.code [ fhir:value "http://hl7.org/fhirpath/System.String" ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 17;
+       fhir:Element.id [ fhir:value "ViralHepatitisCareFormModel.IsShePregnant.extension" ];
+       fhir:ElementDefinition.path [ fhir:value "ViralHepatitisCareFormModel.IsShePregnant.extension" ];
+       fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
+       fhir:ElementDefinition.definition [ fhir:value "May be used to represent additional information that is not part of the basic definition of the resource. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." ];
+       fhir:ElementDefinition.comment [ fhir:value "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." ];
+       fhir:ElementDefinition.alias [
+         fhir:value "extensions";
+         fhir:index 0
+       ], [
+         fhir:value "user content";
+         fhir:index 1
+       ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Element.extension" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Extension" ]
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ext-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "Must have either extensions or value[x], not both" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "extension.exists() != value.exists()" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Extension";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
+         ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 18;
+       fhir:Element.id [ fhir:value "ViralHepatitisCareFormModel.IsShePregnant.value" ];
+       fhir:ElementDefinition.path [ fhir:value "ViralHepatitisCareFormModel.IsShePregnant.value" ];
+       fhir:ElementDefinition.representation [
+         fhir:value "xmlAttr";
+         fhir:index 0
+       ];
+       fhir:ElementDefinition.short [ fhir:value "Primitive value for code" ];
+       fhir:ElementDefinition.definition [ fhir:value "Primitive value for code" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "string.value" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type" ];
+           fhir:Extension.valueUrl [ fhir:value "string" ]
+         ], [
+           fhir:index 1;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/regex" ];
+           fhir:Extension.valueString [ fhir:value "[^\\s]+(\\s[^\\s]+)*" ]
+         ];
+         fhir:ElementDefinition.type.code [ fhir:value "http://hl7.org/fhirpath/System.String" ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 19;
        fhir:Element.id [ fhir:value "ViralHepatitisCareFormModel.IsShePregnant.IsShePregnant" ];
        fhir:ElementDefinition.path [ fhir:value "ViralHepatitisCareFormModel.IsShePregnant.IsShePregnant" ];
        fhir:ElementDefinition.short [ fhir:value "If female, is she pregnant?" ];
@@ -340,7 +462,7 @@
          fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
        ]
      ], [
-       fhir:index 17;
+       fhir:index 20;
        fhir:Element.id [ fhir:value "ViralHepatitisCareFormModel.Nationality" ];
        fhir:ElementDefinition.path [ fhir:value "ViralHepatitisCareFormModel.Nationality" ];
        fhir:ElementDefinition.short [ fhir:value "Nationality" ];
@@ -357,7 +479,7 @@
          fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
        ]
      ], [
-       fhir:index 18;
+       fhir:index 21;
        fhir:Element.id [ fhir:value "ViralHepatitisCareFormModel.Jaundice" ];
        fhir:ElementDefinition.path [ fhir:value "ViralHepatitisCareFormModel.Jaundice" ];
        fhir:ElementDefinition.short [ fhir:value "Signs and symptoms of Jaundice" ];
@@ -374,7 +496,7 @@
          fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
        ]
      ], [
-       fhir:index 19;
+       fhir:index 22;
        fhir:Element.id [ fhir:value "ViralHepatitisCareFormModel.Coagulopathy" ];
        fhir:ElementDefinition.path [ fhir:value "ViralHepatitisCareFormModel.Coagulopathy" ];
        fhir:ElementDefinition.short [ fhir:value "Signs and symptoms of Coagulopathy" ];
@@ -391,7 +513,7 @@
          fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
        ]
      ], [
-       fhir:index 20;
+       fhir:index 23;
        fhir:Element.id [ fhir:value "ViralHepatitisCareFormModel.Ascites" ];
        fhir:ElementDefinition.path [ fhir:value "ViralHepatitisCareFormModel.Ascites" ];
        fhir:ElementDefinition.short [ fhir:value "Signs and symptoms of Ascites" ];
@@ -408,7 +530,7 @@
          fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
        ]
      ], [
-       fhir:index 21;
+       fhir:index 24;
        fhir:Element.id [ fhir:value "ViralHepatitisCareFormModel.VaricealHemorrhage" ];
        fhir:ElementDefinition.path [ fhir:value "ViralHepatitisCareFormModel.VaricealHemorrhage" ];
        fhir:ElementDefinition.short [ fhir:value "Signs and symptoms of Variceal Hemorrhage" ];
@@ -425,7 +547,7 @@
          fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
        ]
      ], [
-       fhir:index 22;
+       fhir:index 25;
        fhir:Element.id [ fhir:value "ViralHepatitisCareFormModel.HepaticEncephalopathy" ];
        fhir:ElementDefinition.path [ fhir:value "ViralHepatitisCareFormModel.HepaticEncephalopathy" ];
        fhir:ElementDefinition.short [ fhir:value "Signs and symptoms of Hepatic Encephalopathy" ];
@@ -442,7 +564,7 @@
          fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
        ]
      ], [
-       fhir:index 23;
+       fhir:index 26;
        fhir:Element.id [ fhir:value "ViralHepatitisCareFormModel.Hepatomegaly" ];
        fhir:ElementDefinition.path [ fhir:value "ViralHepatitisCareFormModel.Hepatomegaly" ];
        fhir:ElementDefinition.short [ fhir:value "Signs and symptoms of Hepatomegaly" ];
@@ -459,7 +581,7 @@
          fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
        ]
      ], [
-       fhir:index 24;
+       fhir:index 27;
        fhir:Element.id [ fhir:value "ViralHepatitisCareFormModel.Splenomegaly" ];
        fhir:ElementDefinition.path [ fhir:value "ViralHepatitisCareFormModel.Splenomegaly" ];
        fhir:ElementDefinition.short [ fhir:value "Signs and symptoms of Splenomegaly" ];
@@ -476,7 +598,7 @@
          fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
        ]
      ], [
-       fhir:index 25;
+       fhir:index 28;
        fhir:Element.id [ fhir:value "ViralHepatitisCareFormModel.Pruritus" ];
        fhir:ElementDefinition.path [ fhir:value "ViralHepatitisCareFormModel.Pruritus" ];
        fhir:ElementDefinition.short [ fhir:value "Signs and symptoms of Pruritus" ];
@@ -493,7 +615,7 @@
          fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
        ]
      ], [
-       fhir:index 26;
+       fhir:index 29;
        fhir:Element.id [ fhir:value "ViralHepatitisCareFormModel.Fatigue" ];
        fhir:ElementDefinition.path [ fhir:value "ViralHepatitisCareFormModel.Fatigue" ];
        fhir:ElementDefinition.short [ fhir:value "Signs and symptoms of Fatigue" ];
@@ -510,7 +632,7 @@
          fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
        ]
      ], [
-       fhir:index 27;
+       fhir:index 30;
        fhir:Element.id [ fhir:value "ViralHepatitisCareFormModel.SpiderAngiomata" ];
        fhir:ElementDefinition.path [ fhir:value "ViralHepatitisCareFormModel.SpiderAngiomata" ];
        fhir:ElementDefinition.short [ fhir:value "Signs and symptoms of  Spider Angiomata" ];
@@ -527,7 +649,7 @@
          fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
        ]
      ], [
-       fhir:index 28;
+       fhir:index 31;
        fhir:Element.id [ fhir:value "ViralHepatitisCareFormModel.PalmarErythema" ];
        fhir:ElementDefinition.path [ fhir:value "ViralHepatitisCareFormModel.PalmarErythema" ];
        fhir:ElementDefinition.short [ fhir:value "Signs and symptoms of Palmar Erythema" ];
@@ -544,7 +666,7 @@
          fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
        ]
      ], [
-       fhir:index 29;
+       fhir:index 32;
        fhir:Element.id [ fhir:value "ViralHepatitisCareFormModel.Other" ];
        fhir:ElementDefinition.path [ fhir:value "ViralHepatitisCareFormModel.Other" ];
        fhir:ElementDefinition.short [ fhir:value "Other signs and symptoms" ];
@@ -561,7 +683,7 @@
          fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
        ]
      ], [
-       fhir:index 30;
+       fhir:index 33;
        fhir:Element.id [ fhir:value "ViralHepatitisCareFormModel.HBsAgDateDone" ];
        fhir:ElementDefinition.path [ fhir:value "ViralHepatitisCareFormModel.HBsAgDateDone" ];
        fhir:ElementDefinition.short [ fhir:value "Date when the HBsAG Test was done" ];
@@ -578,7 +700,7 @@
          fhir:ElementDefinition.type.code [ fhir:value "dateTime" ]
        ]
      ], [
-       fhir:index 31;
+       fhir:index 34;
        fhir:Element.id [ fhir:value "ViralHepatitisCareFormModel.HBsAgResult" ];
        fhir:ElementDefinition.path [ fhir:value "ViralHepatitisCareFormModel.HBsAgResult" ];
        fhir:ElementDefinition.short [ fhir:value "HBsAG Test Result (Positive or Negative)" ];
@@ -595,7 +717,7 @@
          fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
        ]
      ], [
-       fhir:index 32;
+       fhir:index 35;
        fhir:Element.id [ fhir:value "ViralHepatitisCareFormModel.HBeAgDateDone" ];
        fhir:ElementDefinition.path [ fhir:value "ViralHepatitisCareFormModel.HBeAgDateDone" ];
        fhir:ElementDefinition.short [ fhir:value "Date when the HBeAG Test was done" ];
@@ -612,7 +734,7 @@
          fhir:ElementDefinition.type.code [ fhir:value "dateTime" ]
        ]
      ], [
-       fhir:index 33;
+       fhir:index 36;
        fhir:Element.id [ fhir:value "ViralHepatitisCareFormModel.HBeAgResult" ];
        fhir:ElementDefinition.path [ fhir:value "ViralHepatitisCareFormModel.HBeAgResult" ];
        fhir:ElementDefinition.short [ fhir:value "HBeAg Test Result (Positive or Negative)" ];
@@ -629,7 +751,7 @@
          fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
        ]
      ], [
-       fhir:index 34;
+       fhir:index 37;
        fhir:Element.id [ fhir:value "ViralHepatitisCareFormModel.AntiHCVDateDone" ];
        fhir:ElementDefinition.path [ fhir:value "ViralHepatitisCareFormModel.AntiHCVDateDone" ];
        fhir:ElementDefinition.short [ fhir:value "Date when the Anti-HCV Test was done" ];
@@ -646,7 +768,7 @@
          fhir:ElementDefinition.type.code [ fhir:value "dateTime" ]
        ]
      ], [
-       fhir:index 35;
+       fhir:index 38;
        fhir:Element.id [ fhir:value "ViralHepatitisCareFormModel.AntiHCVResult" ];
        fhir:ElementDefinition.path [ fhir:value "ViralHepatitisCareFormModel.AntiHCVResult" ];
        fhir:ElementDefinition.short [ fhir:value "AntiHCV Test Result (Reactive or Non-reactive)" ];
@@ -663,7 +785,7 @@
          fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
        ]
      ], [
-       fhir:index 36;
+       fhir:index 39;
        fhir:Element.id [ fhir:value "ViralHepatitisCareFormModel.HCVRNAQualitativeDateDone" ];
        fhir:ElementDefinition.path [ fhir:value "ViralHepatitisCareFormModel.HCVRNAQualitativeDateDone" ];
        fhir:ElementDefinition.short [ fhir:value "Date when the HCV-RNA (Quali) Test was done" ];
@@ -680,7 +802,7 @@
          fhir:ElementDefinition.type.code [ fhir:value "dateTime" ]
        ]
      ], [
-       fhir:index 37;
+       fhir:index 40;
        fhir:Element.id [ fhir:value "ViralHepatitisCareFormModel.HCVRNAQualitativeResult" ];
        fhir:ElementDefinition.path [ fhir:value "ViralHepatitisCareFormModel.HCVRNAQualitativeResult" ];
        fhir:ElementDefinition.short [ fhir:value "HCV-RNA (Quali) Test Result (Positive or Negative)" ];
@@ -697,7 +819,7 @@
          fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
        ]
      ], [
-       fhir:index 38;
+       fhir:index 41;
        fhir:Element.id [ fhir:value "ViralHepatitisCareFormModel.HCVRNAQuantitativeDateDone" ];
        fhir:ElementDefinition.path [ fhir:value "ViralHepatitisCareFormModel.HCVRNAQuantitativeDateDone" ];
        fhir:ElementDefinition.short [ fhir:value "Date when the HCV-RNA (Quanti) IU/mL Test was done" ];
@@ -714,7 +836,7 @@
          fhir:ElementDefinition.type.code [ fhir:value "dateTime" ]
        ]
      ], [
-       fhir:index 39;
+       fhir:index 42;
        fhir:Element.id [ fhir:value "ViralHepatitisCareFormModel.HCVRNAQuantitativeResult" ];
        fhir:ElementDefinition.path [ fhir:value "ViralHepatitisCareFormModel.HCVRNAQuantitativeResult" ];
        fhir:ElementDefinition.short [ fhir:value "HCV-RNA (Quali) Test Result (IU/mL)" ];
@@ -731,7 +853,7 @@
          fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
        ]
      ], [
-       fhir:index 40;
+       fhir:index 43;
        fhir:Element.id [ fhir:value "ViralHepatitisCareFormModel.HBVDNADateDone" ];
        fhir:ElementDefinition.path [ fhir:value "ViralHepatitisCareFormModel.HBVDNADateDone" ];
        fhir:ElementDefinition.short [ fhir:value "Date when the HBV DNA (IU/mL) Test was done" ];
@@ -748,7 +870,7 @@
          fhir:ElementDefinition.type.code [ fhir:value "dateTime" ]
        ]
      ], [
-       fhir:index 41;
+       fhir:index 44;
        fhir:Element.id [ fhir:value "ViralHepatitisCareFormModel.HBVDNAResult" ];
        fhir:ElementDefinition.path [ fhir:value "ViralHepatitisCareFormModel.HBVDNAResult" ];
        fhir:ElementDefinition.short [ fhir:value " HBV DNA Test Result (IU/mL)" ];
@@ -765,7 +887,7 @@
          fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
        ]
      ], [
-       fhir:index 42;
+       fhir:index 45;
        fhir:Element.id [ fhir:value "ViralHepatitisCareFormModel.ASTSGOTDateDone" ];
        fhir:ElementDefinition.path [ fhir:value "ViralHepatitisCareFormModel.ASTSGOTDateDone" ];
        fhir:ElementDefinition.short [ fhir:value "Date when the AST (SGOT) (IU/L) Test was done" ];
@@ -782,7 +904,7 @@
          fhir:ElementDefinition.type.code [ fhir:value "dateTime" ]
        ]
      ], [
-       fhir:index 43;
+       fhir:index 46;
        fhir:Element.id [ fhir:value "ViralHepatitisCareFormModel.ASTSGOTResult" ];
        fhir:ElementDefinition.path [ fhir:value "ViralHepatitisCareFormModel.ASTSGOTResult" ];
        fhir:ElementDefinition.short [ fhir:value "AST (SGOT) Test Result (IU/L)" ];
@@ -799,7 +921,7 @@
          fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
        ]
      ], [
-       fhir:index 44;
+       fhir:index 47;
        fhir:Element.id [ fhir:value "ViralHepatitisCareFormModel.ALTSGPTDateDone" ];
        fhir:ElementDefinition.path [ fhir:value "ViralHepatitisCareFormModel.ALTSGPTDateDone" ];
        fhir:ElementDefinition.short [ fhir:value "Date when the ALT (SGPT) (IU/L) Test was done" ];
@@ -816,7 +938,7 @@
          fhir:ElementDefinition.type.code [ fhir:value "dateTime" ]
        ]
      ], [
-       fhir:index 45;
+       fhir:index 48;
        fhir:Element.id [ fhir:value "ViralHepatitisCareFormModel.ALTSGPTResult" ];
        fhir:ElementDefinition.path [ fhir:value "ViralHepatitisCareFormModel.ALTSGPTResult" ];
        fhir:ElementDefinition.short [ fhir:value "ALT (SGPT) Test Result (IU/L) " ];
@@ -833,7 +955,7 @@
          fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
        ]
      ], [
-       fhir:index 46;
+       fhir:index 49;
        fhir:Element.id [ fhir:value "ViralHepatitisCareFormModel.TotalBilirubinDateDone" ];
        fhir:ElementDefinition.path [ fhir:value "ViralHepatitisCareFormModel.TotalBilirubinDateDone" ];
        fhir:ElementDefinition.short [ fhir:value "Date when the Total Bilirubin (mg/dL) Test was done" ];
@@ -850,7 +972,7 @@
          fhir:ElementDefinition.type.code [ fhir:value "dateTime" ]
        ]
      ], [
-       fhir:index 47;
+       fhir:index 50;
        fhir:Element.id [ fhir:value "ViralHepatitisCareFormModel.TotalBilirubinResult" ];
        fhir:ElementDefinition.path [ fhir:value "ViralHepatitisCareFormModel.TotalBilirubinResult" ];
        fhir:ElementDefinition.short [ fhir:value "Total Bilirubin Test Result (mg/dL)" ];
@@ -867,7 +989,7 @@
          fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
        ]
      ], [
-       fhir:index 48;
+       fhir:index 51;
        fhir:Element.id [ fhir:value "ViralHepatitisCareFormModel.AlbuminDateDone" ];
        fhir:ElementDefinition.path [ fhir:value "ViralHepatitisCareFormModel.AlbuminDateDone" ];
        fhir:ElementDefinition.short [ fhir:value "Date when the Albumin Test was done" ];
@@ -884,7 +1006,7 @@
          fhir:ElementDefinition.type.code [ fhir:value "dateTime" ]
        ]
      ], [
-       fhir:index 49;
+       fhir:index 52;
        fhir:Element.id [ fhir:value "ViralHepatitisCareFormModel.AlbuminResult" ];
        fhir:ElementDefinition.path [ fhir:value "ViralHepatitisCareFormModel.AlbuminResult" ];
        fhir:ElementDefinition.short [ fhir:value "Albumin Test Result (g/dL)" ];
@@ -901,7 +1023,7 @@
          fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
        ]
      ], [
-       fhir:index 50;
+       fhir:index 53;
        fhir:Element.id [ fhir:value "ViralHepatitisCareFormModel.PlateletCountDateDone" ];
        fhir:ElementDefinition.path [ fhir:value "ViralHepatitisCareFormModel.PlateletCountDateDone" ];
        fhir:ElementDefinition.short [ fhir:value "Date when the Platelet Count Test was done" ];
@@ -918,7 +1040,7 @@
          fhir:ElementDefinition.type.code [ fhir:value "dateTime" ]
        ]
      ], [
-       fhir:index 51;
+       fhir:index 54;
        fhir:Element.id [ fhir:value "ViralHepatitisCareFormModel.PlateletCountResult" ];
        fhir:ElementDefinition.path [ fhir:value "ViralHepatitisCareFormModel.PlateletCountResult" ];
        fhir:ElementDefinition.short [ fhir:value "Platelet Count Test Result (10*9/L)" ];
@@ -935,7 +1057,7 @@
          fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
        ]
      ], [
-       fhir:index 52;
+       fhir:index 55;
        fhir:Element.id [ fhir:value "ViralHepatitisCareFormModel.PTINRDateDone" ];
        fhir:ElementDefinition.path [ fhir:value "ViralHepatitisCareFormModel.PTINRDateDone" ];
        fhir:ElementDefinition.short [ fhir:value "Date when the PT INR Test was done" ];
@@ -952,7 +1074,7 @@
          fhir:ElementDefinition.type.code [ fhir:value "dateTime" ]
        ]
      ], [
-       fhir:index 53;
+       fhir:index 56;
        fhir:Element.id [ fhir:value "ViralHepatitisCareFormModel.PTINRResult" ];
        fhir:ElementDefinition.path [ fhir:value "ViralHepatitisCareFormModel.PTINRResult" ];
        fhir:ElementDefinition.short [ fhir:value "PT INR Test Result (sec)" ];
@@ -969,7 +1091,7 @@
          fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
        ]
      ], [
-       fhir:index 54;
+       fhir:index 57;
        fhir:Element.id [ fhir:value "ViralHepatitisCareFormModel.AminotransferaseOrPlateletRatioIndexScoreDateDone" ];
        fhir:ElementDefinition.path [ fhir:value "ViralHepatitisCareFormModel.AminotransferaseOrPlateletRatioIndexScoreDateDone" ];
        fhir:ElementDefinition.short [ fhir:value "Date when the Test for Aminotransferase / Platelet Ratio Index Score was done" ];
@@ -986,7 +1108,7 @@
          fhir:ElementDefinition.type.code [ fhir:value "dateTime" ]
        ]
      ], [
-       fhir:index 55;
+       fhir:index 58;
        fhir:Element.id [ fhir:value "ViralHepatitisCareFormModel.AminotransferaseOrPlateletRatioIndexScoreResult" ];
        fhir:ElementDefinition.path [ fhir:value "ViralHepatitisCareFormModel.AminotransferaseOrPlateletRatioIndexScoreResult" ];
        fhir:ElementDefinition.short [ fhir:value "Aminotransferase / Platelet Ratio Index Score Test Result" ];
@@ -1003,7 +1125,7 @@
          fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
        ]
      ], [
-       fhir:index 56;
+       fhir:index 59;
        fhir:Element.id [ fhir:value "ViralHepatitisCareFormModel.Fibrosis4orFIB4ScoreDateDone" ];
        fhir:ElementDefinition.path [ fhir:value "ViralHepatitisCareFormModel.Fibrosis4orFIB4ScoreDateDone" ];
        fhir:ElementDefinition.short [ fhir:value "Date when the Test for Fibrosis 4 / FIB-4 was done" ];
@@ -1020,7 +1142,7 @@
          fhir:ElementDefinition.type.code [ fhir:value "dateTime" ]
        ]
      ], [
-       fhir:index 57;
+       fhir:index 60;
        fhir:Element.id [ fhir:value "ViralHepatitisCareFormModel.Fibrosis4orFIB4ScoreResult" ];
        fhir:ElementDefinition.path [ fhir:value "ViralHepatitisCareFormModel.Fibrosis4orFIB4ScoreResult" ];
        fhir:ElementDefinition.short [ fhir:value "Fibrosis 4 / FIB-4 Test Result" ];
@@ -1037,7 +1159,7 @@
          fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
        ]
      ], [
-       fhir:index 58;
+       fhir:index 61;
        fhir:Element.id [ fhir:value "ViralHepatitisCareFormModel.TransientElastographyDateDone" ];
        fhir:ElementDefinition.path [ fhir:value "ViralHepatitisCareFormModel.TransientElastographyDateDone" ];
        fhir:ElementDefinition.short [ fhir:value "Date when the Transient Elastography Test was done" ];
@@ -1054,7 +1176,7 @@
          fhir:ElementDefinition.type.code [ fhir:value "dateTime" ]
        ]
      ], [
-       fhir:index 59;
+       fhir:index 62;
        fhir:Element.id [ fhir:value "ViralHepatitisCareFormModel.TransientElastographyResult" ];
        fhir:ElementDefinition.path [ fhir:value "ViralHepatitisCareFormModel.TransientElastographyResult" ];
        fhir:ElementDefinition.short [ fhir:value "Transient Elastography Test Result" ];
@@ -1071,7 +1193,7 @@
          fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
        ]
      ], [
-       fhir:index 60;
+       fhir:index 63;
        fhir:Element.id [ fhir:value "ViralHepatitisCareFormModel.ImagingUTZCTMRIDateDone" ];
        fhir:ElementDefinition.path [ fhir:value "ViralHepatitisCareFormModel.ImagingUTZCTMRIDateDone" ];
        fhir:ElementDefinition.short [ fhir:value "Date when the Test for Imaging (UTZ/CT/MRI) was done" ];
@@ -1088,7 +1210,7 @@
          fhir:ElementDefinition.type.code [ fhir:value "dateTime" ]
        ]
      ], [
-       fhir:index 61;
+       fhir:index 64;
        fhir:Element.id [ fhir:value "ViralHepatitisCareFormModel.ImagingUTZCTMRIDateResult" ];
        fhir:ElementDefinition.path [ fhir:value "ViralHepatitisCareFormModel.ImagingUTZCTMRIDateResult" ];
        fhir:ElementDefinition.short [ fhir:value "Imaging Test Result (UTZ/CT/MRI)" ];
@@ -1105,7 +1227,7 @@
          fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
        ]
      ], [
-       fhir:index 62;
+       fhir:index 65;
        fhir:Element.id [ fhir:value "ViralHepatitisCareFormModel.ChildTurcottePughClassScoreDateDone" ];
        fhir:ElementDefinition.path [ fhir:value "ViralHepatitisCareFormModel.ChildTurcottePughClassScoreDateDone" ];
        fhir:ElementDefinition.short [ fhir:value "Date when the Child-Turcotte-Pugh Class Score was done" ];
@@ -1122,7 +1244,7 @@
          fhir:ElementDefinition.type.code [ fhir:value "dateTime" ]
        ]
      ], [
-       fhir:index 63;
+       fhir:index 66;
        fhir:Element.id [ fhir:value "ViralHepatitisCareFormModel.ChildTurcottePughClassScoreResult" ];
        fhir:ElementDefinition.path [ fhir:value "ViralHepatitisCareFormModel.ChildTurcottePughClassScoreResult" ];
        fhir:ElementDefinition.short [ fhir:value "ChildTurcotte Pugh Class Score Test Result" ];

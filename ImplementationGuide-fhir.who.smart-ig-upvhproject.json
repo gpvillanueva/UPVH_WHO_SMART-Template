@@ -42,9 +42,15 @@
   "dependsOn": [
     {
       "id": "hl7tx",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment",
+          "valueMarkdown": "Automatically added as a dependency - all IGs depend on HL7 Terminology"
+        }
+      ],
       "uri": "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
       "packageId": "hl7.terminology.r4",
-      "version": "4.0.0"
+      "version": "5.0.0"
     }
   ],
   "definition": {
@@ -309,7 +315,7 @@
           "reference": "StructureDefinition/2158"
         },
         "name": "ConditionHepB",
-        "description": "Hepatitis B surface antigen condition",
+        "description": "Hepatitis B surface antigen test result",
         "exampleBoolean": false
       },
       {
@@ -323,7 +329,7 @@
           "reference": "StructureDefinition/2159"
         },
         "name": "ConditionHepC",
-        "description": "Hepatitis C antibody test positive",
+        "description": "Hepatitis C antibody test result",
         "exampleBoolean": false
       },
       {

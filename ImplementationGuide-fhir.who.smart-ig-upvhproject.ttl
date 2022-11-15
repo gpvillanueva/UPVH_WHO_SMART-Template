@@ -46,12 +46,17 @@
   fhir:ImplementationGuide.dependsOn [
      fhir:index 0;
      fhir:Element.id [ fhir:value "hl7tx" ];
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment" ];
+       fhir:Extension.valueMarkdown [ fhir:value "Automatically added as a dependency - all IGs depend on HL7 Terminology" ]
+     ];
      fhir:ImplementationGuide.dependsOn.uri [
        fhir:value "http://terminology.hl7.org/ImplementationGuide/hl7.terminology";
        fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
      ];
      fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.terminology.r4" ];
-     fhir:ImplementationGuide.dependsOn.version [ fhir:value "4.0.0" ]
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "5.0.0" ]
   ];
   fhir:ImplementationGuide.definition [
      fhir:Element.extension [
@@ -295,7 +300,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/2158" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "ConditionHepB" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Hepatitis B surface antigen condition" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Hepatitis B surface antigen test result" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 1;
@@ -309,7 +314,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/2159" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "ConditionHepC" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Hepatitis C antibody test positive" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Hepatitis C antibody test result" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 2;
