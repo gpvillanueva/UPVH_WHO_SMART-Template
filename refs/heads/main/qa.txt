@@ -1,9 +1,9 @@
 ﻿smartigupvhproject : Validation Results
 =========================================
 
-err = 6, warn = 260, info = 0
-IG Publisher Version: 1.2.11
-Generated Tue Oct 25 11:02:16 UTC 2022. FHIR version 4.0.1 for fhir.who.smart-ig-upvhproject#0.2.1 (canonical = http://worldhealthorganization.github.io/smart-ig-upvhproject)
+err = 6, warn = 278, info = 0
+IG Publisher Version: 1.2.14
+Generated Tue Nov 15 08:01:45 UTC 2022. FHIR version 4.0.1 for fhir.who.smart-ig-upvhproject#0.2.1 (canonical = http://worldhealthorganization.github.io/smart-ig-upvhproject)
  Build Errors : 3 / 7 / 0
  /github/workspace/fsh-generated/resources/ImplementationGuide-fhir.who.smart-ig-upvhproject : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-2156 : 0 / 1 / 1
@@ -12,8 +12,8 @@ Generated Tue Oct 25 11:02:16 UTC 2022. FHIR version 4.0.1 for fhir.who.smart-ig
  /github/workspace/fsh-generated/resources/StructureDefinition-FatherName : 2 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-MotherName : 2 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-VHPatient2 : 2 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-ViralHepatitisCareFormModel : 0 / 130 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-ViralHepatitisCaseReportFormModel : 0 / 120 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-ViralHepatitisCareFormModel : 0 / 133 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-ViralHepatitisCaseReportFormModel : 0 / 135 / 1
 </table>
 == n/a ==
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/2156.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
@@ -23,8 +23,8 @@ ERROR: /github/workspace/output/instructions.html#/html/body/div/div/div/div/div
 ERROR: /github/workspace/output/instructions.html#/html/body/div/div/div/div/div/div/ul/li/dl/dd/a at Line 271, column 13: The link 'hl7.org/fhir/uv/shorthand/' for "FHIR Shorthand" cannot be resolved
 ERROR: /github/workspace/output/instructions.html#/html/body/div/div/div/div/div/div/ul/li/dl/dd/a at Line 283, column 68: The link '#checklist' for "Smart Guidelines IG checklist" cannot be resolved (valid targets: [instructions, publish-box, segment-post-footer, new-smart, adaptation, creating-a-new-github-repository, family-logo, top, scope, country-adaptation-of-an-existing-guide, stripe, segment-footer, creating-a-new-who-smart-guidline, segment-content, generation, github, generating-an-implmentation-guide, segment-header, bottom, directory-structure, family-nav, ig-status, 1, modify, 2, 3, 4, modifying-the-template-repository, directory-layout-for-content, segment-navbar, segment-breadcrumb])
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
-WARNING: 2: The HTML fragment 'cross-version-analysis.xhtml' is not included anywhere in the produced implementation guide
-WARNING: 3: The HTML fragment 'dependency-table.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 == fsh-generated/resources/ImplementationGuide-fhir.who.smart-ig-upvhproject.json ==
 WARNING: ImplementationGuide/fhir.who.smart-ig-upvhproject: ImplementationGuide: Rule ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
@@ -84,15 +84,15 @@ WARNING: StructureDefinition/ViralHepatitisCareFormModel: StructureDefinition.sn
 WARNING: StructureDefinition/ViralHepatitisCareFormModel: StructureDefinition.snapshot.element[39]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
 WARNING: StructureDefinition/ViralHepatitisCareFormModel: StructureDefinition.snapshot.element[40]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
 WARNING: StructureDefinition/ViralHepatitisCareFormModel: StructureDefinition.snapshot.element[41]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
-WARNING: StructureDefinition/ViralHepatitisCareFormModel: StructureDefinition.snapshot.element[41].short: value should not start or finish with whitespace ' HBV...(IU/mL)'
 WARNING: StructureDefinition/ViralHepatitisCareFormModel: StructureDefinition.snapshot.element[42]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
 WARNING: StructureDefinition/ViralHepatitisCareFormModel: StructureDefinition.snapshot.element[43]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
 WARNING: StructureDefinition/ViralHepatitisCareFormModel: StructureDefinition.snapshot.element[44]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/ViralHepatitisCareFormModel: StructureDefinition.snapshot.element[44].short: value should not start or finish with whitespace ' HBV...(IU/mL)'
 WARNING: StructureDefinition/ViralHepatitisCareFormModel: StructureDefinition.snapshot.element[45]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
-WARNING: StructureDefinition/ViralHepatitisCareFormModel: StructureDefinition.snapshot.element[45].short: value should not start or finish with whitespace 'ALT...(IU/L) '
 WARNING: StructureDefinition/ViralHepatitisCareFormModel: StructureDefinition.snapshot.element[46]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
 WARNING: StructureDefinition/ViralHepatitisCareFormModel: StructureDefinition.snapshot.element[47]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
 WARNING: StructureDefinition/ViralHepatitisCareFormModel: StructureDefinition.snapshot.element[48]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/ViralHepatitisCareFormModel: StructureDefinition.snapshot.element[48].short: value should not start or finish with whitespace 'ALT...(IU/L) '
 WARNING: StructureDefinition/ViralHepatitisCareFormModel: StructureDefinition.snapshot.element[49]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
 WARNING: StructureDefinition/ViralHepatitisCareFormModel: StructureDefinition.snapshot.element[50]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
 WARNING: StructureDefinition/ViralHepatitisCareFormModel: StructureDefinition.snapshot.element[51]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
@@ -108,6 +108,9 @@ WARNING: StructureDefinition/ViralHepatitisCareFormModel: StructureDefinition.sn
 WARNING: StructureDefinition/ViralHepatitisCareFormModel: StructureDefinition.snapshot.element[61]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
 WARNING: StructureDefinition/ViralHepatitisCareFormModel: StructureDefinition.snapshot.element[62]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
 WARNING: StructureDefinition/ViralHepatitisCareFormModel: StructureDefinition.snapshot.element[63]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/ViralHepatitisCareFormModel: StructureDefinition.snapshot.element[64]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/ViralHepatitisCareFormModel: StructureDefinition.snapshot.element[65]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/ViralHepatitisCareFormModel: StructureDefinition.snapshot.element[66]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
 WARNING: StructureDefinition/ViralHepatitisCareFormModel: StructureDefinition.differential.element[1]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
 WARNING: StructureDefinition/ViralHepatitisCareFormModel: StructureDefinition.differential.element[2]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
 WARNING: StructureDefinition/ViralHepatitisCareFormModel: StructureDefinition.differential.element[3]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
@@ -234,6 +237,21 @@ WARNING: StructureDefinition/ViralHepatitisCaseReportFormModel: StructureDefinit
 WARNING: StructureDefinition/ViralHepatitisCaseReportFormModel: StructureDefinition.snapshot.element[58]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
 WARNING: StructureDefinition/ViralHepatitisCaseReportFormModel: StructureDefinition.snapshot.element[59]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
 WARNING: StructureDefinition/ViralHepatitisCaseReportFormModel: StructureDefinition.snapshot.element[60]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/ViralHepatitisCaseReportFormModel: StructureDefinition.snapshot.element[61]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/ViralHepatitisCaseReportFormModel: StructureDefinition.snapshot.element[62]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/ViralHepatitisCaseReportFormModel: StructureDefinition.snapshot.element[63]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/ViralHepatitisCaseReportFormModel: StructureDefinition.snapshot.element[64]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/ViralHepatitisCaseReportFormModel: StructureDefinition.snapshot.element[65]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/ViralHepatitisCaseReportFormModel: StructureDefinition.snapshot.element[66]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/ViralHepatitisCaseReportFormModel: StructureDefinition.snapshot.element[67]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/ViralHepatitisCaseReportFormModel: StructureDefinition.snapshot.element[68]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/ViralHepatitisCaseReportFormModel: StructureDefinition.snapshot.element[69]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/ViralHepatitisCaseReportFormModel: StructureDefinition.snapshot.element[70]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/ViralHepatitisCaseReportFormModel: StructureDefinition.snapshot.element[71]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/ViralHepatitisCaseReportFormModel: StructureDefinition.snapshot.element[72]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/ViralHepatitisCaseReportFormModel: StructureDefinition.snapshot.element[73]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/ViralHepatitisCaseReportFormModel: StructureDefinition.snapshot.element[74]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/ViralHepatitisCaseReportFormModel: StructureDefinition.snapshot.element[75]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
 WARNING: StructureDefinition/ViralHepatitisCaseReportFormModel: StructureDefinition.differential.element[1]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
 WARNING: StructureDefinition/ViralHepatitisCaseReportFormModel: StructureDefinition.differential.element[2]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
 WARNING: StructureDefinition/ViralHepatitisCaseReportFormModel: StructureDefinition.differential.element[3]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
