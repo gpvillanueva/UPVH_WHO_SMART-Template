@@ -79,22 +79,16 @@ Description: "VH Patient"
 Profile: VHCEncounter
 Parent: Encounter
 Id: 2156
-* ^meta.versionId = "2"
-* ^meta.lastUpdated = "2022-10-03T16:05:09.644+00:00"
+* ^meta.versionId = "6"
+* ^meta.lastUpdated = "2022-10-30T19:17:19.503+00:00"
+* ^meta.source = "#ZmxOp7ha00Z66ZSf"
 * ^status = #draft
 * class.system = "http://terminology.hl7.org/CodeSystem/v3-ActCode" (exactly)
 * class.system ^short = "Inpatient Encounter"
 * class.code = #IMP (exactly)
 * class.code ^short = "Fixed value is IMP"
 * class.display = "Inpatient Encounter" (exactly)
-* period 1..
-* diagnosis 1..2
-* diagnosis ^slicing.discriminator.type = #value
-* diagnosis ^slicing.discriminator.path = "condition.reference"
-* diagnosis ^slicing.rules = #open
-* diagnosis contains
-    HepB 0..2 and
-    HepC 0..2
+* diagnosis 2..2
 * location 1..1
 * serviceProvider 1..
 
@@ -102,20 +96,25 @@ Id: 2156
 Profile: ConditionHepB
 Parent: Condition
 Id: 2158
-Description: "Hepatitis B surface antigen condition"
-* ^meta.versionId = "4"
-* ^meta.lastUpdated = "2022-10-18T06:58:43.612+00:00"
+Description: "Hepatitis B surface antigen test result"
+* ^meta.versionId = "6"
+* ^meta.lastUpdated = "2022-10-31T01:48:22.211+00:00"
+* ^meta.source = "#6KMSX4B4QW8oBiXc"
 * ^status = #draft
-* verificationStatus.coding ^code[0] = http://snomed.info/sct#165806002 "Hepatitis B surface antigen positive"
-* verificationStatus.coding ^code[+] = http://snomed.info/sct#406010001 "Hepatitis B surface antigen negative"
+* code 1..
+* code.coding ^code[0] = http://snomed.info/sct#165806002 "Hepatitis B surface antigen positive"
+* code.coding ^code[+] = http://snomed.info/sct#406010001 "Hepatitis B surface antigen negative"
 
 
 Profile: ConditionHepC
 Parent: Condition
 Id: 2159
-Description: "Hepatitis C antibody test positive"
-* ^meta.versionId = "3"
-* ^meta.lastUpdated = "2022-10-18T06:59:48.150+00:00"
+Description: "Hepatitis C antibody test result"
+* ^meta.versionId = "5"
+* ^meta.lastUpdated = "2022-10-30T17:46:56.857+00:00"
+* ^meta.source = "#vOwJeyOWD3R38hI4"
 * ^status = #draft
-* verificationStatus.coding ^code[0] = http://snomed.info/sct#314707006 "Hepatitis C antibody test negative"
-* verificationStatus.coding ^code[+] = http://snomed.info/sct#314706002 "Hepatitis C antibody test positive"
+* code 1..
+* code.coding 1..1
+* code.coding ^code[0] = http://snomed.info/sct#314706002 "Hepatitis C antibody test positive"
+* code.coding ^code[+] = http://snomed.info/sct#314707006 "Hepatitis C antibody test negative"
