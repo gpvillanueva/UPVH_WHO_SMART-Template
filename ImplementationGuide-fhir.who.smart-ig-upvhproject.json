@@ -693,11 +693,11 @@
           "extension": [
             {
               "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-              "valueUrl": "usecases.html"
+              "valueUrl": "use_cases.html"
             }
           ],
-          "nameUrl": "usecases.html",
-          "title": "Usecases",
+          "nameUrl": "use_cases.html",
+          "title": "Use Cases",
           "generation": "html"
         },
         {

@@ -477,10 +477,10 @@
       </page>
       <page>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="usecases.html"/>
+          <valueUrl value="use_cases.html"/>
         </extension>
-        <nameUrl value="usecases.html"/>
-        <title value="Usecases"/>
+        <nameUrl value="use_cases.html"/>
+        <title value="Use Cases"/>
         <generation value="html"/>
       </page>
       <page>

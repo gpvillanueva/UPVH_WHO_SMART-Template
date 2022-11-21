@@ -652,10 +652,10 @@
          fhir:Element.extension [
            fhir:index 0;
            fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ];
-           fhir:Extension.valueUrl [ fhir:value "usecases.html" ]
+           fhir:Extension.valueUrl [ fhir:value "use_cases.html" ]
          ];
-         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "usecases.html" ];
-         fhir:ImplementationGuide.definition.page.title [ fhir:value "Usecases" ];
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "use_cases.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Use Cases" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
        ], [
          fhir:index 25;
