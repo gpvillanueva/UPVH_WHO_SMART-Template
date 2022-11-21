@@ -1,14 +1,73 @@
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R5/fhir-single.xsd">
   
 
-    This implementation guide contains the full set of specifications for general case reporting workflows. It has been broken up into the following sections:
-    <ul>
-      <li><a href="concepts.html">Key Concepts</a></li>
-      <li><a href="functional.html">Functional Requirements</a></li>   
-      <li><a href="usecases.html">Use Cases</a></li>
-      <li><a href="personas.html">Personas</a></li>
-      <li><a href="dictionary.html">Data Dictionary</a></li>
-    </ul>
+<H3>Functional Requirements</H3>
+	<P></P>
 
-    
+	<P ALIGN="JUSTIFY" STYLE="margin-left:40px">
+    1. Ability for participating clinics to access Hepatitis B and C “Case Report” forms online.
+    </P>
+
+    <P ALIGN="JUSTIFY" STYLE="margin-left:40px">
+    2. Ability for participating clinics to access Hepatitis B and C “Care” forms online.
+    </P>
+
+    <P ALIGN="JUSTIFY" STYLE="margin-left:40px">
+    3. Ability for participating clinics to write data to the demonstration FHIR server.
+    </P>
+
+    <P ALIGN="JUSTIFY" STYLE="margin-left:40px">
+    4. Ability for project owners to extract FHIR data from the demonstration server in a format suitable for data visualization or statistical computing tools like “R” for statistical analysis.
+    </P>
+
+    <P ALIGN="JUSTIFY" STYLE="margin-left:40px">
+    5. Ability of participating clinics to read their data, including patient demographics, from the demonstration FHIR server.
+    </P>
+
+    <P ALIGN="JUSTIFY" STYLE="margin-left:40px">
+    6. Ability to limit the access to authenticated users only. 
+    </P>
+<P></P>
+<P></P>
+
+<H3>Stakeholders</H3>
+	<P></P>
+
+	<P ALIGN="JUSTIFY" STYLE="margin-left:40px">
+    1. Department of Health
+      <P ALIGN="JUSTIFY" STYLE="margin-left:60px">  1.a Epidemiology Bureau (EB) </P>
+      <P ALIGN="JUSTIFY" STYLE="margin-left:60px">  1.b Disease Prevention and Control Bureau (DPCB)</P>
+      <P ALIGN="JUSTIFY" STYLE="margin-left:60px">  1.c Knowledge Management and Information Technology Services (KMITS)</P>
+  </P>
+
+  <P ALIGN="JUSTIFY" STYLE="margin-left:40px">
+    2. Participating Health Facilities / Clinics
+      <P ALIGN="JUSTIFY" STYLE="margin-left:60px"> 2.a Screening, Assessment, and Treatment Facilities (SATF) - Level 1 - 2 Hospitals and Health Centers </P>
+      <P ALIGN="JUSTIFY" STYLE="margin-left:60px"> 2.b End Referral Facility (ERF) - Level 3 Hospitals</P>
+  </P>
+
+  <P ALIGN="JUSTIFY" STYLE="margin-left:40px">
+  3. Specialty Societies - Hepatology Society of the Philippines</P>
+
+  <P ALIGN="JUSTIFY" STYLE="margin-left:40px">
+    4. Epidemiologist
+  </P>
+
+<P></P>
+<P></P>
+
+<H3>User Stories</H3>
+<P></P>
+  <P ALIGN="JUSTIFY" STYLE="margin-left:40px"> 1. Health Facilities / Clinics </P>
+      <P ALIGN="JUSTIFY" STYLE="margin-left:60px"> 1.a As a member of a participating Health Facility, I want to be able to submit patient Hepatitis B and C data to the demonstration FHIR server through electronic form submission.</P>
+      <P ALIGN="JUSTIFY" STYLE="margin-left:60px"> 1.b As a member of a participating Health Facility, I want to be able to read electronic Hepatitis B and C data from the demonstration FHIR server.</P>
+      <P ALIGN="JUSTIFY" STYLE="margin-left:60px"> 1.c As a member of a participating Health Facility, I want to be able to edit Hepatitis B and C data in the demonstration FHIR server.</P>
+
+  <P ALIGN="JUSTIFY" STYLE="margin-left:40px"> 2. Epidemiologist </P>
+      <P ALIGN="JUSTIFY" STYLE="margin-left:60px"> 2.a As a field epidemiologist, I want to be able to read individual patient Hepatitis B and C data from the demonstration FHIR server. for track and trace purposes.</P>
+      <P ALIGN="JUSTIFY" STYLE="margin-left:60px"> 2.b As a research epidemiologist, I want to be able to electronically access anonymized collected form data so that I can do statistical analysis.</P>
+
+<P></P>
+<P></P>
+
 </div>

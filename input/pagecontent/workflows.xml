@@ -1,5 +1,50 @@
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R5/fhir-single.xsd">
 
+<H3>Client Process Flow</H3>
+<P></P>
+  <figure>
+    
+    <img style="width:100%" src="VH_Client Process Flow.png" alt="Viral Hepatitis Client Process Flow"/>
+    <figcaption ALIGN="CENTER">Viral Hepatitis Client Process Flow</figcaption>
+  </figure>
+<P></P>
 
+	<P ALIGN="JUSTIFY" STYLE="margin-left:40px"> 1. Client visits the facility. </P>
+    <P ALIGN="JUSTIFY" STYLE="margin-left:40px"> 2. Screening of client for HBsAg or Anti-HCV tests. </P>
+    <P ALIGN="JUSTIFY" STYLE="margin-left:40px"> 3. Fill out the VIRAL HEPATITIS CASE REPORT FORM (For clients, with reactive HBsAg and Anti-HCV RDT results;). </P>
+    <P ALIGN="JUSTIFY" STYLE="margin-left:40px"> 4. Register client in Hepatitis B and C Masterlist and encode to OHASIS VH Module. </P>
+    <P ALIGN="JUSTIFY" STYLE="margin-left:40px"> 5. Assess for treatment eligibility, and use the VIRAL HEPATITIS CARE FORM. </P>
+    <P ALIGN="JUSTIFY" STYLE="margin-left:40px"> 6. Update the Hepatitis B and C Masterlist and encode to OHASIS VH Module. </P>
+
+<P></P>
+<P></P>
+<P></P>
+
+<H3>Reporting Submission Algorithm</H3>
+<P></P>
+  <figure>
+    
+    <img style="width:100%" src="VH_Reporting Flow.png" alt="Viral Hepatitis Report Submission Flow"/>
+    <figcaption ALIGN="CENTER">Reporting Submission Flow</figcaption>
+  </figure>
+<P></P>
+
+    <P ALIGN="JUSTIFY" STYLE="margin-left:40px">1. SATF and ERF will encode the filled-out Viral Hepatitis forms and masterlist through their own EMR or theough the OHASIS</P>
+    <P ALIGN="JUSTIFY" STYLE="margin-left:40px">2. DOH EB will process the data exports from OHASIS and all other EMRs, and will send a viral hepatitis database. Once validated, DOH-EB will send a clean database</P>
+    <P ALIGN="JUSTIFY" STYLE="margin-left:40px">3. RESU will disseminate and consolidate the validated data from the facility and revert back to DOH-EB</P>
+    <P ALIGN="JUSTIFY" STYLE="margin-left:40px">4. Validated Data will undergo Analysis and to present National Report (DOH-EB) and Regional Report (RESU)</P>
+<P></P>
+<P></P>
+<P></P>
+
+<H3>FHIR Test Server Architecture</H3>
+<P></P>
+ <figure>
+    <img style="width:70%" src="Smile CDR Diagram_June192022.png" alt="Smile CDR FHIR Test Server graphic"/>
+    <figcaption ALIGN="CENTER">Smile CDR FHIR Test Server</figcaption>
+  </figure>
+<P></P>
+<P></P>
+<P></P>
 
 </div>

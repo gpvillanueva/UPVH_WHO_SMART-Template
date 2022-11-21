@@ -6,8 +6,16 @@
     <li>WHO <a href="https://www.who.int/teams/digital-health-and-innovation/smart-guidelines">SMART Guidelines</a> overviews the SMART Guidelines approach</li>
     <li>WHO <a href="https://www.who.int/publications/i/item/9789241548960">Handbook for guideline development</a> provides an overview of the WHO guideline development and publication process</li>
   </ul>
-
-
+<P></P>
+<P></P>
+<H3>WHO SMART Guidelines</H3>
+<P></P>
+  <figure>
+    <img style="width:70%" src="smart-guidelines.png" alt="SMART guidlines graphic"/>
+    <figcaption ALIGN="CENTER">WHO SMART Guidelines</figcaption>
+  </figure>
+<P></P>
+<P></P>
   <h3>Tutorials and Reference Material</h3> <a name='tutorials'> </a>
   <ul>
     <li>FHIR Implementation Guide <a href="https://confluence.hl7.org/display/FHIR/IG+Publisher+Documentation">Publisher</a> used to publish this implementatio guide</li>

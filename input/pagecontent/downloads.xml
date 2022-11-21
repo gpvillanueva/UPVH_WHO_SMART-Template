@@ -2,47 +2,40 @@
 {% assign excludexml = site.data.info.excludexml | downcase | slice: 0 %}
 {% assign excludejson = site.data.info.excludejson | downcase | slice: 0 %}
 {% assign excludettl = site.data.info.excludettl | downcase | slice: 0 %}
-	<p>
-    Download the entire implementation guide <a href="full-ig.zip">here</a>
+
+
+<H3>Government Publications and Issuances</H3>
+	<P></P>
+	<p ALIGN="JUSTIFY" STYLE="margin-left:50px">
+    Administrative Order 2017-0011 <a href="AO 2017-0011.PDF">PDF</a>
 	</p>
-	<table>
-		<tbody>
-			<tr>
-				<th>Artifact Definitions</th>
-{% unless excludexml == 'y' %}
-				<td>
-					<a href="definitions.xml.zip">XML</a>
-				</td>
-{% endunless %}
-{% unless excludejson == 'y' %}
-				<td>
-					<a href="definitions.json.zip">JSON</a>
-				</td>
-{% endunless %}
-{% unless excludettl == 'y' %}
-				<td>
-					<a href="definitions.ttl.zip">Turtle</a>
-				</td>
-{% endunless %}
-			</tr>
-			<tr>
-				<th>Examples</th>
-{% unless excludexml == 'y' %}
-				<td>
-					<a href="examples.xml.zip">XML</a>
-				</td>
-{% endunless %}
-{% unless excludejson == 'y' %}
-				<td>
-					<a href="examples.json.zip">JSON</a>
-				</td>
-{% endunless %}
-{% unless excludettl == 'y' %}
-				<td>
-					<a href="examples.ttl.zip">Turtle</a>
-				</td>
-{% endunless %}
-			</tr>
-		</tbody>
-	</table>
+
+	<p ALIGN="JUSTIFY" STYLE="margin-left:50px">
+    Department Memorandum 2019-0062 <a href="DM 2019-0062 with Interim Guidelines.pdf">PDF</a>
+	</p>
+
+	<p ALIGN="JUSTIFY" STYLE="margin-left:50px">
+   	Department Memorandum 2019-0465 <a href="DM 2019-0465.pdf">PDF</a>
+	</p>
+
+	<p ALIGN="JUSTIFY" STYLE="margin-left:50px">
+    Department Memorandum 2020-0531 <a href="DM 2020-0531 Hep C Interim Guidelines.pdf">PDF</a>
+	</p>
+
+	<p ALIGN="JUSTIFY" STYLE="margin-left:50px">
+    Department Memorandum 2020-0532 <a href="DM 2020-0532 Revised Hep B Interim Guidelines.pdf">PDF</a>
+	</p>
+
+	<P></P>
+	<P></P>
+<H3>Viral Hepatitis Patient Forms</H3>
+	<P></P>
+	<p ALIGN="JUSTIFY" STYLE="margin-left:50px">
+	Viral Hepatitis Case Report Form <a href="VH_Care Form.pdf">PDF</a>
+	</p>
+
+	<p ALIGN="JUSTIFY" STYLE="margin-left:50px">
+	Viral Hepatitis Care Form <a href="VH_Care Form.pdf">PDF</a>
+	</p>
+
 </div>

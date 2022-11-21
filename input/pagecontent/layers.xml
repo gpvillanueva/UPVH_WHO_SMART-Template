@@ -54,26 +54,4 @@ for the national viral hepatitis program. </P>
 
   </p>
   
-<H3>WHO SMART Guidelines</H3>
-
-  <figure>
-    
-    <img style="width:70%" src="smart-guidelines.png" alt="SMART guidlines graphic"/>
-    <figcaption ALIGN="CENTER">WHO SMART Guidelines</figcaption>
-  </figure>
-  <p></p>
-  <p></p>
-
-
-  <p></p>
-  <p></p>
-
-<H3>FHIR Test Server Architecture</H3>
-  <figure>
-  
-    <img style="width:70%" src="Smile CDR Diagram_June192022.png" alt="Smile CDR FHIR Test Server graphic"/>
-    <figcaption ALIGN="CENTER">Smile CDR FHIR Test Server</figcaption>
-  </figure>
-  <p></p>
-  <p></p>
 </div>
