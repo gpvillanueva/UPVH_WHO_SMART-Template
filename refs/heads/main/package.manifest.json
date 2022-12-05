@@ -1,8 +1,6 @@
 {
-  "version": "0.2.1",
-  "fhirVersion": [
-    "4.0.1"
-  ],
-  "date": "20221121112248",
-  "name": "fhir.who.smart-ig-upvhproject"
+  "version" : "0.2.1",
+  "fhirVersion" : ["4.0.1"],
+  "date" : "20221205080417",
+  "name" : "fhir.who.smart-ig-upvhproject"
 }
