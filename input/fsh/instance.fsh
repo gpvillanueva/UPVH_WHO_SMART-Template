@@ -33,10 +33,10 @@ Description: "VH Patient"
 * extension contains
     $2131 named FatherName 0..1 and
     $2132 named MotherName 0..1 and
-    $patient-nationality named myExtension 0..1
+    $patient-nationality named Nationality 0..1
 * extension[FatherName] ^isModifier = false
 * extension[MotherName] ^isModifier = false
-* extension[myExtension] ^isModifier = false
+* extension[Nationality] ^isModifier = false
 * identifier ..3
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "use"
@@ -64,6 +64,7 @@ Description: "VH Patient"
 * name.given ^definition = "Patient.name[0].given[0]\r\nPatient.name[0].given[1]"
 * name.suffix ^definition = "Patient.name[0].suffix"
 * telecom.use = #work (exactly)
+* birthDate 1..
 * address ..2
 * address ^definition = "CurrentAddress[0]\r\nPermanentAddress[1]"
 * address.use 1..
@@ -71,6 +72,7 @@ Description: "VH Patient"
 * address.use ^definition = "Current=home\r\nPermanent=old"
 * address.type 1..
 * address.type = #both (exactly)
+* maritalStatus 1..
 * maritalStatus ^short = "Civil Status"
 * maritalStatus ^definition = "Civil status"
 * managingOrganization 1..
