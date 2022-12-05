@@ -7,18 +7,18 @@
 
 <http://worldhealthorganization.github.io/smart-ig-upvhproject/ImplementationGuide/fhir.who.smart-ig-upvhproject> a fhir:ImplementationGuide;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "fhir.who.smart-ig-upvhproject"];
+  fhir:Resource.id [ fhir:value "fhir.who.smart-ig-upvhproject"]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>smartigupvhproject</h2><p>The official URL for this implementation guide is: </p><pre>http://worldhealthorganization.github.io/smart-ig-upvhproject/ImplementationGuide/fhir.who.smart-ig-upvhproject</pre><div><p>This is a FHIR Implementation Guide for the project of University of the Philippines Manila entitled Monitoring the Chronic Viral Hepatitis Treatment Cascade Through Electronic Medical Records in the Philippines which is being funded by Gilead Sciences, coursed through the UP Manila Development Fund</p>\n</div></div>"
-  ];
-  fhir:ImplementationGuide.url [ fhir:value "http://worldhealthorganization.github.io/smart-ig-upvhproject/ImplementationGuide/fhir.who.smart-ig-upvhproject"];
-  fhir:ImplementationGuide.version [ fhir:value "0.2.1"];
-  fhir:ImplementationGuide.name [ fhir:value "smartigupvhproject"];
-  fhir:ImplementationGuide.title [ fhir:value "University of the Philippines Manila Viral Hepatitis Project Implementation Guide"];
-  fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-10-25"^^xsd:date];
-  fhir:ImplementationGuide.publisher [ fhir:value "UP Manila Viral Hepatitis Project"];
+  ]; # 
+  fhir:ImplementationGuide.url [ fhir:value "http://worldhealthorganization.github.io/smart-ig-upvhproject/ImplementationGuide/fhir.who.smart-ig-upvhproject"]; # 
+  fhir:ImplementationGuide.version [ fhir:value "0.2.1"]; # 
+  fhir:ImplementationGuide.name [ fhir:value "smartigupvhproject"]; # 
+  fhir:ImplementationGuide.title [ fhir:value "University of the Philippines Manila Viral Hepatitis Project Implementation Guide"]; # 
+  fhir:ImplementationGuide.status [ fhir:value "draft"]; # 
+  fhir:ImplementationGuide.date [ fhir:value "2022-10-25"^^xsd:date]; # 
+  fhir:ImplementationGuide.publisher [ fhir:value "UP Manila Viral Hepatitis Project"]; # 
   fhir:ImplementationGuide.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "UP Manila Viral Hepatitis Project" ];
@@ -27,8 +27,8 @@
        fhir:ContactPoint.system [ fhir:value "url" ];
        fhir:ContactPoint.value [ fhir:value "http://ehealth4hepatitis.ph" ]
      ]
-  ];
-  fhir:ImplementationGuide.description [ fhir:value "This is a FHIR Implementation Guide for the project of University of the Philippines Manila entitled Monitoring the Chronic Viral Hepatitis Treatment Cascade Through Electronic Medical Records in the Philippines which is being funded by Gilead Sciences, coursed through the UP Manila Development Fund"];
+  ]; # 
+  fhir:ImplementationGuide.description [ fhir:value "This is a FHIR Implementation Guide for the project of University of the Philippines Manila entitled Monitoring the Chronic Viral Hepatitis Treatment Cascade Through Electronic Medical Records in the Philippines which is being funded by Gilead Sciences, coursed through the UP Manila Development Fund"]; # 
   fhir:ImplementationGuide.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [
@@ -36,13 +36,13 @@
        fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
        fhir:Coding.code [ fhir:value "001" ]
      ]
-  ];
-  fhir:ImplementationGuide.packageId [ fhir:value "fhir.who.smart-ig-upvhproject"];
-  fhir:ImplementationGuide.license [ fhir:value "CC0-1.0"];
+  ]; # 
+  fhir:ImplementationGuide.packageId [ fhir:value "fhir.who.smart-ig-upvhproject"]; # 
+  fhir:ImplementationGuide.license [ fhir:value "CC0-1.0"]; # 
   fhir:ImplementationGuide.fhirVersion [
      fhir:value "4.0.1";
      fhir:index 0
-  ];
+  ]; # 
   fhir:ImplementationGuide.dependsOn [
      fhir:index 0;
      fhir:Element.id [ fhir:value "hl7tx" ];
@@ -57,7 +57,7 @@
      ];
      fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.terminology.r4" ];
      fhir:ImplementationGuide.dependsOn.version [ fhir:value "5.0.0" ]
-  ];
+  ]; # 
   fhir:ImplementationGuide.definition [
      fhir:Element.extension [
        fhir:index 0;
@@ -730,7 +730,7 @@
        fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-tx-cache" ];
        fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input-cache/txcache" ]
      ]
-  ] .
+  ] . # 
 
 # - ontology header ------------------------------------------------------------
 
