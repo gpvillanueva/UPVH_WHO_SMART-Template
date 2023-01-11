@@ -1,17 +1,17 @@
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R5/fhir-single.xsd">
 
-<P ALIGN="JUSTIFY" STYLE= "margin-left:40px">
-  <P ALIGN="JUSTIFY" STYLE= "margin-left:40px"> The Philippine National Viral Hepatitis program aims to monitor the reporting and treatment of chronic viral hepatitis through standardized data collection from case records.</P> 
+  <P ALIGN="JUSTIFY" STYLE= "margin-left:40px">
+    <P ALIGN="JUSTIFY" STYLE= "margin-left:40px"> The Philippine National Viral Hepatitis program aims to monitor the reporting and treatment of chronic viral hepatitis through standardized data collection from case records.</P> 
 
-  <P ALIGN="JUSTIFY" STYLE= "margin-left:40px"> About half of the 3000 frontline public health facilities in the Philippines use an electronic medical records system (EMR). </P>
+    <P ALIGN="JUSTIFY" STYLE= "margin-left:40px"> About half of the 3000 frontline public health facilities in the Philippines use an electronic medical records system (EMR). </P>
 
-  <P ALIGN="JUSTIFY" STYLE= "margin-left:40px"> To harness viral hepatitis data from these EMRs, there is a need for a secure standardized data exchange system to gather individual cases of Hepatitis B and C, track their treatment status, and conduct population health analysis.</P>
+    <P ALIGN="JUSTIFY" STYLE= "margin-left:40px"> To harness viral hepatitis data from these EMRs, there is a need for a secure standardized data exchange system to gather individual cases of Hepatitis B and C, track their treatment status, and conduct population health analysis.</P>
 
-  <P ALIGN="JUSTIFY" STYLE= "margin-left:40px"> The Department of Health (DOH) and the UP Manila Standards and Interoperability Lab (UPM-SILab) has adopted the Fast Healthcare Interoperability Resource (FHIR) as data exchange format for Hepatitis B and C reporting. Using the WHO SMART Guidelines approach, two forms from the program - the “Case” and “Care” forms - were translated into FHIR format for this purpose. </P>
+    <P ALIGN="JUSTIFY" STYLE= "margin-left:40px"> The Department of Health (DOH) and the UP Manila Standards and Interoperability Lab (UPM-SILab) has adopted the Fast Healthcare Interoperability Resource (FHIR) as data exchange format for Hepatitis B and C reporting. Using the WHO SMART Guidelines approach, two forms from the program - the “Case” and “Care” forms - were translated into FHIR format for this purpose. </P>
 
-  <P ALIGN="JUSTIFY" STYLE= "margin-left:40px"> This project demonstrates the provenance of interoperability from level 1 (DOH narrative policy) to level 4 (EMR transmission) using the WHO SMART guidelines. </P>
+    <P ALIGN="JUSTIFY" STYLE= "margin-left:40px"> This project demonstrates the provenance of interoperability from level 1 (DOH narrative policy) to level 4 (EMR transmission) using the WHO SMART guidelines. </P>
 
-</P>
+  </P>
 
    <H3>Background</H3>
     
