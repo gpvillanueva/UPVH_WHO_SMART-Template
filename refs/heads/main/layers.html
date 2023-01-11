@@ -138,58 +138,52 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <div xmlns="http://www.w3.org/1999/xhtml">
 
 <ns0:P xmlns:ns0="http://www.w3.org/1999/xhtml" ALIGN="JUSTIFY" STYLE="margin-left:40px">
-  <ns1:P xmlns:ns1="http://www.w3.org/1999/xhtml" ALIGN="JUSTIFY" STYLE="margin-left:40px"> The Philippines’ National Viral Hepatitis program wants to monitor the reporting and treatment of chronic viral hepatitis through a secure FHIR server of case records.</ns1:P> 
+  <ns1:P xmlns:ns1="http://www.w3.org/1999/xhtml" ALIGN="JUSTIFY" STYLE="margin-left:40px"> The Philippine National Viral Hepatitis program aims to monitor the reporting and treatment of chronic viral hepatitis through standardized data collection from case records.</ns1:P> 
 
-  <ns2:P xmlns:ns2="http://www.w3.org/1999/xhtml" ALIGN="JUSTIFY" STYLE="margin-left:40px"> Currently, There are 3000 medical facilities in the Philippines out of which 1500 use approximately 20 different types of Electronic Medical Records (EMR) and the other 1500
-operate with paper records. </ns2:P>
+  <ns2:P xmlns:ns2="http://www.w3.org/1999/xhtml" ALIGN="JUSTIFY" STYLE="margin-left:40px"> About half of the 3000 frontline public health facilities in the Philippines use an electronic medical records system (EMR). </ns2:P>
 
-  <ns3:P xmlns:ns3="http://www.w3.org/1999/xhtml" ALIGN="JUSTIFY" STYLE="margin-left:40px"> There is a need for a centralized information system to report individual cases of Hepatitis B and C, track treatment status, and conduct statistical modelling with data from the demonstration
-FHIR server.</ns3:P>
+  <ns3:P xmlns:ns3="http://www.w3.org/1999/xhtml" ALIGN="JUSTIFY" STYLE="margin-left:40px"> To harness viral hepatitis data from these EMRs, there is a need for a secure standardized data exchange system to gather individual cases of Hepatitis B and C, track their treatment status, and conduct population health analysis.</ns3:P>
 
-  <ns4:P xmlns:ns4="http://www.w3.org/1999/xhtml" ALIGN="JUSTIFY" STYLE="margin-left:40px"> The Philippines Department of Health (DOH) and Philippines Standard Interoperability Labs want to use the FHIR format for Hepatitis B and C reporting forms - known as “Case” and “Care” forms - for the purpose of developing a standardized national surveillance tool.
-To function as a demonstration project for FHIR and Smile </ns4:P>
+  <ns4:P xmlns:ns4="http://www.w3.org/1999/xhtml" ALIGN="JUSTIFY" STYLE="margin-left:40px"> The Department of Health (DOH) and the UP Manila Standards and Interoperability Lab (UPM-SILab) has adopted the Fast Healthcare Interoperability Resource (FHIR) as data exchange format for Hepatitis B and C reporting. Using the WHO SMART Guidelines approach, two forms from the program - the “Case” and “Care” forms - were translated into FHIR format for this purpose. </ns4:P>
 
-  <ns5:P xmlns:ns5="http://www.w3.org/1999/xhtml" ALIGN="JUSTIFY" STYLE="margin-left:40px"> This is a demonstration project to show transition from level 1 (narrative) to level 4 (executable) health data systems using WHO SMART guidelines. At Level 4, the project aims to demonstrate synthetic data exchange between EMRs and a FHIR server
-for the national viral hepatitis program. </ns5:P>
+  <ns5:P xmlns:ns5="http://www.w3.org/1999/xhtml" ALIGN="JUSTIFY" STYLE="margin-left:40px"> This project demonstrates the provenance of interoperability from level 1 (DOH narrative policy) to level 4 (EMR transmission) using the WHO SMART guidelines. </ns5:P>
 
 </ns0:P>
 
-  <ns6:p xmlns:ns6="http://www.w3.org/1999/xhtml">
-   <ns7:H3 xmlns:ns7="http://www.w3.org/1999/xhtml">Background</ns7:H3>
+   <ns6:H3 xmlns:ns6="http://www.w3.org/1999/xhtml">Background</ns6:H3>
     
+    <ns7:P xmlns:ns7="http://www.w3.org/1999/xhtml" ALIGN="JUSTIFY" STYLE="margin-left:40px">
+    Chronic Viral Hepatitis is a major public health problem in the Philippines. A recent study estimates that in 2016, about 9.8% of the population or more than 10 million Filipinos have Chronic Hepatitis B (CHB) (The Polaris Observatory Collaborators, Lancet Gastroenterol Hepatol ,2018). CHB is the leading cause of cirrhosis and hepatocellular carcinoma in the country, the latter of which is the second leading cause of cancer deaths. Chronic Hepatitis C (CHC) affects 0.6 to 0.9% of the population or roughly 600,000 Filipinos. (The Polaris Observatory HCV Collaborators, 2017; Gower E, 2014) 
+    </ns7:P>
+
     <ns8:P xmlns:ns8="http://www.w3.org/1999/xhtml" ALIGN="JUSTIFY" STYLE="margin-left:40px">
-    Chronic Viral Hepatitis is a major public health problem in the Philippines. A very recent study estimates that in 2016, about 9.8% of the population or 10,143,000 Filipinos have Chronic Hepatitis B (CHB) (The Polaris Observatory Collaborators, Lancet Gastroenterol Hepatol ,2018) CHB is the leading cause of cirrhosis in the country. It is also the leading cause of hepatocellular carcinoma in the country, which is the second leading cause of cancer deaths. Chronic Hepatitis C (CHC) affects 0.6 to 0.9% of the population or roughly 600,000 Filipinos. (The Polaris Observatory HCV Collaborators, 2017; Gower E, 2014) 
-    </ns8:P>
+    In 2016, the WHO Global Hepatitis Program released the Global Health Sector Strategy on Viral Hepatitis which sets out 2 impact targets and 7 service coverage targets for both CHB and CHC for 2020 and 2030.  As the Department of Health moves towards a national action plan on viral hepatitis, one of the key elements would be the monitoring and evaluation of the program to assess if the targets set by the WHO are being met. This would require that a terminology service be in place that should be incorporated into the electronic medical records that are recognized by the Department of Health. One problem is the inability of the hepatitis program to monitor and track care of hepatitis at the primary care level.
+    </ns8:P> 
 
-    <ns9:P xmlns:ns9="http://www.w3.org/1999/xhtml" ALIGN="JUSTIFY" STYLE="margin-left:40px">
-    The WHO Global Hepatitis Program released a Global Health Sector Strategy on Viral Hepatitis in 2016 which sets out 2 impact targets and 7 service coverage targets for both CHB and CHC for 2020 and 2030.  As the Department of Health moves towards a national action plan on viral hepatitis, one of the key elements would be the monitoring and evaluation of the program to assess if the targets set by the WHO are being met. This would require that a terminology service be in place that should be incorporated into the electronic medical records that are recognized by the Department of Health. One problem is the inability of the hepatitis program to monitor and track care of hepatitis at the primary care level.
-    </ns9:P> 
+    <ns9:P xmlns:ns9="http://www.w3.org/1999/xhtml" ALIGN="JUSTIFY" STYLE="margin-left:40px"> 
 
-    <ns10:P xmlns:ns10="http://www.w3.org/1999/xhtml" ALIGN="JUSTIFY" STYLE="margin-left:40px"> 
     Since 2013, the National eHealth Governance Structure has enacted policies that facilitated the deployment of electronic medical records. There are several electronic medical records (EMRs) in the country. Five of these are being used by 1500 rural health units (covering 67% of the population). Unfortunately, there are no standard terminology s sets for monitoring patient with chronic viral hepatitis patients even as their signs and symptoms are recorded in the EMRs.
-  </ns10:P>
+    </ns9:P>
 
-<ns11:p xmlns:ns11="http://www.w3.org/1999/xhtml"/>
+<ns10:p xmlns:ns10="http://www.w3.org/1999/xhtml"/>
 
-  <ns12:H3 xmlns:ns12="http://www.w3.org/1999/xhtml">Vission/Objectives</ns12:H3>
+  <ns11:H3 xmlns:ns11="http://www.w3.org/1999/xhtml">Vision/Objectives</ns11:H3>
   
-  <ns13:P xmlns:ns13="http://www.w3.org/1999/xhtml" ALIGN="JUSTIFY" STYLE="margin-left:40px">
+  <ns12:P xmlns:ns12="http://www.w3.org/1999/xhtml" ALIGN="JUSTIFY" STYLE="margin-left:40px">
   As the Department of Health moves towards a national action plan on viral hepatitis, one of the key elements would be the monitoring and evaluation of the program to assess if the targets set by the WHO are being met. This would require that a terminology service be in place that should be incorporated into the electronic medical records that are recognized by the Department of Health. 
-  </ns13:P>
+  </ns12:P>
 
-  <ns14:P xmlns:ns14="http://www.w3.org/1999/xhtml" ALIGN="JUSTIFY" STYLE="margin-left:40px">
+  <ns13:P xmlns:ns13="http://www.w3.org/1999/xhtml" ALIGN="JUSTIFY" STYLE="margin-left:40px">
     This project has several components:
-    <ns15:p xmlns:ns15="http://www.w3.org/1999/xhtml" ALIGN="JUSTIFY" STYLE="margin-left:60px">1. Obtain expert consensus on the terminologies related to chronic viral hepatitis through a workshop;</ns15:p>
-    <ns16:p xmlns:ns16="http://www.w3.org/1999/xhtml" ALIGN="JUSTIFY" STYLE="margin-left:60px">2. Populate a terminology service with the consensus terminology </ns16:p>
-    <ns17:p xmlns:ns17="http://www.w3.org/1999/xhtml" ALIGN="JUSTIFY" STYLE="margin-left:60px">3. Map EMR terms to the terminology service</ns17:p>
-    <ns18:p xmlns:ns18="http://www.w3.org/1999/xhtml" ALIGN="JUSTIFY" STYLE="margin-left:60px">4. Collect data from EMRs into a monitoring dashboard</ns18:p>
-  </ns14:P>  
+    <ns14:p xmlns:ns14="http://www.w3.org/1999/xhtml" ALIGN="JUSTIFY" STYLE="margin-left:60px">1. Obtain expert consensus on the terminologies related to chronic viral hepatitis through workshops;</ns14:p>
+    <ns15:p xmlns:ns15="http://www.w3.org/1999/xhtml" ALIGN="JUSTIFY" STYLE="margin-left:60px">2. Prepare application programming interfaces that employ the consensus/standard terminology </ns15:p>
+    <ns16:p xmlns:ns16="http://www.w3.org/1999/xhtml" ALIGN="JUSTIFY" STYLE="margin-left:60px">3. Equip EMRs to consume these application programming interfaces</ns16:p>
+    <ns17:p xmlns:ns17="http://www.w3.org/1999/xhtml" ALIGN="JUSTIFY" STYLE="margin-left:60px">4. Monitor collection of standardized data from EMRs into a dashboard</ns17:p>
+  </ns13:P>  
 
-  <ns19:P xmlns:ns19="http://www.w3.org/1999/xhtml" ALIGN="JUSTIFY" STYLE="margin-left:40px">
+  <ns18:P xmlns:ns18="http://www.w3.org/1999/xhtml" ALIGN="JUSTIFY" STYLE="margin-left:40px">
     At the end of the project, the DOH hepatitis program will have a dashboard that shows standardized data from participating electronic medical records.
-  </ns19:P>
-
-  </ns6:p>
+  </ns18:P>
   
 </div>
 </div>
@@ -214,7 +208,7 @@ for the national viral hepatitis program. </ns5:P>
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://ehealth4hepatitis.ph">UP Manila Viral Hepatitis Project</a>.  Package fhir.who.smart-ig-upvhproject#0.2.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jan 11, 2023 09:49+0000">2023-01-11</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://ehealth4hepatitis.ph">UP Manila Viral Hepatitis Project</a>.  Package fhir.who.smart-ig-upvhproject#0.2.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jan 11, 2023 09:59+0000">2023-01-11</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
