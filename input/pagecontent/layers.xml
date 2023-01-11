@@ -3,14 +3,13 @@
 <P ALIGN="JUSTIFY" STYLE= "margin-left:40px">
   <P ALIGN="JUSTIFY" STYLE= "margin-left:40px"> The Philippine National Viral Hepatitis program aims to monitor the reporting and treatment of chronic viral hepatitis through standardized data collection from case records.</P> 
 
-  <P ALIGN="JUSTIFY" STYLE= "margin-left:40px"> About half of the 3000 fronteline public health facilities in the Philippines use an electronic medical records system (EMR). </P>
+  <P ALIGN="JUSTIFY" STYLE= "margin-left:40px"> About half of the 3000 frontline public health facilities in the Philippines use an electronic medical records system (EMR). </P>
 
-  <P ALIGN="JUSTIFY" STYLE= "margin-left:40px"> To harness viral hepatitis data from EMRs, there is a need for a system to gather individual cases of Hepatitis B and C, track treatment status, and conduct statistical modelling with data.</P>
+  <P ALIGN="JUSTIFY" STYLE= "margin-left:40px"> To harness viral hepatitis data from these EMRs, there is a need for a secure standardized data exchange system to gather individual cases of Hepatitis B and C, track their treatment status, and conduct population health analysis.</P>
 
-  <P ALIGN="JUSTIFY" STYLE= "margin-left:40px"> The Department of Health (DOH) and the UP Manila Standards and Interoperability Lab (UPM-SILab) has adopted the Fast Healthcare Interoperability Resource (FHIR) as data exchange format for Hepatitis B and C reporting. Two forms from the program, “Case” and “Care” forms, were translated into FHIR format for the purpose of developing a standardized national surveillance tool and reference for EMRs. </P>
+  <P ALIGN="JUSTIFY" STYLE= "margin-left:40px"> The Department of Health (DOH) and the UP Manila Standards and Interoperability Lab (UPM-SILab) has adopted the Fast Healthcare Interoperability Resource (FHIR) as data exchange format for Hepatitis B and C reporting. Using the WHO SMART Guidelines approach, two forms from the program - the “Case” and “Care” forms - were translated into FHIR format for this purpose. </P>
 
-  <P ALIGN="JUSTIFY" STYLE= "margin-left:40px"> This is a demonstration project to show transition from level 1 (narrative) to level 4 (executable) health data systems using WHO SMART guidelines. At Level 4, the project aims to demonstrate synthetic data exchange between EMRs and a FHIR server
-for the national viral hepatitis program. </P>
+  <P ALIGN="JUSTIFY" STYLE= "margin-left:40px"> This project demonstrates the provenance of interoperability from level 1 (DOH narrative policy) to level 4 (EMR transmission) using the WHO SMART guidelines. </P>
 
 </P>
 
@@ -25,6 +24,7 @@ for the national viral hepatitis program. </P>
     </P> 
 
     <P ALIGN="JUSTIFY" STYLE= "margin-left:40px"> 
+
     Since 2013, the National eHealth Governance Structure has enacted policies that facilitated the deployment of electronic medical records. There are several electronic medical records (EMRs) in the country. Five of these are being used by 1500 rural health units (covering 67% of the population). Unfortunately, there are no standard terminology s sets for monitoring patient with chronic viral hepatitis patients even as their signs and symptoms are recorded in the EMRs.
     </P>
 
@@ -38,10 +38,10 @@ for the national viral hepatitis program. </P>
 
   <P ALIGN="JUSTIFY" STYLE= "margin-left:40px">
     This project has several components:
-    <p ALIGN="JUSTIFY" STYLE= "margin-left:60px">1. Obtain expert consensus on the terminologies related to chronic viral hepatitis through a workshop;</p>
-    <p ALIGN="JUSTIFY" STYLE= "margin-left:60px">2. Populate a terminology service with the consensus terminology </p>
-    <p ALIGN="JUSTIFY" STYLE= "margin-left:60px">3. Map EMR terms to the terminology service</p>
-    <p ALIGN="JUSTIFY" STYLE= "margin-left:60px">4. Collect data from EMRs into a monitoring dashboard</p>
+    <p ALIGN="JUSTIFY" STYLE= "margin-left:60px">1. Obtain expert consensus on the terminologies related to chronic viral hepatitis through workshops;</p>
+    <p ALIGN="JUSTIFY" STYLE= "margin-left:60px">2. Prepare application programming interfaces that employ the consensus/standard terminology </p>
+    <p ALIGN="JUSTIFY" STYLE= "margin-left:60px">3. Equip EMRs to consume these application programming interfaces</p>
+    <p ALIGN="JUSTIFY" STYLE= "margin-left:60px">4. Monitor collection of standardized data from EMRs into a dashboard</p>
   </P>  
 
   <P ALIGN="JUSTIFY" STYLE= "margin-left:40px">
