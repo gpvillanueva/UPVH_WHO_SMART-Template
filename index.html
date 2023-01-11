@@ -133,6 +133,37 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <!--ReleaseHeader--><p id="publish-box">This is the continuous build for version 0.2.1. This version is expected to change regularly.</p><!--EndReleaseHeader-->
   <h2>Home</h2>
   
+  
+
+  <table class="">
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;"></span></td>
+    </tr>
+
+
+
+
+  </table>
+  
+  
+  
   <div xmlns="http://www.w3.org/1999/xhtml" lang="en"><div class="markdown-toc"><p>Contents:</p><ul><li><a href="#scope">Summary</a></li><li><a href="#summary">References</a></li><li><a href="#3">Dependencies</a></li><li><a href="#dependencies">Providing Feedback</a></li><li><a href="#feedback">Disclaimer</a></li></ul></div>
   
   <a name="scope">   </a>
@@ -140,95 +171,95 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   
 
   
-  <h3>Summary</h3>  <a name="summary">  </a>
+  <ns0:h3 xmlns:ns0="http://www.w3.org/1999/xhtml">Summary</ns0:h3>  <a name="summary">  </a>
   <div xmlns="http://www.w3.org/1999/xhtml">
 
-<P ALIGN="JUSTIFY" STYLE="margin-left:40px">
-  <P ALIGN="JUSTIFY" STYLE="margin-left:40px"> The Philippines’ National Viral Hepatitis program wants to monitor the reporting and treatment of chronic viral hepatitis through a secure FHIR server of case records.</P> 
+<ns0:P xmlns:ns0="http://www.w3.org/1999/xhtml" ALIGN="JUSTIFY" STYLE="margin-left:40px">
+  <ns1:P xmlns:ns1="http://www.w3.org/1999/xhtml" ALIGN="JUSTIFY" STYLE="margin-left:40px"> The Philippines’ National Viral Hepatitis program wants to monitor the reporting and treatment of chronic viral hepatitis through a secure FHIR server of case records.</ns1:P> 
 
-  <P ALIGN="JUSTIFY" STYLE="margin-left:40px"> Currently, There are 3000 medical facilities in the Philippines out of which 1500 use approximately 20 different types of Electronic Medical Records (EMR) and the other 1500
-operate with paper records. </P>
+  <ns2:P xmlns:ns2="http://www.w3.org/1999/xhtml" ALIGN="JUSTIFY" STYLE="margin-left:40px"> Currently, There are 3000 medical facilities in the Philippines out of which 1500 use approximately 20 different types of Electronic Medical Records (EMR) and the other 1500
+operate with paper records. </ns2:P>
 
-  <P ALIGN="JUSTIFY" STYLE="margin-left:40px"> There is a need for a centralized information system to report individual cases of Hepatitis B and C, track treatment status, and conduct statistical modelling with data from the demonstration
-FHIR server.</P>
+  <ns3:P xmlns:ns3="http://www.w3.org/1999/xhtml" ALIGN="JUSTIFY" STYLE="margin-left:40px"> There is a need for a centralized information system to report individual cases of Hepatitis B and C, track treatment status, and conduct statistical modelling with data from the demonstration
+FHIR server.</ns3:P>
 
-  <P ALIGN="JUSTIFY" STYLE="margin-left:40px"> The Philippines Department of Health (DOH) and Philippines Standard Interoperability Labs want to use the FHIR format for Hepatitis B and C reporting forms - known as “Case” and “Care” forms - for the purpose of developing a standardized national surveillance tool.
-To function as a demonstration project for FHIR and Smile </P>
+  <ns4:P xmlns:ns4="http://www.w3.org/1999/xhtml" ALIGN="JUSTIFY" STYLE="margin-left:40px"> The Philippines Department of Health (DOH) and Philippines Standard Interoperability Labs want to use the FHIR format for Hepatitis B and C reporting forms - known as “Case” and “Care” forms - for the purpose of developing a standardized national surveillance tool.
+To function as a demonstration project for FHIR and Smile </ns4:P>
 
-  <P ALIGN="JUSTIFY" STYLE="margin-left:40px"> This is a demonstration project to show transition from level 1 (narrative) to level 4 (executable) health data systems using WHO SMART guidelines. At Level 4, the project aims to demonstrate synthetic data exchange between EMRs and a FHIR server
-for the national viral hepatitis program. </P>
+  <ns5:P xmlns:ns5="http://www.w3.org/1999/xhtml" ALIGN="JUSTIFY" STYLE="margin-left:40px"> This is a demonstration project to show transition from level 1 (narrative) to level 4 (executable) health data systems using WHO SMART guidelines. At Level 4, the project aims to demonstrate synthetic data exchange between EMRs and a FHIR server
+for the national viral hepatitis program. </ns5:P>
 
-</P>
+</ns0:P>
 
-  <p>
-   <H3>Background</H3>
+  <ns6:p xmlns:ns6="http://www.w3.org/1999/xhtml">
+   <ns7:H3 xmlns:ns7="http://www.w3.org/1999/xhtml">Background</ns7:H3>
     
-    <P ALIGN="JUSTIFY" STYLE="margin-left:40px">
+    <ns8:P xmlns:ns8="http://www.w3.org/1999/xhtml" ALIGN="JUSTIFY" STYLE="margin-left:40px">
     Chronic Viral Hepatitis is a major public health problem in the Philippines. A very recent study estimates that in 2016, about 9.8% of the population or 10,143,000 Filipinos have Chronic Hepatitis B (CHB) (The Polaris Observatory Collaborators, Lancet Gastroenterol Hepatol ,2018) CHB is the leading cause of cirrhosis in the country. It is also the leading cause of hepatocellular carcinoma in the country, which is the second leading cause of cancer deaths. Chronic Hepatitis C (CHC) affects 0.6 to 0.9% of the population or roughly 600,000 Filipinos. (The Polaris Observatory HCV Collaborators, 2017; Gower E, 2014) 
-    </P>
+    </ns8:P>
 
-    <P ALIGN="JUSTIFY" STYLE="margin-left:40px">
+    <ns9:P xmlns:ns9="http://www.w3.org/1999/xhtml" ALIGN="JUSTIFY" STYLE="margin-left:40px">
     The WHO Global Hepatitis Program released a Global Health Sector Strategy on Viral Hepatitis in 2016 which sets out 2 impact targets and 7 service coverage targets for both CHB and CHC for 2020 and 2030.  As the Department of Health moves towards a national action plan on viral hepatitis, one of the key elements would be the monitoring and evaluation of the program to assess if the targets set by the WHO are being met. This would require that a terminology service be in place that should be incorporated into the electronic medical records that are recognized by the Department of Health. One problem is the inability of the hepatitis program to monitor and track care of hepatitis at the primary care level.
-    </P> 
+    </ns9:P> 
 
-    <P ALIGN="JUSTIFY" STYLE="margin-left:40px"> 
+    <ns10:P xmlns:ns10="http://www.w3.org/1999/xhtml" ALIGN="JUSTIFY" STYLE="margin-left:40px"> 
     Since 2013, the National eHealth Governance Structure has enacted policies that facilitated the deployment of electronic medical records. There are several electronic medical records (EMRs) in the country. Five of these are being used by 1500 rural health units (covering 67% of the population). Unfortunately, there are no standard terminology s sets for monitoring patient with chronic viral hepatitis patients even as their signs and symptoms are recorded in the EMRs.
-  </P>
+  </ns10:P>
 
-<p/>
+<ns11:p xmlns:ns11="http://www.w3.org/1999/xhtml"/>
 
-  <H3>Vission/Objectives</H3>
+  <ns12:H3 xmlns:ns12="http://www.w3.org/1999/xhtml">Vission/Objectives</ns12:H3>
   
-  <P ALIGN="JUSTIFY" STYLE="margin-left:40px">
+  <ns13:P xmlns:ns13="http://www.w3.org/1999/xhtml" ALIGN="JUSTIFY" STYLE="margin-left:40px">
   As the Department of Health moves towards a national action plan on viral hepatitis, one of the key elements would be the monitoring and evaluation of the program to assess if the targets set by the WHO are being met. This would require that a terminology service be in place that should be incorporated into the electronic medical records that are recognized by the Department of Health. 
-  </P>
+  </ns13:P>
 
-  <P ALIGN="JUSTIFY" STYLE="margin-left:40px">
+  <ns14:P xmlns:ns14="http://www.w3.org/1999/xhtml" ALIGN="JUSTIFY" STYLE="margin-left:40px">
     This project has several components:
-    <p ALIGN="JUSTIFY" STYLE="margin-left:60px">1. Obtain expert consensus on the terminologies related to chronic viral hepatitis through a workshop;</p>
-    <p ALIGN="JUSTIFY" STYLE="margin-left:60px">2. Populate a terminology service with the consensus terminology </p>
-    <p ALIGN="JUSTIFY" STYLE="margin-left:60px">3. Map EMR terms to the terminology service</p>
-    <p ALIGN="JUSTIFY" STYLE="margin-left:60px">4. Collect data from EMRs into a monitoring dashboard</p>
-  </P>  
+    <ns15:p xmlns:ns15="http://www.w3.org/1999/xhtml" ALIGN="JUSTIFY" STYLE="margin-left:60px">1. Obtain expert consensus on the terminologies related to chronic viral hepatitis through a workshop;</ns15:p>
+    <ns16:p xmlns:ns16="http://www.w3.org/1999/xhtml" ALIGN="JUSTIFY" STYLE="margin-left:60px">2. Populate a terminology service with the consensus terminology </ns16:p>
+    <ns17:p xmlns:ns17="http://www.w3.org/1999/xhtml" ALIGN="JUSTIFY" STYLE="margin-left:60px">3. Map EMR terms to the terminology service</ns17:p>
+    <ns18:p xmlns:ns18="http://www.w3.org/1999/xhtml" ALIGN="JUSTIFY" STYLE="margin-left:60px">4. Collect data from EMRs into a monitoring dashboard</ns18:p>
+  </ns14:P>  
 
-  <P ALIGN="JUSTIFY" STYLE="margin-left:40px">
+  <ns19:P xmlns:ns19="http://www.w3.org/1999/xhtml" ALIGN="JUSTIFY" STYLE="margin-left:40px">
     At the end of the project, the DOH hepatitis program will have a dashboard that shows standardized data from participating electronic medical records.
-  </P>
+  </ns19:P>
 
-  </p>
+  </ns6:p>
   
 </div>
 
-  <h3>References</h3>  <a name="references">  </a>
-  This Implementation Guide is based on the following <a href="references.html">References</a>
+  <ns1:h3 xmlns:ns1="http://www.w3.org/1999/xhtml">References</ns1:h3>  <a name="references">  </a>
+  This Implementation Guide is based on the following <ns2:a xmlns:ns2="http://www.w3.org/1999/xhtml" href="references.html">References</ns2:a>
 
-  <a name="3"/><h3>Dependencies</h3>  <a name="dependencies">  </a>
+  <a name="3"/><ns3:h3 xmlns:ns3="http://www.w3.org/1999/xhtml">Dependencies</ns3:h3>  <a name="dependencies">  </a>
   <div xmlns="http://www.w3.org/1999/xhtml">
 
-  <p>
-    There are no dependencies for this implementation guide.  The source code for the WHO SMART Guidlines IG template is available <a href="https://github.com/WorldHealthOrganization/smart-ig">here</a>.
-  </p>
+  <ns0:p xmlns:ns0="http://www.w3.org/1999/xhtml">
+    There are no dependencies for this implementation guide.  The source code for the WHO SMART Guidlines IG template is available <ns1:a xmlns:ns1="http://www.w3.org/1999/xhtml" href="https://github.com/WorldHealthOrganization/smart-ig">here</ns1:a>.
+  </ns0:p>
 </div>
 
-  <h3>Providing Feedback</h3>  <a name="feedback">  </a>
+  <ns4:h3 xmlns:ns4="http://www.w3.org/1999/xhtml">Providing Feedback</ns4:h3>  <a name="feedback">  </a>
   <div xmlns="http://www.w3.org/1999/xhtml">
-  <p>
+  <ns0:p xmlns:ns0="http://www.w3.org/1999/xhtml">
     Feedback specific to this Implementation Guide can provided through:
-  </p>
-  <ul>
-    <li>Clicking on one of the Feedbacks link to the right of any section header</li>
-    <li>Emailing <mark>TODO: Put in SMART Guidelines email address</mark></li>
-    <li>Creating an issue on GitHub <a href="https://github.com/WorldHealthOrganization/smart-ig-upvhproject">smart-ig-upvhproject repository</a></li>
-  </ul>
+  </ns0:p>
+  <ns1:ul xmlns:ns1="http://www.w3.org/1999/xhtml">
+    <ns2:li xmlns:ns2="http://www.w3.org/1999/xhtml">Clicking on one of the Feedbacks link to the right of any section header</ns2:li>
+    <ns3:li xmlns:ns3="http://www.w3.org/1999/xhtml">Emailing <ns4:mark xmlns:ns4="http://www.w3.org/1999/xhtml">TODO: Put in SMART Guidelines email address</ns4:mark></ns3:li>
+    <ns5:li xmlns:ns5="http://www.w3.org/1999/xhtml">Creating an issue on GitHub <ns6:a xmlns:ns6="http://www.w3.org/1999/xhtml" href="https://github.com/WorldHealthOrganization/smart-ig-upvhproject">smart-ig-upvhproject repository</ns6:a></ns5:li>
+  </ns1:ul>
 </div>
 
-  <h3>Disclaimer</h3>  <a name="disclaimer">  </a>
+  <ns5:h3 xmlns:ns5="http://www.w3.org/1999/xhtml">Disclaimer</ns5:h3>  <a name="disclaimer">  </a>
   <div xmlns="http://www.w3.org/1999/xhtml">
-  <p>
+  <ns0:p xmlns:ns0="http://www.w3.org/1999/xhtml">
     The specification herewith documented is a demo working specification, and may not be used for any implementation purposes. 
     This draft is provided without warranty of completeness or consistency, and the official publication supersedes this draft.
     No liability can be inferred from the use or misuse of this specification, or its consequences.
-  </p>
+  </ns0:p>
 </div>
 </div>
 </div>
@@ -253,9 +284,9 @@ for the national viral hepatitis program. </P>
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://ehealth4hepatitis.ph">UP Manila Viral Hepatitis Project</a>.  Package fhir.who.smart-ig-upvhproject#0.2.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Dec 5, 2022 08:04+0000">2022-12-05</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://ehealth4hepatitis.ph">UP Manila Viral Hepatitis Project</a>.  Package fhir.who.smart-ig-upvhproject#0.2.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jan 11, 2023 07:40+0000">2023-01-11</span>
           <br/>
-          <span style="color: var(--footer-highlight-text-color)"></span>
+          <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                   | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://github.com/WorldHealthOrganization/smart-ig-upvhproject/projects/1">Issues</a>
@@ -280,6 +311,8 @@ for the national viral hepatitis program. </P>
   <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
   <script type="text/javascript" src="assets/js/respond.min.js"> </script>
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
   <script>anchors.options.visible = 'hover'
 anchors.add()</script>
   
