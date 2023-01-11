@@ -3,7 +3,7 @@
 
 err = 6, warn = 278, info = 0
 IG Publisher Version: 1.2.26
-Generated Wed Jan 11 10:23:47 UTC 2023. FHIR version 4.0.1 for fhir.who.smart-ig-upvhproject#0.2.1 (canonical = http://worldhealthorganization.github.io/smart-ig-upvhproject)
+Generated Wed Jan 11 10:44:20 UTC 2023. FHIR version 4.0.1 for fhir.who.smart-ig-upvhproject#0.2.1 (canonical = http://worldhealthorganization.github.io/smart-ig-upvhproject)
  Build Errors : 10 / 7 / 0
  /github/workspace/fsh-generated/resources/ImplementationGuide-fhir.who.smart-ig-upvhproject : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-2156 : 0 / 1 / 1
