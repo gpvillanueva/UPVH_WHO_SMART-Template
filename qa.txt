@@ -3,7 +3,7 @@
 
 err = 6, warn = 278, info = 0
 IG Publisher Version: 1.2.26
-Generated Wed Jan 11 09:50:31 UTC 2023. FHIR version 4.0.1 for fhir.who.smart-ig-upvhproject#0.2.1 (canonical = http://worldhealthorganization.github.io/smart-ig-upvhproject)
+Generated Wed Jan 11 10:00:33 UTC 2023. FHIR version 4.0.1 for fhir.who.smart-ig-upvhproject#0.2.1 (canonical = http://worldhealthorganization.github.io/smart-ig-upvhproject)
  Build Errors : 10 / 7 / 0
  /github/workspace/fsh-generated/resources/ImplementationGuide-fhir.who.smart-ig-upvhproject : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-2156 : 0 / 1 / 1
@@ -19,7 +19,7 @@ Generated Wed Jan 11 09:50:31 UTC 2023. FHIR version 4.0.1 for fhir.who.smart-ig
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/2156.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/FatherName.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/MotherName.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: /github/workspace/output/downloads.html#/html/body/div/div/div/div/div/div/p/a at Line 147, column 37: The link 'AO 2017-0011.PDF' for "PDF" cannot be resolved
+ERROR: /github/workspace/output/downloads.html#/html/body/div/div/div/div/div/div/p/a at Line 147, column 168: The link 'AO 2017-0011.PDF' for "PDF" cannot be resolved
 ERROR: /github/workspace/output/downloads.html#/html/body/div/div/div/div/div/div/p/a at Line 151, column 38: The link 'DM 2019-0062 with Interim Guidelines.pdf' for "PDF" cannot be resolved
 ERROR: /github/workspace/output/downloads.html#/html/body/div/div/div/div/div/div/p/a at Line 155, column 38: The link 'DM 2019-0465.pdf' for "PDF" cannot be resolved
 ERROR: /github/workspace/output/downloads.html#/html/body/div/div/div/div/div/div/p/a at Line 159, column 38: The link 'DM 2020-0531 Hep C Interim Guidelines.pdf' for "PDF" cannot be resolved
