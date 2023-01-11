@@ -1,0 +1,1790 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="ViralHepatitisCareFormModel"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="The logical name of the element">Name</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information about the use of the element">Flags</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Minimum and Maximum # of times the the element can appear in the instance">Card.</a></th><th style="width: 100px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Reference to the type of the element">Type</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Additional information about the element">Description &amp; Constraints</a><span style="float: right"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-ViralHepatitisCareFormModel-definitions.html#ViralHepatitisCareFormModel" title="Viral Hepatitis Care Form Information model">ViralHepatitisCareFormModel</a><a name="ViralHepatitisCareFormModel"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://build.fhir.org/types.html#Base">Base</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">VH Care Form Logical Model</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ViralHepatitisCareFormModel-definitions.html#ViralHepatitisCareFormModel.ConsultDate" title="Consult Date (MM/DD/YYYY)">ConsultDate</a><a name="ViralHepatitisCareFormModel.ConsultDate"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Consult Date (MM/DD/YYYY)</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-ViralHepatitisCareFormModel-definitions.html#ViralHepatitisCareFormModel.PatientCode" title="Patient Identifier">PatientCode</a><a name="ViralHepatitisCareFormModel.PatientCode"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Patient Code</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a href="StructureDefinition-ViralHepatitisCareFormModel-definitions.html#ViralHepatitisCareFormModel.FacilityName" title="The location where the encounter takes place.">FacilityName</a><a name="ViralHepatitisCareFormModel.FacilityName"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>()</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Testing Facility Name</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ViralHepatitisCareFormModel-definitions.html#ViralHepatitisCareFormModel.UniqueIdentifierCode" title="First two letters of mother's name, First two letters of father's name, birth order, and Birthdate (MM/FF/BO/MM/DD/YYYY)">UniqueIdentifierCode</a><a name="ViralHepatitisCareFormModel.UniqueIdentifierCode"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#id">id</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Unique Identifier Code for the patient</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-ViralHepatitisCareFormModel-definitions.html#ViralHepatitisCareFormModel.TestedPositiveForHepatitisB" title="If patient tested positive for Hepatitis B">TestedPositiveForHepatitisB</a><a name="ViralHepatitisCareFormModel.TestedPositiveForHepatitisB"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#BackboneElement">BackboneElement</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">If patient tested positive for Hepatitis B</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-ViralHepatitisCareFormModel-definitions.html#ViralHepatitisCareFormModel.TestedPositiveForHepatitisC" title="If patient tested positive for Hepatitis C">TestedPositiveForHepatitisC</a><a name="ViralHepatitisCareFormModel.TestedPositiveForHepatitisC"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#BackboneElement">BackboneElement</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">If patient tested positive for Hepatitis C</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-ViralHepatitisCareFormModel-definitions.html#ViralHepatitisCareFormModel.FirstName" title="First Name of the Patient">FirstName</a><a name="ViralHepatitisCareFormModel.FirstName"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#HumanName">HumanName</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">First Name<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-ViralHepatitisCareFormModel-definitions.html#ViralHepatitisCareFormModel.MiddleName" title="Middle Name of the Patient">MiddleName</a><a name="ViralHepatitisCareFormModel.MiddleName"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#HumanName">HumanName</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Middle Name<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-ViralHepatitisCareFormModel-definitions.html#ViralHepatitisCareFormModel.LastName" title="Last Name of the Patient">LastName</a><a name="ViralHepatitisCareFormModel.LastName"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#HumanName">HumanName</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Last Name</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-ViralHepatitisCareFormModel-definitions.html#ViralHepatitisCareFormModel.Suffix" title="Suffix of the Patient">Suffix</a><a name="ViralHepatitisCareFormModel.Suffix"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#HumanName">HumanName</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Suffix<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ViralHepatitisCareFormModel-definitions.html#ViralHepatitisCareFormModel.SexAssignedAtBirth" title="Sex Assigned at Birth">SexAssignedAtBirth</a><a name="ViralHepatitisCareFormModel.SexAssignedAtBirth"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Sex Assigned at Birth</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-ViralHepatitisCareFormModel-definitions.html#ViralHepatitisCareFormModel.AgeInYears" title="Age of Patient in Years">AgeInYears</a><a name="ViralHepatitisCareFormModel.AgeInYears"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Age">Age</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Age of Patient in Years</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-ViralHepatitisCareFormModel-definitions.html#ViralHepatitisCareFormModel.WeightInKg" title="What is the weigh of the patient in kg?">WeightInKg</a><a name="ViralHepatitisCareFormModel.WeightInKg"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Patient weight in kg</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-ViralHepatitisCareFormModel-definitions.html#ViralHepatitisCareFormModel.HeightInCM" title="What is the height of the patient in cm?">HeightInCM</a><a name="ViralHepatitisCareFormModel.HeightInCM"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Patient heigh in CM</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ViralHepatitisCareFormModel-definitions.html#ViralHepatitisCareFormModel.IsShePregnant" title="If female, is she pregnant?">IsShePregnant</a><a name="ViralHepatitisCareFormModel.IsShePregnant"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">If female, is she pregnant?<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-ViralHepatitisCareFormModel-definitions.html#ViralHepatitisCareFormModel.IsShePregnant.IsShePregnant" title="If female, is she pregnant?">IsShePregnant</a><a name="ViralHepatitisCareFormModel.IsShePregnant.IsShePregnant"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">If female, is she pregnant?<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-ViralHepatitisCareFormModel-definitions.html#ViralHepatitisCareFormModel.Nationality" title="Nationality">Nationality</a><a name="ViralHepatitisCareFormModel.Nationality"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Nationality<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-ViralHepatitisCareFormModel-definitions.html#ViralHepatitisCareFormModel.Jaundice" title="Does the patient show signs and symptoms of Jaundice?">Jaundice</a><a name="ViralHepatitisCareFormModel.Jaundice"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Signs and symptoms of Jaundice</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-ViralHepatitisCareFormModel-definitions.html#ViralHepatitisCareFormModel.Coagulopathy" title="Does the patient show signs and symptoms of Coagulopathy?">Coagulopathy</a><a name="ViralHepatitisCareFormModel.Coagulopathy"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Signs and symptoms of Coagulopathy</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-ViralHepatitisCareFormModel-definitions.html#ViralHepatitisCareFormModel.Ascites" title="Does the patient show signs and symptoms of Ascites?">Ascites</a><a name="ViralHepatitisCareFormModel.Ascites"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Signs and symptoms of Ascites</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-ViralHepatitisCareFormModel-definitions.html#ViralHepatitisCareFormModel.VaricealHemorrhage" title="Does the patient show signs and symptoms of Variceal Hemorrhage?">VaricealHemorrhage</a><a name="ViralHepatitisCareFormModel.VaricealHemorrhage"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Signs and symptoms of Variceal Hemorrhage</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-ViralHepatitisCareFormModel-definitions.html#ViralHepatitisCareFormModel.HepaticEncephalopathy" title="Does the patient show signs and symptoms of Hepatic Encephalopathy?">HepaticEncephalopathy</a><a name="ViralHepatitisCareFormModel.HepaticEncephalopathy"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Signs and symptoms of Hepatic Encephalopathy</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-ViralHepatitisCareFormModel-definitions.html#ViralHepatitisCareFormModel.Hepatomegaly" title="Does the patient show signs and symptoms of Hepatomegaly?">Hepatomegaly</a><a name="ViralHepatitisCareFormModel.Hepatomegaly"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Signs and symptoms of Hepatomegaly</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-ViralHepatitisCareFormModel-definitions.html#ViralHepatitisCareFormModel.Splenomegaly" title="Does the patient show signs and symptoms of Splenomegaly?">Splenomegaly</a><a name="ViralHepatitisCareFormModel.Splenomegaly"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Signs and symptoms of Splenomegaly</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-ViralHepatitisCareFormModel-definitions.html#ViralHepatitisCareFormModel.Pruritus" title="Does the patient show signs and symptoms of Pruritus?">Pruritus</a><a name="ViralHepatitisCareFormModel.Pruritus"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Signs and symptoms of Pruritus</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-ViralHepatitisCareFormModel-definitions.html#ViralHepatitisCareFormModel.Fatigue" title="Does the patient show signs and symptoms of Fatigue?">Fatigue</a><a name="ViralHepatitisCareFormModel.Fatigue"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Signs and symptoms of Fatigue</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-ViralHepatitisCareFormModel-definitions.html#ViralHepatitisCareFormModel.SpiderAngiomata" title="Does the patient show signs and symptoms of Spider Angiomata?">SpiderAngiomata</a><a name="ViralHepatitisCareFormModel.SpiderAngiomata"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Signs and symptoms of  Spider Angiomata</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-ViralHepatitisCareFormModel-definitions.html#ViralHepatitisCareFormModel.PalmarErythema" title="Does the patient show signs and symptoms of Palmar Erythema?">PalmarErythema</a><a name="ViralHepatitisCareFormModel.PalmarErythema"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Signs and symptoms of Palmar Erythema</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-ViralHepatitisCareFormModel-definitions.html#ViralHepatitisCareFormModel.Other" title="Does the patient show other signs and symptoms not included in the list?">Other</a><a name="ViralHepatitisCareFormModel.Other"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Other signs and symptoms</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ViralHepatitisCareFormModel-definitions.html#ViralHepatitisCareFormModel.HBsAgDateDone" title="Date when the HBsAG Test was done">HBsAgDateDone</a><a name="ViralHepatitisCareFormModel.HBsAgDateDone"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Date when the HBsAG Test was done</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-ViralHepatitisCareFormModel-definitions.html#ViralHepatitisCareFormModel.HBsAgResult" title="HBsAG Test Result (Positive or Negative)">HBsAgResult</a><a name="ViralHepatitisCareFormModel.HBsAgResult"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">HBsAG Test Result (Positive or Negative)</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ViralHepatitisCareFormModel-definitions.html#ViralHepatitisCareFormModel.HBeAgDateDone" title="Date when the HBeAG Test was done">HBeAgDateDone</a><a name="ViralHepatitisCareFormModel.HBeAgDateDone"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Date when the HBeAG Test was done</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-ViralHepatitisCareFormModel-definitions.html#ViralHepatitisCareFormModel.HBeAgResult" title="HBeAg Test Result (Positive or Negative)">HBeAgResult</a><a name="ViralHepatitisCareFormModel.HBeAgResult"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">HBeAg Test Result (Positive or Negative)</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ViralHepatitisCareFormModel-definitions.html#ViralHepatitisCareFormModel.AntiHCVDateDone" title="Date when the Anti-HCV Test was done">AntiHCVDateDone</a><a name="ViralHepatitisCareFormModel.AntiHCVDateDone"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Date when the Anti-HCV Test was done</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-ViralHepatitisCareFormModel-definitions.html#ViralHepatitisCareFormModel.AntiHCVResult" title="AntiHCV Test Result (Reactive or Non-reactive)">AntiHCVResult</a><a name="ViralHepatitisCareFormModel.AntiHCVResult"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">AntiHCV Test Result (Reactive or Non-reactive)</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ViralHepatitisCareFormModel-definitions.html#ViralHepatitisCareFormModel.HCVRNAQualitativeDateDone" title="Date when the HCV-RNA (Quali) Test was done">HCVRNAQualitativeDateDone</a><a name="ViralHepatitisCareFormModel.HCVRNAQualitativeDateDone"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Date when the HCV-RNA (Quali) Test was done</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-ViralHepatitisCareFormModel-definitions.html#ViralHepatitisCareFormModel.HCVRNAQualitativeResult" title="HCV-RNA (Quali) Test Result (Positive or Negative)">HCVRNAQualitativeResult</a><a name="ViralHepatitisCareFormModel.HCVRNAQualitativeResult"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">HCV-RNA (Quali) Test Result (Positive or Negative)</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ViralHepatitisCareFormModel-definitions.html#ViralHepatitisCareFormModel.HCVRNAQuantitativeDateDone" title="Date when the HCV-RNA (Quanti) IU/mL Test was done">HCVRNAQuantitativeDateDone</a><a name="ViralHepatitisCareFormModel.HCVRNAQuantitativeDateDone"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Date when the HCV-RNA (Quanti) IU/mL Test was done</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-ViralHepatitisCareFormModel-definitions.html#ViralHepatitisCareFormModel.HCVRNAQuantitativeResult" title="HCV-RNA (Quali) Test Result (IU/mL)">HCVRNAQuantitativeResult</a><a name="ViralHepatitisCareFormModel.HCVRNAQuantitativeResult"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">HCV-RNA (Quali) Test Result (IU/mL)</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ViralHepatitisCareFormModel-definitions.html#ViralHepatitisCareFormModel.HBVDNADateDone" title="Date when the HBV DNA (IU/mL) Test was done">HBVDNADateDone</a><a name="ViralHepatitisCareFormModel.HBVDNADateDone"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Date when the HBV DNA (IU/mL) Test was done</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-ViralHepatitisCareFormModel-definitions.html#ViralHepatitisCareFormModel.HBVDNAResult" title=" HBV DNA Test Result (IU/mL)">HBVDNAResult</a><a name="ViralHepatitisCareFormModel.HBVDNAResult"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"> HBV DNA Test Result (IU/mL)</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ViralHepatitisCareFormModel-definitions.html#ViralHepatitisCareFormModel.ASTSGOTDateDone" title="Date when the AST (SGOT) (IU/L) Test was done">ASTSGOTDateDone</a><a name="ViralHepatitisCareFormModel.ASTSGOTDateDone"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Date when the AST (SGOT) (IU/L) Test was done</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-ViralHepatitisCareFormModel-definitions.html#ViralHepatitisCareFormModel.ASTSGOTResult" title="AST (SGOT) Test Result (IU/L)">ASTSGOTResult</a><a name="ViralHepatitisCareFormModel.ASTSGOTResult"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">AST (SGOT) Test Result (IU/L)</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ViralHepatitisCareFormModel-definitions.html#ViralHepatitisCareFormModel.ALTSGPTDateDone" title="Date when the ALT (SGPT) (IU/L) Test was done">ALTSGPTDateDone</a><a name="ViralHepatitisCareFormModel.ALTSGPTDateDone"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Date when the ALT (SGPT) (IU/L) Test was done</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-ViralHepatitisCareFormModel-definitions.html#ViralHepatitisCareFormModel.ALTSGPTResult" title="ALT (SGPT) Test Result (IU/L) ">ALTSGPTResult</a><a name="ViralHepatitisCareFormModel.ALTSGPTResult"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ALT (SGPT) Test Result (IU/L) </td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ViralHepatitisCareFormModel-definitions.html#ViralHepatitisCareFormModel.TotalBilirubinDateDone" title="Date when the Total Bilirubin (mg/dL) Test was done">TotalBilirubinDateDone</a><a name="ViralHepatitisCareFormModel.TotalBilirubinDateDone"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Date when the Total Bilirubin (mg/dL) Test was done</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-ViralHepatitisCareFormModel-definitions.html#ViralHepatitisCareFormModel.TotalBilirubinResult" title="Total Bilirubin Test Result (mg/dL)">TotalBilirubinResult</a><a name="ViralHepatitisCareFormModel.TotalBilirubinResult"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Total Bilirubin Test Result (mg/dL)</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ViralHepatitisCareFormModel-definitions.html#ViralHepatitisCareFormModel.AlbuminDateDone" title="Date when the Albumin Test was done">AlbuminDateDone</a><a name="ViralHepatitisCareFormModel.AlbuminDateDone"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Date when the Albumin Test was done</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-ViralHepatitisCareFormModel-definitions.html#ViralHepatitisCareFormModel.AlbuminResult" title="Albumin Test Result (g/dL)">AlbuminResult</a><a name="ViralHepatitisCareFormModel.AlbuminResult"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Albumin Test Result (g/dL)</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ViralHepatitisCareFormModel-definitions.html#ViralHepatitisCareFormModel.PlateletCountDateDone" title="Date when the Platelet Count Test was done">PlateletCountDateDone</a><a name="ViralHepatitisCareFormModel.PlateletCountDateDone"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Date when the Platelet Count Test was done</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-ViralHepatitisCareFormModel-definitions.html#ViralHepatitisCareFormModel.PlateletCountResult" title="Platelet Count Test Result (10*9/L)">PlateletCountResult</a><a name="ViralHepatitisCareFormModel.PlateletCountResult"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Platelet Count Test Result (10*9/L)</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ViralHepatitisCareFormModel-definitions.html#ViralHepatitisCareFormModel.PTINRDateDone" title="Date when the PT INR Test was done">PTINRDateDone</a><a name="ViralHepatitisCareFormModel.PTINRDateDone"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Date when the PT INR Test was done</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-ViralHepatitisCareFormModel-definitions.html#ViralHepatitisCareFormModel.PTINRResult" title="PT INR Test Result (sec)">PTINRResult</a><a name="ViralHepatitisCareFormModel.PTINRResult"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">PT INR Test Result (sec)</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ViralHepatitisCareFormModel-definitions.html#ViralHepatitisCareFormModel.AminotransferaseOrPlateletRatioIndexScoreDateDone" title="Date when the Test for Aminotransferase / Platelet Ratio Index Score was done">AminotransferaseOrPlateletRatioIndexScoreDateDone</a><a name="ViralHepatitisCareFormModel.AminotransferaseOrPlateletRatioIndexScoreDateDone"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Date when the Test for Aminotransferase / Platelet Ratio Index Score was done</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-ViralHepatitisCareFormModel-definitions.html#ViralHepatitisCareFormModel.AminotransferaseOrPlateletRatioIndexScoreResult" title="Aminotransferase / Platelet Ratio Index Score Test Result">AminotransferaseOrPlateletRatioIndexScoreResult</a><a name="ViralHepatitisCareFormModel.AminotransferaseOrPlateletRatioIndexScoreResult"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Aminotransferase / Platelet Ratio Index Score Test Result</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ViralHepatitisCareFormModel-definitions.html#ViralHepatitisCareFormModel.Fibrosis4orFIB4ScoreDateDone" title="Date when the Test for Fibrosis 4 / FIB-4 was done">Fibrosis4orFIB4ScoreDateDone</a><a name="ViralHepatitisCareFormModel.Fibrosis4orFIB4ScoreDateDone"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Date when the Test for Fibrosis 4 / FIB-4 was done</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-ViralHepatitisCareFormModel-definitions.html#ViralHepatitisCareFormModel.Fibrosis4orFIB4ScoreResult" title="Fibrosis 4 / FIB-4 Test Result">Fibrosis4orFIB4ScoreResult</a><a name="ViralHepatitisCareFormModel.Fibrosis4orFIB4ScoreResult"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Fibrosis 4 / FIB-4 Test Result</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ViralHepatitisCareFormModel-definitions.html#ViralHepatitisCareFormModel.TransientElastographyDateDone" title="Date when the Transient Elastography Test was done">TransientElastographyDateDone</a><a name="ViralHepatitisCareFormModel.TransientElastographyDateDone"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Date when the Transient Elastography Test was done</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-ViralHepatitisCareFormModel-definitions.html#ViralHepatitisCareFormModel.TransientElastographyResult" title="Transient Elastography Test Result">TransientElastographyResult</a><a name="ViralHepatitisCareFormModel.TransientElastographyResult"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Transient Elastography Test Result</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ViralHepatitisCareFormModel-definitions.html#ViralHepatitisCareFormModel.ImagingUTZCTMRIDateDone" title="Date when the Test for Imaging (UTZ/CT/MRI) was done">ImagingUTZCTMRIDateDone</a><a name="ViralHepatitisCareFormModel.ImagingUTZCTMRIDateDone"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Date when the Test for Imaging (UTZ/CT/MRI) was done</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-ViralHepatitisCareFormModel-definitions.html#ViralHepatitisCareFormModel.ImagingUTZCTMRIDateResult" title="Imaging Test Result (UTZ/CT/MRI)">ImagingUTZCTMRIDateResult</a><a name="ViralHepatitisCareFormModel.ImagingUTZCTMRIDateResult"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Imaging Test Result (UTZ/CT/MRI)</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ViralHepatitisCareFormModel-definitions.html#ViralHepatitisCareFormModel.ChildTurcottePughClassScoreDateDone" title="Date when the Child-Turcotte-Pugh Class Score was done">ChildTurcottePughClassScoreDateDone</a><a name="ViralHepatitisCareFormModel.ChildTurcottePughClassScoreDateDone"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Date when the Child-Turcotte-Pugh Class Score was done</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-ViralHepatitisCareFormModel-definitions.html#ViralHepatitisCareFormModel.ChildTurcottePughClassScoreResult" title="ChildTurcotte Pugh Class Score Test Result">ChildTurcottePughClassScoreResult</a><a name="ViralHepatitisCareFormModel.ChildTurcottePughClassScoreResult"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ChildTurcotte Pugh Class Score Test Result</td></tr>
+<tr><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
+  </text>
+  <url value="http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/ViralHepatitisCareFormModel"/>
+  <version value="0.2.1"/>
+  <name value="ViralHepatitisCareFormModel"/>
+  <title value="VH Care Form Logical Model"/>
+  <status value="active"/>
+  <date value="2023-01-11T09:58:01+00:00"/>
+  <publisher value="UP Manila Viral Hepatitis Project"/>
+  <contact>
+    <name value="UP Manila Viral Hepatitis Project"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://ehealth4hepatitis.ph"/>
+    </telecom>
+  </contact>
+  <description value="Viral Hepatitis Care Form Information model"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <fhirVersion value="4.0.1"/>
+  <mapping>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM Mapping"/>
+  </mapping>
+  <kind value="logical"/>
+  <abstract value="false"/>
+  <type value="http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/ViralHepatitisCareFormModel"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
+  <derivation value="specialization"/>
+  <snapshot>
+    <element id="ViralHepatitisCareFormModel">
+      <path value="ViralHepatitisCareFormModel"/>
+      <short value="VH Care Form Logical Model"/>
+      <definition value="Viral Hepatitis Care Form Information model"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Base"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <isModifier value="false"/>
+    </element>
+    <element id="ViralHepatitisCareFormModel.ConsultDate">
+      <path value="ViralHepatitisCareFormModel.ConsultDate"/>
+      <short value="Consult Date (MM/DD/YYYY)"/>
+      <definition value="Consult Date (MM/DD/YYYY)"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ViralHepatitisCareFormModel.ConsultDate"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.PatientCode">
+      <path value="ViralHepatitisCareFormModel.PatientCode"/>
+      <short value="Patient Code"/>
+      <definition value="Patient Identifier"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ViralHepatitisCareFormModel.PatientCode"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.FacilityName">
+      <path value="ViralHepatitisCareFormModel.FacilityName"/>
+      <short value="Testing Facility Name"/>
+      <definition value="The location where the encounter takes place."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ViralHepatitisCareFormModel.FacilityName"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Reference"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.UniqueIdentifierCode">
+      <path value="ViralHepatitisCareFormModel.UniqueIdentifierCode"/>
+      <short value="Unique Identifier Code for the patient"/>
+      <definition value="First two letters of mother's name, First two letters of father's name, birth order, and Birthdate (MM/FF/BO/MM/DD/YYYY)"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ViralHepatitisCareFormModel.UniqueIdentifierCode"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="id"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.TestedPositiveForHepatitisB">
+      <path value="ViralHepatitisCareFormModel.TestedPositiveForHepatitisB"/>
+      <short value="If patient tested positive for Hepatitis B"/>
+      <definition value="If patient tested positive for Hepatitis B"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ViralHepatitisCareFormModel.TestedPositiveForHepatitisB"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.TestedPositiveForHepatitisC">
+      <path value="ViralHepatitisCareFormModel.TestedPositiveForHepatitisC"/>
+      <short value="If patient tested positive for Hepatitis C"/>
+      <definition value="If patient tested positive for Hepatitis C"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ViralHepatitisCareFormModel.TestedPositiveForHepatitisC"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.FirstName">
+      <path value="ViralHepatitisCareFormModel.FirstName"/>
+      <short value="First Name"/>
+      <definition value="First Name of the Patient"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="ViralHepatitisCareFormModel.FirstName"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="HumanName"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.MiddleName">
+      <path value="ViralHepatitisCareFormModel.MiddleName"/>
+      <short value="Middle Name"/>
+      <definition value="Middle Name of the Patient"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="ViralHepatitisCareFormModel.MiddleName"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="HumanName"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.LastName">
+      <path value="ViralHepatitisCareFormModel.LastName"/>
+      <short value="Last Name"/>
+      <definition value="Last Name of the Patient"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ViralHepatitisCareFormModel.LastName"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="HumanName"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.Suffix">
+      <path value="ViralHepatitisCareFormModel.Suffix"/>
+      <short value="Suffix"/>
+      <definition value="Suffix of the Patient"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="ViralHepatitisCareFormModel.Suffix"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="HumanName"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.SexAssignedAtBirth">
+      <path value="ViralHepatitisCareFormModel.SexAssignedAtBirth"/>
+      <short value="Sex Assigned at Birth"/>
+      <definition value="Sex Assigned at Birth"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ViralHepatitisCareFormModel.SexAssignedAtBirth"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.AgeInYears">
+      <path value="ViralHepatitisCareFormModel.AgeInYears"/>
+      <short value="Age of Patient in Years"/>
+      <definition value="Age of Patient in Years"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ViralHepatitisCareFormModel.AgeInYears"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Age"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.WeightInKg">
+      <path value="ViralHepatitisCareFormModel.WeightInKg"/>
+      <short value="Patient weight in kg"/>
+      <definition value="What is the weigh of the patient in kg?"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ViralHepatitisCareFormModel.WeightInKg"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.HeightInCM">
+      <path value="ViralHepatitisCareFormModel.HeightInCM"/>
+      <short value="Patient heigh in CM"/>
+      <definition value="What is the height of the patient in cm?"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ViralHepatitisCareFormModel.HeightInCM"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.IsShePregnant">
+      <path value="ViralHepatitisCareFormModel.IsShePregnant"/>
+      <short value="If female, is she pregnant?"/>
+      <definition value="If female, is she pregnant?"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="ViralHepatitisCareFormModel.IsShePregnant"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+    </element>
+    <element id="ViralHepatitisCareFormModel.IsShePregnant.id">
+      <path value="ViralHepatitisCareFormModel.IsShePregnant.id"/>
+      <representation value="xmlAttr"/>
+      <short value="xml:id (or equivalent in JSON)"/>
+      <definition value="unique id for the element within a resource (for internal references)"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Element.id"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type">
+          <valueUrl value="string"/>
+        </extension>
+        <code value="http://hl7.org/fhirpath/System.String"/>
+      </type>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+    </element>
+    <element id="ViralHepatitisCareFormModel.IsShePregnant.extension">
+      <path value="ViralHepatitisCareFormModel.IsShePregnant.extension"/>
+      <short value="Additional content defined by implementations"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the resource. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Element.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </constraint>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+    </element>
+    <element id="ViralHepatitisCareFormModel.IsShePregnant.value">
+      <path value="ViralHepatitisCareFormModel.IsShePregnant.value"/>
+      <representation value="xmlAttr"/>
+      <short value="Primitive value for code"/>
+      <definition value="Primitive value for code"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="string.value"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type">
+          <valueUrl value="string"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/regex">
+          <valueString value="[^\s]+(\s[^\s]+)*"/>
+        </extension>
+        <code value="http://hl7.org/fhirpath/System.String"/>
+      </type>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+    </element>
+    <element id="ViralHepatitisCareFormModel.IsShePregnant.IsShePregnant">
+      <path value="ViralHepatitisCareFormModel.IsShePregnant.IsShePregnant"/>
+      <short value="If female, is she pregnant?"/>
+      <definition value="If female, is she pregnant?"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="ViralHepatitisCareFormModel.IsShePregnant.IsShePregnant"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.Nationality">
+      <path value="ViralHepatitisCareFormModel.Nationality"/>
+      <short value="Nationality"/>
+      <definition value="Nationality"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="ViralHepatitisCareFormModel.Nationality"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.Jaundice">
+      <path value="ViralHepatitisCareFormModel.Jaundice"/>
+      <short value="Signs and symptoms of Jaundice"/>
+      <definition value="Does the patient show signs and symptoms of Jaundice?"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ViralHepatitisCareFormModel.Jaundice"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.Coagulopathy">
+      <path value="ViralHepatitisCareFormModel.Coagulopathy"/>
+      <short value="Signs and symptoms of Coagulopathy"/>
+      <definition value="Does the patient show signs and symptoms of Coagulopathy?"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ViralHepatitisCareFormModel.Coagulopathy"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.Ascites">
+      <path value="ViralHepatitisCareFormModel.Ascites"/>
+      <short value="Signs and symptoms of Ascites"/>
+      <definition value="Does the patient show signs and symptoms of Ascites?"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ViralHepatitisCareFormModel.Ascites"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.VaricealHemorrhage">
+      <path value="ViralHepatitisCareFormModel.VaricealHemorrhage"/>
+      <short value="Signs and symptoms of Variceal Hemorrhage"/>
+      <definition value="Does the patient show signs and symptoms of Variceal Hemorrhage?"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ViralHepatitisCareFormModel.VaricealHemorrhage"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.HepaticEncephalopathy">
+      <path value="ViralHepatitisCareFormModel.HepaticEncephalopathy"/>
+      <short value="Signs and symptoms of Hepatic Encephalopathy"/>
+      <definition value="Does the patient show signs and symptoms of Hepatic Encephalopathy?"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ViralHepatitisCareFormModel.HepaticEncephalopathy"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.Hepatomegaly">
+      <path value="ViralHepatitisCareFormModel.Hepatomegaly"/>
+      <short value="Signs and symptoms of Hepatomegaly"/>
+      <definition value="Does the patient show signs and symptoms of Hepatomegaly?"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ViralHepatitisCareFormModel.Hepatomegaly"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.Splenomegaly">
+      <path value="ViralHepatitisCareFormModel.Splenomegaly"/>
+      <short value="Signs and symptoms of Splenomegaly"/>
+      <definition value="Does the patient show signs and symptoms of Splenomegaly?"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ViralHepatitisCareFormModel.Splenomegaly"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.Pruritus">
+      <path value="ViralHepatitisCareFormModel.Pruritus"/>
+      <short value="Signs and symptoms of Pruritus"/>
+      <definition value="Does the patient show signs and symptoms of Pruritus?"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ViralHepatitisCareFormModel.Pruritus"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.Fatigue">
+      <path value="ViralHepatitisCareFormModel.Fatigue"/>
+      <short value="Signs and symptoms of Fatigue"/>
+      <definition value="Does the patient show signs and symptoms of Fatigue?"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ViralHepatitisCareFormModel.Fatigue"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.SpiderAngiomata">
+      <path value="ViralHepatitisCareFormModel.SpiderAngiomata"/>
+      <short value="Signs and symptoms of  Spider Angiomata"/>
+      <definition value="Does the patient show signs and symptoms of Spider Angiomata?"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ViralHepatitisCareFormModel.SpiderAngiomata"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.PalmarErythema">
+      <path value="ViralHepatitisCareFormModel.PalmarErythema"/>
+      <short value="Signs and symptoms of Palmar Erythema"/>
+      <definition value="Does the patient show signs and symptoms of Palmar Erythema?"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ViralHepatitisCareFormModel.PalmarErythema"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.Other">
+      <path value="ViralHepatitisCareFormModel.Other"/>
+      <short value="Other signs and symptoms"/>
+      <definition value="Does the patient show other signs and symptoms not included in the list?"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ViralHepatitisCareFormModel.Other"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.HBsAgDateDone">
+      <path value="ViralHepatitisCareFormModel.HBsAgDateDone"/>
+      <short value="Date when the HBsAG Test was done"/>
+      <definition value="Date when the HBsAG Test was done"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ViralHepatitisCareFormModel.HBsAgDateDone"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.HBsAgResult">
+      <path value="ViralHepatitisCareFormModel.HBsAgResult"/>
+      <short value="HBsAG Test Result (Positive or Negative)"/>
+      <definition value="HBsAG Test Result (Positive or Negative)"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ViralHepatitisCareFormModel.HBsAgResult"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.HBeAgDateDone">
+      <path value="ViralHepatitisCareFormModel.HBeAgDateDone"/>
+      <short value="Date when the HBeAG Test was done"/>
+      <definition value="Date when the HBeAG Test was done"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ViralHepatitisCareFormModel.HBeAgDateDone"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.HBeAgResult">
+      <path value="ViralHepatitisCareFormModel.HBeAgResult"/>
+      <short value="HBeAg Test Result (Positive or Negative)"/>
+      <definition value="HBeAg Test Result (Positive or Negative)"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ViralHepatitisCareFormModel.HBeAgResult"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.AntiHCVDateDone">
+      <path value="ViralHepatitisCareFormModel.AntiHCVDateDone"/>
+      <short value="Date when the Anti-HCV Test was done"/>
+      <definition value="Date when the Anti-HCV Test was done"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ViralHepatitisCareFormModel.AntiHCVDateDone"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.AntiHCVResult">
+      <path value="ViralHepatitisCareFormModel.AntiHCVResult"/>
+      <short value="AntiHCV Test Result (Reactive or Non-reactive)"/>
+      <definition value="AntiHCV Test Result (Reactive or Non-reactive)"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ViralHepatitisCareFormModel.AntiHCVResult"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.HCVRNAQualitativeDateDone">
+      <path value="ViralHepatitisCareFormModel.HCVRNAQualitativeDateDone"/>
+      <short value="Date when the HCV-RNA (Quali) Test was done"/>
+      <definition value="Date when the HCV-RNA (Quali) Test was done"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ViralHepatitisCareFormModel.HCVRNAQualitativeDateDone"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.HCVRNAQualitativeResult">
+      <path value="ViralHepatitisCareFormModel.HCVRNAQualitativeResult"/>
+      <short value="HCV-RNA (Quali) Test Result (Positive or Negative)"/>
+      <definition value="HCV-RNA (Quali) Test Result (Positive or Negative)"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ViralHepatitisCareFormModel.HCVRNAQualitativeResult"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.HCVRNAQuantitativeDateDone">
+      <path value="ViralHepatitisCareFormModel.HCVRNAQuantitativeDateDone"/>
+      <short value="Date when the HCV-RNA (Quanti) IU/mL Test was done"/>
+      <definition value="Date when the HCV-RNA (Quanti) IU/mL Test was done"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ViralHepatitisCareFormModel.HCVRNAQuantitativeDateDone"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.HCVRNAQuantitativeResult">
+      <path value="ViralHepatitisCareFormModel.HCVRNAQuantitativeResult"/>
+      <short value="HCV-RNA (Quali) Test Result (IU/mL)"/>
+      <definition value="HCV-RNA (Quali) Test Result (IU/mL)"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ViralHepatitisCareFormModel.HCVRNAQuantitativeResult"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.HBVDNADateDone">
+      <path value="ViralHepatitisCareFormModel.HBVDNADateDone"/>
+      <short value="Date when the HBV DNA (IU/mL) Test was done"/>
+      <definition value="Date when the HBV DNA (IU/mL) Test was done"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ViralHepatitisCareFormModel.HBVDNADateDone"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.HBVDNAResult">
+      <path value="ViralHepatitisCareFormModel.HBVDNAResult"/>
+      <short value=" HBV DNA Test Result (IU/mL)"/>
+      <definition value=" HBV DNA Test Result (IU/mL)"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ViralHepatitisCareFormModel.HBVDNAResult"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.ASTSGOTDateDone">
+      <path value="ViralHepatitisCareFormModel.ASTSGOTDateDone"/>
+      <short value="Date when the AST (SGOT) (IU/L) Test was done"/>
+      <definition value="Date when the AST (SGOT) (IU/L) Test was done"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ViralHepatitisCareFormModel.ASTSGOTDateDone"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.ASTSGOTResult">
+      <path value="ViralHepatitisCareFormModel.ASTSGOTResult"/>
+      <short value="AST (SGOT) Test Result (IU/L)"/>
+      <definition value="AST (SGOT) Test Result (IU/L)"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ViralHepatitisCareFormModel.ASTSGOTResult"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.ALTSGPTDateDone">
+      <path value="ViralHepatitisCareFormModel.ALTSGPTDateDone"/>
+      <short value="Date when the ALT (SGPT) (IU/L) Test was done"/>
+      <definition value="Date when the ALT (SGPT) (IU/L) Test was done"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ViralHepatitisCareFormModel.ALTSGPTDateDone"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.ALTSGPTResult">
+      <path value="ViralHepatitisCareFormModel.ALTSGPTResult"/>
+      <short value="ALT (SGPT) Test Result (IU/L) "/>
+      <definition value="ALT (SGPT) Test Result (IU/L) "/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ViralHepatitisCareFormModel.ALTSGPTResult"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.TotalBilirubinDateDone">
+      <path value="ViralHepatitisCareFormModel.TotalBilirubinDateDone"/>
+      <short value="Date when the Total Bilirubin (mg/dL) Test was done"/>
+      <definition value="Date when the Total Bilirubin (mg/dL) Test was done"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ViralHepatitisCareFormModel.TotalBilirubinDateDone"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.TotalBilirubinResult">
+      <path value="ViralHepatitisCareFormModel.TotalBilirubinResult"/>
+      <short value="Total Bilirubin Test Result (mg/dL)"/>
+      <definition value="Total Bilirubin Test Result (mg/dL)"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ViralHepatitisCareFormModel.TotalBilirubinResult"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.AlbuminDateDone">
+      <path value="ViralHepatitisCareFormModel.AlbuminDateDone"/>
+      <short value="Date when the Albumin Test was done"/>
+      <definition value="Date when the Albumin Test was done"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ViralHepatitisCareFormModel.AlbuminDateDone"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.AlbuminResult">
+      <path value="ViralHepatitisCareFormModel.AlbuminResult"/>
+      <short value="Albumin Test Result (g/dL)"/>
+      <definition value="Albumin Test Result (g/dL)"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ViralHepatitisCareFormModel.AlbuminResult"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.PlateletCountDateDone">
+      <path value="ViralHepatitisCareFormModel.PlateletCountDateDone"/>
+      <short value="Date when the Platelet Count Test was done"/>
+      <definition value="Date when the Platelet Count Test was done"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ViralHepatitisCareFormModel.PlateletCountDateDone"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.PlateletCountResult">
+      <path value="ViralHepatitisCareFormModel.PlateletCountResult"/>
+      <short value="Platelet Count Test Result (10*9/L)"/>
+      <definition value="Platelet Count Test Result (10*9/L)"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ViralHepatitisCareFormModel.PlateletCountResult"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.PTINRDateDone">
+      <path value="ViralHepatitisCareFormModel.PTINRDateDone"/>
+      <short value="Date when the PT INR Test was done"/>
+      <definition value="Date when the PT INR Test was done"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ViralHepatitisCareFormModel.PTINRDateDone"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.PTINRResult">
+      <path value="ViralHepatitisCareFormModel.PTINRResult"/>
+      <short value="PT INR Test Result (sec)"/>
+      <definition value="PT INR Test Result (sec)"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ViralHepatitisCareFormModel.PTINRResult"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.AminotransferaseOrPlateletRatioIndexScoreDateDone">
+      <path value="ViralHepatitisCareFormModel.AminotransferaseOrPlateletRatioIndexScoreDateDone"/>
+      <short value="Date when the Test for Aminotransferase / Platelet Ratio Index Score was done"/>
+      <definition value="Date when the Test for Aminotransferase / Platelet Ratio Index Score was done"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ViralHepatitisCareFormModel.AminotransferaseOrPlateletRatioIndexScoreDateDone"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.AminotransferaseOrPlateletRatioIndexScoreResult">
+      <path value="ViralHepatitisCareFormModel.AminotransferaseOrPlateletRatioIndexScoreResult"/>
+      <short value="Aminotransferase / Platelet Ratio Index Score Test Result"/>
+      <definition value="Aminotransferase / Platelet Ratio Index Score Test Result"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ViralHepatitisCareFormModel.AminotransferaseOrPlateletRatioIndexScoreResult"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.Fibrosis4orFIB4ScoreDateDone">
+      <path value="ViralHepatitisCareFormModel.Fibrosis4orFIB4ScoreDateDone"/>
+      <short value="Date when the Test for Fibrosis 4 / FIB-4 was done"/>
+      <definition value="Date when the Test for Fibrosis 4 / FIB-4 was done"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ViralHepatitisCareFormModel.Fibrosis4orFIB4ScoreDateDone"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.Fibrosis4orFIB4ScoreResult">
+      <path value="ViralHepatitisCareFormModel.Fibrosis4orFIB4ScoreResult"/>
+      <short value="Fibrosis 4 / FIB-4 Test Result"/>
+      <definition value="Fibrosis 4 / FIB-4 Test Result"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ViralHepatitisCareFormModel.Fibrosis4orFIB4ScoreResult"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.TransientElastographyDateDone">
+      <path value="ViralHepatitisCareFormModel.TransientElastographyDateDone"/>
+      <short value="Date when the Transient Elastography Test was done"/>
+      <definition value="Date when the Transient Elastography Test was done"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ViralHepatitisCareFormModel.TransientElastographyDateDone"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.TransientElastographyResult">
+      <path value="ViralHepatitisCareFormModel.TransientElastographyResult"/>
+      <short value="Transient Elastography Test Result"/>
+      <definition value="Transient Elastography Test Result"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ViralHepatitisCareFormModel.TransientElastographyResult"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.ImagingUTZCTMRIDateDone">
+      <path value="ViralHepatitisCareFormModel.ImagingUTZCTMRIDateDone"/>
+      <short value="Date when the Test for Imaging (UTZ/CT/MRI) was done"/>
+      <definition value="Date when the Test for Imaging (UTZ/CT/MRI) was done"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ViralHepatitisCareFormModel.ImagingUTZCTMRIDateDone"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.ImagingUTZCTMRIDateResult">
+      <path value="ViralHepatitisCareFormModel.ImagingUTZCTMRIDateResult"/>
+      <short value="Imaging Test Result (UTZ/CT/MRI)"/>
+      <definition value="Imaging Test Result (UTZ/CT/MRI)"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ViralHepatitisCareFormModel.ImagingUTZCTMRIDateResult"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.ChildTurcottePughClassScoreDateDone">
+      <path value="ViralHepatitisCareFormModel.ChildTurcottePughClassScoreDateDone"/>
+      <short value="Date when the Child-Turcotte-Pugh Class Score was done"/>
+      <definition value="Date when the Child-Turcotte-Pugh Class Score was done"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ViralHepatitisCareFormModel.ChildTurcottePughClassScoreDateDone"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.ChildTurcottePughClassScoreResult">
+      <path value="ViralHepatitisCareFormModel.ChildTurcottePughClassScoreResult"/>
+      <short value="ChildTurcotte Pugh Class Score Test Result"/>
+      <definition value="ChildTurcotte Pugh Class Score Test Result"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ViralHepatitisCareFormModel.ChildTurcottePughClassScoreResult"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+  </snapshot>
+  <differential>
+    <element id="ViralHepatitisCareFormModel">
+      <path value="ViralHepatitisCareFormModel"/>
+      <short value="VH Care Form Logical Model"/>
+      <definition value="Viral Hepatitis Care Form Information model"/>
+    </element>
+    <element id="ViralHepatitisCareFormModel.ConsultDate">
+      <path value="ViralHepatitisCareFormModel.ConsultDate"/>
+      <short value="Consult Date (MM/DD/YYYY)"/>
+      <definition value="Consult Date (MM/DD/YYYY)"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.PatientCode">
+      <path value="ViralHepatitisCareFormModel.PatientCode"/>
+      <short value="Patient Code"/>
+      <definition value="Patient Identifier"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.FacilityName">
+      <path value="ViralHepatitisCareFormModel.FacilityName"/>
+      <short value="Testing Facility Name"/>
+      <definition value="The location where the encounter takes place."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Reference"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.UniqueIdentifierCode">
+      <path value="ViralHepatitisCareFormModel.UniqueIdentifierCode"/>
+      <short value="Unique Identifier Code for the patient"/>
+      <definition value="First two letters of mother's name, First two letters of father's name, birth order, and Birthdate (MM/FF/BO/MM/DD/YYYY)"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="id"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.TestedPositiveForHepatitisB">
+      <path value="ViralHepatitisCareFormModel.TestedPositiveForHepatitisB"/>
+      <short value="If patient tested positive for Hepatitis B"/>
+      <definition value="If patient tested positive for Hepatitis B"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.TestedPositiveForHepatitisC">
+      <path value="ViralHepatitisCareFormModel.TestedPositiveForHepatitisC"/>
+      <short value="If patient tested positive for Hepatitis C"/>
+      <definition value="If patient tested positive for Hepatitis C"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.FirstName">
+      <path value="ViralHepatitisCareFormModel.FirstName"/>
+      <short value="First Name"/>
+      <definition value="First Name of the Patient"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="HumanName"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.MiddleName">
+      <path value="ViralHepatitisCareFormModel.MiddleName"/>
+      <short value="Middle Name"/>
+      <definition value="Middle Name of the Patient"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="HumanName"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.LastName">
+      <path value="ViralHepatitisCareFormModel.LastName"/>
+      <short value="Last Name"/>
+      <definition value="Last Name of the Patient"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="HumanName"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.Suffix">
+      <path value="ViralHepatitisCareFormModel.Suffix"/>
+      <short value="Suffix"/>
+      <definition value="Suffix of the Patient"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="HumanName"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.SexAssignedAtBirth">
+      <path value="ViralHepatitisCareFormModel.SexAssignedAtBirth"/>
+      <short value="Sex Assigned at Birth"/>
+      <definition value="Sex Assigned at Birth"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.AgeInYears">
+      <path value="ViralHepatitisCareFormModel.AgeInYears"/>
+      <short value="Age of Patient in Years"/>
+      <definition value="Age of Patient in Years"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Age"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.WeightInKg">
+      <path value="ViralHepatitisCareFormModel.WeightInKg"/>
+      <short value="Patient weight in kg"/>
+      <definition value="What is the weigh of the patient in kg?"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.HeightInCM">
+      <path value="ViralHepatitisCareFormModel.HeightInCM"/>
+      <short value="Patient heigh in CM"/>
+      <definition value="What is the height of the patient in cm?"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.IsShePregnant">
+      <path value="ViralHepatitisCareFormModel.IsShePregnant"/>
+      <short value="If female, is she pregnant?"/>
+      <definition value="If female, is she pregnant?"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="code"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.IsShePregnant.IsShePregnant">
+      <path value="ViralHepatitisCareFormModel.IsShePregnant.IsShePregnant"/>
+      <short value="If female, is she pregnant?"/>
+      <definition value="If female, is she pregnant?"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.Nationality">
+      <path value="ViralHepatitisCareFormModel.Nationality"/>
+      <short value="Nationality"/>
+      <definition value="Nationality"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.Jaundice">
+      <path value="ViralHepatitisCareFormModel.Jaundice"/>
+      <short value="Signs and symptoms of Jaundice"/>
+      <definition value="Does the patient show signs and symptoms of Jaundice?"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.Coagulopathy">
+      <path value="ViralHepatitisCareFormModel.Coagulopathy"/>
+      <short value="Signs and symptoms of Coagulopathy"/>
+      <definition value="Does the patient show signs and symptoms of Coagulopathy?"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.Ascites">
+      <path value="ViralHepatitisCareFormModel.Ascites"/>
+      <short value="Signs and symptoms of Ascites"/>
+      <definition value="Does the patient show signs and symptoms of Ascites?"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.VaricealHemorrhage">
+      <path value="ViralHepatitisCareFormModel.VaricealHemorrhage"/>
+      <short value="Signs and symptoms of Variceal Hemorrhage"/>
+      <definition value="Does the patient show signs and symptoms of Variceal Hemorrhage?"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.HepaticEncephalopathy">
+      <path value="ViralHepatitisCareFormModel.HepaticEncephalopathy"/>
+      <short value="Signs and symptoms of Hepatic Encephalopathy"/>
+      <definition value="Does the patient show signs and symptoms of Hepatic Encephalopathy?"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.Hepatomegaly">
+      <path value="ViralHepatitisCareFormModel.Hepatomegaly"/>
+      <short value="Signs and symptoms of Hepatomegaly"/>
+      <definition value="Does the patient show signs and symptoms of Hepatomegaly?"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.Splenomegaly">
+      <path value="ViralHepatitisCareFormModel.Splenomegaly"/>
+      <short value="Signs and symptoms of Splenomegaly"/>
+      <definition value="Does the patient show signs and symptoms of Splenomegaly?"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.Pruritus">
+      <path value="ViralHepatitisCareFormModel.Pruritus"/>
+      <short value="Signs and symptoms of Pruritus"/>
+      <definition value="Does the patient show signs and symptoms of Pruritus?"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.Fatigue">
+      <path value="ViralHepatitisCareFormModel.Fatigue"/>
+      <short value="Signs and symptoms of Fatigue"/>
+      <definition value="Does the patient show signs and symptoms of Fatigue?"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.SpiderAngiomata">
+      <path value="ViralHepatitisCareFormModel.SpiderAngiomata"/>
+      <short value="Signs and symptoms of  Spider Angiomata"/>
+      <definition value="Does the patient show signs and symptoms of Spider Angiomata?"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.PalmarErythema">
+      <path value="ViralHepatitisCareFormModel.PalmarErythema"/>
+      <short value="Signs and symptoms of Palmar Erythema"/>
+      <definition value="Does the patient show signs and symptoms of Palmar Erythema?"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.Other">
+      <path value="ViralHepatitisCareFormModel.Other"/>
+      <short value="Other signs and symptoms"/>
+      <definition value="Does the patient show other signs and symptoms not included in the list?"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.HBsAgDateDone">
+      <path value="ViralHepatitisCareFormModel.HBsAgDateDone"/>
+      <short value="Date when the HBsAG Test was done"/>
+      <definition value="Date when the HBsAG Test was done"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.HBsAgResult">
+      <path value="ViralHepatitisCareFormModel.HBsAgResult"/>
+      <short value="HBsAG Test Result (Positive or Negative)"/>
+      <definition value="HBsAG Test Result (Positive or Negative)"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.HBeAgDateDone">
+      <path value="ViralHepatitisCareFormModel.HBeAgDateDone"/>
+      <short value="Date when the HBeAG Test was done"/>
+      <definition value="Date when the HBeAG Test was done"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.HBeAgResult">
+      <path value="ViralHepatitisCareFormModel.HBeAgResult"/>
+      <short value="HBeAg Test Result (Positive or Negative)"/>
+      <definition value="HBeAg Test Result (Positive or Negative)"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.AntiHCVDateDone">
+      <path value="ViralHepatitisCareFormModel.AntiHCVDateDone"/>
+      <short value="Date when the Anti-HCV Test was done"/>
+      <definition value="Date when the Anti-HCV Test was done"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.AntiHCVResult">
+      <path value="ViralHepatitisCareFormModel.AntiHCVResult"/>
+      <short value="AntiHCV Test Result (Reactive or Non-reactive)"/>
+      <definition value="AntiHCV Test Result (Reactive or Non-reactive)"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.HCVRNAQualitativeDateDone">
+      <path value="ViralHepatitisCareFormModel.HCVRNAQualitativeDateDone"/>
+      <short value="Date when the HCV-RNA (Quali) Test was done"/>
+      <definition value="Date when the HCV-RNA (Quali) Test was done"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.HCVRNAQualitativeResult">
+      <path value="ViralHepatitisCareFormModel.HCVRNAQualitativeResult"/>
+      <short value="HCV-RNA (Quali) Test Result (Positive or Negative)"/>
+      <definition value="HCV-RNA (Quali) Test Result (Positive or Negative)"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.HCVRNAQuantitativeDateDone">
+      <path value="ViralHepatitisCareFormModel.HCVRNAQuantitativeDateDone"/>
+      <short value="Date when the HCV-RNA (Quanti) IU/mL Test was done"/>
+      <definition value="Date when the HCV-RNA (Quanti) IU/mL Test was done"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.HCVRNAQuantitativeResult">
+      <path value="ViralHepatitisCareFormModel.HCVRNAQuantitativeResult"/>
+      <short value="HCV-RNA (Quali) Test Result (IU/mL)"/>
+      <definition value="HCV-RNA (Quali) Test Result (IU/mL)"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.HBVDNADateDone">
+      <path value="ViralHepatitisCareFormModel.HBVDNADateDone"/>
+      <short value="Date when the HBV DNA (IU/mL) Test was done"/>
+      <definition value="Date when the HBV DNA (IU/mL) Test was done"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.HBVDNAResult">
+      <path value="ViralHepatitisCareFormModel.HBVDNAResult"/>
+      <short value=" HBV DNA Test Result (IU/mL)"/>
+      <definition value=" HBV DNA Test Result (IU/mL)"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.ASTSGOTDateDone">
+      <path value="ViralHepatitisCareFormModel.ASTSGOTDateDone"/>
+      <short value="Date when the AST (SGOT) (IU/L) Test was done"/>
+      <definition value="Date when the AST (SGOT) (IU/L) Test was done"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.ASTSGOTResult">
+      <path value="ViralHepatitisCareFormModel.ASTSGOTResult"/>
+      <short value="AST (SGOT) Test Result (IU/L)"/>
+      <definition value="AST (SGOT) Test Result (IU/L)"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.ALTSGPTDateDone">
+      <path value="ViralHepatitisCareFormModel.ALTSGPTDateDone"/>
+      <short value="Date when the ALT (SGPT) (IU/L) Test was done"/>
+      <definition value="Date when the ALT (SGPT) (IU/L) Test was done"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.ALTSGPTResult">
+      <path value="ViralHepatitisCareFormModel.ALTSGPTResult"/>
+      <short value="ALT (SGPT) Test Result (IU/L) "/>
+      <definition value="ALT (SGPT) Test Result (IU/L) "/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.TotalBilirubinDateDone">
+      <path value="ViralHepatitisCareFormModel.TotalBilirubinDateDone"/>
+      <short value="Date when the Total Bilirubin (mg/dL) Test was done"/>
+      <definition value="Date when the Total Bilirubin (mg/dL) Test was done"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.TotalBilirubinResult">
+      <path value="ViralHepatitisCareFormModel.TotalBilirubinResult"/>
+      <short value="Total Bilirubin Test Result (mg/dL)"/>
+      <definition value="Total Bilirubin Test Result (mg/dL)"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.AlbuminDateDone">
+      <path value="ViralHepatitisCareFormModel.AlbuminDateDone"/>
+      <short value="Date when the Albumin Test was done"/>
+      <definition value="Date when the Albumin Test was done"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.AlbuminResult">
+      <path value="ViralHepatitisCareFormModel.AlbuminResult"/>
+      <short value="Albumin Test Result (g/dL)"/>
+      <definition value="Albumin Test Result (g/dL)"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.PlateletCountDateDone">
+      <path value="ViralHepatitisCareFormModel.PlateletCountDateDone"/>
+      <short value="Date when the Platelet Count Test was done"/>
+      <definition value="Date when the Platelet Count Test was done"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.PlateletCountResult">
+      <path value="ViralHepatitisCareFormModel.PlateletCountResult"/>
+      <short value="Platelet Count Test Result (10*9/L)"/>
+      <definition value="Platelet Count Test Result (10*9/L)"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.PTINRDateDone">
+      <path value="ViralHepatitisCareFormModel.PTINRDateDone"/>
+      <short value="Date when the PT INR Test was done"/>
+      <definition value="Date when the PT INR Test was done"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.PTINRResult">
+      <path value="ViralHepatitisCareFormModel.PTINRResult"/>
+      <short value="PT INR Test Result (sec)"/>
+      <definition value="PT INR Test Result (sec)"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.AminotransferaseOrPlateletRatioIndexScoreDateDone">
+      <path value="ViralHepatitisCareFormModel.AminotransferaseOrPlateletRatioIndexScoreDateDone"/>
+      <short value="Date when the Test for Aminotransferase / Platelet Ratio Index Score was done"/>
+      <definition value="Date when the Test for Aminotransferase / Platelet Ratio Index Score was done"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.AminotransferaseOrPlateletRatioIndexScoreResult">
+      <path value="ViralHepatitisCareFormModel.AminotransferaseOrPlateletRatioIndexScoreResult"/>
+      <short value="Aminotransferase / Platelet Ratio Index Score Test Result"/>
+      <definition value="Aminotransferase / Platelet Ratio Index Score Test Result"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.Fibrosis4orFIB4ScoreDateDone">
+      <path value="ViralHepatitisCareFormModel.Fibrosis4orFIB4ScoreDateDone"/>
+      <short value="Date when the Test for Fibrosis 4 / FIB-4 was done"/>
+      <definition value="Date when the Test for Fibrosis 4 / FIB-4 was done"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.Fibrosis4orFIB4ScoreResult">
+      <path value="ViralHepatitisCareFormModel.Fibrosis4orFIB4ScoreResult"/>
+      <short value="Fibrosis 4 / FIB-4 Test Result"/>
+      <definition value="Fibrosis 4 / FIB-4 Test Result"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.TransientElastographyDateDone">
+      <path value="ViralHepatitisCareFormModel.TransientElastographyDateDone"/>
+      <short value="Date when the Transient Elastography Test was done"/>
+      <definition value="Date when the Transient Elastography Test was done"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.TransientElastographyResult">
+      <path value="ViralHepatitisCareFormModel.TransientElastographyResult"/>
+      <short value="Transient Elastography Test Result"/>
+      <definition value="Transient Elastography Test Result"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.ImagingUTZCTMRIDateDone">
+      <path value="ViralHepatitisCareFormModel.ImagingUTZCTMRIDateDone"/>
+      <short value="Date when the Test for Imaging (UTZ/CT/MRI) was done"/>
+      <definition value="Date when the Test for Imaging (UTZ/CT/MRI) was done"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.ImagingUTZCTMRIDateResult">
+      <path value="ViralHepatitisCareFormModel.ImagingUTZCTMRIDateResult"/>
+      <short value="Imaging Test Result (UTZ/CT/MRI)"/>
+      <definition value="Imaging Test Result (UTZ/CT/MRI)"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.ChildTurcottePughClassScoreDateDone">
+      <path value="ViralHepatitisCareFormModel.ChildTurcottePughClassScoreDateDone"/>
+      <short value="Date when the Child-Turcotte-Pugh Class Score was done"/>
+      <definition value="Date when the Child-Turcotte-Pugh Class Score was done"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="ViralHepatitisCareFormModel.ChildTurcottePughClassScoreResult">
+      <path value="ViralHepatitisCareFormModel.ChildTurcottePughClassScoreResult"/>
+      <short value="ChildTurcotte Pugh Class Score Test Result"/>
+      <definition value="ChildTurcotte Pugh Class Score Test Result"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

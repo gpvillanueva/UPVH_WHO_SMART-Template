@@ -1,0 +1,65 @@
+[
+  {
+    "id" : "fhir.who.smart-ig-upvhproject",
+    "type" : "ImplementationGuide",
+    "url" : "http://worldhealthorganization.github.io/smart-ig-upvhproject/ImplementationGuide/fhir.who.smart-ig-upvhproject",
+    "version" : "0.2.1",
+    "name" : "smartigupvhproject"
+  },
+  {
+    "id" : "2156",
+    "type" : "StructureDefinition",
+    "url" : "http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/2156",
+    "version" : "0.2.1",
+    "name" : "VHCEncounter"
+  },
+  {
+    "id" : "2158",
+    "type" : "StructureDefinition",
+    "url" : "http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/2158",
+    "version" : "0.2.1",
+    "name" : "ConditionHepB"
+  },
+  {
+    "id" : "2159",
+    "type" : "StructureDefinition",
+    "url" : "http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/2159",
+    "version" : "0.2.1",
+    "name" : "ConditionHepC"
+  },
+  {
+    "id" : "ViralHepatitisCareFormModel",
+    "type" : "StructureDefinition",
+    "url" : "http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/ViralHepatitisCareFormModel",
+    "version" : "0.2.1",
+    "name" : "ViralHepatitisCareFormModel"
+  },
+  {
+    "id" : "ViralHepatitisCaseReportFormModel",
+    "type" : "StructureDefinition",
+    "url" : "http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/ViralHepatitisCaseReportFormModel",
+    "version" : "0.2.1",
+    "name" : "ViralHepatitisCaseReportFormModel"
+  },
+  {
+    "id" : "FatherName",
+    "type" : "StructureDefinition",
+    "url" : "https://up.smilecdr.com:8000/StructureDefinition/2131",
+    "version" : "0.2.1",
+    "name" : "FatherName"
+  },
+  {
+    "id" : "MotherName",
+    "type" : "StructureDefinition",
+    "url" : "https://up.smilecdr.com:8000/StructureDefinition/2132",
+    "version" : "0.2.1",
+    "name" : "MotherName"
+  },
+  {
+    "id" : "VHPatient2",
+    "type" : "StructureDefinition",
+    "url" : "https://up.smilecdr.com:8000/StructureDefinition/2137",
+    "version" : "0.2.1",
+    "name" : "VHPatient2"
+  }
+]

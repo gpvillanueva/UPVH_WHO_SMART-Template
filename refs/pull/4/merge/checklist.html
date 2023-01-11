@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>FHIR.WHO.SMART-IG-UPVHPROJECT\Checklist - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/cqf.css" rel="stylesheet"/>
+
+    <link href="assets/css/who.css" rel="stylesheet"/>
+<!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/local.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+<!--
+  Questionnaire:
+-->
+    <link href="assets/css/lforms.min.css" rel="stylesheet"/>
+
+
+
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"5"}
+    h3,h4,h5,h6{--heading-prefix:"5"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+<div id="family-nav">
+  <a id="family-logo" no-external="true" href="https://github.com/cqframework"><img height="50" alt="Visit the CQF github organization website" src="assets/images/cqf.png"/> </a>
+</div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">University of the Philippines Manila Viral Hepatitis Project Implementation Guide</span><br/>0.2.1 - CI Build</p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  
+  <li><a href="index.html">Home</a></li>
+
+  <li><a href="requirements.html">Requirements</a></li> 
+
+  <li><a href="workflows.html">Workflows</a></li>
+
+  <li><a href="downloads.html">Downloads</a></li>
+
+  <li><a href="artifacts.html">Artifact Index</a></li>
+
+  <li><a href="references.html">References</a></li>
+</ul>      
+
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+    
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Checklist</b></li>
+          
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">This is the continuous build for version 0.2.1. This version is expected to change regularly.</p><!--EndReleaseHeader-->
+  <h2>Checklist</h2>
+  
+  
+  
+  <div xmlns="http://www.w3.org/1999/xhtml" lang="en"><div class="markdown-toc"><p>Contents:</p><ul><li><a href="#1">Checklist: L1 Content</a></li><li><a href="#2">Checklist: L2 Content</a></li><li><a href="#3">Checklist: L3 Content</a></li><li><a href="#4">Checklist: L4 Content</a></li></ul></div>
+  <ns0:p xmlns:ns0="http://www.w3.org/1999/xhtml">
+    The folowing sections provides a checklist to review to ensure that a SMART Guidelines Implmentation Guide has the expected content and level of quality.   This checklist is broken up according four layers of knowledge representation.
+  </ns0:p>
+
+
+
+
+  <a name="1"/><ns1:h3 xmlns:ns1="http://www.w3.org/1999/xhtml">Checklist: L1 Content</ns1:h3><a name="checklist-l1">  </a>
+  <ns2:p xmlns:ns2="http://www.w3.org/1999/xhtml">ecklist.xml   Toecklist.xml   To
+    Checklist for narrative content relating the guidance, guidelines, policies and recommendations underpinning this Implementation Guide.
+  </ns2:p>
+  <ns3:table xmlns:ns3="http://www.w3.org/1999/xhtml" class="checklist">
+    <ns4:tr xmlns:ns4="http://www.w3.org/1999/xhtml">
+      <ns5:th xmlns:ns5="http://www.w3.org/1999/xhtml" class="checklist-section">Section in IG</ns5:th>
+      <ns6:th xmlns:ns6="http://www.w3.org/1999/xhtml" class="checlist-required">Required</ns6:th>
+      <ns7:th xmlns:ns7="http://www.w3.org/1999/xhtml" class="checlist-description">Description</ns7:th>
+      <ns8:th xmlns:ns8="http://www.w3.org/1999/xhtml" class="checlist-artifacts">Expected Artifacts</ns8:th>
+      <ns9:th xmlns:ns9="http://www.w3.org/1999/xhtml" class="checlist-criteria">Acceptance Criteria</ns9:th>
+    </ns4:tr>
+    <ns10:tr xmlns:ns10="http://www.w3.org/1999/xhtml">
+      <ns11:td xmlns:ns11="http://www.w3.org/1999/xhtml" class="checklist-section">Home Page</ns11:td>
+      <ns12:td xmlns:ns12="http://www.w3.org/1999/xhtml" class="checlist-required">Yes</ns12:td>
+      <ns13:td xmlns:ns13="http://www.w3.org/1999/xhtml" class="checlist-description">Status and maturity level of the Implementation Guide</ns13:td>
+      <ns14:td xmlns:ns14="http://www.w3.org/1999/xhtml" class="checlist-artifacts">Disclaimer notice indicating the maturity level of the implemenation guide. <ns15:mark xmlns:ns15="http://www.w3.org/1999/xhtml">TODO: define maturity levels such as 'draft', 'public comment', 'published'. see also forthcoming IPS maturity levels</ns15:mark></ns14:td>
+      <ns16:td xmlns:ns16="http://www.w3.org/1999/xhtml" class="checlist-criteria">Maturity level is indicated in the 'STU Note' block quote on the home page of the Implementation Guide.</ns16:td>
+    </ns10:tr>
+    <ns17:tr xmlns:ns17="http://www.w3.org/1999/xhtml">
+      <ns18:td xmlns:ns18="http://www.w3.org/1999/xhtml" class="checklist-section">Home Page</ns18:td>
+      <ns19:td xmlns:ns19="http://www.w3.org/1999/xhtml" class="checlist-required">Yes</ns19:td>
+      <ns20:td xmlns:ns20="http://www.w3.org/1999/xhtml" class="checlist-description">Linkage to the primary L1 and L2 content that underpins this Implementation Guide.</ns20:td>
+      <ns21:td xmlns:ns21="http://www.w3.org/1999/xhtml" class="checlist-artifacts">URL links on the home page to relevant guidance documents and a brief description of the relevance of the document to this Implementation Guide</ns21:td>
+      <ns22:td xmlns:ns22="http://www.w3.org/1999/xhtml" class="checlist-criteria">Links exist on the home page</ns22:td>
+    </ns17:tr>
+    <ns23:tr xmlns:ns23="http://www.w3.org/1999/xhtml">
+      <ns24:td xmlns:ns24="http://www.w3.org/1999/xhtml" class="checklist-section"/>
+      <ns25:td xmlns:ns25="http://www.w3.org/1999/xhtml" class="checlist-required"/>
+      <ns26:td xmlns:ns26="http://www.w3.org/1999/xhtml" class="checlist-description"/>
+      <ns27:td xmlns:ns27="http://www.w3.org/1999/xhtml" class="checlist-artifacts"/>
+      <ns28:td xmlns:ns28="http://www.w3.org/1999/xhtml" class="checlist-criteria"/>
+    </ns23:tr>
+
+    <ns29:tr xmlns:ns29="http://www.w3.org/1999/xhtml">
+      <ns30:td xmlns:ns30="http://www.w3.org/1999/xhtml" class="checklist-section"/>
+      <ns31:td xmlns:ns31="http://www.w3.org/1999/xhtml" class="checlist-required"/>
+      <ns32:td xmlns:ns32="http://www.w3.org/1999/xhtml" class="checlist-description"/>
+      <ns33:td xmlns:ns33="http://www.w3.org/1999/xhtml" class="checlist-artifacts"/>
+      <ns34:td xmlns:ns34="http://www.w3.org/1999/xhtml" class="checlist-criteria"/>
+    </ns29:tr>
+    <ns35:tr xmlns:ns35="http://www.w3.org/1999/xhtml">
+      <ns36:td xmlns:ns36="http://www.w3.org/1999/xhtml" class="checklist-section"/>
+      <ns37:td xmlns:ns37="http://www.w3.org/1999/xhtml" class="checlist-required"/>
+      <ns38:td xmlns:ns38="http://www.w3.org/1999/xhtml" class="checlist-description"/>
+      <ns39:td xmlns:ns39="http://www.w3.org/1999/xhtml" class="checlist-artifacts"/>
+      <ns40:td xmlns:ns40="http://www.w3.org/1999/xhtml" class="checlist-criteria"/>
+    </ns35:tr>
+  </ns3:table>
+
+  <a name="2"/><ns41:h3 xmlns:ns41="http://www.w3.org/1999/xhtml">Checklist: L2 Content</ns41:h3><a name="checklist-l2">  </a>
+  <ns42:p xmlns:ns42="http://www.w3.org/1999/xhtml">
+    Checklist for semi-structure content relating to business requirements, definitions of key concepts, user personas, use cases, and data dictionaries underpinning the Implementation Guide.
+  </ns42:p>
+    <ns43:table xmlns:ns43="http://www.w3.org/1999/xhtml" class="checklist">
+    <ns44:tr xmlns:ns44="http://www.w3.org/1999/xhtml">
+      <ns45:th xmlns:ns45="http://www.w3.org/1999/xhtml" class="checklist-section">Section in IG</ns45:th>
+      <ns46:th xmlns:ns46="http://www.w3.org/1999/xhtml" class="checlist-required">Required</ns46:th>
+      <ns47:th xmlns:ns47="http://www.w3.org/1999/xhtml" class="checlist-description">Description</ns47:th>
+      <ns48:th xmlns:ns48="http://www.w3.org/1999/xhtml" class="checlist-artifacts">Expected Artifacts</ns48:th>
+      <ns49:th xmlns:ns49="http://www.w3.org/1999/xhtml" class="checlist-criteria">Acceptance Criteria</ns49:th>
+    </ns44:tr>
+    <ns50:tr xmlns:ns50="http://www.w3.org/1999/xhtml">
+      <ns51:td xmlns:ns51="http://www.w3.org/1999/xhtml" class="checklist-section"/>
+      <ns52:td xmlns:ns52="http://www.w3.org/1999/xhtml" class="checlist-required"/>
+      <ns53:td xmlns:ns53="http://www.w3.org/1999/xhtml" class="checlist-description"/>
+      <ns54:td xmlns:ns54="http://www.w3.org/1999/xhtml" class="checlist-artifacts"/>
+      <ns55:td xmlns:ns55="http://www.w3.org/1999/xhtml" class="checlist-criteria"/>
+    </ns50:tr>
+    <ns56:tr xmlns:ns56="http://www.w3.org/1999/xhtml">
+      <ns57:td xmlns:ns57="http://www.w3.org/1999/xhtml" class="checklist-section"/>
+      <ns58:td xmlns:ns58="http://www.w3.org/1999/xhtml" class="checlist-required"/>
+      <ns59:td xmlns:ns59="http://www.w3.org/1999/xhtml" class="checlist-description"/>
+      <ns60:td xmlns:ns60="http://www.w3.org/1999/xhtml" class="checlist-artifacts"/>
+      <ns61:td xmlns:ns61="http://www.w3.org/1999/xhtml" class="checlist-criteria"/>
+    </ns56:tr>
+    <ns62:tr xmlns:ns62="http://www.w3.org/1999/xhtml">
+      <ns63:td xmlns:ns63="http://www.w3.org/1999/xhtml" class="checklist-section"/>
+      <ns64:td xmlns:ns64="http://www.w3.org/1999/xhtml" class="checlist-required"/>
+      <ns65:td xmlns:ns65="http://www.w3.org/1999/xhtml" class="checlist-description"/>
+      <ns66:td xmlns:ns66="http://www.w3.org/1999/xhtml" class="checlist-artifacts"/>
+      <ns67:td xmlns:ns67="http://www.w3.org/1999/xhtml" class="checlist-criteria"/>
+    </ns62:tr>
+  </ns43:table>
+
+  <a name="3"/><ns68:h3 xmlns:ns68="http://www.w3.org/1999/xhtml">Checklist: L3 Content</ns68:h3><a name="checklist-l3">  </a>
+  <ns69:p xmlns:ns69="http://www.w3.org/1999/xhtml">
+    Checklist for structured content relating to data models, data exchange protocols with actors and transactions defined which are defined in the Implementation Guide.
+  </ns69:p>
+    <ns70:table xmlns:ns70="http://www.w3.org/1999/xhtml" class="checklist">
+    <ns71:tr xmlns:ns71="http://www.w3.org/1999/xhtml">
+      <ns72:th xmlns:ns72="http://www.w3.org/1999/xhtml" class="checklist-section">Section in IG</ns72:th>
+      <ns73:th xmlns:ns73="http://www.w3.org/1999/xhtml" class="checlist-required">Required</ns73:th>
+      <ns74:th xmlns:ns74="http://www.w3.org/1999/xhtml" class="checlist-description">Description</ns74:th>
+      <ns75:th xmlns:ns75="http://www.w3.org/1999/xhtml" class="checlist-artifacts">Expected Artifacts</ns75:th>
+      <ns76:th xmlns:ns76="http://www.w3.org/1999/xhtml" class="checlist-criteria">Acceptance Criteria</ns76:th>
+    </ns71:tr>
+    <ns77:tr xmlns:ns77="http://www.w3.org/1999/xhtml">
+      <ns78:td xmlns:ns78="http://www.w3.org/1999/xhtml" class="checklist-section"/>
+      <ns79:td xmlns:ns79="http://www.w3.org/1999/xhtml" class="checlist-required"/>
+      <ns80:td xmlns:ns80="http://www.w3.org/1999/xhtml" class="checlist-description"/>
+      <ns81:td xmlns:ns81="http://www.w3.org/1999/xhtml" class="checlist-artifacts"/>
+      <ns82:td xmlns:ns82="http://www.w3.org/1999/xhtml" class="checlist-criteria"/>
+    </ns77:tr>
+    <ns83:tr xmlns:ns83="http://www.w3.org/1999/xhtml">
+      <ns84:td xmlns:ns84="http://www.w3.org/1999/xhtml" class="checklist-section"/>
+      <ns85:td xmlns:ns85="http://www.w3.org/1999/xhtml" class="checlist-required"/>
+      <ns86:td xmlns:ns86="http://www.w3.org/1999/xhtml" class="checlist-description"/>
+      <ns87:td xmlns:ns87="http://www.w3.org/1999/xhtml" class="checlist-artifacts"/>
+      <ns88:td xmlns:ns88="http://www.w3.org/1999/xhtml" class="checlist-criteria"/>
+    </ns83:tr>
+    <ns89:tr xmlns:ns89="http://www.w3.org/1999/xhtml">
+      <ns90:td xmlns:ns90="http://www.w3.org/1999/xhtml" class="checklist-section"/>
+      <ns91:td xmlns:ns91="http://www.w3.org/1999/xhtml" class="checlist-required"/>
+      <ns92:td xmlns:ns92="http://www.w3.org/1999/xhtml" class="checlist-description"/>
+      <ns93:td xmlns:ns93="http://www.w3.org/1999/xhtml" class="checlist-artifacts"/>
+      <ns94:td xmlns:ns94="http://www.w3.org/1999/xhtml" class="checlist-criteria"/>
+    </ns89:tr>
+  </ns70:table>
+
+
+
+  
+  <a name="4"/><ns95:h3 xmlns:ns95="http://www.w3.org/1999/xhtml">Checklist: L4 Content</ns95:h3><a name="checklist-l4">  </a>
+  <ns96:p xmlns:ns96="http://www.w3.org/1999/xhtml">
+    Checklist for executable content supporting guidance for adaptation to local contexts in the Implementation Guide.
+  </ns96:p>
+    <ns97:table xmlns:ns97="http://www.w3.org/1999/xhtml" class="checklist">
+    <ns98:tr xmlns:ns98="http://www.w3.org/1999/xhtml">
+      <ns99:th xmlns:ns99="http://www.w3.org/1999/xhtml" class="checklist-section">Section in IG</ns99:th>
+      <ns100:th xmlns:ns100="http://www.w3.org/1999/xhtml" class="checlist-required">Required</ns100:th>
+      <ns101:th xmlns:ns101="http://www.w3.org/1999/xhtml" class="checlist-description">Description</ns101:th>
+      <ns102:th xmlns:ns102="http://www.w3.org/1999/xhtml" class="checlist-artifacts">Expected Artifacts</ns102:th>
+      <ns103:th xmlns:ns103="http://www.w3.org/1999/xhtml" class="checlist-criteria">Acceptance Criteria</ns103:th>
+    </ns98:tr>
+    <ns104:tr xmlns:ns104="http://www.w3.org/1999/xhtml">
+      <ns105:td xmlns:ns105="http://www.w3.org/1999/xhtml" class="checklist-section"/>
+      <ns106:td xmlns:ns106="http://www.w3.org/1999/xhtml" class="checlist-required"/>
+      <ns107:td xmlns:ns107="http://www.w3.org/1999/xhtml" class="checlist-description"/>
+      <ns108:td xmlns:ns108="http://www.w3.org/1999/xhtml" class="checlist-artifacts"/>
+      <ns109:td xmlns:ns109="http://www.w3.org/1999/xhtml" class="checlist-criteria"/>
+    </ns104:tr>
+    <ns110:tr xmlns:ns110="http://www.w3.org/1999/xhtml">
+      <ns111:td xmlns:ns111="http://www.w3.org/1999/xhtml" class="checklist-section"/>
+      <ns112:td xmlns:ns112="http://www.w3.org/1999/xhtml" class="checlist-required"/>
+      <ns113:td xmlns:ns113="http://www.w3.org/1999/xhtml" class="checlist-description"/>
+      <ns114:td xmlns:ns114="http://www.w3.org/1999/xhtml" class="checlist-artifacts"/>
+      <ns115:td xmlns:ns115="http://www.w3.org/1999/xhtml" class="checlist-criteria"/>
+    </ns110:tr>
+    <ns116:tr xmlns:ns116="http://www.w3.org/1999/xhtml">
+      <ns117:td xmlns:ns117="http://www.w3.org/1999/xhtml" class="checklist-section"/>
+      <ns118:td xmlns:ns118="http://www.w3.org/1999/xhtml" class="checlist-required"/>
+      <ns119:td xmlns:ns119="http://www.w3.org/1999/xhtml" class="checlist-description"/>
+      <ns120:td xmlns:ns120="http://www.w3.org/1999/xhtml" class="checlist-artifacts"/>
+      <ns121:td xmlns:ns121="http://www.w3.org/1999/xhtml" class="checlist-criteria"/>
+    </ns116:tr>
+  </ns97:table>
+</div>
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://ehealth4hepatitis.ph">UP Manila Viral Hepatitis Project</a>.  Package fhir.who.smart-ig-upvhproject#0.2.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jan 11, 2023 09:58+0000">2023-01-11</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                  | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://github.com/WorldHealthOrganization/smart-ig-upvhproject/projects/1">Issues</a>
+                
+                 | <a style="color: #81BEF7" target="_blank" href="http://worldhealthorganization.github.io/smart-ig-upvhproject/history.html">Version History <img alt="external" style="vertical-align: baseline" src="external.png"/></a></a> |
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+  
+    
+    <script type="text/javascript">
+     /* <![CDATA[ */
+        $(':header[id]').each(function() { // apply this to each heading
+          var id = $(this).attr('id');
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';  // The feedback label is a string
+            
+
+            
+              var parameterFieldId = '';
+              var parameterVariableName = '';
+              var parameterValue = '';
+              parameterFieldId = 'entry.'+parseInt(1353807103).toString(); // the parameter fields is parsed as an integer, i presume this means no code can be injected there.
+              parameterVariableName = 'pageTitle';
+
+              switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
+                default:
+                    console.log("Parameter value not supported");
+                    break;
+                  case "pageTitle":
+                    parameterValue = encodeURIComponent($(document).attr('title'));
+                    break;
+                  case "sectionId":
+                    parameterValue = id;
+                    break;
+                  case "sectionName":
+                    parameterValue = document.getElementById(id).textContent;
+                    break;
+              }
+/* <![CDATA[ */
+              feedbackurl = feedbackurl + '&';
+              feedbackurl = feedbackurl + parameterFieldId + '=' + parameterValue;
+/* ]]> */
+            
+              var parameterFieldId = '';
+              var parameterVariableName = '';
+              var parameterValue = '';
+              parameterFieldId = 'entry.'+parseInt(247644557).toString(); // the parameter fields is parsed as an integer, i presume this means no code can be injected there.
+              parameterVariableName = 'sectionName';
+
+              switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
+                default:
+                    console.log("Parameter value not supported");
+                    break;
+                  case "pageTitle":
+                    parameterValue = encodeURIComponent($(document).attr('title'));
+                    break;
+                  case "sectionId":
+                    parameterValue = id;
+                    break;
+                  case "sectionName":
+                    parameterValue = document.getElementById(id).textContent;
+                    break;
+              }
+/* <![CDATA[ */
+              feedbackurl = feedbackurl + '&';
+              feedbackurl = feedbackurl + parameterFieldId + '=' + parameterValue;
+/* ]]> */
+            
+            
+          if (id) { //To make sure the element has an id
+            $(this).append(function () {
+              return $('<a/>', {
+                id,
+                href: feedbackurl,
+                text: feedbacklabel+' ' ,
+                class: 'feedback',
+                target: '_blank',
+                onclick: 'window.open('+feedbackurl+',\'newwindow\',\'width=300,height=250\');return false;'
+        
+              });
+            });
+          }
+        }) 
+/* ]]> */
+      </script>  
+    
+  
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+
