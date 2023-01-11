@@ -16,7 +16,7 @@
   fhir:StructureDefinition.version [ fhir:value "0.2.1"]; # 
   fhir:StructureDefinition.name [ fhir:value "MotherName"]; # 
   fhir:StructureDefinition.status [ fhir:value "draft"]; # 
-  fhir:StructureDefinition.date [ fhir:value "2023-01-11T07:56:36+00:00"^^xsd:dateTime]; # 
+  fhir:StructureDefinition.date [ fhir:value "2023-01-11T08:04:46+00:00"^^xsd:dateTime]; # 
   fhir:StructureDefinition.publisher [ fhir:value "UP Manila Viral Hepatitis Project"]; # 
   fhir:StructureDefinition.contact [
      fhir:index 0;
