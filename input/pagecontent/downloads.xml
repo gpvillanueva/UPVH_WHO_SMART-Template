@@ -1,4 +1,5 @@
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R5/fhir-single.xsd">
+
 {% assign excludexml = site.data.info.excludexml | downcase | slice: 0 %}
 {% assign excludejson = site.data.info.excludejson | downcase | slice: 0 %}
 {% assign excludettl = site.data.info.excludettl | downcase | slice: 0 %}
@@ -6,7 +7,7 @@
 
 <H3>Government Publications and Issuances</H3>
 	<P></P>
-	<p ALIGN="JUSTIFY" STYLE="margin-left:50px">
+	<p A LIGN="JUSTIFY" STYLE="margin-left:50px">
     Administrative Order 2017-0011 - Policy on the Prevention and Control of Viral Hepatitis of the National HIV, AIDS and STI Prevention and Control Program (NASPCP)<a href="AO 2017-0011.PDF">PDF</a>
 	</p>
 
