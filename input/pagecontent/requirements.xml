@@ -1,37 +1,39 @@
-<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R5/fhir-single.xsd">
-  
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R5/fhir-single.xsd">
 
 <H3>Functional Requirements</H3>
 	<P></P>
 
 	<P ALIGN="JUSTIFY" STYLE="margin-left:40px">
     1. Ability for participating clinics to access Hepatitis B and C “Case Report” forms online.
-    </P>
+  </P>
 
-    <P ALIGN="JUSTIFY" STYLE="margin-left:40px">
+  <P ALIGN="JUSTIFY" STYLE="margin-left:40px">
     2. Ability for participating clinics to access Hepatitis B and C “Care” forms online.
-    </P>
+  </P>
 
-    <P ALIGN="JUSTIFY" STYLE="margin-left:40px">
+  <P ALIGN="JUSTIFY" STYLE="margin-left:40px">
     3. Ability for participating clinics to write data to the demonstration FHIR server.
-    </P>
+  </P>
 
-    <P ALIGN="JUSTIFY" STYLE="margin-left:40px">
+  <P ALIGN="JUSTIFY" STYLE="margin-left:40px">
     4. Ability for project owners to extract FHIR data from the demonstration server in a format suitable for data visualization or statistical computing tools like “R” for statistical analysis.
-    </P>
+  </P>
 
-    <P ALIGN="JUSTIFY" STYLE="margin-left:40px">
+  <P ALIGN="JUSTIFY" STYLE="margin-left:40px">
     5. Ability of participating clinics to read their data, including patient demographics, from the demonstration FHIR server.
-    </P>
+  </P>
 
-    <P ALIGN="JUSTIFY" STYLE="margin-left:40px">
+  <P ALIGN="JUSTIFY" STYLE="margin-left:40px">
     6. Ability to limit the access to authenticated users only. 
-    </P>
+  </P>
+
 <P></P>
+
 <P></P>
 
 <H3>Stakeholders</H3>
-	<P></P>
+	
+  <P></P>
 
 	<P ALIGN="JUSTIFY" STYLE="margin-left:40px">
     1. Department of Health
