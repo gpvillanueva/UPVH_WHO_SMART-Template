@@ -2,8 +2,8 @@
 =========================================
 
 err = 6, warn = 278, info = 0
-IG Publisher Version: 1.2.26
-Generated Wed Jan 11 10:45:53 UTC 2023. FHIR version 4.0.1 for fhir.who.smart-ig-upvhproject#0.2.1 (canonical = http://worldhealthorganization.github.io/smart-ig-upvhproject)
+IG Publisher Version: 1.2.54
+Generated Wed Mar 22 05:03:27 UTC 2023. FHIR version 4.0.1 for fhir.who.smart-ig-upvhproject#0.2.1 (canonical = http://worldhealthorganization.github.io/smart-ig-upvhproject)
  Build Errors : 10 / 7 / 0
  /github/workspace/fsh-generated/resources/ImplementationGuide-fhir.who.smart-ig-upvhproject : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-2156 : 0 / 1 / 1
@@ -19,13 +19,13 @@ Generated Wed Jan 11 10:45:53 UTC 2023. FHIR version 4.0.1 for fhir.who.smart-ig
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/2156.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/FatherName.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/MotherName.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: /github/workspace/output/downloads.html#/html/body/div/div/div/div/div/div/p/a at Line 147, column 168: The link 'AO 2017-0011.PDF' for "PDF" cannot be resolved
-ERROR: /github/workspace/output/downloads.html#/html/body/div/div/div/div/div/div/p/a at Line 151, column 38: The link 'DM 2019-0062 with Interim Guidelines.pdf' for "PDF" cannot be resolved
-ERROR: /github/workspace/output/downloads.html#/html/body/div/div/div/div/div/div/p/a at Line 155, column 38: The link 'DM 2019-0465.pdf' for "PDF" cannot be resolved
-ERROR: /github/workspace/output/downloads.html#/html/body/div/div/div/div/div/div/p/a at Line 159, column 38: The link 'DM 2020-0531 Hep C Interim Guidelines.pdf' for "PDF" cannot be resolved
-ERROR: /github/workspace/output/downloads.html#/html/body/div/div/div/div/div/div/p/a at Line 163, column 38: The link 'DM 2020-0532 Revised Hep B Interim Guidelines.pdf' for "PDF" cannot be resolved
-ERROR: /github/workspace/output/downloads.html#/html/body/div/div/div/div/div/div/p/a at Line 171, column 36: The link 'VH_Care Form.pdf' for "PDF" cannot be resolved
-ERROR: /github/workspace/output/downloads.html#/html/body/div/div/div/div/div/div/p/a at Line 175, column 29: The link 'VH_Care Form.pdf' for "PDF" cannot be resolved
+ERROR: /github/workspace/output/downloads.html#/html/body/div/div/div/div/div/div/p/a at Line 148, column 168: The link 'AO 2017-0011.PDF' for "PDF" cannot be resolved
+ERROR: /github/workspace/output/downloads.html#/html/body/div/div/div/div/div/div/p/a at Line 152, column 38: The link 'DM 2019-0062 with Interim Guidelines.pdf' for "PDF" cannot be resolved
+ERROR: /github/workspace/output/downloads.html#/html/body/div/div/div/div/div/div/p/a at Line 156, column 38: The link 'DM 2019-0465.pdf' for "PDF" cannot be resolved
+ERROR: /github/workspace/output/downloads.html#/html/body/div/div/div/div/div/div/p/a at Line 160, column 38: The link 'DM 2020-0531 Hep C Interim Guidelines.pdf' for "PDF" cannot be resolved
+ERROR: /github/workspace/output/downloads.html#/html/body/div/div/div/div/div/div/p/a at Line 164, column 38: The link 'DM 2020-0532 Revised Hep B Interim Guidelines.pdf' for "PDF" cannot be resolved
+ERROR: /github/workspace/output/downloads.html#/html/body/div/div/div/div/div/div/p/a at Line 172, column 36: The link 'VH_Care Form.pdf' for "PDF" cannot be resolved
+ERROR: /github/workspace/output/downloads.html#/html/body/div/div/div/div/div/div/p/a at Line 176, column 29: The link 'VH_Care Form.pdf' for "PDF" cannot be resolved
 ERROR: /github/workspace/output/instructions.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 235, column 42: The link '#checklist' for "Smart Guidelines IG checklist" cannot be resolved (valid targets: [instructions, publish-box, segment-post-footer, new-smart, adaptation, creating-a-new-github-repository, family-logo, top, scope, country-adaptation-of-an-existing-guide, stripe, segment-footer, creating-a-new-who-smart-guidline, segment-content, generation, github, generating-an-implmentation-guide, segment-header, bottom, directory-structure, family-nav, ig-status, 1, modify, 2, 3, 4, modifying-the-template-repository, directory-layout-for-content, segment-navbar, segment-breadcrumb])
 ERROR: /github/workspace/output/instructions.html#/html/body/div/div/div/div/div/div/ul/li/dl/dd/a at Line 239, column 13: The link 'hl7.org/fhir/uv/shorthand/' for "FHIR Shorthand" cannot be resolved
 ERROR: /github/workspace/output/instructions.html#/html/body/div/div/div/div/div/div/ul/li/dl/dd/a at Line 251, column 68: The link '#checklist' for "Smart Guidelines IG checklist" cannot be resolved (valid targets: [instructions, publish-box, segment-post-footer, new-smart, adaptation, creating-a-new-github-repository, family-logo, top, scope, country-adaptation-of-an-existing-guide, stripe, segment-footer, creating-a-new-who-smart-guidline, segment-content, generation, github, generating-an-implmentation-guide, segment-header, bottom, directory-structure, family-nav, ig-status, 1, modify, 2, 3, 4, modifying-the-template-repository, directory-layout-for-content, segment-navbar, segment-breadcrumb])
@@ -94,12 +94,12 @@ WARNING: StructureDefinition/ViralHepatitisCareFormModel: StructureDefinition.sn
 WARNING: StructureDefinition/ViralHepatitisCareFormModel: StructureDefinition.snapshot.element[42]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
 WARNING: StructureDefinition/ViralHepatitisCareFormModel: StructureDefinition.snapshot.element[43]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
 WARNING: StructureDefinition/ViralHepatitisCareFormModel: StructureDefinition.snapshot.element[44]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
-WARNING: StructureDefinition/ViralHepatitisCareFormModel: StructureDefinition.snapshot.element[44].short: value should not start or finish with whitespace ' HBV...(IU/mL)'
+WARNING: StructureDefinition/ViralHepatitisCareFormModel: StructureDefinition.snapshot.element[44].short: value should not start or finish with whitespace ' HBV DNA Test Result (IU/mL)'
 WARNING: StructureDefinition/ViralHepatitisCareFormModel: StructureDefinition.snapshot.element[45]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
 WARNING: StructureDefinition/ViralHepatitisCareFormModel: StructureDefinition.snapshot.element[46]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
 WARNING: StructureDefinition/ViralHepatitisCareFormModel: StructureDefinition.snapshot.element[47]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
 WARNING: StructureDefinition/ViralHepatitisCareFormModel: StructureDefinition.snapshot.element[48]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
-WARNING: StructureDefinition/ViralHepatitisCareFormModel: StructureDefinition.snapshot.element[48].short: value should not start or finish with whitespace 'ALT...(IU/L) '
+WARNING: StructureDefinition/ViralHepatitisCareFormModel: StructureDefinition.snapshot.element[48].short: value should not start or finish with whitespace 'ALT (SGPT) Test Result (IU/L) '
 WARNING: StructureDefinition/ViralHepatitisCareFormModel: StructureDefinition.snapshot.element[49]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
 WARNING: StructureDefinition/ViralHepatitisCareFormModel: StructureDefinition.snapshot.element[50]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
 WARNING: StructureDefinition/ViralHepatitisCareFormModel: StructureDefinition.snapshot.element[51]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
@@ -159,12 +159,12 @@ WARNING: StructureDefinition/ViralHepatitisCareFormModel: StructureDefinition.di
 WARNING: StructureDefinition/ViralHepatitisCareFormModel: StructureDefinition.differential.element[39]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
 WARNING: StructureDefinition/ViralHepatitisCareFormModel: StructureDefinition.differential.element[40]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
 WARNING: StructureDefinition/ViralHepatitisCareFormModel: StructureDefinition.differential.element[41]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
-WARNING: StructureDefinition/ViralHepatitisCareFormModel: StructureDefinition.differential.element[41].short: value should not start or finish with whitespace ' HBV...(IU/mL)'
+WARNING: StructureDefinition/ViralHepatitisCareFormModel: StructureDefinition.differential.element[41].short: value should not start or finish with whitespace ' HBV DNA Test Result (IU/mL)'
 WARNING: StructureDefinition/ViralHepatitisCareFormModel: StructureDefinition.differential.element[42]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
 WARNING: StructureDefinition/ViralHepatitisCareFormModel: StructureDefinition.differential.element[43]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
 WARNING: StructureDefinition/ViralHepatitisCareFormModel: StructureDefinition.differential.element[44]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
 WARNING: StructureDefinition/ViralHepatitisCareFormModel: StructureDefinition.differential.element[45]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
-WARNING: StructureDefinition/ViralHepatitisCareFormModel: StructureDefinition.differential.element[45].short: value should not start or finish with whitespace 'ALT...(IU/L) '
+WARNING: StructureDefinition/ViralHepatitisCareFormModel: StructureDefinition.differential.element[45].short: value should not start or finish with whitespace 'ALT (SGPT) Test Result (IU/L) '
 WARNING: StructureDefinition/ViralHepatitisCareFormModel: StructureDefinition.differential.element[46]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
 WARNING: StructureDefinition/ViralHepatitisCareFormModel: StructureDefinition.differential.element[47]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
 WARNING: StructureDefinition/ViralHepatitisCareFormModel: StructureDefinition.differential.element[48]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
