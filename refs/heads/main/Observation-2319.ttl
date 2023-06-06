@@ -1,0 +1,58 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://worldhealthorganization.github.io/smart-ig-upvhproject/Observation/2319> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "2319"] ; # 
+  fhir:meta [
+     fhir:versionId [ fhir:v "1" ] ;
+     fhir:lastUpdated [ fhir:v "2023-02-20T18:40:30.205+00:00"^^xsd:dateTime ] ;
+     fhir:source [ fhir:v "#2SSc7UQgOt5xdIYA"^^xsd:anyURI ] ;
+     fhir:profile ( [
+       fhir:v "https://up.smilecdr.com:8000/StructureDefinition/2318"^^xsd:anyURI ;
+       fhir:link <https://up.smilecdr.com:8000/StructureDefinition/2318>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"2319\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;2319&quot; Version &quot;1&quot; Updated &quot;2023-02-20 18:40:30+0000&quot; </p><p style=\"margin-bottom: 0px\">Information Source: #2SSc7UQgOt5xdIYA!</p><p style=\"margin-bottom: 0px\">Profile: <code>https://up.smilecdr.com:8000/StructureDefinition/2318</code></p></div><p><b>status</b>: final</p><p><b>category</b>: Social History <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#social-history)</span></p><p><b>code</b>: Past employer country [Location] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#80438-5)</span></p><p><b>subject</b>: <a href=\"Patient/POC1\">Patient/POC1</a></p><p><b>effective</b>: 2022-04-28</p><p><b>value</b>: Yes <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#373066001)</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "social-history" ] ;
+       fhir:display [ fhir:v "Social History" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:80438-5 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "80438-5" ] ;
+       fhir:display [ fhir:v "Past employer country [Location]" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/Patient/POC1> ;
+     fhir:reference [ fhir:v "Patient/POC1" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2022-04-28"^^xsd:date] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       a sct:373066001 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "373066001" ] ;
+       fhir:display [ fhir:v "Yes" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+
