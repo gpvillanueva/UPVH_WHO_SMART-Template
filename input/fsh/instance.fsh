@@ -1,21 +1,3 @@
-Extension: FatherName
-Id: FatherName
-* ^url = "https://up.smilecdr.com:8000/StructureDefinition/2131"
-* ^status = #draft
-* ^context.type = #element
-* ^context.expression = "Patient"
-* url = "https://up.smilecdr.com:8000/StructureDefinition/2131" (exactly)
-* value[x] only string
-
-Extension: MotherName
-Id: MotherName
-* ^url = "https://up.smilecdr.com:8000/StructureDefinition/2132"
-* ^status = #draft
-* ^context.type = #element
-* ^context.expression = "Patient"
-* url = "https://up.smilecdr.com:8000/StructureDefinition/2132" (exactly)
-* value[x] only string
-
 Alias: $2131 = https://up.smilecdr.com:8000/StructureDefinition/2131
 Alias: $2132 = https://up.smilecdr.com:8000/StructureDefinition/2132
 Alias: $patient-nationality = http://hl7.org/fhir/StructureDefinition/patient-nationality
@@ -33,10 +15,10 @@ Description: "VH Patient"
 * extension contains
     $2131 named FatherName 0..1 and
     $2132 named MotherName 0..1 and
-    $patient-nationality named Nationality 0..1
+    $patient-nationality named myExtension 0..1
 * extension[FatherName] ^isModifier = false
 * extension[MotherName] ^isModifier = false
-* extension[Nationality] ^isModifier = false
+* extension[myExtension] ^isModifier = false
 * identifier ..3
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "use"
@@ -64,7 +46,6 @@ Description: "VH Patient"
 * name.given ^definition = "Patient.name[0].given[0]\r\nPatient.name[0].given[1]"
 * name.suffix ^definition = "Patient.name[0].suffix"
 * telecom.use = #work (exactly)
-* birthDate 1..
 * address ..2
 * address ^definition = "CurrentAddress[0]\r\nPermanentAddress[1]"
 * address.use 1..
@@ -72,10 +53,32 @@ Description: "VH Patient"
 * address.use ^definition = "Current=home\r\nPermanent=old"
 * address.type 1..
 * address.type = #both (exactly)
-* maritalStatus 1..
 * maritalStatus ^short = "Civil Status"
 * maritalStatus ^definition = "Civil status"
 * managingOrganization 1..
+
+
+
+Extension: FatherName
+Id: FatherName
+* ^url = "https://up.smilecdr.com:8000/StructureDefinition/2131"
+* ^status = #draft
+* ^context.type = #element
+* ^context.expression = "Patient"
+* url = "https://up.smilecdr.com:8000/StructureDefinition/2131" (exactly)
+* value[x] only string
+
+
+
+Extension: MotherName
+Id: MotherName
+* ^url = "https://up.smilecdr.com:8000/StructureDefinition/2132"
+* ^status = #draft
+* ^context.type = #element
+* ^context.expression = "Patient"
+* url = "https://up.smilecdr.com:8000/StructureDefinition/2132" (exactly)
+* value[x] only string
+
 
 
 Profile: VHCEncounter
@@ -95,6 +98,9 @@ Id: 2156
 * serviceProvider 1..
 
 
+
+Alias: $sct = http://snomed.info/sct
+
 Profile: ConditionHepB
 Parent: Condition
 Id: 2158
@@ -104,9 +110,12 @@ Description: "Hepatitis B surface antigen test result"
 * ^meta.source = "#6KMSX4B4QW8oBiXc"
 * ^status = #draft
 * code 1..
-* code.coding ^code[0] = http://snomed.info/sct#165806002 "Hepatitis B surface antigen positive"
-* code.coding ^code[+] = http://snomed.info/sct#406010001 "Hepatitis B surface antigen negative"
+* code.coding ^code[0] = $sct#165806002 "Hepatitis B surface antigen positive"
+* code.coding ^code[+] = $sct#406010001 "Hepatitis B surface antigen negative"
 
+
+
+Alias: $sct = http://snomed.info/sct
 
 Profile: ConditionHepC
 Parent: Condition
@@ -118,5 +127,437 @@ Description: "Hepatitis C antibody test result"
 * ^status = #draft
 * code 1..
 * code.coding 1..1
-* code.coding ^code[0] = http://snomed.info/sct#314706002 "Hepatitis C antibody test positive"
-* code.coding ^code[+] = http://snomed.info/sct#314707006 "Hepatitis C antibody test negative"
+* code.coding ^code[0] = $sct#314706002 "Hepatitis C antibody test positive"
+* code.coding ^code[+] = $sct#314707006 "Hepatitis C antibody test negative"
+
+
+
+Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
+Alias: $loinc = http://loinc.org
+
+Instance: 2284
+InstanceOf: Observation
+Usage: #example
+* meta.versionId = "1"
+* meta.lastUpdated = "2023-02-19T21:52:23.151+00:00"
+* meta.source = "#UjpmLI0LhEsLa6fR"
+* meta.profile = "https://up.smilecdr.com:8000/StructureDefinition/2283"
+* status = #final
+* category = $observation-category#social-history "Social History"
+* code = $loinc#11638-4 "[#]Births.still living"
+* subject = Reference(Patient/POC1)
+* effectiveDateTime = "2022-04-28"
+* valueInteger = 5
+
+
+
+Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
+Alias: $loinc = http://loinc.org
+Alias: $sct = http://snomed.info/sct
+
+Instance: 2281
+InstanceOf: Observation
+Usage: #example
+* meta.versionId = "1"
+* meta.lastUpdated = "2023-02-19T21:28:35.097+00:00"
+* meta.source = "#sFIXF5P8FnJeXneY"
+* meta.profile = "https://up.smilecdr.com:8000/StructureDefinition/2279"
+* status = #final
+* category = $observation-category#social-history "Social History"
+* code = $loinc#11449-6 "Pregnancy status - Reported"
+* subject = Reference(Patient/1814)
+* valueCodeableConcept = $sct#77386006 "Pregnancy(true)"
+
+
+Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
+Alias: $sct = http://snomed.info/sct
+
+Instance: 2295
+InstanceOf: Observation
+Usage: #example
+* meta.versionId = "1"
+* meta.lastUpdated = "2023-02-20T10:06:28.839+00:00"
+* meta.source = "#7hR7ej377Ht4H2ez"
+* meta.profile = "https://up.smilecdr.com:8000/StructureDefinition/2294"
+* status = #final
+* category = $observation-category#social-history "Social History"
+* code = $sct#341000119102 "Tattoo of skin"
+* subject = Reference(Patient/POC1)
+* effectiveDateTime = "2022-04-28"
+* valueCodeableConcept = $sct#373066001 "Yes"
+
+
+
+Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
+Alias: $sct = http://snomed.info/sct
+
+Instance: 2317
+InstanceOf: Observation
+Usage: #example
+* meta.versionId = "1"
+* meta.lastUpdated = "2023-02-20T18:24:18.459+00:00"
+* meta.source = "#JFxgxYqNQpUACzEV"
+* meta.profile = "https://up.smilecdr.com:8000/StructureDefinition/2316"
+* status = #final
+* category = $observation-category#social-history "Social History"
+* code = $sct#53713009 "Works as prostitute"
+* subject = Reference(Patient/POC1)
+* effectiveDateTime = "2022-04-28"
+* valueCodeableConcept = $sct#373066001 "Yes"
+
+Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
+Alias: $loinc = http://loinc.org
+Alias: $sct = http://snomed.info/sct
+
+Instance: 2319
+InstanceOf: Observation
+Usage: #example
+* meta.versionId = "1"
+* meta.lastUpdated = "2023-02-20T18:40:30.205+00:00"
+* meta.source = "#2SSc7UQgOt5xdIYA"
+* meta.profile = "https://up.smilecdr.com:8000/StructureDefinition/2318"
+* status = #final
+* category = $observation-category#social-history "Social History"
+* code = $loinc#80438-5 "Past employer country [Location]"
+* subject = Reference(Patient/POC1)
+* effectiveDateTime = "2022-04-28"
+* valueCodeableConcept = $sct#373066001 "Yes"
+
+
+
+Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
+Alias: $loinc = http://loinc.org
+Alias: $sct = http://snomed.info/sct
+
+Instance: 2289
+InstanceOf: Observation
+Usage: #example
+* meta.versionId = "1"
+* meta.lastUpdated = "2023-02-20T06:05:15.696+00:00"
+* meta.source = "#NRMjUsip5rD9PWjl"
+* meta.profile = "https://up.smilecdr.com:8000/StructureDefinition/2288"
+* status = #final
+* category = $observation-category#social-history "Social History"
+* code = $loinc#95492-5 "Injection drug use Lifetime"
+* subject = Reference(Patient/POC1)
+* effectiveDateTime = "2022-04-28"
+* valueCodeableConcept = $sct#373066001 "Yes"
+
+
+Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
+Alias: $sct = http://snomed.info/sct
+
+Instance: 2287
+InstanceOf: Observation
+Usage: #example
+* meta.versionId = "1"
+* meta.lastUpdated = "2023-02-20T05:53:36.104+00:00"
+* meta.source = "#IV5m4UaMVt1saHPW"
+* meta.profile = "https://up.smilecdr.com:8000/StructureDefinition/2286"
+* status = #final
+* category = $observation-category#social-history "Social History"
+* code = $sct#228400001 "Shares needles"
+* subject = Reference(Patient/POC1)
+* effectiveDateTime = "2022-04-28"
+* valueCodeableConcept = $sct#373066001 "Yes"
+
+
+
+Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
+Alias: $loinc = http://loinc.org
+Alias: $sct = http://snomed.info/sct
+
+Instance: 2299
+InstanceOf: Observation
+Usage: #example
+* meta.versionId = "1"
+* meta.lastUpdated = "2023-02-20T10:56:56.307+00:00"
+* meta.source = "#b2VHeqXZKp9eUQnB"
+* meta.profile = "https://up.smilecdr.com:8000/StructureDefinition/2298"
+* status = #final
+* category = $observation-category#social-history "Social History"
+* code = $loinc#83315-2 "Sexual activity with a female in the past year"
+* subject = Reference(Patient/POC1)
+* effectiveDateTime = "2022-04-28"
+* valueCodeableConcept = $sct#373066001 "Yes"
+
+
+
+Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
+Alias: $loinc = http://loinc.org
+Alias: $sct = http://snomed.info/sct
+
+Instance: 2297
+InstanceOf: Observation
+Usage: #example
+* meta.versionId = "1"
+* meta.lastUpdated = "2023-02-20T10:50:29.948+00:00"
+* meta.source = "#ttTBULg8bQggl51j"
+* meta.profile = "https://up.smilecdr.com:8000/StructureDefinition/2296"
+* status = #final
+* category = $observation-category#social-history "Social History"
+* code = $loinc#83316-0 "Sexual activity with a male in the past year"
+* subject = Reference(Patient/POC1)
+* effectiveDateTime = "2022-04-28"
+* valueCodeableConcept = $sct#373066001 "Yes"
+
+
+
+Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
+Alias: $sct = http://snomed.info/sct
+
+Instance: 2312
+InstanceOf: Observation
+Usage: #example
+* meta.versionId = "1"
+* meta.lastUpdated = "2023-02-20T18:09:13.286+00:00"
+* meta.source = "#TGUjIyq9OOH4sl10"
+* meta.profile = "hhttps://up.smilecdr.com:8000/StructureDefinition/2311"
+* status = #final
+* category = $observation-category#social-history "Social History"
+* code = $sct#788159003 "Client of prostitutes"
+* subject = Reference(Patient/POC1)
+* effectiveDateTime = "2022-04-28"
+* valueCodeableConcept = $sct#373066001 "Yes"
+
+
+
+Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
+Alias: $loinc = http://loinc.org
+Alias: $sct = http://snomed.info/sct
+
+Instance: 2291
+InstanceOf: Observation
+Usage: #example
+* meta.versionId = "1"
+* meta.lastUpdated = "2023-02-20T09:44:57.780+00:00"
+* meta.source = "#qoMm9hdi7LYA3I1E"
+* meta.profile = "https://up.smilecdr.com:8000/StructureDefinition/2290"
+* status = #final
+* category = $observation-category#social-history "Social History"
+* code = $loinc#55217-4 "Stick or puncture with a needle or other object contaminated with blood"
+* subject = Reference(Patient/POC1)
+* effectiveDateTime = "2022-04-28"
+* valueCodeableConcept = $sct#373066001 "Yes"
+
+
+
+Alias: $sct = http://snomed.info/sct
+
+Profile: FamilyMemberHistoryVHcase34
+Parent: FamilyMemberHistory
+Id: FamilyMemberHistoryVHcase34
+* ^url = "https://example.org/fhir/StructureDefinition/FamilyMemberHistoryVHcase34"
+* ^status = #draft
+* relationship.coding.system = "https://terminology.hl7.org/CodeSystem/v3-RoleCode" (exactly)
+* relationship.coding.code = #NMTH (exactly)
+* relationship.coding.display = "natural mother" (exactly)
+* deceased[x] only boolean
+* condition ..2
+* condition.code.coding ^code[0] = $sct#66071002 "Viral hepatitis type B (disorder)"
+* condition.code.coding ^code[+] = $sct#50711007 "Viral hepatitis type C (disorder)"
+
+
+Alias: $sct = http://snomed.info/sct
+
+Profile: FamilyMemberHistoryVHcase35
+Parent: FamilyMemberHistory
+Id: FamilyMemberHistoryVHcase35
+* ^url = "https://example.org/fhir/StructureDefinition/FamilyMemberHistoryVHcase35"
+* ^status = #draft
+* relationship.coding.system = "https://terminology.hl7.org/CodeSystem/v3-RoleCode" (exactly)
+* relationship.coding.code = #SPS (exactly)
+* relationship.coding.display = "spouse" (exactly)
+* deceased[x] only boolean
+* condition.code.coding ^code[0] = $sct#66071002 "Viral hepatitis type B (disorder)"
+* condition.code.coding ^code[+] = $sct#50711007 "Viral hepatitis type C (disorder)"
+
+
+
+Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
+Alias: $sct = http://snomed.info/sct
+
+Profile: ObservationVHcase13
+Parent: Observation
+Id: ObservationVHcase13
+* ^url = "https://example.org/fhir/StructureDefinition/ObservationVHcase13"
+* ^status = #draft
+* category 1..1
+* category.coding 1..1
+* category.coding ^code[0] = $observation-category#social-history "Social History"
+* category.coding ^code[+] = $sct#161664006 "History of blood transfusion (situation)"
+* category.coding.system = "http://terminology.hl7.org/CodeSystem/observation-category" (exactly)
+* category.coding.code = #social-history (exactly)
+* category.coding.display = "Social History" (exactly)
+* code.coding 1..1
+* code.coding ^code[0] = $sct#109841003 "Liver cell carcinoma (disorder)"
+* code.coding ^code[+] = $sct#288556008 "Before(attribute)"
+* code.coding ^code[+] = $sct#50711007 "50711007"
+* code.coding.system = "http://loinc.org" (exactly)
+* code.coding.code = #76691-5 (exactly)
+* code.coding.display = "Gender Identity" (exactly)
+* subject 1..
+* subject.type = "Patient" (exactly)
+* value[x] 1..
+* value[x] only string
+
+
+
+Alias: $sct = http://snomed.info/sct
+
+Profile: ObservationVHcase48
+Parent: Observation
+Id: ObservationVHcase48
+* ^url = "https://example.org/fhir/StructureDefinition/ObservationVHcase48"
+* ^status = #draft
+* category 1..1
+* category.coding.system = "http://terminology.hl7.org/CodeSystem/observation-category" (exactly)
+* category.coding.code = #social-history (exactly)
+* category.coding.display = "Social History" (exactly)
+* code.coding 4..4
+* code.coding ^code[0] = $sct#109841003 "Liver cell carcinoma (disorder)"
+* code.coding ^code[+] = $sct#288556008 "Before(attribute)"
+* code.coding ^code[+] = $sct#50711007 "50711007"
+* code.coding ^slicing.discriminator.type = #value
+* code.coding ^slicing.discriminator.path = "code"
+* code.coding ^slicing.rules = #open
+* subject 1..
+* subject.type = "Patient" (exactly)
+* value[x] 1..
+* value[x] only CodeableConcept or boolean
+
+
+
+Profile: ObservationVHcase49
+Parent: Observation
+Id: ObservationVHcase49
+* ^url = "https://example.org/fhir/StructureDefinition/ObservationVHcase49"
+* ^status = #draft
+* category 1..1
+* category.coding 1..1
+* category.coding.system = "http://terminology.hl7.org/CodeSystem/observation-category" (exactly)
+* category.coding.code = #social-history (exactly)
+* category.coding.display = "Social History" (exactly)
+* code.coding ..1
+* code.coding.system = "http://snomed.info/sct" (exactly)
+* code.coding.code = #161664006 (exactly)
+* code.coding.display = "History of blood transfusion (situation)" (exactly)
+* subject 1..
+* subject.type = "Patient" (exactly)
+* value[x] 1..
+* value[x] only CodeableConcept or boolean
+
+
+Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
+Alias: $sct = http://snomed.info/sct
+
+Profile: ObservationVHcase50
+Parent: Observation
+Id: ObservationVHcase50
+* ^url = "https://example.org/fhir/StructureDefinition/ObservationVHcase50"
+* ^status = #draft
+* category 1..1
+* category.coding 1..1
+* category.coding ^code[0] = $observation-category#social-history "Social History"
+* category.coding ^code[+] = $sct#161664006 "History of blood transfusion (situation)"
+* category.coding.system = "http://terminology.hl7.org/CodeSystem/observation-category" (exactly)
+* category.coding.code = #social-history (exactly)
+* category.coding.display = "Social History" (exactly)
+* code.coding 1..1
+* code.coding ^code[0] = $sct#109841003 "Liver cell carcinoma (disorder)"
+* code.coding ^code[+] = $sct#288556008 "Before(attribute)"
+* code.coding ^code[+] = $sct#50711007 "50711007"
+* code.coding.system = "http://snomed.info/sct" (exactly)
+* code.coding.code = #161693006 (exactly)
+* code.coding.display = "History of renal dialysis (situation)" (exactly)
+* subject 1..
+* subject.type = "Patient" (exactly)
+* value[x] 1..
+* value[x] only CodeableConcept or boolean
+
+
+
+Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
+Alias: $sct = http://snomed.info/sct
+
+Profile: ObservationVHcase51
+Parent: Observation
+Id: ObservationVHcase51
+* ^url = "https://example.org/fhir/StructureDefinition/ObservationVHcase51"
+* ^status = #draft
+* category 1..1
+* category.coding 1..1
+* category.coding ^code[0] = $observation-category#social-history "Social History"
+* category.coding ^code[+] = $sct#161664006 "History of blood transfusion (situation)"
+* category.coding.system = "http://terminology.hl7.org/CodeSystem/observation-category" (exactly)
+* category.coding.code = #social-history (exactly)
+* category.coding.display = "Social History" (exactly)
+* code.coding 1..1
+* code.coding ^code[0] = $sct#109841003 "Liver cell carcinoma (disorder)"
+* code.coding ^code[+] = $sct#288556008 "Before(attribute)"
+* code.coding ^code[+] = $sct#50711007 "50711007"
+* code.coding.system = "http://loinc.org" (exactly)
+* code.coding.code = #45231-8 (exactly)
+* code.coding.display = "HIV treatment prior to enrollment" (exactly)
+* subject 1..
+* subject.type = "Patient" (exactly)
+* value[x] 1..
+* value[x] only CodeableConcept or boolean
+
+
+
+Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
+Alias: $sct = http://snomed.info/sct
+
+Profile: ObservationVHcase55
+Parent: Observation
+Id: ObservationVHcase55
+* ^url = "https://example.org/fhir/StructureDefinition/ObservationVHcase55"
+* ^status = #draft
+* category 1..1
+* category.coding 1..1
+* category.coding ^code[0] = $observation-category#social-history "Social History"
+* category.coding ^code[+] = $sct#161664006 "History of blood transfusion (situation)"
+* category.coding.system = "http://terminology.hl7.org/CodeSystem/observation-category" (exactly)
+* category.coding.code = #social-history (exactly)
+* category.coding.display = "Social History" (exactly)
+* code.coding 1..1
+* code.coding ^code[0] = $sct#109841003 "Liver cell carcinoma (disorder)"
+* code.coding ^code[+] = $sct#288556008 "Before(attribute)"
+* code.coding ^code[+] = $sct#50711007 "50711007"
+* code.coding.system = "http://snomed.info/sct" (exactly)
+* code.coding.code = #243789007 (exactly)
+* code.coding.display = "Administration of vaccine product containing only Hepatitis A virus antigen (procedure)" (exactly)
+* subject 1..
+* subject.type = "Patient" (exactly)
+* value[x] 1..
+* value[x] only CodeableConcept or boolean
+
+
+
+Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
+Alias: $sct = http://snomed.info/sct
+
+Profile: ObservationVHcase56
+Parent: Observation
+Id: ObservationVHcase56
+* ^url = "https://example.org/fhir/StructureDefinition/ObservationVHcase56"
+* ^status = #draft
+* category 1..1
+* category.coding 1..1
+* category.coding ^code[0] = $observation-category#social-history "Social History"
+* category.coding ^code[+] = $sct#161664006 "History of blood transfusion (situation)"
+* category.coding.system = "http://terminology.hl7.org/CodeSystem/observation-category" (exactly)
+* category.coding.code = #social-history (exactly)
+* category.coding.display = "Social History" (exactly)
+* code.coding 1..1
+* code.coding ^code[0] = $sct#109841003 "Liver cell carcinoma (disorder)"
+* code.coding ^code[+] = $sct#288556008 "Before(attribute)"
+* code.coding ^code[+] = $sct#50711007 "50711007"
+* code.coding.system = "http://snomed.info/sct" (exactly)
+* code.coding.code = #16584000 (exactly)
+* code.coding.display = "Administration of vaccine product containing only Hepatitis B virus antigen (procedure)" (exactly)
+* subject 1..
+* subject.type = "Patient" (exactly)
+* value[x] 1..
+* value[x] only string
