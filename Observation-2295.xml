@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="2295"/>
+  <meta>
+    <versionId value="1"/>
+    <lastUpdated value="2023-02-20T10:06:28.839+00:00"/>
+    <source value="#7hR7ej377Ht4H2ez"/>
+    <profile value="https://up.smilecdr.com:8000/StructureDefinition/2294"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="2295"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;2295&quot; Version &quot;1&quot; Updated &quot;2023-02-20 10:06:28+0000&quot; </p><p style="margin-bottom: 0px">Information Source: #7hR7ej377Ht4H2ez!</p><p style="margin-bottom: 0px">Profile: <code>https://up.smilecdr.com:8000/StructureDefinition/2294</code></p></div><p><b>status</b>: final</p><p><b>category</b>: Social History <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html">Observation Category Codes</a>#social-history)</span></p><p><b>code</b>: Tattoo of skin <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#341000119102)</span></p><p><b>subject</b>: <a href="Patient/POC1">Patient/POC1</a></p><p><b>effective</b>: 2022-04-28</p><p><b>value</b>: Yes <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#373066001)</span></p></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="social-history"/>
+      <display value="Social History"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="341000119102"/>
+      <display value="Tattoo of skin"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/POC1"/>
+  </subject>
+  <effectiveDateTime value="2022-04-28"/>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="373066001"/>
+      <display value="Yes"/>
+    </coding>
+  </valueCodeableConcept>
+</Observation>

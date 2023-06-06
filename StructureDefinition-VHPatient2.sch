@@ -16,9 +16,7 @@
       <sch:assert test="count(f:extension[@url = 'https://up.smilecdr.com:8000/StructureDefinition/2132']) &lt;= 1">extension with URL = 'https://up.smilecdr.com:8000/StructureDefinition/2132': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/StructureDefinition/patient-nationality']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/StructureDefinition/patient-nationality': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:name) &gt;= 1">name: minimum cardinality of 'name' is 1</sch:assert>
-      <sch:assert test="count(f:birthDate) &gt;= 1">birthDate: minimum cardinality of 'birthDate' is 1</sch:assert>
       <sch:assert test="count(f:address) &lt;= 2">address: maximum cardinality of 'address' is 2</sch:assert>
-      <sch:assert test="count(f:maritalStatus) &gt;= 1">maritalStatus: minimum cardinality of 'maritalStatus' is 1</sch:assert>
       <sch:assert test="count(f:managingOrganization) &gt;= 1">managingOrganization: minimum cardinality of 'managingOrganization' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>

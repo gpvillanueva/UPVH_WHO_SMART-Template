@@ -36,6 +36,46 @@
         "title": "ConditionHepC"
       }
     ],
+    "FamilyMemberHistory": [
+      {
+        "url": "https://example.org/fhir/StructureDefinition/FamilyMemberHistoryVHcase34",
+        "title": "FamilyMemberHistoryVHcase34"
+      },
+      {
+        "url": "https://example.org/fhir/StructureDefinition/FamilyMemberHistoryVHcase35",
+        "title": "FamilyMemberHistoryVHcase35"
+      }
+    ],
+    "Observation": [
+      {
+        "url": "https://example.org/fhir/StructureDefinition/ObservationVHcase13",
+        "title": "ObservationVHcase13"
+      },
+      {
+        "url": "https://example.org/fhir/StructureDefinition/ObservationVHcase48",
+        "title": "ObservationVHcase48"
+      },
+      {
+        "url": "https://example.org/fhir/StructureDefinition/ObservationVHcase49",
+        "title": "ObservationVHcase49"
+      },
+      {
+        "url": "https://example.org/fhir/StructureDefinition/ObservationVHcase50",
+        "title": "ObservationVHcase50"
+      },
+      {
+        "url": "https://example.org/fhir/StructureDefinition/ObservationVHcase51",
+        "title": "ObservationVHcase51"
+      },
+      {
+        "url": "https://example.org/fhir/StructureDefinition/ObservationVHcase55",
+        "title": "ObservationVHcase55"
+      },
+      {
+        "url": "https://example.org/fhir/StructureDefinition/ObservationVHcase56",
+        "title": "ObservationVHcase56"
+      }
+    ],
     "Patient": [
       {
         "url": "https://up.smilecdr.com:8000/StructureDefinition/2137",
@@ -68,6 +108,9 @@
     "http://hl7.org/fhir/StructureDefinition/regex": [
       "StructureDefinition.snapshot.element.type"
     ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+      "StructureDefinition.snapshot.element"
+    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name": [
       "StructureDefinition.snapshot.element"
     ],
@@ -76,6 +119,12 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
       "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
+      "ImplementationGuide.definition"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
       "ImplementationGuide.definition.page",

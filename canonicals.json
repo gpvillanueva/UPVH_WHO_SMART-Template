@@ -42,6 +42,69 @@
     "name" : "ViralHepatitisCaseReportFormModel"
   },
   {
+    "id" : "FamilyMemberHistoryVHcase34",
+    "type" : "StructureDefinition",
+    "url" : "https://example.org/fhir/StructureDefinition/FamilyMemberHistoryVHcase34",
+    "version" : "0.2.1",
+    "name" : "FamilyMemberHistoryVHcase34"
+  },
+  {
+    "id" : "FamilyMemberHistoryVHcase35",
+    "type" : "StructureDefinition",
+    "url" : "https://example.org/fhir/StructureDefinition/FamilyMemberHistoryVHcase35",
+    "version" : "0.2.1",
+    "name" : "FamilyMemberHistoryVHcase35"
+  },
+  {
+    "id" : "ObservationVHcase13",
+    "type" : "StructureDefinition",
+    "url" : "https://example.org/fhir/StructureDefinition/ObservationVHcase13",
+    "version" : "0.2.1",
+    "name" : "ObservationVHcase13"
+  },
+  {
+    "id" : "ObservationVHcase48",
+    "type" : "StructureDefinition",
+    "url" : "https://example.org/fhir/StructureDefinition/ObservationVHcase48",
+    "version" : "0.2.1",
+    "name" : "ObservationVHcase48"
+  },
+  {
+    "id" : "ObservationVHcase49",
+    "type" : "StructureDefinition",
+    "url" : "https://example.org/fhir/StructureDefinition/ObservationVHcase49",
+    "version" : "0.2.1",
+    "name" : "ObservationVHcase49"
+  },
+  {
+    "id" : "ObservationVHcase50",
+    "type" : "StructureDefinition",
+    "url" : "https://example.org/fhir/StructureDefinition/ObservationVHcase50",
+    "version" : "0.2.1",
+    "name" : "ObservationVHcase50"
+  },
+  {
+    "id" : "ObservationVHcase51",
+    "type" : "StructureDefinition",
+    "url" : "https://example.org/fhir/StructureDefinition/ObservationVHcase51",
+    "version" : "0.2.1",
+    "name" : "ObservationVHcase51"
+  },
+  {
+    "id" : "ObservationVHcase55",
+    "type" : "StructureDefinition",
+    "url" : "https://example.org/fhir/StructureDefinition/ObservationVHcase55",
+    "version" : "0.2.1",
+    "name" : "ObservationVHcase55"
+  },
+  {
+    "id" : "ObservationVHcase56",
+    "type" : "StructureDefinition",
+    "url" : "https://example.org/fhir/StructureDefinition/ObservationVHcase56",
+    "version" : "0.2.1",
+    "name" : "ObservationVHcase56"
+  },
+  {
     "id" : "FatherName",
     "type" : "StructureDefinition",
     "url" : "https://up.smilecdr.com:8000/StructureDefinition/2131",

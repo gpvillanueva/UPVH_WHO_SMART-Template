@@ -19,19 +19,12 @@
     <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
   	<link rel="stylesheet" href="assets/css/prism.css"/>
       <!-- Placeholder for child template CSS declarations -->
-    <link rel="stylesheet" href="assets/css/cqf.css"/>
-
     <link rel="stylesheet" href="assets/css/who.css"/>
   <!-- Placeholder for child template CSS declarations -->
 <link rel="stylesheet" href="assets/css/local.css"/>
 
 
     <script src="fhir-table-scripts.js" type="text/javascript"> </script>
-  <!-- Questionnaire: -->
-    <link rel="stylesheet" href="assets/css/lforms.min.css"/>
-
-
-
 
       <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
       <!-- [if lt IE 9]>
@@ -56,13 +49,19 @@
       <div class="container">    <!-- container -->
           <!-- Placeholder for child template header declarations -->
 
-<div id="family-nav">
-  <a no-external="true" id="family-logo" href="https://github.com/cqframework"><img src="assets/images/cqf.png" alt="Visit the CQF github organization website" height="50"/> </a>
-</div>
-
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">University of the Philippines Manila Viral Hepatitis Project Implementation Guide</span><br/>0.2.1 - CI Build</p>
+          <p><span style="font-size:12pt;font-weight:bold">University of the Philippines Manila Viral Hepatitis Project Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.2.1 - CI Build
+
+
+
+  <img src="assets/images/001.svg" alt="International flag" title="International" height="16"/>
+
+
+            </span>
+          </p>
         </div>
       </div>   <!-- /container -->
     </div>    <!-- /segment-header -->
@@ -104,12 +103,12 @@
       </div>    <!-- /container -->
     </div>    <!-- /segment-navbar -->
       <!-- status-bar -->
-    
+
     <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
       <div class="container">    <!-- container -->
         <ul class="breadcrumb">
           <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>Instructions</b></li>
-          
+
         </ul>
       </div>    <!-- /container -->
     </div>    <!-- /segment-breadcrumb -->
@@ -229,11 +228,11 @@ git checkout main</pre>
   
   <a name="3"/><h3>Directory layout for content</h3><a name="directory-structure">  </a>
   <ul>
-    <li><a name="l513">​</a>
+    <li><a name="l506">​</a>
       Create your content following the <a href="#checklist">Smart Guidelines IG checklist</a> and using the following directory and file structure:
       <dl>
 	<dt>input/fsh</dt>
-	<dd><a name="l523">​</a>
+	<dd><a name="l516">​</a>
 	  put any <a href="hl7.org/fhir/uv/shorthand/">FHIR Shorthand</a> (or fsh) files in this directory.
 	</dd>
 	<dt>input/images</dt>
@@ -245,7 +244,7 @@ git checkout main</pre>
 	  put UML, sequence diagrams, etc in this directory as <a href="https://plantuml.com/">plantUML</a> diagrams.  A UML diagram named XXXX.plantuml can be referenced in a xml file under input/pagecontent as  'include XXXX.svg' <mark>TODO: figure out how to esacpe jekyll control sequences </mark>
 	</dd>
 	<dt>input/pagecontent</dt>
-	<dd><a name="l550">​</a>
+	<dd><a name="l543">​</a>
 	  Edit the following pages by providing content according to the <a href="#checklist">Smart Guidelines IG checklist</a> below.
 	  <dl>
 	    <dt>actors.xml</dt>
@@ -399,15 +398,14 @@ npm install -g sushi</pre></blockquote>
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://ehealth4hepatitis.ph">UP Manila Viral Hepatitis Project</a>.  Package fhir.who.smart-ig-upvhproject#0.2.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Mar 22, 2023 05:02+0000">2023-03-22</span>
+          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://ehealth4hepatitis.ph">UP Manila Viral Hepatitis Project</a>.  Package fhir.who.smart-ig-upvhproject#0.2.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jun 6, 2023 10:22+0000">2023-06-06</span>
           <br/>
-          <span style="color: var(--footer-highlight-text-color)">
+          <span style="color: var(--footer-highlight-text-color)"><a name="l804">​</a>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                   | <a style="color: var(--footer-hyperlink-text-color)" href="https://github.com/WorldHealthOrganization/smart-ig-upvhproject/projects/1" target="_blank">Issues</a>
                 
-                 | <a style="color: #81BEF7" href="http://worldhealthorganization.github.io/smart-ig-upvhproject/history.html" target="_blank">Version History <img src="external.png" alt="external" style="vertical-align: baseline"/></a> |
-                   <!-- <a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+| <a style="color: #81BEF7" href="http://worldhealthorganization.github.io/smart-ig-upvhproject/history.html" target="_blank">Version History</a> | <a rel="license" style="color: #81BEF7" href="license.html">License</a>
           </span>
         </p>
       </div>    <!-- /inner-wrapper -->
