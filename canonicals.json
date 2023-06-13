@@ -105,6 +105,216 @@
     "name" : "ObservationVHcase56"
   },
   {
+    "id" : "VHcareALT",
+    "type" : "StructureDefinition",
+    "url" : "https://example.org/fhir/StructureDefinition/VHcareALT",
+    "version" : "0.2.1",
+    "name" : "VHcareALT"
+  },
+  {
+    "id" : "VHcareAST",
+    "type" : "StructureDefinition",
+    "url" : "https://example.org/fhir/StructureDefinition/VHcareAST",
+    "version" : "0.2.1",
+    "name" : "VHcareAST"
+  },
+  {
+    "id" : "VHcareAntiHCV",
+    "type" : "StructureDefinition",
+    "url" : "https://example.org/fhir/StructureDefinition/VHcareAntiHCV",
+    "version" : "0.2.1",
+    "name" : "VHcareAntiHCV"
+  },
+  {
+    "id" : "VHcareHBVDNA",
+    "type" : "StructureDefinition",
+    "url" : "https://example.org/fhir/StructureDefinition/VHcareHBVDNA",
+    "version" : "0.2.1",
+    "name" : "VHcareHBVDNA"
+  },
+  {
+    "id" : "VHcareHBeAg",
+    "type" : "StructureDefinition",
+    "url" : "https://example.org/fhir/StructureDefinition/VHcareHBeAg",
+    "version" : "0.2.1",
+    "name" : "VHcareHBeAg"
+  },
+  {
+    "id" : "VHcareHBsAg",
+    "type" : "StructureDefinition",
+    "url" : "https://example.org/fhir/StructureDefinition/VHcareHBsAg",
+    "version" : "0.2.1",
+    "name" : "VHcareHBsAg"
+  },
+  {
+    "id" : "VHcareHCVRNAQuali",
+    "type" : "StructureDefinition",
+    "url" : "https://example.org/fhir/StructureDefinition/VHcareHCVRNAQuali",
+    "version" : "0.2.1",
+    "name" : "VHcareHCVRNAQuali"
+  },
+  {
+    "id" : "VHcareHCVRNAQuanti",
+    "type" : "StructureDefinition",
+    "url" : "https://example.org/fhir/StructureDefinition/VHcareHCVRNAQuanti",
+    "version" : "0.2.1",
+    "name" : "VHcareHCVRNAQuanti"
+  },
+  {
+    "id" : "VHcareImaging",
+    "type" : "StructureDefinition",
+    "url" : "https://example.org/fhir/StructureDefinition/VHcareImaging",
+    "version" : "0.2.1",
+    "name" : "VHcareImaging"
+  },
+  {
+    "id" : "VHcarePTINR",
+    "type" : "StructureDefinition",
+    "url" : "https://example.org/fhir/StructureDefinition/VHcarePTINR",
+    "version" : "0.2.1",
+    "name" : "VHcarePTINR"
+  },
+  {
+    "id" : "VHcarealbumin",
+    "type" : "StructureDefinition",
+    "url" : "https://example.org/fhir/StructureDefinition/VHcarealbumin",
+    "version" : "0.2.1",
+    "name" : "VHcarealbumin"
+  },
+  {
+    "id" : "VHcareaminotransferaseScore",
+    "type" : "StructureDefinition",
+    "url" : "https://example.org/fhir/StructureDefinition/VHcareaminotransferaseScore",
+    "version" : "0.2.1",
+    "name" : "VHcareaminotransferaseScore"
+  },
+  {
+    "id" : "VHcarechildTurcottePugh",
+    "type" : "StructureDefinition",
+    "url" : "https://example.org/fhir/StructureDefinition/VHcarechildTurcottePugh",
+    "version" : "0.2.1",
+    "name" : "VHcarechildTurcottePugh"
+  },
+  {
+    "id" : "VHcarefibrosis",
+    "type" : "StructureDefinition",
+    "url" : "https://example.org/fhir/StructureDefinition/VHcarefibrosis",
+    "version" : "0.2.1",
+    "name" : "VHcarefibrosis"
+  },
+  {
+    "id" : "VHcareheight",
+    "type" : "StructureDefinition",
+    "url" : "https://example.org/fhir/StructureDefinition/VHcareheight",
+    "version" : "0.2.1",
+    "name" : "VHcareheight"
+  },
+  {
+    "id" : "VHcareplateletCount",
+    "type" : "StructureDefinition",
+    "url" : "https://example.org/fhir/StructureDefinition/VHcareplateletCount",
+    "version" : "0.2.1",
+    "name" : "VHcareplateletCount"
+  },
+  {
+    "id" : "VHcaretotalBilirubin",
+    "type" : "StructureDefinition",
+    "url" : "https://example.org/fhir/StructureDefinition/VHcaretotalBilirubin",
+    "version" : "0.2.1",
+    "name" : "VHcaretotalBilirubin"
+  },
+  {
+    "id" : "VHcaretransientElastography",
+    "type" : "StructureDefinition",
+    "url" : "https://example.org/fhir/StructureDefinition/VHcaretransientElastography",
+    "version" : "0.2.1",
+    "name" : "VHcaretransientElastography"
+  },
+  {
+    "id" : "VHcareweight",
+    "type" : "StructureDefinition",
+    "url" : "https://example.org/fhir/StructureDefinition/VHcareweight",
+    "version" : "0.2.1",
+    "name" : "VHcareweight"
+  },
+  {
+    "id" : "VHcareAscites",
+    "type" : "StructureDefinition",
+    "url" : "https://example.org/fhir/StructureDefinition/vhcareAscites",
+    "version" : "0.2.1",
+    "name" : "VHcareAscites"
+  },
+  {
+    "id" : "VHcarecoagulopathy",
+    "type" : "StructureDefinition",
+    "url" : "https://example.org/fhir/StructureDefinition/vhcarecoagulopathy",
+    "version" : "0.2.1",
+    "name" : "VHcarecoagulopathy"
+  },
+  {
+    "id" : "VHcarefatigue",
+    "type" : "StructureDefinition",
+    "url" : "https://example.org/fhir/StructureDefinition/vhcarefatigue",
+    "version" : "0.2.1",
+    "name" : "VHcarefatigue"
+  },
+  {
+    "id" : "VHcarehepBInfection",
+    "type" : "StructureDefinition",
+    "url" : "https://example.org/fhir/StructureDefinition/vhcarehepBInfection",
+    "version" : "0.2.1",
+    "name" : "VHcarehepBInfection"
+  },
+  {
+    "id" : "VHcarehepatomegaly",
+    "type" : "StructureDefinition",
+    "url" : "https://example.org/fhir/StructureDefinition/vhcarehepatomegaly",
+    "version" : "0.2.1",
+    "name" : "VHcarehepatomegaly"
+  },
+  {
+    "id" : "VHhcarejaundice",
+    "type" : "StructureDefinition",
+    "url" : "https://example.org/fhir/StructureDefinition/vhcarejaundice",
+    "version" : "0.2.1",
+    "name" : "VHhcarejaundice"
+  },
+  {
+    "id" : "VHcareotherInfection",
+    "type" : "StructureDefinition",
+    "url" : "https://example.org/fhir/StructureDefinition/vhcareotherInfection",
+    "version" : "0.2.1",
+    "name" : "VHcareotherInfection"
+  },
+  {
+    "id" : "VHcareotherSignAndSymptoms",
+    "type" : "StructureDefinition",
+    "url" : "https://example.org/fhir/StructureDefinition/vhcareotherSignAndSymptoms",
+    "version" : "0.2.1",
+    "name" : "VHcareotherSignAndSymptoms"
+  },
+  {
+    "id" : "VHcarepalmarErythema",
+    "type" : "StructureDefinition",
+    "url" : "https://example.org/fhir/StructureDefinition/vhcarepalmarErythema",
+    "version" : "0.2.1",
+    "name" : "VHcarepalmarErythema"
+  },
+  {
+    "id" : "VHcarepruritus",
+    "type" : "StructureDefinition",
+    "url" : "https://example.org/fhir/StructureDefinition/vhcarepruritus",
+    "version" : "0.2.1",
+    "name" : "VHcarepruritus"
+  },
+  {
+    "id" : "VHcaresplenomegaly",
+    "type" : "StructureDefinition",
+    "url" : "https://example.org/fhir/StructureDefinition/vhcaresplenomegaly",
+    "version" : "0.2.1",
+    "name" : "VHcaresplenomegaly"
+  },
+  {
     "id" : "FatherName",
     "type" : "StructureDefinition",
     "url" : "https://up.smilecdr.com:8000/StructureDefinition/2131",

@@ -28,12 +28,48 @@
     ],
     "Condition": [
       {
-        "url": "http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/2158",
-        "title": "ConditionHepB"
+        "url": "https://example.org/fhir/StructureDefinition/vhcareAscites",
+        "title": "VHcareAscites"
       },
       {
-        "url": "http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/2159",
-        "title": "ConditionHepC"
+        "url": "https://example.org/fhir/StructureDefinition/vhcarecoagulopathy",
+        "title": "VHcarecoagulopathy"
+      },
+      {
+        "url": "https://example.org/fhir/StructureDefinition/vhcarefatigue",
+        "title": "VHcarefatigue"
+      },
+      {
+        "url": "https://example.org/fhir/StructureDefinition/vhcarehepBInfection",
+        "title": "VHcarehepBInfection"
+      },
+      {
+        "url": "https://example.org/fhir/StructureDefinition/vhcarehepatomegaly",
+        "title": "VHcarehepatomegaly"
+      },
+      {
+        "url": "https://example.org/fhir/StructureDefinition/vhcarejaundice",
+        "title": "VHhcarejaundice"
+      },
+      {
+        "url": "https://example.org/fhir/StructureDefinition/vhcareotherInfection",
+        "title": "VHcareotherInfection"
+      },
+      {
+        "url": "https://example.org/fhir/StructureDefinition/vhcareotherSignAndSymptoms",
+        "title": "VHcareotherSignAndSymptoms"
+      },
+      {
+        "url": "https://example.org/fhir/StructureDefinition/vhcarepalmarErythema",
+        "title": "VHcarepalmarErythema"
+      },
+      {
+        "url": "https://example.org/fhir/StructureDefinition/vhcarepruritus",
+        "title": "VHcarepruritus"
+      },
+      {
+        "url": "https://example.org/fhir/StructureDefinition/vhcaresplenomegaly",
+        "title": "VHcaresplenomegaly"
       }
     ],
     "FamilyMemberHistory": [
@@ -74,6 +110,82 @@
       {
         "url": "https://example.org/fhir/StructureDefinition/ObservationVHcase56",
         "title": "ObservationVHcase56"
+      },
+      {
+        "url": "https://example.org/fhir/StructureDefinition/VHcareALT",
+        "title": "VHcareALT"
+      },
+      {
+        "url": "https://example.org/fhir/StructureDefinition/VHcareAST",
+        "title": "VHcareAST"
+      },
+      {
+        "url": "https://example.org/fhir/StructureDefinition/VHcareAntiHCV",
+        "title": "VHcareAntiHCV"
+      },
+      {
+        "url": "https://example.org/fhir/StructureDefinition/VHcareHBVDNA",
+        "title": "VHcareHBVDNA"
+      },
+      {
+        "url": "https://example.org/fhir/StructureDefinition/VHcareHBeAg",
+        "title": "VHcareHBeAg"
+      },
+      {
+        "url": "https://example.org/fhir/StructureDefinition/VHcareHBsAg",
+        "title": "VHcareHBsAg"
+      },
+      {
+        "url": "https://example.org/fhir/StructureDefinition/VHcareHCVRNAQuali",
+        "title": "VHcareHCVRNAQuali"
+      },
+      {
+        "url": "https://example.org/fhir/StructureDefinition/VHcareHCVRNAQuanti",
+        "title": "VHcareHCVRNAQuanti"
+      },
+      {
+        "url": "https://example.org/fhir/StructureDefinition/VHcareImaging",
+        "title": "VHcareImaging"
+      },
+      {
+        "url": "https://example.org/fhir/StructureDefinition/VHcarePTINR",
+        "title": "VHcarePTINR"
+      },
+      {
+        "url": "https://example.org/fhir/StructureDefinition/VHcarealbumin",
+        "title": "VHcarealbumin"
+      },
+      {
+        "url": "https://example.org/fhir/StructureDefinition/VHcareaminotransferaseScore",
+        "title": "VHcareaminotransferaseScore"
+      },
+      {
+        "url": "https://example.org/fhir/StructureDefinition/VHcarechildTurcottePugh",
+        "title": "VHcarechildTurcottePugh"
+      },
+      {
+        "url": "https://example.org/fhir/StructureDefinition/VHcarefibrosis",
+        "title": "VHcarefibrosis"
+      },
+      {
+        "url": "https://example.org/fhir/StructureDefinition/VHcareheight",
+        "title": "VHcareheight"
+      },
+      {
+        "url": "https://example.org/fhir/StructureDefinition/VHcareplateletCount",
+        "title": "VHcareplateletCount"
+      },
+      {
+        "url": "https://example.org/fhir/StructureDefinition/VHcaretotalBilirubin",
+        "title": "VHcaretotalBilirubin"
+      },
+      {
+        "url": "https://example.org/fhir/StructureDefinition/VHcaretransientElastography",
+        "title": "VHcaretransientElastography"
+      },
+      {
+        "url": "https://example.org/fhir/StructureDefinition/VHcareweight",
+        "title": "VHcareweight"
       }
     ],
     "Patient": [
