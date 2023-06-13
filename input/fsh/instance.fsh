@@ -561,3 +561,476 @@ Id: ObservationVHcase56
 * subject.type = "Patient" (exactly)
 * value[x] 1..
 * value[x] only string
+
+
+
+Alias: $snomed = https://www.snomed.org
+
+Profile: VHcaresplenomegaly
+Parent: Condition
+Id: VHcaresplenomegaly
+* ^url = "https://example.org/fhir/StructureDefinition/vhcaresplenomegaly"
+* ^status = #draft
+* code = $snomed#404684003 "Clinical finding" (exactly)
+* code ^fixedCodeableConcept.coding[1] = $snomed#16294009 "Splenomegaly Disorder"
+
+
+
+Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
+Alias: $loinc = http://loinc.org
+
+Profile: VHcaretotalBilirubin
+Parent: Observation
+Id: VHcaretotalBilirubin
+* ^url = "https://example.org/fhir/StructureDefinition/VHcaretotalBilirubin"
+* ^status = #draft
+* category.coding = $observation-category#laboratory "Laboratory" (exactly)
+* code = $loinc#1975-2 "Bilirubin.total [Mass/volume] in Serum or Plasma" (exactly)
+* subject.reference 1..
+* effective[x] 1..
+* effective[x] only dateTime
+* value[x] 1..
+* value[x] only Quantity
+
+
+
+Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
+Alias: $loinc = http://loinc.org
+
+Profile: VHcaretransientElastography
+Parent: Observation
+Id: VHcaretransientElastography
+* ^url = "https://example.org/fhir/StructureDefinition/VHcaretransientElastography"
+* ^status = #draft
+* category.coding = $observation-category#laboratory "Laboratory" (exactly)
+* code = $loinc#77615-3 "Liver stiffness by US.transient elastography" (exactly)
+* subject.reference 1..
+* effective[x] 1..
+* effective[x] only dateTime
+* value[x] 1..
+* value[x] only Quantity
+
+
+
+Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
+Alias: $loinc = http://loinc.org
+
+Profile: VHcareweight
+Parent: Observation
+Id: VHcareweight
+* ^url = "https://example.org/fhir/StructureDefinition/VHcareweight"
+* ^status = #draft
+* category.coding = $observation-category#vital-signs "Vital Signs" (exactly)
+* code = $loinc#29463-7 "Body weight" (exactly)
+* subject.reference 1..
+* value[x] 1..
+* value[x] only Quantity
+
+
+
+Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
+Alias: $loinc = http://loinc.org
+
+Profile: VHcarealbumin
+Parent: Observation
+Id: VHcarealbumin
+* ^url = "https://example.org/fhir/StructureDefinition/VHcarealbumin"
+* ^status = #draft
+* category.coding = $observation-category#laboratory "Laboratory" (exactly)
+* code = $loinc#1751-7 "Albumin [Mass/volume] in Serum or Plasma" (exactly)
+* subject.reference 1..
+* effective[x] 1..
+* effective[x] only dateTime
+* value[x] 1..
+* value[x] only Quantity
+
+
+
+Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
+Alias: $loinc = http://loinc.org
+
+Profile: VHcareALT
+Parent: Observation
+Id: VHcareALT
+* ^url = "https://example.org/fhir/StructureDefinition/VHcareALT"
+* ^status = #draft
+* category.coding = $observation-category#laboratory "Laboratory" (exactly)
+* code = $loinc#77144-4 "Alanine aminotransferase [Enzymatic activity/volume] in Serum, Plasma or Blood" (exactly)
+* subject.reference 1..
+* effective[x] 1..
+* effective[x] only dateTime
+* value[x] 1..
+* value[x] only Quantity
+
+
+
+Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
+Alias: $loinc = http://loinc.org
+
+Profile: VHcareaminotransferaseScore
+Parent: Observation
+Id: VHcareaminotransferaseScore
+* ^url = "https://example.org/fhir/StructureDefinition/VHcareaminotransferaseScore"
+* ^status = #draft
+* category.coding = $observation-category#laboratory "Laboratory" (exactly)
+* code = $loinc#86465-2 "AST to platelet ratio index in Serum and Blood by calculation" (exactly)
+* subject.reference 1..
+* effective[x] 1..
+* effective[x] only dateTime
+* value[x] 1..
+* value[x] only Quantity
+
+
+
+Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
+Alias: $loinc = http://loinc.org
+
+Profile: VHcareAntiHCV
+Parent: Observation
+Id: VHcareAntiHCV
+* ^url = "https://example.org/fhir/StructureDefinition/VHcareAntiHCV"
+* ^status = #draft
+* category.coding = $observation-category#laboratory "Laboratory" (exactly)
+* code = $loinc#95237-4 "Hepatitis C virus Ab [Interpretation] in Serum or Plasma" (exactly)
+* subject.reference 1..
+* effective[x] 1..
+* effective[x] only dateTime
+* value[x] 1..
+* value[x] only CodeableConcept or boolean
+
+
+
+Alias: $snomed = https://www.snomed.org
+
+Profile: VHcarecoagulopathy
+Parent: Condition
+Id: VHcarecoagulopathy
+* ^url = "https://example.org/fhir/StructureDefinition/vhcarecoagulopathy"
+* ^status = #draft
+* code = $snomed#404684003 "Clinical finding" (exactly)
+* code ^fixedCodeableConcept.coding[1] = $snomed#18165001 "Blood Coagulation Disorder"
+
+
+
+Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
+Alias: $loinc = http://loinc.org
+
+Profile: VHcarechildTurcottePugh
+Parent: Observation
+Id: VHcarechildTurcottePugh
+* ^url = "https://example.org/fhir/StructureDefinition/VHcarechildTurcottePugh"
+* ^status = #draft
+* category.coding = $observation-category#laboratory "Laboratory" (exactly)
+* code = $loinc#98152-2 "Total score [Child-Pugh]" (exactly)
+* code ^fixedCodeableConcept.coding[1] = $loinc#41806-1 "CT Abdomen"
+* code ^fixedCodeableConcept.coding[+] = $loinc#24556-3 "MRI abdomen study"
+* subject.reference 1..
+* effective[x] 1..
+* effective[x] only dateTime
+* value[x] 1..
+* value[x] only Quantity
+
+
+Alias: $icd = https://icd.who.int/
+
+Profile: VHcareAscites
+Parent: Condition
+Id: VHcareAscites
+* ^url = "https://example.org/fhir/StructureDefinition/vhcareAscites"
+* ^status = #draft
+* code = $icd#R18 "Ascites" (exactly)
+
+
+
+Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
+Alias: $loinc = http://loinc.org
+
+Profile: VHcareAST
+Parent: Observation
+Id: VHcareAST
+* ^url = "https://example.org/fhir/StructureDefinition/VHcareAST"
+* ^status = #draft
+* category.coding = $observation-category#laboratory "Laboratory" (exactly)
+* code = $loinc#1920-8 "Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma" (exactly)
+* subject.reference 1..
+* effective[x] 1..
+* effective[x] only dateTime
+* value[x] 1..
+* value[x] only Quantity
+
+
+
+Alias: $icd = https://icd.who.int/
+
+Profile: VHcarefatigue
+Parent: Condition
+Id: VHcarefatigue
+* ^url = "https://example.org/fhir/StructureDefinition/vhcarefatigue"
+* ^status = #draft
+* code = $icd#R53.82 "Chronic Fatigue, unspecified" (exactly)
+
+
+
+Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
+Alias: $loinc = http://loinc.org
+
+Profile: VHcarefibrosis
+Parent: Observation
+Id: VHcarefibrosis
+* ^url = "https://example.org/fhir/StructureDefinition/VHcarefibrosis"
+* ^status = #draft
+* category.coding = $observation-category#laboratory "Laboratory" (exactly)
+* code = $loinc#98488-0 "Liver fibrosis score in Serum Calculated by FIB4" (exactly)
+* subject.reference 1..
+* effective[x] 1..
+* effective[x] only dateTime
+* value[x] 1..
+* value[x] only Quantity
+
+
+
+Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
+Alias: $loinc = http://loinc.org
+
+Profile: VHcareHCVRNAQuali
+Parent: Observation
+Id: VHcareHCVRNAQuali
+* ^url = "https://example.org/fhir/StructureDefinition/VHcareHCVRNAQuali"
+* ^status = #draft
+* category.coding = $observation-category#laboratory "Laboratory" (exactly)
+* code = $loinc#10676-5 "Hepatitis C virus RNA [Units/volume] (viral load) in Serum or Plasma by Probe with amplification" (exactly)
+* subject.reference 1..
+* effective[x] 1..
+* effective[x] only dateTime
+* value[x] 1..
+* value[x] only CodeableConcept or boolean
+
+
+
+Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
+Alias: $loinc = http://loinc.org
+
+Profile: VHcareHBVDNA
+Parent: Observation
+Id: VHcareHBVDNA
+* ^url = "https://example.org/fhir/StructureDefinition/VHcareHBVDNA"
+* ^status = #draft
+* category.coding = $observation-category#laboratory "Laboratory" (exactly)
+* code = $loinc#47216-7 "Hepatitis B virus DNA [#/volume] (viral load) in Serum or Plasma by Probe and target amplification method detection limit = 200 copies/ml" (exactly)
+* subject.reference 1..
+* effective[x] 1..
+* effective[x] only dateTime
+* value[x] 1..
+* value[x] only Quantity
+
+
+
+Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
+Alias: $loinc = http://loinc.org
+
+Profile: VHcareHBsAg
+Parent: Observation
+Id: VHcareHBsAg
+* ^url = "https://example.org/fhir/StructureDefinition/VHcareHBsAg"
+* ^status = #draft
+* category.coding = $observation-category#laboratory "Laboratory" (exactly)
+* code = $loinc#5195-3 "Hepatitis B virus surface Ag [Presence] in Serum" (exactly)
+* subject.reference 1..
+* effective[x] 1..
+* effective[x] only dateTime
+* value[x] 1..
+* value[x] only CodeableConcept or boolean
+
+
+
+Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
+Alias: $loinc = http://loinc.org
+
+Profile: VHcareHBeAg
+Parent: Observation
+Id: VHcareHBeAg
+* ^url = "https://example.org/fhir/StructureDefinition/VHcareHBeAg"
+* ^status = #draft
+* category.coding = $observation-category#laboratory "Laboratory" (exactly)
+* code = $loinc#39007-0 "Hepatitis B virus e Ag [Presence] in Specimen" (exactly)
+* subject.reference 1..
+* effective[x] 1..
+* effective[x] only dateTime
+* value[x] 1..
+* value[x] only CodeableConcept or boolean
+
+
+
+Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
+Alias: $loinc = http://loinc.org
+
+Profile: VHcareheight
+Parent: Observation
+Id: VHcareheight
+* ^url = "https://example.org/fhir/StructureDefinition/VHcareheight"
+* ^status = #draft
+* category.coding = $observation-category#vital-signs "Vital Signs" (exactly)
+* code = $loinc#8302-2 "Body height" (exactly)
+* subject.reference 1..
+* value[x] 1..
+* value[x] only Quantity
+
+
+
+Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
+Alias: $loinc = http://loinc.org
+
+Profile: VHcareImaging
+Parent: Observation
+Id: VHcareImaging
+* ^url = "https://example.org/fhir/StructureDefinition/VHcareImaging"
+* ^status = #draft
+* category.coding = $observation-category#laboratory "Laboratory" (exactly)
+* code = $loinc#28614-6 "Liver stiffness by US.transient elastography" (exactly)
+* code ^fixedCodeableConcept.coding[1] = $loinc#41806-1 "CT Abdomen"
+* code ^fixedCodeableConcept.coding[+] = $loinc#24556-3 "MRI abdomen study"
+* subject.reference 1..
+* effective[x] 1..
+* effective[x] only dateTime
+* value[x] 1..
+* value[x] only CodeableConcept
+
+
+
+Alias: $snomed = https://www.snomed.org
+
+Profile: VHcarehepatomegaly
+Parent: Condition
+Id: VHcarehepatomegaly
+* ^url = "https://example.org/fhir/StructureDefinition/vhcarehepatomegaly"
+* ^status = #draft
+* code = $snomed#404684003 "Clinical finding" (exactly)
+* code ^fixedCodeableConcept.coding[1] = $snomed#80515008 "Large Liver Disorder"
+
+
+
+Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
+Alias: $loinc = http://loinc.org
+
+Profile: VHcareHCVRNAQuanti
+Parent: Observation
+Id: VHcareHCVRNAQuanti
+* ^url = "https://example.org/fhir/StructureDefinition/VHcareHCVRNAQuanti"
+* ^status = #draft
+* category.coding = $observation-category#laboratory "Laboratory" (exactly)
+* code = $loinc#10676-5 "Hepatitis C virus RNA [Units/volume] (viral load) in Serum or Plasma by Probe with amplification" (exactly)
+* subject.reference 1..
+* effective[x] 1..
+* effective[x] only dateTime
+* value[x] 1..
+* value[x] only Quantity
+
+
+
+Alias: $sct = http://snomed.info/sct
+
+Profile: VHcarehepBInfection
+Parent: Condition
+Id: VHcarehepBInfection
+* ^url = "https://example.org/fhir/StructureDefinition/vhcarehepBInfection"
+* ^status = #draft
+* code = $sct#186626002 "Acute hepatitis B with delta-agent (coinfection) without hepatic coma" (exactly)
+
+
+
+
+Profile: VHcareotherSignAndSymptoms
+Parent: Condition
+Id: VHcareotherSignAndSymptoms
+* ^url = "https://example.org/fhir/StructureDefinition/vhcareotherSignAndSymptoms"
+* ^status = #draft
+* note 1..1
+* note ^short = "This is for vh-care:part3:otherSignAndSymptoms"
+* note ^definition = "Please specify Sign and Symptoms not included on the deafault list"
+
+
+
+
+Alias: $snomed = https://www.snomed.org
+
+Profile: VHhcarejaundice
+Parent: Condition
+Id: VHhcarejaundice
+* ^url = "https://example.org/fhir/StructureDefinition/vhcarejaundice"
+* ^status = #draft
+* code = $snomed#404684003 "Clinical finding" (exactly)
+* code ^fixedCodeableConcept.coding[1] = $snomed#18165001 "Jaundice"
+
+
+
+Profile: VHcareotherInfection
+Parent: Condition
+Id: VHcareotherInfection
+* ^url = "https://example.org/fhir/StructureDefinition/vhcareotherInfection"
+* ^status = #draft
+* note 1..1
+* note ^short = "This is for vh-care:part3:otherInfection"
+* note ^definition = "Please specify other infections not included on the deafault list"
+
+
+
+Alias: $snomed = https://www.snomed.org
+
+Profile: VHcarepalmarErythema
+Parent: Condition
+Id: VHcarepalmarErythema
+* ^url = "https://example.org/fhir/StructureDefinition/vhcarepalmarErythema"
+* ^status = #draft
+* code = $snomed#404684003 "Clinical finding" (exactly)
+* code ^fixedCodeableConcept.coding[1] = $snomed#56940005 "Palmar erythema"
+
+
+
+Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
+Alias: $loinc = http://loinc.org
+
+Profile: VHcareplateletCount
+Parent: Observation
+Id: VHcareplateletCount
+* ^url = "https://example.org/fhir/StructureDefinition/VHcareplateletCount"
+* ^status = #draft
+* category.coding = $observation-category#laboratory "Laboratory" (exactly)
+* code = $loinc#26515-7 "Platelets [#/volume] in Blood" (exactly)
+* subject.reference 1..
+* effective[x] 1..
+* effective[x] only dateTime
+* value[x] 1..
+* value[x] only Quantity
+
+
+
+
+Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
+Alias: $loinc = http://loinc.org
+
+Profile: VHcarePTINR
+Parent: Observation
+Id: VHcarePTINR
+* ^url = "https://example.org/fhir/StructureDefinition/VHcarePTINR"
+* ^status = #draft
+* category.coding = $observation-category#laboratory "Laboratory" (exactly)
+* code = $loinc#5902-2 "Prothrombin time (PT)" (exactly)
+* subject.reference 1..
+* effective[x] 1..
+* effective[x] only dateTime
+* value[x] 1..
+* value[x] only Quantity
+
+
+
+
+Alias: $icd = https://icd.who.int/
+
+Profile: VHcarepruritus
+Parent: Condition
+Id: VHcarepruritus
+* ^url = "https://example.org/fhir/StructureDefinition/vhcarepruritus"
+* ^status = #draft
+* code = $icd#L29 "Pruritus" (exactly)
+
+
