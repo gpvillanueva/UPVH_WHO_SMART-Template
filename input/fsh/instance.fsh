@@ -1034,3 +1034,412 @@ Id: VHcarepruritus
 * code = $icd#L29 "Pruritus" (exactly)
 
 
+Alias: $sct = http://snomed.info/sct
+
+Profile: HepatocellularCarcinomaFollowingTreatment
+Parent: Observation
+Id: HepatocellularCarcinomaFollowingTreatment
+* ^url = "https://example.org/fhir/StructureDefinition/HepatocellularCarcinomaFollowingTreatment"
+* ^status = #draft
+* code = $sct#25370001 "Hepatocellular carcinoma" (exactly)
+* value[x] 1..
+* value[x] only boolean
+
+
+Alias: $sct = http://snomed.info/sct
+
+Profile: OtherRegimenDispense
+Parent: MedicationDispense
+Id: OtherRegimenDispense
+* ^url = "https://example.org/fhir/StructureDefinition/OtherRegimenDispense"
+* ^status = #draft
+* medication[x] only CodeableConcept
+* medication[x] = $sct#133877004 "Other Regimen" (exactly)
+* medication[x] N
+* medication[x] ^extension[1].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version"
+* medication[x] ^extension[=].valueCode = #4.0.0
+
+
+
+Extension: VHCareEligibilityHepC
+Id: VHCareEligibilityHepC
+* ^url = "https://example.org/fhir/StructureDefinition/VHCareEligibilityHepC"
+* ^status = #draft
+* ^context.type = #element
+* ^context.expression = "CarePlan"
+* . ^short = "VHCarePlanEligibility"
+* . ^definition = "To be determined by clinician/practitioner."
+* value[x] only boolean
+* value[x] ^short = "TreatmentHepC"
+* value[x] ^definition = "Is client is eligible for treatment for Hepatitis C?"
+
+
+Alias: $sct = http://snomed.info/sct
+
+Profile: HepBInfection
+Parent: Observation
+Id: HepBInfection
+* ^url = "https://example.org/fhir/StructureDefinition/HepBInfection"
+* ^status = #draft
+* code = $sct#186626002 "Acute hepatitis B with delta-agent (coinfection) without hepatic coma" (exactly)
+* value[x] 1..
+* value[x] only boolean
+
+
+Alias: $sct = http://snomed.info/sct
+
+Profile: HepCInfection
+Parent: Observation
+Id: HepCInfection
+* ^url = "https://example.org/fhir/StructureDefinition/HepCInfection"
+* ^status = #draft
+* code = $sct#838377003 "Chronic hepatitis C co-occurrent with human immunodeficiency virus infection" (exactly)
+* value[x] 1..
+* value[x] only boolean
+
+
+Alias: $sct = http://snomed.info/sct
+
+Profile: HIVcoInfection
+Parent: Observation
+Id: HIVcoInfection
+* ^url = "https://example.org/fhir/StructureDefinition/HIVcoInfection"
+* ^status = #draft
+* code = $sct#19030005 "Human immunodeficiency virus" (exactly)
+* value[x] 1..
+* value[x] only boolean
+
+Alias: $sct = http://snomed.info/sct
+
+Profile: OthercoInfection
+Parent: Observation
+Id: OthercoInfection
+* ^url = "https://example.org/fhir/StructureDefinition/OthercoInfection"
+* ^status = #draft
+* code = $sct#19030005 "Human immunodeficiency virus" (exactly)
+* value[x] 1..
+* value[x] only string or boolean
+* note ..1
+
+Extension: PillsExpectedRefillDate
+Id: PillsExpectedRefillDate
+Description: "Expected date of refill of Pills"
+* ^url = "https://example.org/fhir/StructureDefinition/PillsExpectedRefillDate"
+* ^status = #draft
+* ^context.type = #element
+* ^context.expression = "MedicationStatement"
+* value[x] 1..
+* value[x] only date
+
+
+
+Alias: $sct = http://snomed.info/sct
+
+Profile: LiverCirrhosisFollowingTreatment
+Parent: Observation
+Id: LiverCirrhosisFollowingTreatment
+* ^url = "https://example.org/fhir/StructureDefinition/LiverCirrhosisFollowingTreatment"
+* ^status = #draft
+* code = $sct#19943007 "Cirrhosis of liver" (exactly)
+* value[x] 1..
+* value[x] only boolean
+
+
+Extension: Pillsmissed
+Id: Pillsmissed
+Description: "pills missed (past 30 days)"
+* ^url = "https://example.org/fhir/StructureDefinition/pillsmissed"
+* ^status = #draft
+* ^context.type = #element
+* ^context.expression = "MedicationStatement"
+* url = "https://example.org/fhir/StructureDefinition/pillsmissed" (exactly)
+* value[x] 1..
+* value[x] only integer
+
+
+Extension: PillsOnHand
+Id: PillsOnHand
+Description: "pills on hand"
+* ^url = "https://example.org/fhir/StructureDefinition/PillsOnHand"
+* ^status = #draft
+* ^context.type = #element
+* ^context.expression = "MedicationStatement"
+* value[x] 1..
+* value[x] only integer
+
+
+Alias: $VHCareEligibilityHepB = https://example.org/fhir/StructureDefinition/VHCareEligibilityHepB
+Alias: $VHCareEligibilityHepC = https://example.org/fhir/StructureDefinition/VHCareEligibilityHepC
+
+Profile: TreatmentCarePlanVH
+Parent: CarePlan
+Id: TreatmentCarePlanVH
+* ^url = "https://example.org/fhir/StructureDefinition/TreatmentCarePlanVH"
+* ^status = #draft
+* extension ^slicing.discriminator.type = #value
+* extension ^slicing.discriminator.path = "url"
+* extension ^slicing.rules = #open
+* extension contains
+    $VHCareEligibilityHepB named HepBTreatmentEligibility 1..1 and
+    $VHCareEligibilityHepC named HepCTreatmentEligibility 1..1
+* extension[HepBTreatmentEligibility] ^isModifier = false
+* extension[HepBTreatmentEligibility].value[x] 1..
+* extension[HepCTreatmentEligibility] ^isModifier = false
+* extension[HepCTreatmentEligibility].value[x] 1..
+* encounter 1..
+
+
+Extension: VHCareEligibilityHepB
+Id: VHCareEligibilityHepB
+* ^url = "https://example.org/fhir/StructureDefinition/VHCareEligibilityHepB"
+* ^status = #draft
+* ^context.type = #element
+* ^context.expression = "CarePlan"
+* . ^short = "VHCarePlanEligibility"
+* . ^definition = "To be determined by clinician/practitioner."
+* value[x] only boolean
+* value[x] ^short = "TreatmentHepC"
+* value[x] ^definition = "Is client is eligible for treatment for Hepatitis C?"
+
+
+
+Alias: $sct = http://snomed.info/sct
+
+Profile: RibavirinDispense
+Parent: MedicationDispense
+Id: RibavirinDispense
+* ^url = "https://example.org/fhir/StructureDefinition/RibavirinDispense"
+* ^status = #draft
+* medication[x] only CodeableConcept
+* medication[x] = $sct#387188005 "Ribavirin" (exactly)
+
+Alias: $sct = http://snomed.info/sct
+Alias: $pillsmissed = https://example.org/fhir/StructureDefinition/pillsmissed
+Alias: $PillsOnHand = https://example.org/fhir/StructureDefinition/PillsOnHand
+Alias: $PillsExpectedRefillDate = https://example.org/fhir/StructureDefinition/PillsExpectedRefillDate
+
+Profile: Ribavirin
+Parent: MedicationStatement
+Id: Ribavirin
+* ^url = "https://example.org/fhir/StructureDefinition/Ribavirin"
+* ^status = #draft
+* extension ^slicing.discriminator.type = #value
+* extension ^slicing.discriminator.path = "url"
+* extension ^slicing.rules = #open
+* extension ^min = 0
+* extension contains
+    $pillsmissed named Pillsmissed 0..1 and
+    $PillsOnHand named PillsOnHand 0..1 and
+    $PillsExpectedRefillDate named ExpectedRefillDate 0..1
+* extension[Pillsmissed] ^short = "pills missed (past 30 days)"
+* extension[Pillsmissed] ^definition = "pills missed (past 30 days)"
+* extension[Pillsmissed] ^isModifier = false
+* extension[PillsOnHand] ^short = "# of pills on hand"
+* extension[PillsOnHand] ^definition = "# of pills on hand"
+* extension[PillsOnHand] ^isModifier = false
+* extension[ExpectedRefillDate] ^short = "Expected date of refill"
+* extension[ExpectedRefillDate] ^definition = "Expected date of refill"
+* extension[ExpectedRefillDate] ^isModifier = false
+* medication[x] only CodeableConcept
+* medication[x] = $sct#387188005 "Ribavirin" (exactly)
+
+
+Alias: $sct = http://snomed.info/sct
+Alias: $pillsmissed = https://example.org/fhir/StructureDefinition/pillsmissed
+Alias: $PillsOnHand = https://example.org/fhir/StructureDefinition/PillsOnHand
+Alias: $PillsExpectedRefillDate = https://example.org/fhir/StructureDefinition/PillsExpectedRefillDate
+
+Profile: Daclatasvir
+Parent: MedicationStatement
+Id: Daclatasvir
+* ^url = "https://example.org/fhir/StructureDefinition/Daclatasvir"
+* ^status = #draft
+* extension ^slicing.discriminator.type = #value
+* extension ^slicing.discriminator.path = "url"
+* extension ^slicing.rules = #open
+* extension ^min = 0
+* extension contains
+    $pillsmissed named Pillsmissed 0..1 and
+    $PillsOnHand named PillsOnHand 0..1 and
+    $PillsExpectedRefillDate named ExpectedRefillDate 0..1
+* extension[Pillsmissed] ^short = "pills missed (past 30 days)"
+* extension[Pillsmissed] ^definition = "pills missed (past 30 days)"
+* extension[Pillsmissed] ^isModifier = false
+* extension[PillsOnHand] ^short = "# of pills on hand"
+* extension[PillsOnHand] ^definition = "# of pills on hand"
+* extension[PillsOnHand] ^isModifier = false
+* extension[ExpectedRefillDate] ^short = "Expected date of refill"
+* extension[ExpectedRefillDate] ^definition = "Expected date of refill"
+* extension[ExpectedRefillDate] ^isModifier = false
+* medication[x] only CodeableConcept
+* medication[x] = $sct#712519008 "Daclatasvir" (exactly)
+
+Alias: $sct = http://snomed.info/sct
+
+Profile: DaclatasvirDispense
+Parent: MedicationDispense
+Id: DaclatasvirDispense
+* ^url = "https://example.org/fhir/StructureDefinition/DaclatasvirDispense"
+* ^status = #draft
+* medication[x] only CodeableConcept
+* medication[x] = $sct#712519008 "Daclatasvir" (exactly)
+
+
+Alias: $sct = http://snomed.info/sct
+Alias: $pillsmissed = https://example.org/fhir/StructureDefinition/pillsmissed
+Alias: $PillsOnHand = https://example.org/fhir/StructureDefinition/PillsOnHand
+Alias: $PillsExpectedRefillDate = https://example.org/fhir/StructureDefinition/PillsExpectedRefillDate
+
+Profile: Sofosbuvir
+Parent: MedicationStatement
+Id: Sofosbuvir
+* ^url = "https://example.org/fhir/StructureDefinition/Sofosbuvir"
+* ^status = #draft
+* extension ^slicing.discriminator.type = #value
+* extension ^slicing.discriminator.path = "url"
+* extension ^slicing.rules = #open
+* extension ^min = 0
+* extension contains
+    $pillsmissed named Pillsmissed 0..1 and
+    $PillsOnHand named PillsOnHand 0..1 and
+    $PillsExpectedRefillDate named ExpectedRefillDate 0..1
+* extension[Pillsmissed] ^short = "pills missed (past 30 days)"
+* extension[Pillsmissed] ^definition = "pills missed (past 30 days)"
+* extension[Pillsmissed] ^isModifier = false
+* extension[PillsOnHand] ^short = "# of pills on hand"
+* extension[PillsOnHand] ^definition = "# of pills on hand"
+* extension[PillsOnHand] ^isModifier = false
+* extension[ExpectedRefillDate] ^short = "Expected date of refill"
+* extension[ExpectedRefillDate] ^definition = "Expected date of refill"
+* extension[ExpectedRefillDate] ^isModifier = false
+* medication[x] only CodeableConcept
+* medication[x] = $sct#710806008 "Sofosbuvir" (exactly)
+
+
+Alias: $sct = http://snomed.info/sct
+
+Profile: SofosbuvirDispense
+Parent: MedicationDispense
+Id: SofosbuvirDispense
+* ^url = "https://example.org/fhir/StructureDefinition/SofosbuvirDispense"
+* ^status = #draft
+* medication[x] only CodeableConcept
+* medication[x] = $sct#710806008 "Sofosbuvir" (exactly)
+
+
+Alias: $sct = http://snomed.info/sct
+Alias: $pillsmissed = https://example.org/fhir/StructureDefinition/pillsmissed
+Alias: $PillsOnHand = https://example.org/fhir/StructureDefinition/PillsOnHand
+Alias: $PillsExpectedRefillDate = https://example.org/fhir/StructureDefinition/PillsExpectedRefillDate
+
+Profile: SofosbuvirAndVelpatasvir
+Parent: MedicationStatement
+Id: SofosbuvirAndVelpatasvir
+* ^url = "https://example.org/fhir/StructureDefinition/SofosbuvirAndVelpatasvir"
+* ^status = #draft
+* extension ^slicing.discriminator.type = #value
+* extension ^slicing.discriminator.path = "url"
+* extension ^slicing.rules = #open
+* extension ^min = 0
+* extension contains
+    $pillsmissed named Pillsmissed 0..1 and
+    $PillsOnHand named PillsOnHand 0..1 and
+    $PillsExpectedRefillDate named ExpectedRefillDate 0..1
+* extension[Pillsmissed] ^short = "pills missed (past 30 days)"
+* extension[Pillsmissed] ^definition = "pills missed (past 30 days)"
+* extension[Pillsmissed] ^isModifier = false
+* extension[PillsOnHand] ^short = "# of pills on hand"
+* extension[PillsOnHand] ^definition = "# of pills on hand"
+* extension[PillsOnHand] ^isModifier = false
+* extension[ExpectedRefillDate] ^short = "Expected date of refill"
+* extension[ExpectedRefillDate] ^definition = "Expected date of refill"
+* extension[ExpectedRefillDate] ^isModifier = false
+* medication[x] only CodeableConcept
+* medication[x] = $sct#763519003 "Sofosbuvir- and velpatasvir-containing product" (exactly)
+
+
+Alias: $sct = http://snomed.info/sct
+
+Profile: SofosbuvirAndVelpatasvirDispense
+Parent: MedicationDispense
+Id: SofosbuvirAndVelpatasvirDispense
+* ^url = "https://example.org/fhir/StructureDefinition/SofosbuvirAndVelpatasvirDispense"
+* ^status = #draft
+* medication[x] only CodeableConcept
+* medication[x] = $sct#763519003 "Sofosbuvir- and velpatasvir-containing product" (exactly)
+
+
+Alias: $sct = http://snomed.info/sct
+Alias: $pillsmissed = https://example.org/fhir/StructureDefinition/pillsmissed
+Alias: $PillsOnHand = https://example.org/fhir/StructureDefinition/PillsOnHand
+Alias: $PillsExpectedRefillDate = https://example.org/fhir/StructureDefinition/PillsExpectedRefillDate
+
+Profile: Tenofovir
+Parent: MedicationStatement
+Id: Tenofovir
+* ^url = "https://example.org/fhir/StructureDefinition/Tenofovir"
+* ^status = #draft
+* extension ^slicing.discriminator.type = #value
+* extension ^slicing.discriminator.path = "url"
+* extension ^slicing.rules = #open
+* extension ^min = 0
+* extension contains
+    $pillsmissed named Pillsmissed 0..1 and
+    $PillsOnHand named PillsOnHand 0..1 and
+    $PillsExpectedRefillDate named ExpectedRefillDate 0..1
+* extension[Pillsmissed] ^short = "pills missed (past 30 days)"
+* extension[Pillsmissed] ^definition = "pills missed (past 30 days)"
+* extension[Pillsmissed] ^isModifier = false
+* extension[PillsOnHand] ^short = "# of pills on hand"
+* extension[PillsOnHand] ^definition = "# of pills on hand"
+* extension[PillsOnHand] ^isModifier = false
+* extension[ExpectedRefillDate] ^short = "Expected date of refill"
+* extension[ExpectedRefillDate] ^definition = "Expected date of refill"
+* extension[ExpectedRefillDate] ^isModifier = false
+* medication[x] only CodeableConcept
+* medication[x] = $sct#422091007 "Tenofovir" (exactly)
+
+
+Alias: $sct = http://snomed.info/sct
+
+Profile: TenofovirDispense
+Parent: MedicationDispense
+Id: TenofovirDispense
+* ^url = "https://example.org/fhir/StructureDefinition/Tenofovir"
+* ^status = #draft
+* medication[x] only CodeableConcept
+* medication[x] = $sct#422091007 "Tenofovir" (exactly)
+
+
+Alias: $sct = http://snomed.info/sct
+Alias: $pillsmissed = https://example.org/fhir/StructureDefinition/pillsmissed
+Alias: $PillsOnHand = https://example.org/fhir/StructureDefinition/PillsOnHand
+Alias: $PillsExpectedRefillDate = https://example.org/fhir/StructureDefinition/PillsExpectedRefillDate
+
+Profile: OtherRegimen
+Parent: MedicationStatement
+Id: OtherRegimen
+* ^url = "https://example.org/fhir/StructureDefinition/OtherRegimen"
+* ^status = #draft
+* extension ^slicing.discriminator.type = #value
+* extension ^slicing.discriminator.path = "url"
+* extension ^slicing.rules = #open
+* extension ^min = 0
+* extension contains
+    $pillsmissed named Pillsmissed 0..1 and
+    $PillsOnHand named PillsOnHand 0..1 and
+    $PillsExpectedRefillDate named ExpectedRefillDate 0..1
+* extension[Pillsmissed] ^short = "pills missed (past 30 days)"
+* extension[Pillsmissed] ^definition = "pills missed (past 30 days)"
+* extension[Pillsmissed] ^isModifier = false
+* extension[PillsOnHand] ^short = "# of pills on hand"
+* extension[PillsOnHand] ^definition = "# of pills on hand"
+* extension[PillsOnHand] ^isModifier = false
+* extension[ExpectedRefillDate] ^short = "Expected date of refill"
+* extension[ExpectedRefillDate] ^definition = "Expected date of refill"
+* extension[ExpectedRefillDate] ^isModifier = false
+* medication[x] only CodeableConcept
+* medication[x] = $sct#133877004 "Other" (exactly)
+* medication[x] N
+* medication[x] ^extension[1].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version"
+* medication[x] ^extension[=].valueCode = #4.0.0
