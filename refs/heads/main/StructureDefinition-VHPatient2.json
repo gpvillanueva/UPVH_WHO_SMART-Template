@@ -9,7 +9,7 @@
   "version" : "0.2.1",
   "name" : "VHPatient2",
   "status" : "draft",
-  "date" : "2023-06-13T12:43:51+00:00",
+  "date" : "2023-06-26T10:28:50+00:00",
   "publisher" : "UP Manila Viral Hepatitis Project",
   "contact" : [{
     "name" : "UP Manila Viral Hepatitis Project",
@@ -396,8 +396,8 @@
       "id" : "Patient.extension:MotherName",
       "path" : "Patient.extension",
       "sliceName" : "MotherName",
-      "short" : "Optional Extensions Element",
-      "definition" : "Optional Extension Element - found in all resources.",
+      "short" : "Extension",
+      "definition" : "An Extension",
       "min" : 0,
       "max" : "1",
       "base" : {
@@ -426,15 +426,7 @@
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
         "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
       }],
-      "isModifier" : false,
-      "mapping" : [{
-        "identity" : "rim",
-        "map" : "n/a"
-      },
-      {
-        "identity" : "rim",
-        "map" : "N/A"
-      }]
+      "isModifier" : false
     },
     {
       "id" : "Patient.extension:myExtension",
