@@ -38,7 +38,7 @@ Permanent=old">use</a><a name="Patient.address.use"> </a></td><td style="vertica
   <version value="0.2.1"/>
   <name value="VHPatient2"/>
   <status value="draft"/>
-  <date value="2023-06-13T12:43:51+00:00"/>
+  <date value="2023-06-26T10:28:50+00:00"/>
   <publisher value="UP Manila Viral Hepatitis Project"/>
   <contact>
     <name value="UP Manila Viral Hepatitis Project"/>
@@ -409,8 +409,8 @@ Permanent=old">use</a><a name="Patient.address.use"> </a></td><td style="vertica
     <element id="Patient.extension:MotherName">
       <path value="Patient.extension"/>
       <sliceName value="MotherName"/>
-      <short value="Optional Extensions Element"/>
-      <definition value="Optional Extension Element - found in all resources."/>
+      <short value="Extension"/>
+      <definition value="An Extension"/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -440,14 +440,6 @@ Permanent=old">use</a><a name="Patient.address.use"> </a></td><td style="vertica
         <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </constraint>
       <isModifier value="false"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="N/A"/>
-      </mapping>
     </element>
     <element id="Patient.extension:myExtension">
       <path value="Patient.extension"/>

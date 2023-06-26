@@ -16,7 +16,7 @@
   fhir:version [ fhir:v "0.2.1"] ; # 
   fhir:name [ fhir:v "VHcarefatigue"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-06-13T12:43:51+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-06-26T10:28:50+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "UP Manila Viral Hepatitis Project"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "UP Manila Viral Hepatitis Project" ] ;

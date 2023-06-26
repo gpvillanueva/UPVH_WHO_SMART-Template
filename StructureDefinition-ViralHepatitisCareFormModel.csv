@@ -99,7 +99,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ViralHepatitisCareFormModel.ALTSGPTDateDone","ViralHepatitisCareFormModel.ALTSGPTDateDone","","","",1,1,"","","","dateTime {[]} {[]}
 ","Date when the ALT (SGPT) (IU/L) Test was done","Date when the ALT (SGPT) (IU/L) Test was done","","","","","","","","","",,,,,"",,,,"ViralHepatitisCareFormModel.ALTSGPTDateDone",1,1,"",""
 "ViralHepatitisCareFormModel.ALTSGPTResult","ViralHepatitisCareFormModel.ALTSGPTResult","","","",1,1,"","","","CodeableConcept {[]} {[]}
-","ALT (SGPT) Test Result (IU/L) ","ALT (SGPT) Test Result (IU/L) ","","","","","","","","","",,,,,"",,,,"ViralHepatitisCareFormModel.ALTSGPTResult",1,1,"",""
+","ALT (SGPT) Test Result (IU/L) ","ALT (SGPT) Test Result (IU/L)","","","","","","","","","",,,,,"",,,,"ViralHepatitisCareFormModel.ALTSGPTResult",1,1,"",""
 "ViralHepatitisCareFormModel.TotalBilirubinDateDone","ViralHepatitisCareFormModel.TotalBilirubinDateDone","","","",1,1,"","","","dateTime {[]} {[]}
 ","Date when the Total Bilirubin (mg/dL) Test was done","Date when the Total Bilirubin (mg/dL) Test was done","","","","","","","","","",,,,,"",,,,"ViralHepatitisCareFormModel.TotalBilirubinDateDone",1,1,"",""
 "ViralHepatitisCareFormModel.TotalBilirubinResult","ViralHepatitisCareFormModel.TotalBilirubinResult","","","",1,1,"","","","CodeableConcept {[]} {[]}

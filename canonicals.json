@@ -42,6 +42,20 @@
     "name" : "ViralHepatitisCaseReportFormModel"
   },
   {
+    "id" : "Daclatasvir",
+    "type" : "StructureDefinition",
+    "url" : "https://example.org/fhir/StructureDefinition/Daclatasvir",
+    "version" : "0.2.1",
+    "name" : "Daclatasvir"
+  },
+  {
+    "id" : "DaclatasvirDispense",
+    "type" : "StructureDefinition",
+    "url" : "https://example.org/fhir/StructureDefinition/DaclatasvirDispense",
+    "version" : "0.2.1",
+    "name" : "DaclatasvirDispense"
+  },
+  {
     "id" : "FamilyMemberHistoryVHcase34",
     "type" : "StructureDefinition",
     "url" : "https://example.org/fhir/StructureDefinition/FamilyMemberHistoryVHcase34",
@@ -54,6 +68,41 @@
     "url" : "https://example.org/fhir/StructureDefinition/FamilyMemberHistoryVHcase35",
     "version" : "0.2.1",
     "name" : "FamilyMemberHistoryVHcase35"
+  },
+  {
+    "id" : "HIVcoInfection",
+    "type" : "StructureDefinition",
+    "url" : "https://example.org/fhir/StructureDefinition/HIVcoInfection",
+    "version" : "0.2.1",
+    "name" : "HIVcoInfection"
+  },
+  {
+    "id" : "HepBInfection",
+    "type" : "StructureDefinition",
+    "url" : "https://example.org/fhir/StructureDefinition/HepBInfection",
+    "version" : "0.2.1",
+    "name" : "HepBInfection"
+  },
+  {
+    "id" : "HepCInfection",
+    "type" : "StructureDefinition",
+    "url" : "https://example.org/fhir/StructureDefinition/HepCInfection",
+    "version" : "0.2.1",
+    "name" : "HepCInfection"
+  },
+  {
+    "id" : "HepatocellularCarcinomaFollowingTreatment",
+    "type" : "StructureDefinition",
+    "url" : "https://example.org/fhir/StructureDefinition/HepatocellularCarcinomaFollowingTreatment",
+    "version" : "0.2.1",
+    "name" : "HepatocellularCarcinomaFollowingTreatment"
+  },
+  {
+    "id" : "LiverCirrhosisFollowingTreatment",
+    "type" : "StructureDefinition",
+    "url" : "https://example.org/fhir/StructureDefinition/LiverCirrhosisFollowingTreatment",
+    "version" : "0.2.1",
+    "name" : "LiverCirrhosisFollowingTreatment"
   },
   {
     "id" : "ObservationVHcase13",
@@ -103,6 +152,118 @@
     "url" : "https://example.org/fhir/StructureDefinition/ObservationVHcase56",
     "version" : "0.2.1",
     "name" : "ObservationVHcase56"
+  },
+  {
+    "id" : "OtherRegimen",
+    "type" : "StructureDefinition",
+    "url" : "https://example.org/fhir/StructureDefinition/OtherRegimen",
+    "version" : "0.2.1",
+    "name" : "OtherRegimen"
+  },
+  {
+    "id" : "OtherRegimenDispense",
+    "type" : "StructureDefinition",
+    "url" : "https://example.org/fhir/StructureDefinition/OtherRegimenDispense",
+    "version" : "0.2.1",
+    "name" : "OtherRegimenDispense"
+  },
+  {
+    "id" : "OthercoInfection",
+    "type" : "StructureDefinition",
+    "url" : "https://example.org/fhir/StructureDefinition/OthercoInfection",
+    "version" : "0.2.1",
+    "name" : "OthercoInfection"
+  },
+  {
+    "id" : "PillsExpectedRefillDate",
+    "type" : "StructureDefinition",
+    "url" : "https://example.org/fhir/StructureDefinition/PillsExpectedRefillDate",
+    "version" : "0.2.1",
+    "name" : "PillsExpectedRefillDate"
+  },
+  {
+    "id" : "PillsOnHand",
+    "type" : "StructureDefinition",
+    "url" : "https://example.org/fhir/StructureDefinition/PillsOnHand",
+    "version" : "0.2.1",
+    "name" : "PillsOnHand"
+  },
+  {
+    "id" : "Ribavirin",
+    "type" : "StructureDefinition",
+    "url" : "https://example.org/fhir/StructureDefinition/Ribavirin",
+    "version" : "0.2.1",
+    "name" : "Ribavirin"
+  },
+  {
+    "id" : "RibavirinDispense",
+    "type" : "StructureDefinition",
+    "url" : "https://example.org/fhir/StructureDefinition/RibavirinDispense",
+    "version" : "0.2.1",
+    "name" : "RibavirinDispense"
+  },
+  {
+    "id" : "Sofosbuvir",
+    "type" : "StructureDefinition",
+    "url" : "https://example.org/fhir/StructureDefinition/Sofosbuvir",
+    "version" : "0.2.1",
+    "name" : "Sofosbuvir"
+  },
+  {
+    "id" : "SofosbuvirAndVelpatasvir",
+    "type" : "StructureDefinition",
+    "url" : "https://example.org/fhir/StructureDefinition/SofosbuvirAndVelpatasvir",
+    "version" : "0.2.1",
+    "name" : "SofosbuvirAndVelpatasvir"
+  },
+  {
+    "id" : "SofosbuvirAndVelpatasvirDispense",
+    "type" : "StructureDefinition",
+    "url" : "https://example.org/fhir/StructureDefinition/SofosbuvirAndVelpatasvirDispense",
+    "version" : "0.2.1",
+    "name" : "SofosbuvirAndVelpatasvirDispense"
+  },
+  {
+    "id" : "SofosbuvirDispense",
+    "type" : "StructureDefinition",
+    "url" : "https://example.org/fhir/StructureDefinition/SofosbuvirDispense",
+    "version" : "0.2.1",
+    "name" : "SofosbuvirDispense"
+  },
+  {
+    "id" : "TenofovirDispense",
+    "type" : "StructureDefinition",
+    "url" : "https://example.org/fhir/StructureDefinition/Tenofovir",
+    "version" : "0.2.1",
+    "name" : "TenofovirDispense"
+  },
+  {
+    "id" : "Tenofovir",
+    "type" : "StructureDefinition",
+    "url" : "https://example.org/fhir/StructureDefinition/Tenofovir",
+    "version" : "0.2.1",
+    "name" : "Tenofovir"
+  },
+  {
+    "id" : "TreatmentCarePlanVH",
+    "type" : "StructureDefinition",
+    "url" : "https://example.org/fhir/StructureDefinition/TreatmentCarePlanVH",
+    "version" : "0.2.1",
+    "name" : "TreatmentCarePlanVH"
+  },
+  {
+    "id" : "VHCareEligibilityHepB",
+    "type" : "StructureDefinition",
+    "url" : "https://example.org/fhir/StructureDefinition/VHCareEligibilityHepB",
+    "version" : "0.2.1",
+    "name" : "VHCareEligibilityHepB"
+  },
+  {
+    "id" : "VHCareEligibilityHepC",
+    "type" : "StructureDefinition",
+    "url" : "https://example.org/fhir/StructureDefinition/VHCareEligibilityHepC",
+    "version" : "0.2.1",
+    "name" : "VHCareEligibilityHepC"
   },
   {
     "id" : "VHcareALT",
@@ -236,6 +397,13 @@
     "url" : "https://example.org/fhir/StructureDefinition/VHcareweight",
     "version" : "0.2.1",
     "name" : "VHcareweight"
+  },
+  {
+    "id" : "Pillsmissed",
+    "type" : "StructureDefinition",
+    "url" : "https://example.org/fhir/StructureDefinition/pillsmissed",
+    "version" : "0.2.1",
+    "name" : "Pillsmissed"
   },
   {
     "id" : "VHcareAscites",
