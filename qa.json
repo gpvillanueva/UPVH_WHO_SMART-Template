@@ -3,10 +3,11 @@
   "name" : "smartigupvhproject",
   "package-id" : "fhir.who.smart-ig-upvhproject",
   "ig-ver" : "0.2.1",
-  "date" : "Mon, 26 Jun, 2023 10:28:50 +0000",
-  "errs" : 167,
-  "warnings" : 432,
-  "hints" : 51,
+  "date" : "Mon, 25 Sep, 2023 00:15:58 +0000",
+  "errs" : 284,
+  "warnings" : 153,
+  "hints" : 17,
   "version" : "4.0.1",
-  "tool" : "5.0.0 (3)"
+  "tool" : "5.0.0 (3)",
+  "maxMemory" : 1589118976
 }

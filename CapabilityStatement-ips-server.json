@@ -1,0 +1,334 @@
+{
+  "resourceType" : "CapabilityStatement",
+  "id" : "ips-server",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  },
+  "url" : "http://hl7.org/fhir/uv/ips/CapabilityStatement/ips-server",
+  "version" : "0.2.1",
+  "name" : "IpsServerCapabilityStatement",
+  "title" : "IPS Server Capability Statement",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2022-01-05T13:15:56.964-00:00",
+  "publisher" : "UP Manila Viral Hepatitis Project",
+  "contact" : [{
+    "name" : "UP Manila Viral Hepatitis Project",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://ehealth4hepatitis.ph"
+    }]
+  }],
+  "description" : "This section describes the expected capabilities of the IPS Server actor which is responsible for providing responses to the queries submitted for IPS documents. The list of FHIR profiles and operations supported by IPS Servers are defined.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "copyright" : "Used by permission of HL7 International, all rights reserved Creative Commons License",
+  "kind" : "requirements",
+  "fhirVersion" : "4.0.1",
+  "format" : ["application/fhir+xml",
+  "xml",
+  "application/fhir+json",
+  "json"],
+  "rest" : [{
+    "mode" : "server",
+    "resource" : [{
+      "type" : "Bundle",
+      "profile" : "http://hl7.org/fhir/StructureDefinition/Bundle",
+      "supportedProfile" : ["http://hl7.org/fhir/uv/ips/StructureDefinition/Bundle-uv-ips"],
+      "_supportedProfile" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }]
+      }]
+    },
+    {
+      "type" : "Composition",
+      "profile" : "http://hl7.org/fhir/StructureDefinition/Composition",
+      "supportedProfile" : ["http://hl7.org/fhir/uv/ips/StructureDefinition/Composition-uv-ips"],
+      "_supportedProfile" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }]
+      }]
+    },
+    {
+      "type" : "Patient",
+      "profile" : "http://hl7.org/fhir/StructureDefinition/Patient",
+      "supportedProfile" : ["http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips"],
+      "_supportedProfile" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }]
+      }],
+      "operation" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "summary",
+        "definition" : "http://hl7.org/fhir/uv/ips/OperationDefinition/summary"
+      }]
+    },
+    {
+      "type" : "AllergyIntolerance",
+      "profile" : "http://hl7.org/fhir/StructureDefinition/AllergyIntolerance",
+      "supportedProfile" : ["http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance-uv-ips"],
+      "_supportedProfile" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }]
+      }]
+    },
+    {
+      "type" : "Condition",
+      "profile" : "http://hl7.org/fhir/StructureDefinition/Condition",
+      "supportedProfile" : ["http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips"],
+      "_supportedProfile" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }]
+      }]
+    },
+    {
+      "type" : "Device",
+      "profile" : "http://hl7.org/fhir/StructureDefinition/Device",
+      "supportedProfile" : ["http://hl7.org/fhir/uv/ips/StructureDefinition/Device-uv-ips"],
+      "_supportedProfile" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }]
+      }]
+    },
+    {
+      "type" : "DeviceUseStatement",
+      "profile" : "http://hl7.org/fhir/StructureDefinition/DeviceUseStatement",
+      "supportedProfile" : ["http://hl7.org/fhir/uv/ips/StructureDefinition/DeviceUseStatement-uv-ips"],
+      "_supportedProfile" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }]
+      }]
+    },
+    {
+      "type" : "DiagnosticReport",
+      "profile" : "http://hl7.org/fhir/StructureDefinition/DiagnosticReport",
+      "supportedProfile" : ["http://hl7.org/fhir/uv/ips/StructureDefinition/DiagnosticReport-uv-ips"],
+      "_supportedProfile" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }]
+      }]
+    },
+    {
+      "type" : "ImagingStudy",
+      "profile" : "http://hl7.org/fhir/StructureDefinition/ImagingStudy",
+      "supportedProfile" : ["http://hl7.org/fhir/uv/ips/StructureDefinition/ImagingStudy-uv-ips"],
+      "_supportedProfile" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }]
+      }]
+    },
+    {
+      "type" : "Immunization",
+      "profile" : "http://hl7.org/fhir/StructureDefinition/Immunization",
+      "supportedProfile" : ["http://hl7.org/fhir/uv/ips/StructureDefinition/Immunization-uv-ips"],
+      "_supportedProfile" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }]
+      }]
+    },
+    {
+      "type" : "Media",
+      "profile" : "http://hl7.org/fhir/StructureDefinition/Media",
+      "supportedProfile" : ["http://hl7.org/fhir/uv/ips/StructureDefinition/Media-observation-uv-ips"],
+      "_supportedProfile" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }]
+      }]
+    },
+    {
+      "type" : "Medication",
+      "profile" : "http://hl7.org/fhir/StructureDefinition/Medication",
+      "supportedProfile" : ["http://hl7.org/fhir/uv/ips/StructureDefinition/Medication-uv-ips"],
+      "_supportedProfile" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }]
+      }]
+    },
+    {
+      "type" : "MedicationRequest",
+      "profile" : "http://hl7.org/fhir/StructureDefinition/MedicationRequest",
+      "supportedProfile" : ["http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationRequest-uv-ips"],
+      "_supportedProfile" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }]
+      }]
+    },
+    {
+      "type" : "MedicationStatement",
+      "profile" : "http://hl7.org/fhir/StructureDefinition/MedicationStatement",
+      "supportedProfile" : ["http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationStatement-uv-ips"],
+      "_supportedProfile" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }]
+      }]
+    },
+    {
+      "type" : "Observation",
+      "profile" : "http://hl7.org/fhir/StructureDefinition/Observation",
+      "supportedProfile" : ["http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pregnancy-edd-uv-ips",
+      "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pregnancy-status-uv-ips",
+      "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-alcoholuse-uv-ips",
+      "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-tobaccouse-uv-ips",
+      "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-uv-ips",
+      "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-laboratory-uv-ips",
+      "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-pathology-uv-ips"],
+      "_supportedProfile" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }]
+      }]
+    },
+    {
+      "type" : "Organization",
+      "profile" : "http://hl7.org/fhir/StructureDefinition/Organization",
+      "supportedProfile" : ["http://hl7.org/fhir/uv/ips/StructureDefinition/Organization-uv-ips"],
+      "_supportedProfile" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }]
+      }]
+    },
+    {
+      "type" : "Practitioner",
+      "profile" : "http://hl7.org/fhir/StructureDefinition/Practitioner",
+      "supportedProfile" : ["http://hl7.org/fhir/uv/ips/StructureDefinition/Practitioner-uv-ips"],
+      "_supportedProfile" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }]
+      }]
+    },
+    {
+      "type" : "PractitionerRole",
+      "profile" : "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
+      "supportedProfile" : ["http://hl7.org/fhir/uv/ips/StructureDefinition/PractitionerRole-uv-ips"],
+      "_supportedProfile" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }]
+      }]
+    },
+    {
+      "type" : "Procedure",
+      "profile" : "http://hl7.org/fhir/StructureDefinition/Procedure",
+      "supportedProfile" : ["http://hl7.org/fhir/uv/ips/StructureDefinition/Procedure-uv-ips"],
+      "_supportedProfile" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }]
+      }]
+    },
+    {
+      "type" : "Specimen",
+      "profile" : "http://hl7.org/fhir/StructureDefinition/Specimen",
+      "supportedProfile" : ["http://hl7.org/fhir/uv/ips/StructureDefinition/Specimen-uv-ips"],
+      "_supportedProfile" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+        "valueCode" : "SHOULD"
+      }],
+      "type" : "DocumentReference",
+      "profile" : "http://hl7.org/fhir/StructureDefinition/DocumentReference",
+      "operation" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "docref",
+        "definition" : "http://build.fhir.org/ig/HL7/fhir-ipa/OperationDefinition-docref"
+      }]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+        "valueCode" : "SHOULD"
+      }],
+      "type" : "OperationDefinition",
+      "profile" : "http://hl7.org/fhir/StructureDefinition/OperationDefinition"
+    }]
+  }]
+}

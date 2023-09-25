@@ -1,5 +1,264 @@
 [
   {
+    "id" : "ips-server",
+    "type" : "CapabilityStatement",
+    "url" : "http://hl7.org/fhir/uv/ips/CapabilityStatement/ips-server",
+    "version" : "0.2.1",
+    "name" : "IpsServerCapabilityStatement"
+  },
+  {
+    "id" : "summary",
+    "type" : "OperationDefinition",
+    "url" : "http://hl7.org/fhir/uv/ips/OperationDefinition/summary",
+    "version" : "0.2.1",
+    "name" : "IpsSummary"
+  },
+  {
+    "id" : "AllergyIntolerance-uv-ips",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance-uv-ips",
+    "version" : "0.2.1",
+    "name" : "AllergyIntoleranceUvIps"
+  },
+  {
+    "id" : "Bundle-uv-ips",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/uv/ips/StructureDefinition/Bundle-uv-ips",
+    "version" : "0.2.1",
+    "name" : "BundleUvIps"
+  },
+  {
+    "id" : "CodeableConcept-uv-ips",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips",
+    "version" : "0.2.1",
+    "name" : "CodeableConceptIPS"
+  },
+  {
+    "id" : "Coding-uv-ips",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips",
+    "version" : "0.2.1",
+    "name" : "CodingIPS"
+  },
+  {
+    "id" : "Composition-uv-ips",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/uv/ips/StructureDefinition/Composition-uv-ips",
+    "version" : "0.2.1",
+    "name" : "CompositionUvIps"
+  },
+  {
+    "id" : "Condition-uv-ips",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips",
+    "version" : "0.2.1",
+    "name" : "ConditionUvIps"
+  },
+  {
+    "id" : "Device-observer-uv-ips",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/uv/ips/StructureDefinition/Device-observer-uv-ips",
+    "version" : "0.2.1",
+    "name" : "DeviceObserverUvIps"
+  },
+  {
+    "id" : "Device-uv-ips",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/uv/ips/StructureDefinition/Device-uv-ips",
+    "version" : "0.2.1",
+    "name" : "DeviceUvIps"
+  },
+  {
+    "id" : "DeviceUseStatement-uv-ips",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/uv/ips/StructureDefinition/DeviceUseStatement-uv-ips",
+    "version" : "0.2.1",
+    "name" : "DeviceUseStatementUvIps"
+  },
+  {
+    "id" : "DiagnosticReport-uv-ips",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/uv/ips/StructureDefinition/DiagnosticReport-uv-ips",
+    "version" : "0.2.1",
+    "name" : "DiagnosticReportUvIps"
+  },
+  {
+    "id" : "ImagingStudy-uv-ips",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/uv/ips/StructureDefinition/ImagingStudy-uv-ips",
+    "version" : "0.2.1",
+    "name" : "ImagingStudyUvIps"
+  },
+  {
+    "id" : "Immunization-uv-ips",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/uv/ips/StructureDefinition/Immunization-uv-ips",
+    "version" : "0.2.1",
+    "name" : "ImmunizationUvIps"
+  },
+  {
+    "id" : "Media-observation-uv-ips",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/uv/ips/StructureDefinition/Media-observation-uv-ips",
+    "version" : "0.2.1",
+    "name" : "MediaObservationUvIps"
+  },
+  {
+    "id" : "Medication-uv-ips",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/uv/ips/StructureDefinition/Medication-uv-ips",
+    "version" : "0.2.1",
+    "name" : "MedicationIPS"
+  },
+  {
+    "id" : "MedicationRequest-uv-ips",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationRequest-uv-ips",
+    "version" : "0.2.1",
+    "name" : "MedicationRequestIPS"
+  },
+  {
+    "id" : "MedicationStatement-uv-ips",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationStatement-uv-ips",
+    "version" : "0.2.1",
+    "name" : "MedicationStatementIPS"
+  },
+  {
+    "id" : "Observation-alcoholuse-uv-ips",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-alcoholuse-uv-ips",
+    "version" : "0.2.1",
+    "name" : "ObservationAlcoholUseUvIps"
+  },
+  {
+    "id" : "Observation-pregnancy-edd-uv-ips",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pregnancy-edd-uv-ips",
+    "version" : "0.2.1",
+    "name" : "ObservationPregnancyEddUvIps"
+  },
+  {
+    "id" : "Observation-pregnancy-outcome-uv-ips",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pregnancy-outcome-uv-ips",
+    "version" : "0.2.1",
+    "name" : "ObservationPregnancyOutcomeUvIps"
+  },
+  {
+    "id" : "Observation-pregnancy-status-uv-ips",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pregnancy-status-uv-ips",
+    "version" : "0.2.1",
+    "name" : "ObservationPregnancyStatusUvIps"
+  },
+  {
+    "id" : "Observation-results-laboratory-uv-ips",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-laboratory-uv-ips",
+    "version" : "0.2.1",
+    "name" : "ObservationResultsLaboratoryUvIps"
+  },
+  {
+    "id" : "Observation-results-pathology-uv-ips",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-pathology-uv-ips",
+    "version" : "0.2.1",
+    "name" : "ObservationResultsPathologyUvIps"
+  },
+  {
+    "id" : "Observation-results-radiology-uv-ips",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-radiology-uv-ips",
+    "version" : "0.2.1",
+    "name" : "ObservationResultsRadiologyUvIps"
+  },
+  {
+    "id" : "Observation-results-uv-ips",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-uv-ips",
+    "version" : "0.2.1",
+    "name" : "ObservationResultsUvIps"
+  },
+  {
+    "id" : "Observation-tobaccouse-uv-ips",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-tobaccouse-uv-ips",
+    "version" : "0.2.1",
+    "name" : "ObservationTobaccoUseUvIps"
+  },
+  {
+    "id" : "Organization-uv-ips",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/uv/ips/StructureDefinition/Organization-uv-ips",
+    "version" : "0.2.1",
+    "name" : "OrganizationUvIps"
+  },
+  {
+    "id" : "Patient-uv-ips",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips",
+    "version" : "0.2.1",
+    "name" : "PatientUvIps"
+  },
+  {
+    "id" : "Practitioner-uv-ips",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/uv/ips/StructureDefinition/Practitioner-uv-ips",
+    "version" : "0.2.1",
+    "name" : "PractitionerUvIps"
+  },
+  {
+    "id" : "PractitionerRole-uv-ips",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/uv/ips/StructureDefinition/PractitionerRole-uv-ips",
+    "version" : "0.2.1",
+    "name" : "PractitionerRoleUvIps"
+  },
+  {
+    "id" : "Procedure-uv-ips",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/uv/ips/StructureDefinition/Procedure-uv-ips",
+    "version" : "0.2.1",
+    "name" : "ProcedureUvIps"
+  },
+  {
+    "id" : "Quantity-uv-ips",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/uv/ips/StructureDefinition/Quantity-uv-ips",
+    "version" : "0.2.1",
+    "name" : "QuantityIPS"
+  },
+  {
+    "id" : "Range-uv-ips",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/uv/ips/StructureDefinition/Range-uv-ips",
+    "version" : "0.2.1",
+    "name" : "RangeIPS"
+  },
+  {
+    "id" : "Ratio-uv-ips",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/uv/ips/StructureDefinition/Ratio-uv-ips",
+    "version" : "0.2.1",
+    "name" : "RatioIPS"
+  },
+  {
+    "id" : "SimpleQuantity-uv-ips",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/uv/ips/StructureDefinition/SimpleQuantity-uv-ips",
+    "version" : "0.2.1",
+    "name" : "SimpleQuantityIPS"
+  },
+  {
+    "id" : "Specimen-uv-ips",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/uv/ips/StructureDefinition/Specimen-uv-ips",
+    "version" : "0.2.1",
+    "name" : "SpecimenUvIps"
+  },
+  {
     "id" : "fhir.who.smart-ig-upvhproject",
     "type" : "ImplementationGuide",
     "url" : "http://worldhealthorganization.github.io/smart-ig-upvhproject/ImplementationGuide/fhir.who.smart-ig-upvhproject",
@@ -7,500 +266,129 @@
     "name" : "smartigupvhproject"
   },
   {
-    "id" : "2156",
-    "type" : "StructureDefinition",
-    "url" : "http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/2156",
+    "id" : "1d160789-65c0-47bc-a874-dc2dfd0a87f1",
+    "type" : "CodeSystem",
+    "url" : "https://ontoserver.upmsilab.org/psgc1",
     "version" : "0.2.1",
-    "name" : "VHCEncounter"
+    "name" : "Psgc1"
   },
   {
-    "id" : "2158",
-    "type" : "StructureDefinition",
-    "url" : "http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/2158",
+    "id" : "f69a0c8a-dded-4d0a-8fbf-36f713f707f6",
+    "type" : "CodeSystem",
+    "url" : "https://ontoserver.upmsilab.org/psgc10",
     "version" : "0.2.1",
-    "name" : "ConditionHepB"
+    "name" : "Psgc10"
   },
   {
-    "id" : "2159",
-    "type" : "StructureDefinition",
-    "url" : "http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/2159",
+    "id" : "0dc9cd73-922c-45c3-b97b-e88499091fb7",
+    "type" : "CodeSystem",
+    "url" : "https://ontoserver.upmsilab.org/psgc11",
     "version" : "0.2.1",
-    "name" : "ConditionHepC"
+    "name" : "Psgc11"
   },
   {
-    "id" : "ViralHepatitisCareFormModel",
-    "type" : "StructureDefinition",
-    "url" : "http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/ViralHepatitisCareFormModel",
+    "id" : "c3798377-894f-4495-b813-862b5e74ddb5",
+    "type" : "CodeSystem",
+    "url" : "https://ontoserver.upmsilab.org/psgc12",
     "version" : "0.2.1",
-    "name" : "ViralHepatitisCareFormModel"
+    "name" : "Psgc12"
   },
   {
-    "id" : "ViralHepatitisCaseReportFormModel",
-    "type" : "StructureDefinition",
-    "url" : "http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/ViralHepatitisCaseReportFormModel",
+    "id" : "881ef5c4-e344-4a6b-b04c-76d8c78f6531",
+    "type" : "CodeSystem",
+    "url" : "https://ontoserver.upmsilab.org/psgc13",
     "version" : "0.2.1",
-    "name" : "ViralHepatitisCaseReportFormModel"
+    "name" : "Psgc13"
   },
   {
-    "id" : "Daclatasvir",
-    "type" : "StructureDefinition",
-    "url" : "https://example.org/fhir/StructureDefinition/Daclatasvir",
+    "id" : "9b08be51-61ed-4fb0-89b1-28956af23653",
+    "type" : "CodeSystem",
+    "url" : "https://ontoserver.upmsilab.org/psgc2",
     "version" : "0.2.1",
-    "name" : "Daclatasvir"
+    "name" : "Psgc2"
   },
   {
-    "id" : "DaclatasvirDispense",
-    "type" : "StructureDefinition",
-    "url" : "https://example.org/fhir/StructureDefinition/DaclatasvirDispense",
+    "id" : "978c4066-1a18-483c-904f-0b77f28415b7",
+    "type" : "CodeSystem",
+    "url" : "https://ontoserver.upmsilab.org/psgc3",
     "version" : "0.2.1",
-    "name" : "DaclatasvirDispense"
+    "name" : "Psgc3"
   },
   {
-    "id" : "FamilyMemberHistoryVHcase34",
-    "type" : "StructureDefinition",
-    "url" : "https://example.org/fhir/StructureDefinition/FamilyMemberHistoryVHcase34",
+    "id" : "c767ab11-70c7-4e46-9a4a-55364d9784f1",
+    "type" : "CodeSystem",
+    "url" : "https://ontoserver.upmsilab.org/psgc4A",
     "version" : "0.2.1",
-    "name" : "FamilyMemberHistoryVHcase34"
+    "name" : "Psgc4a"
   },
   {
-    "id" : "FamilyMemberHistoryVHcase35",
-    "type" : "StructureDefinition",
-    "url" : "https://example.org/fhir/StructureDefinition/FamilyMemberHistoryVHcase35",
+    "id" : "0043e898-2e3a-4285-946a-5ae37e78fa8e",
+    "type" : "CodeSystem",
+    "url" : "https://ontoserver.upmsilab.org/psgc4B",
     "version" : "0.2.1",
-    "name" : "FamilyMemberHistoryVHcase35"
+    "name" : "Psgc4b"
   },
   {
-    "id" : "HIVcoInfection",
-    "type" : "StructureDefinition",
-    "url" : "https://example.org/fhir/StructureDefinition/HIVcoInfection",
+    "id" : "49bf4e83-71e2-4aa7-b3cb-138f2c7a416a",
+    "type" : "CodeSystem",
+    "url" : "https://ontoserver.upmsilab.org/psgc5",
     "version" : "0.2.1",
-    "name" : "HIVcoInfection"
+    "name" : "Psgc5"
   },
   {
-    "id" : "HepBInfection",
-    "type" : "StructureDefinition",
-    "url" : "https://example.org/fhir/StructureDefinition/HepBInfection",
+    "id" : "40bd5d06-7f39-43e5-9393-d97711924233",
+    "type" : "CodeSystem",
+    "url" : "https://ontoserver.upmsilab.org/psgc6",
     "version" : "0.2.1",
-    "name" : "HepBInfection"
+    "name" : "Psgc6"
   },
   {
-    "id" : "HepCInfection",
-    "type" : "StructureDefinition",
-    "url" : "https://example.org/fhir/StructureDefinition/HepCInfection",
+    "id" : "cd7db9f5-9ec3-4e93-8ef4-d299b685cae8",
+    "type" : "CodeSystem",
+    "url" : "https://ontoserver.upmsilab.org/psgc7",
     "version" : "0.2.1",
-    "name" : "HepCInfection"
+    "name" : "Psgc7"
   },
   {
-    "id" : "HepatocellularCarcinomaFollowingTreatment",
-    "type" : "StructureDefinition",
-    "url" : "https://example.org/fhir/StructureDefinition/HepatocellularCarcinomaFollowingTreatment",
+    "id" : "1ab7a522-13d9-47c4-b70b-3f9a00fed13b",
+    "type" : "CodeSystem",
+    "url" : "https://ontoserver.upmsilab.org/psgc8",
     "version" : "0.2.1",
-    "name" : "HepatocellularCarcinomaFollowingTreatment"
+    "name" : "Psgc8"
   },
   {
-    "id" : "LiverCirrhosisFollowingTreatment",
-    "type" : "StructureDefinition",
-    "url" : "https://example.org/fhir/StructureDefinition/LiverCirrhosisFollowingTreatment",
+    "id" : "20a1ac6b-8007-432a-8e91-20437e29277f",
+    "type" : "CodeSystem",
+    "url" : "https://ontoserver.upmsilab.org/psgc9",
     "version" : "0.2.1",
-    "name" : "LiverCirrhosisFollowingTreatment"
+    "name" : "Psgc9"
   },
   {
-    "id" : "ObservationVHcase13",
-    "type" : "StructureDefinition",
-    "url" : "https://example.org/fhir/StructureDefinition/ObservationVHcase13",
+    "id" : "d6777e0f-e48d-4d7a-81bc-0f868fc94ac0",
+    "type" : "CodeSystem",
+    "url" : "https://ontoserver.upmsilab.org/psgcbrmm",
     "version" : "0.2.1",
-    "name" : "ObservationVHcase13"
+    "name" : "Psgcbrmm"
   },
   {
-    "id" : "ObservationVHcase48",
-    "type" : "StructureDefinition",
-    "url" : "https://example.org/fhir/StructureDefinition/ObservationVHcase48",
+    "id" : "3b392c94-b4c8-487a-a9ef-22c56c2f6979",
+    "type" : "CodeSystem",
+    "url" : "https://ontoserver.upmsilab.org/psgccar",
     "version" : "0.2.1",
-    "name" : "ObservationVHcase48"
+    "name" : "Psgccar"
   },
   {
-    "id" : "ObservationVHcase49",
-    "type" : "StructureDefinition",
-    "url" : "https://example.org/fhir/StructureDefinition/ObservationVHcase49",
+    "id" : "235ffd4c-6ebe-4bed-af3a-1e130c620ffa",
+    "type" : "CodeSystem",
+    "url" : "https://ontoserver.upmsilab.org/psgcncr",
     "version" : "0.2.1",
-    "name" : "ObservationVHcase49"
+    "name" : "Psgcncr"
   },
   {
-    "id" : "ObservationVHcase50",
-    "type" : "StructureDefinition",
-    "url" : "https://example.org/fhir/StructureDefinition/ObservationVHcase50",
-    "version" : "0.2.1",
-    "name" : "ObservationVHcase50"
-  },
-  {
-    "id" : "ObservationVHcase51",
-    "type" : "StructureDefinition",
-    "url" : "https://example.org/fhir/StructureDefinition/ObservationVHcase51",
-    "version" : "0.2.1",
-    "name" : "ObservationVHcase51"
-  },
-  {
-    "id" : "ObservationVHcase55",
-    "type" : "StructureDefinition",
-    "url" : "https://example.org/fhir/StructureDefinition/ObservationVHcase55",
-    "version" : "0.2.1",
-    "name" : "ObservationVHcase55"
-  },
-  {
-    "id" : "ObservationVHcase56",
-    "type" : "StructureDefinition",
-    "url" : "https://example.org/fhir/StructureDefinition/ObservationVHcase56",
-    "version" : "0.2.1",
-    "name" : "ObservationVHcase56"
-  },
-  {
-    "id" : "OtherRegimen",
-    "type" : "StructureDefinition",
-    "url" : "https://example.org/fhir/StructureDefinition/OtherRegimen",
-    "version" : "0.2.1",
-    "name" : "OtherRegimen"
-  },
-  {
-    "id" : "OtherRegimenDispense",
-    "type" : "StructureDefinition",
-    "url" : "https://example.org/fhir/StructureDefinition/OtherRegimenDispense",
-    "version" : "0.2.1",
-    "name" : "OtherRegimenDispense"
-  },
-  {
-    "id" : "OthercoInfection",
-    "type" : "StructureDefinition",
-    "url" : "https://example.org/fhir/StructureDefinition/OthercoInfection",
-    "version" : "0.2.1",
-    "name" : "OthercoInfection"
-  },
-  {
-    "id" : "PillsExpectedRefillDate",
-    "type" : "StructureDefinition",
-    "url" : "https://example.org/fhir/StructureDefinition/PillsExpectedRefillDate",
-    "version" : "0.2.1",
-    "name" : "PillsExpectedRefillDate"
-  },
-  {
-    "id" : "PillsOnHand",
-    "type" : "StructureDefinition",
-    "url" : "https://example.org/fhir/StructureDefinition/PillsOnHand",
-    "version" : "0.2.1",
-    "name" : "PillsOnHand"
-  },
-  {
-    "id" : "Ribavirin",
-    "type" : "StructureDefinition",
-    "url" : "https://example.org/fhir/StructureDefinition/Ribavirin",
-    "version" : "0.2.1",
-    "name" : "Ribavirin"
-  },
-  {
-    "id" : "RibavirinDispense",
-    "type" : "StructureDefinition",
-    "url" : "https://example.org/fhir/StructureDefinition/RibavirinDispense",
-    "version" : "0.2.1",
-    "name" : "RibavirinDispense"
-  },
-  {
-    "id" : "Sofosbuvir",
-    "type" : "StructureDefinition",
-    "url" : "https://example.org/fhir/StructureDefinition/Sofosbuvir",
-    "version" : "0.2.1",
-    "name" : "Sofosbuvir"
-  },
-  {
-    "id" : "SofosbuvirAndVelpatasvir",
-    "type" : "StructureDefinition",
-    "url" : "https://example.org/fhir/StructureDefinition/SofosbuvirAndVelpatasvir",
-    "version" : "0.2.1",
-    "name" : "SofosbuvirAndVelpatasvir"
-  },
-  {
-    "id" : "SofosbuvirAndVelpatasvirDispense",
-    "type" : "StructureDefinition",
-    "url" : "https://example.org/fhir/StructureDefinition/SofosbuvirAndVelpatasvirDispense",
-    "version" : "0.2.1",
-    "name" : "SofosbuvirAndVelpatasvirDispense"
-  },
-  {
-    "id" : "SofosbuvirDispense",
-    "type" : "StructureDefinition",
-    "url" : "https://example.org/fhir/StructureDefinition/SofosbuvirDispense",
-    "version" : "0.2.1",
-    "name" : "SofosbuvirDispense"
-  },
-  {
-    "id" : "TenofovirDispense",
-    "type" : "StructureDefinition",
-    "url" : "https://example.org/fhir/StructureDefinition/Tenofovir",
-    "version" : "0.2.1",
-    "name" : "TenofovirDispense"
-  },
-  {
-    "id" : "Tenofovir",
-    "type" : "StructureDefinition",
-    "url" : "https://example.org/fhir/StructureDefinition/Tenofovir",
-    "version" : "0.2.1",
-    "name" : "Tenofovir"
-  },
-  {
-    "id" : "TreatmentCarePlanVH",
-    "type" : "StructureDefinition",
-    "url" : "https://example.org/fhir/StructureDefinition/TreatmentCarePlanVH",
-    "version" : "0.2.1",
-    "name" : "TreatmentCarePlanVH"
-  },
-  {
-    "id" : "VHCareEligibilityHepB",
-    "type" : "StructureDefinition",
-    "url" : "https://example.org/fhir/StructureDefinition/VHCareEligibilityHepB",
-    "version" : "0.2.1",
-    "name" : "VHCareEligibilityHepB"
-  },
-  {
-    "id" : "VHCareEligibilityHepC",
-    "type" : "StructureDefinition",
-    "url" : "https://example.org/fhir/StructureDefinition/VHCareEligibilityHepC",
-    "version" : "0.2.1",
-    "name" : "VHCareEligibilityHepC"
-  },
-  {
-    "id" : "VHcareALT",
-    "type" : "StructureDefinition",
-    "url" : "https://example.org/fhir/StructureDefinition/VHcareALT",
-    "version" : "0.2.1",
-    "name" : "VHcareALT"
-  },
-  {
-    "id" : "VHcareAST",
-    "type" : "StructureDefinition",
-    "url" : "https://example.org/fhir/StructureDefinition/VHcareAST",
-    "version" : "0.2.1",
-    "name" : "VHcareAST"
-  },
-  {
-    "id" : "VHcareAntiHCV",
-    "type" : "StructureDefinition",
-    "url" : "https://example.org/fhir/StructureDefinition/VHcareAntiHCV",
-    "version" : "0.2.1",
-    "name" : "VHcareAntiHCV"
-  },
-  {
-    "id" : "VHcareHBVDNA",
-    "type" : "StructureDefinition",
-    "url" : "https://example.org/fhir/StructureDefinition/VHcareHBVDNA",
-    "version" : "0.2.1",
-    "name" : "VHcareHBVDNA"
-  },
-  {
-    "id" : "VHcareHBeAg",
-    "type" : "StructureDefinition",
-    "url" : "https://example.org/fhir/StructureDefinition/VHcareHBeAg",
-    "version" : "0.2.1",
-    "name" : "VHcareHBeAg"
-  },
-  {
-    "id" : "VHcareHBsAg",
-    "type" : "StructureDefinition",
-    "url" : "https://example.org/fhir/StructureDefinition/VHcareHBsAg",
-    "version" : "0.2.1",
-    "name" : "VHcareHBsAg"
-  },
-  {
-    "id" : "VHcareHCVRNAQuali",
-    "type" : "StructureDefinition",
-    "url" : "https://example.org/fhir/StructureDefinition/VHcareHCVRNAQuali",
-    "version" : "0.2.1",
-    "name" : "VHcareHCVRNAQuali"
-  },
-  {
-    "id" : "VHcareHCVRNAQuanti",
-    "type" : "StructureDefinition",
-    "url" : "https://example.org/fhir/StructureDefinition/VHcareHCVRNAQuanti",
-    "version" : "0.2.1",
-    "name" : "VHcareHCVRNAQuanti"
-  },
-  {
-    "id" : "VHcareImaging",
-    "type" : "StructureDefinition",
-    "url" : "https://example.org/fhir/StructureDefinition/VHcareImaging",
-    "version" : "0.2.1",
-    "name" : "VHcareImaging"
-  },
-  {
-    "id" : "VHcarePTINR",
-    "type" : "StructureDefinition",
-    "url" : "https://example.org/fhir/StructureDefinition/VHcarePTINR",
-    "version" : "0.2.1",
-    "name" : "VHcarePTINR"
-  },
-  {
-    "id" : "VHcarealbumin",
-    "type" : "StructureDefinition",
-    "url" : "https://example.org/fhir/StructureDefinition/VHcarealbumin",
-    "version" : "0.2.1",
-    "name" : "VHcarealbumin"
-  },
-  {
-    "id" : "VHcareaminotransferaseScore",
-    "type" : "StructureDefinition",
-    "url" : "https://example.org/fhir/StructureDefinition/VHcareaminotransferaseScore",
-    "version" : "0.2.1",
-    "name" : "VHcareaminotransferaseScore"
-  },
-  {
-    "id" : "VHcarechildTurcottePugh",
-    "type" : "StructureDefinition",
-    "url" : "https://example.org/fhir/StructureDefinition/VHcarechildTurcottePugh",
-    "version" : "0.2.1",
-    "name" : "VHcarechildTurcottePugh"
-  },
-  {
-    "id" : "VHcarefibrosis",
-    "type" : "StructureDefinition",
-    "url" : "https://example.org/fhir/StructureDefinition/VHcarefibrosis",
-    "version" : "0.2.1",
-    "name" : "VHcarefibrosis"
-  },
-  {
-    "id" : "VHcareheight",
-    "type" : "StructureDefinition",
-    "url" : "https://example.org/fhir/StructureDefinition/VHcareheight",
-    "version" : "0.2.1",
-    "name" : "VHcareheight"
-  },
-  {
-    "id" : "VHcareplateletCount",
-    "type" : "StructureDefinition",
-    "url" : "https://example.org/fhir/StructureDefinition/VHcareplateletCount",
-    "version" : "0.2.1",
-    "name" : "VHcareplateletCount"
-  },
-  {
-    "id" : "VHcaretotalBilirubin",
-    "type" : "StructureDefinition",
-    "url" : "https://example.org/fhir/StructureDefinition/VHcaretotalBilirubin",
-    "version" : "0.2.1",
-    "name" : "VHcaretotalBilirubin"
-  },
-  {
-    "id" : "VHcaretransientElastography",
-    "type" : "StructureDefinition",
-    "url" : "https://example.org/fhir/StructureDefinition/VHcaretransientElastography",
-    "version" : "0.2.1",
-    "name" : "VHcaretransientElastography"
-  },
-  {
-    "id" : "VHcareweight",
-    "type" : "StructureDefinition",
-    "url" : "https://example.org/fhir/StructureDefinition/VHcareweight",
-    "version" : "0.2.1",
-    "name" : "VHcareweight"
-  },
-  {
-    "id" : "Pillsmissed",
-    "type" : "StructureDefinition",
-    "url" : "https://example.org/fhir/StructureDefinition/pillsmissed",
-    "version" : "0.2.1",
-    "name" : "Pillsmissed"
-  },
-  {
-    "id" : "VHcareAscites",
-    "type" : "StructureDefinition",
-    "url" : "https://example.org/fhir/StructureDefinition/vhcareAscites",
-    "version" : "0.2.1",
-    "name" : "VHcareAscites"
-  },
-  {
-    "id" : "VHcarecoagulopathy",
-    "type" : "StructureDefinition",
-    "url" : "https://example.org/fhir/StructureDefinition/vhcarecoagulopathy",
-    "version" : "0.2.1",
-    "name" : "VHcarecoagulopathy"
-  },
-  {
-    "id" : "VHcarefatigue",
-    "type" : "StructureDefinition",
-    "url" : "https://example.org/fhir/StructureDefinition/vhcarefatigue",
-    "version" : "0.2.1",
-    "name" : "VHcarefatigue"
-  },
-  {
-    "id" : "VHcarehepBInfection",
-    "type" : "StructureDefinition",
-    "url" : "https://example.org/fhir/StructureDefinition/vhcarehepBInfection",
-    "version" : "0.2.1",
-    "name" : "VHcarehepBInfection"
-  },
-  {
-    "id" : "VHcarehepatomegaly",
-    "type" : "StructureDefinition",
-    "url" : "https://example.org/fhir/StructureDefinition/vhcarehepatomegaly",
-    "version" : "0.2.1",
-    "name" : "VHcarehepatomegaly"
-  },
-  {
-    "id" : "VHhcarejaundice",
-    "type" : "StructureDefinition",
-    "url" : "https://example.org/fhir/StructureDefinition/vhcarejaundice",
-    "version" : "0.2.1",
-    "name" : "VHhcarejaundice"
-  },
-  {
-    "id" : "VHcareotherInfection",
-    "type" : "StructureDefinition",
-    "url" : "https://example.org/fhir/StructureDefinition/vhcareotherInfection",
-    "version" : "0.2.1",
-    "name" : "VHcareotherInfection"
-  },
-  {
-    "id" : "VHcareotherSignAndSymptoms",
-    "type" : "StructureDefinition",
-    "url" : "https://example.org/fhir/StructureDefinition/vhcareotherSignAndSymptoms",
-    "version" : "0.2.1",
-    "name" : "VHcareotherSignAndSymptoms"
-  },
-  {
-    "id" : "VHcarepalmarErythema",
-    "type" : "StructureDefinition",
-    "url" : "https://example.org/fhir/StructureDefinition/vhcarepalmarErythema",
-    "version" : "0.2.1",
-    "name" : "VHcarepalmarErythema"
-  },
-  {
-    "id" : "VHcarepruritus",
-    "type" : "StructureDefinition",
-    "url" : "https://example.org/fhir/StructureDefinition/vhcarepruritus",
-    "version" : "0.2.1",
-    "name" : "VHcarepruritus"
-  },
-  {
-    "id" : "VHcaresplenomegaly",
-    "type" : "StructureDefinition",
-    "url" : "https://example.org/fhir/StructureDefinition/vhcaresplenomegaly",
-    "version" : "0.2.1",
-    "name" : "VHcaresplenomegaly"
-  },
-  {
-    "id" : "FatherName",
-    "type" : "StructureDefinition",
-    "url" : "https://up.smilecdr.com:8000/StructureDefinition/2131",
-    "version" : "0.2.1",
-    "name" : "FatherName"
-  },
-  {
-    "id" : "MotherName",
-    "type" : "StructureDefinition",
-    "url" : "https://up.smilecdr.com:8000/StructureDefinition/2132",
-    "version" : "0.2.1",
-    "name" : "MotherName"
-  },
-  {
-    "id" : "VHPatient2",
+    "id" : "patient",
     "type" : "StructureDefinition",
     "url" : "https://up.smilecdr.com:8000/StructureDefinition/2137",
     "version" : "0.2.1",
-    "name" : "VHPatient2"
+    "name" : "patient"
   }
 ]

@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Ratio-uv-ips"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
+  </text>
+  <url value="http://hl7.org/fhir/uv/ips/StructureDefinition/Ratio-uv-ips"/>
+  <version value="0.2.1"/>
+  <name value="RatioIPS"/>
+  <title value="Ratio (IPS)"/>
+  <status value="active"/>
+  <date value="2023-09-25T00:15:58+00:00"/>
+  <publisher value="UP Manila Viral Hepatitis Project"/>
+  <contact>
+    <name value="UP Manila Viral Hepatitis Project"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://ehealth4hepatitis.ph"/>
+    </telecom>
+  </contact>
+  <description value="Ratio data type, constrained to use UCUM as the code system for units."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <purpose value="Allow only UCUM as the code system for units."/>
+  <fhirVersion value="4.0.1"/>
+  <mapping>
+    <identity value="v2"/>
+    <uri value="http://hl7.org/v2"/>
+    <name value="HL7 v2 Mapping"/>
+  </mapping>
+  <mapping>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM Mapping"/>
+  </mapping>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <type value="Ratio"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Ratio"/>
+  <derivation value="constraint"/>
+  <snapshot>
+    <element id="Ratio">
+      <path value="Ratio"/>
+      <short value="A ratio of two Quantity values - a numerator and a denominator"/>
+      <definition value="A relationship of two Quantity values - expressed as a numerator and a denominator."/>
+      <comment value="The Ratio datatype should only be used to express a relationship of two numbers if the relationship cannot be suitably expressed using a Quantity and a common unit.  Where the denominator value is known to be fixed to &quot;1&quot;, Quantity should be used instead of Ratio."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Ratio"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <condition value="ele-1"/>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="rat-1"/>
+        <severity value="error"/>
+        <human value="Numerator and denominator SHALL both be present, or both are absent. If both are absent, there SHALL be some extension present"/>
+        <expression value="(numerator.empty() xor denominator.exists()) and (numerator.exists() or extension.exists())"/>
+        <xpath value="(count(f:numerator) = count(f:denominator)) and ((count(f:numerator) &gt; 0) or (count(f:extension) &gt; 0))"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Ratio"/>
+      </constraint>
+      <isModifier value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+      <mapping>
+        <identity value="v2"/>
+        <map value="N/A"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="RTO"/>
+      </mapping>
+    </element>
+    <element id="Ratio.id">
+      <path value="Ratio.id"/>
+      <representation value="xmlAttr"/>
+      <short value="Unique id for inter-element referencing"/>
+      <definition value="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Element.id"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type">
+          <valueUrl value="string"/>
+        </extension>
+        <code value="http://hl7.org/fhirpath/System.String"/>
+      </type>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="Ratio.extension">
+      <path value="Ratio.extension"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <description value="Extensions are always sliced by (at least) url"/>
+        <rules value="open"/>
+      </slicing>
+      <short value="Additional content defined by implementations"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Element.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </constraint>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="Ratio.numerator">
+      <path value="Ratio.numerator"/>
+      <short value="A measured amount using UCUM"/>
+      <definition value="A measured amount (or an amount that can potentially be measured). Note that measured amounts include amounts that are not precisely quantified, including amounts involving arbitrary units and floating currencies.&#xD;&#xA;This profile imposes that the code system for units be UCUM."/>
+      <comment value="The context of use may frequently define what kind of quantity this is and therefore what kind of units can be used. The context of use may also restrict the values for the comparator."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Ratio.numerator"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Quantity"/>
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Quantity-uv-ips"/>
+      </type>
+      <condition value="ele-1"/>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="qty-3"/>
+        <severity value="error"/>
+        <human value="If a code for the unit is present, the system SHALL also be present"/>
+        <expression value="code.empty() or system.exists()"/>
+        <xpath value="not(exists(f:code)) or exists(f:system)"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Quantity"/>
+      </constraint>
+      <mustSupport value="true"/>
+      <isModifier value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+      <mapping>
+        <identity value="v2"/>
+        <map value="SN (see also Range) or CQ"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="PQ, IVL&lt;PQ&gt;, MO, CO, depending on the values"/>
+      </mapping>
+    </element>
+    <element id="Ratio.denominator">
+      <path value="Ratio.denominator"/>
+      <short value="A measured amount using UCUM"/>
+      <definition value="A measured amount (or an amount that can potentially be measured). Note that measured amounts include amounts that are not precisely quantified, including amounts involving arbitrary units and floating currencies.&#xD;&#xA;This profile imposes that the code system for units be UCUM."/>
+      <comment value="The context of use may frequently define what kind of quantity this is and therefore what kind of units can be used. The context of use may also restrict the values for the comparator."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Ratio.denominator"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Quantity"/>
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Quantity-uv-ips"/>
+      </type>
+      <condition value="ele-1"/>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="qty-3"/>
+        <severity value="error"/>
+        <human value="If a code for the unit is present, the system SHALL also be present"/>
+        <expression value="code.empty() or system.exists()"/>
+        <xpath value="not(exists(f:code)) or exists(f:system)"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Quantity"/>
+      </constraint>
+      <mustSupport value="true"/>
+      <isModifier value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+      <mapping>
+        <identity value="v2"/>
+        <map value="SN (see also Range) or CQ"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="PQ, IVL&lt;PQ&gt;, MO, CO, depending on the values"/>
+      </mapping>
+    </element>
+  </snapshot>
+  <differential>
+    <element id="Ratio">
+      <path value="Ratio"/>
+    </element>
+    <element id="Ratio.numerator">
+      <path value="Ratio.numerator"/>
+      <type>
+        <code value="Quantity"/>
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Quantity-uv-ips"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Ratio.denominator">
+      <path value="Ratio.denominator"/>
+      <type>
+        <code value="Quantity"/>
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Quantity-uv-ips"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+  </differential>
+</StructureDefinition>
