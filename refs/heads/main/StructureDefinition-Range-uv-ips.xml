@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Range-uv-ips"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
+  </text>
+  <url value="http://hl7.org/fhir/uv/ips/StructureDefinition/Range-uv-ips"/>
+  <version value="0.2.1"/>
+  <name value="RangeIPS"/>
+  <title value="Range (IPS)"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-09-25T00:15:58+00:00"/>
+  <publisher value="UP Manila Viral Hepatitis Project"/>
+  <contact>
+    <name value="UP Manila Viral Hepatitis Project"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://ehealth4hepatitis.ph"/>
+    </telecom>
+  </contact>
+  <description value="Range constrained to UCUM as the code system for units."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <purpose value="Requires UCUM as the code system for units"/>
+  <fhirVersion value="4.0.1"/>
+  <mapping>
+    <identity value="v2"/>
+    <uri value="http://hl7.org/v2"/>
+    <name value="HL7 v2 Mapping"/>
+  </mapping>
+  <mapping>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM Mapping"/>
+  </mapping>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <type value="Range"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Range"/>
+  <derivation value="constraint"/>
+  <snapshot>
+    <element id="Range">
+      <path value="Range"/>
+      <short value="Set of values bounded by low and high"/>
+      <definition value="A set of ordered Quantities defined by a low and high limit."/>
+      <comment value="The stated low and high value are assumed to have arbitrarily high precision when it comes to determining which values are in the range. I.e. 1.99 is not in the range 2 -&gt; 3."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Range"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <condition value="ele-1"/>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="rng-2"/>
+        <severity value="error"/>
+        <human value="If present, low SHALL have a lower value than high"/>
+        <expression value="low.empty() or high.empty() or (low &lt;= high)"/>
+        <xpath value="not(exists(f:low/f:value/@value)) or not(exists(f:high/f:value/@value)) or (number(f:low/f:value/@value) &lt;= number(f:high/f:value/@value))"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Range"/>
+      </constraint>
+      <isModifier value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+      <mapping>
+        <identity value="v2"/>
+        <map value="NR and also possibly SN (but see also quantity)"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="IVL&lt;QTY[not(type=&quot;TS&quot;)]&gt; [lowClosed=&quot;true&quot; and highClosed=&quot;true&quot;]or URG&lt;QTY[not(type=&quot;TS&quot;)]&gt;"/>
+      </mapping>
+    </element>
+    <element id="Range.id">
+      <path value="Range.id"/>
+      <representation value="xmlAttr"/>
+      <short value="Unique id for inter-element referencing"/>
+      <definition value="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Element.id"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type">
+          <valueUrl value="string"/>
+        </extension>
+        <code value="http://hl7.org/fhirpath/System.String"/>
+      </type>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="Range.extension">
+      <path value="Range.extension"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <description value="Extensions are always sliced by (at least) url"/>
+        <rules value="open"/>
+      </slicing>
+      <short value="Additional content defined by implementations"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Element.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </constraint>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="Range.low">
+      <path value="Range.low"/>
+      <short value="A measured amount using UCUM"/>
+      <definition value="A measured amount (or an amount that can potentially be measured). Note that measured amounts include amounts that are not precisely quantified, including amounts involving arbitrary units and floating currencies.&#xD;&#xA;This profile imposes that the code system for units be UCUM."/>
+      <comment value="The context of use may frequently define what kind of quantity this is and therefore what kind of units can be used. The context of use may also restrict the values for the comparator."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Range.low"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Quantity"/>
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/SimpleQuantity-uv-ips"/>
+      </type>
+      <condition value="ele-1"/>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="qty-3"/>
+        <severity value="error"/>
+        <human value="If a code for the unit is present, the system SHALL also be present"/>
+        <expression value="code.empty() or system.exists()"/>
+        <xpath value="not(exists(f:code)) or exists(f:system)"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Quantity"/>
+      </constraint>
+      <constraint>
+        <key value="sqty-1"/>
+        <severity value="error"/>
+        <human value="The comparator is not used on a SimpleQuantity"/>
+        <expression value="comparator.empty()"/>
+        <xpath value="not(exists(f:comparator))"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/SimpleQuantity"/>
+      </constraint>
+      <mustSupport value="true"/>
+      <isModifier value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+      <mapping>
+        <identity value="v2"/>
+        <map value="SN (see also Range) or CQ"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="PQ, IVL&lt;PQ&gt;, MO, CO, depending on the values"/>
+      </mapping>
+    </element>
+    <element id="Range.high">
+      <path value="Range.high"/>
+      <short value="A measured amount using UCUM"/>
+      <definition value="A measured amount (or an amount that can potentially be measured). Note that measured amounts include amounts that are not precisely quantified, including amounts involving arbitrary units and floating currencies.&#xD;&#xA;This profile imposes that the code system for units be UCUM."/>
+      <comment value="The context of use may frequently define what kind of quantity this is and therefore what kind of units can be used. The context of use may also restrict the values for the comparator."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Range.high"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Quantity"/>
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/SimpleQuantity-uv-ips"/>
+      </type>
+      <condition value="ele-1"/>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="qty-3"/>
+        <severity value="error"/>
+        <human value="If a code for the unit is present, the system SHALL also be present"/>
+        <expression value="code.empty() or system.exists()"/>
+        <xpath value="not(exists(f:code)) or exists(f:system)"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Quantity"/>
+      </constraint>
+      <constraint>
+        <key value="sqty-1"/>
+        <severity value="error"/>
+        <human value="The comparator is not used on a SimpleQuantity"/>
+        <expression value="comparator.empty()"/>
+        <xpath value="not(exists(f:comparator))"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/SimpleQuantity"/>
+      </constraint>
+      <mustSupport value="true"/>
+      <isModifier value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+      <mapping>
+        <identity value="v2"/>
+        <map value="SN (see also Range) or CQ"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="PQ, IVL&lt;PQ&gt;, MO, CO, depending on the values"/>
+      </mapping>
+    </element>
+  </snapshot>
+  <differential>
+    <element id="Range">
+      <path value="Range"/>
+    </element>
+    <element id="Range.low">
+      <path value="Range.low"/>
+      <type>
+        <code value="Quantity"/>
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/SimpleQuantity-uv-ips"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Range.high">
+      <path value="Range.high"/>
+      <type>
+        <code value="Quantity"/>
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/SimpleQuantity-uv-ips"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+  </differential>
+</StructureDefinition>

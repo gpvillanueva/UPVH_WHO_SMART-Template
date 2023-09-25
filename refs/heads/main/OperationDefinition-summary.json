@@ -1,0 +1,68 @@
+{
+  "resourceType" : "OperationDefinition",
+  "id" : "summary",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  },
+  "url" : "http://hl7.org/fhir/uv/ips/OperationDefinition/summary",
+  "version" : "0.2.1",
+  "name" : "IpsSummary",
+  "title" : "IPS Summary",
+  "status" : "draft",
+  "kind" : "operation",
+  "date" : "2022-01-05T13:15:56.964-00:00",
+  "publisher" : "UP Manila Viral Hepatitis Project",
+  "contact" : [{
+    "name" : "UP Manila Viral Hepatitis Project",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://ehealth4hepatitis.ph"
+    }]
+  }],
+  "description" : "This operation is used to return a patient summary using the IPS profile.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "affectsState" : false,
+  "code" : "summary",
+  "resource" : ["Patient"],
+  "system" : false,
+  "type" : true,
+  "instance" : true,
+  "parameter" : [{
+    "name" : "identifer",
+    "use" : "in",
+    "min" : 0,
+    "max" : "1",
+    "documentation" : "When the logical id of the patient is not used, servers MAY choose to support patient selection based on provided identifier",
+    "type" : "Identifier"
+  },
+  {
+    "name" : "profile",
+    "use" : "in",
+    "min" : 0,
+    "max" : "1",
+    "documentation" : "A specific profile for the patient summary may be specified. By default, servers MAY use the [Bundle profile](./StructureDefinition-Bundle-uv-ips.html)",
+    "type" : "uri"
+  },
+  {
+    "name" : "graph",
+    "use" : "in",
+    "min" : 0,
+    "max" : "1",
+    "documentation" : "Servers MAY choose to allow any graph definition to be specified, but MAY require that the client choose a graph definition from a specific list of known supported definitions. The server is not required to support a formal definition of the graph on the end point",
+    "type" : "uri"
+  },
+  {
+    "name" : "return",
+    "use" : "out",
+    "min" : 0,
+    "max" : "1",
+    "documentation" : "The Bundle returned is a document conforming to the specified input profile parameter or the International Patient Summary [Bundle profile](./StructureDefinition-Bundle-uv-ips.html) (if not otherwise specified)",
+    "type" : "Bundle"
+  }]
+}

@@ -1,0 +1,74 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://worldhealthorganization.github.io/smart-ig-upvhproject/OperationDefinition/summary> a fhir:OperationDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "summary"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://hl7.org/fhir/uv/ips/OperationDefinition/summary"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.2.1"] ; # 
+  fhir:name [ fhir:v "IpsSummary"] ; # 
+  fhir:title [ fhir:v "IPS Summary"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:kind [ fhir:v "operation"] ; # 
+  fhir:date [ fhir:v "2022-01-05T13:15:56.964-00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "UP Manila Viral Hepatitis Project"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "UP Manila Viral Hepatitis Project" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://ehealth4hepatitis.ph" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "This operation is used to return a patient summary using the IPS profile."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ]
+     ] )
+  ] ) ; # 
+  fhir:affectsState [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:code [ fhir:v "summary"] ; # 
+  fhir:resource ( [ fhir:v "Patient"] ) ; # 
+  fhir:system [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:type [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:instance [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:parameter ( [
+     fhir:name [ fhir:v "identifer" ] ;
+     fhir:use [ fhir:v "in" ] ;
+     fhir:min [ fhir:v "0"^^xsd:integer ] ;
+     fhir:max [ fhir:v "1" ] ;
+     fhir:documentation [ fhir:v "When the logical id of the patient is not used, servers MAY choose to support patient selection based on provided identifier" ] ;
+     fhir:type [ fhir:v "Identifier" ]
+  ] [
+     fhir:name [ fhir:v "profile" ] ;
+     fhir:use [ fhir:v "in" ] ;
+     fhir:min [ fhir:v "0"^^xsd:integer ] ;
+     fhir:max [ fhir:v "1" ] ;
+     fhir:documentation [ fhir:v "A specific profile for the patient summary may be specified. By default, servers MAY use the [Bundle profile](./StructureDefinition-Bundle-uv-ips.html)" ] ;
+     fhir:type [ fhir:v "uri" ]
+  ] [
+     fhir:name [ fhir:v "graph" ] ;
+     fhir:use [ fhir:v "in" ] ;
+     fhir:min [ fhir:v "0"^^xsd:integer ] ;
+     fhir:max [ fhir:v "1" ] ;
+     fhir:documentation [ fhir:v "Servers MAY choose to allow any graph definition to be specified, but MAY require that the client choose a graph definition from a specific list of known supported definitions. The server is not required to support a formal definition of the graph on the end point" ] ;
+     fhir:type [ fhir:v "uri" ]
+  ] [
+     fhir:name [ fhir:v "return" ] ;
+     fhir:use [ fhir:v "out" ] ;
+     fhir:min [ fhir:v "0"^^xsd:integer ] ;
+     fhir:max [ fhir:v "1" ] ;
+     fhir:documentation [ fhir:v "The Bundle returned is a document conforming to the specified input profile parameter or the International Patient Summary [Bundle profile](./StructureDefinition-Bundle-uv-ips.html) (if not otherwise specified)" ] ;
+     fhir:type [ fhir:v "Bundle" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

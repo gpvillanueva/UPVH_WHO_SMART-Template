@@ -1,0 +1,411 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://worldhealthorganization.github.io/smart-ig-upvhproject/CapabilityStatement/ips-server> a fhir:CapabilityStatement ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ips-server"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://hl7.org/fhir/uv/ips/CapabilityStatement/ips-server"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.2.1"] ; # 
+  fhir:name [ fhir:v "IpsServerCapabilityStatement"] ; # 
+  fhir:title [ fhir:v "IPS Server Capability Statement"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2022-01-05T13:15:56.964-00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "UP Manila Viral Hepatitis Project"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "UP Manila Viral Hepatitis Project" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://ehealth4hepatitis.ph" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "This section describes the expected capabilities of the IPS Server actor which is responsible for providing responses to the queries submitted for IPS documents. The list of FHIR profiles and operations supported by IPS Servers are defined."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Used by permission of HL7 International, all rights reserved Creative Commons License"] ; # 
+  fhir:kind [ fhir:v "requirements"] ; # 
+  fhir:fhirVersion [ fhir:v "4.0.1"] ; # 
+  fhir:format ( [ fhir:v "application/fhir+xml"] [ fhir:v "xml"] [ fhir:v "application/fhir+json"] [ fhir:v "json"] ) ; # 
+  fhir:rest ( [
+     fhir:mode [ fhir:v "server" ] ;
+     fhir:resource ( [
+       fhir:type [ fhir:v "Bundle" ] ;
+       fhir:profile [
+         fhir:v "http://hl7.org/fhir/StructureDefinition/Bundle"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/StructureDefinition/Bundle>
+       ] ;
+       fhir:supportedProfile ( [
+         fhir:v "http://hl7.org/fhir/uv/ips/StructureDefinition/Bundle-uv-ips"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/uv/ips/StructureDefinition/Bundle-uv-ips> ;
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] )
+       ] )
+     ] [
+       fhir:type [ fhir:v "Composition" ] ;
+       fhir:profile [
+         fhir:v "http://hl7.org/fhir/StructureDefinition/Composition"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/StructureDefinition/Composition>
+       ] ;
+       fhir:supportedProfile ( [
+         fhir:v "http://hl7.org/fhir/uv/ips/StructureDefinition/Composition-uv-ips"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/uv/ips/StructureDefinition/Composition-uv-ips> ;
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] )
+       ] )
+     ] [
+       fhir:type [ fhir:v "Patient" ] ;
+       fhir:profile [
+         fhir:v "http://hl7.org/fhir/StructureDefinition/Patient"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/StructureDefinition/Patient>
+       ] ;
+       fhir:supportedProfile ( [
+         fhir:v "http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips> ;
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] )
+       ] ) ;
+       fhir:operation ( [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHOULD" ]
+         ] ) ;
+         fhir:name [ fhir:v "summary" ] ;
+         fhir:definition [
+           fhir:v "http://hl7.org/fhir/uv/ips/OperationDefinition/summary"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/uv/ips/OperationDefinition/summary>
+         ]
+       ] )
+     ] [
+       fhir:type [ fhir:v "AllergyIntolerance" ] ;
+       fhir:profile [
+         fhir:v "http://hl7.org/fhir/StructureDefinition/AllergyIntolerance"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/StructureDefinition/AllergyIntolerance>
+       ] ;
+       fhir:supportedProfile ( [
+         fhir:v "http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance-uv-ips"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance-uv-ips> ;
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHOULD" ]
+         ] )
+       ] )
+     ] [
+       fhir:type [ fhir:v "Condition" ] ;
+       fhir:profile [
+         fhir:v "http://hl7.org/fhir/StructureDefinition/Condition"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/StructureDefinition/Condition>
+       ] ;
+       fhir:supportedProfile ( [
+         fhir:v "http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips> ;
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHOULD" ]
+         ] )
+       ] )
+     ] [
+       fhir:type [ fhir:v "Device" ] ;
+       fhir:profile [
+         fhir:v "http://hl7.org/fhir/StructureDefinition/Device"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/StructureDefinition/Device>
+       ] ;
+       fhir:supportedProfile ( [
+         fhir:v "http://hl7.org/fhir/uv/ips/StructureDefinition/Device-uv-ips"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/uv/ips/StructureDefinition/Device-uv-ips> ;
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHOULD" ]
+         ] )
+       ] )
+     ] [
+       fhir:type [ fhir:v "DeviceUseStatement" ] ;
+       fhir:profile [
+         fhir:v "http://hl7.org/fhir/StructureDefinition/DeviceUseStatement"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/StructureDefinition/DeviceUseStatement>
+       ] ;
+       fhir:supportedProfile ( [
+         fhir:v "http://hl7.org/fhir/uv/ips/StructureDefinition/DeviceUseStatement-uv-ips"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/uv/ips/StructureDefinition/DeviceUseStatement-uv-ips> ;
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHOULD" ]
+         ] )
+       ] )
+     ] [
+       fhir:type [ fhir:v "DiagnosticReport" ] ;
+       fhir:profile [
+         fhir:v "http://hl7.org/fhir/StructureDefinition/DiagnosticReport"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/StructureDefinition/DiagnosticReport>
+       ] ;
+       fhir:supportedProfile ( [
+         fhir:v "http://hl7.org/fhir/uv/ips/StructureDefinition/DiagnosticReport-uv-ips"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/uv/ips/StructureDefinition/DiagnosticReport-uv-ips> ;
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHOULD" ]
+         ] )
+       ] )
+     ] [
+       fhir:type [ fhir:v "ImagingStudy" ] ;
+       fhir:profile [
+         fhir:v "http://hl7.org/fhir/StructureDefinition/ImagingStudy"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/StructureDefinition/ImagingStudy>
+       ] ;
+       fhir:supportedProfile ( [
+         fhir:v "http://hl7.org/fhir/uv/ips/StructureDefinition/ImagingStudy-uv-ips"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/uv/ips/StructureDefinition/ImagingStudy-uv-ips> ;
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHOULD" ]
+         ] )
+       ] )
+     ] [
+       fhir:type [ fhir:v "Immunization" ] ;
+       fhir:profile [
+         fhir:v "http://hl7.org/fhir/StructureDefinition/Immunization"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/StructureDefinition/Immunization>
+       ] ;
+       fhir:supportedProfile ( [
+         fhir:v "http://hl7.org/fhir/uv/ips/StructureDefinition/Immunization-uv-ips"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/uv/ips/StructureDefinition/Immunization-uv-ips> ;
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHOULD" ]
+         ] )
+       ] )
+     ] [
+       fhir:type [ fhir:v "Media" ] ;
+       fhir:profile [
+         fhir:v "http://hl7.org/fhir/StructureDefinition/Media"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/StructureDefinition/Media>
+       ] ;
+       fhir:supportedProfile ( [
+         fhir:v "http://hl7.org/fhir/uv/ips/StructureDefinition/Media-observation-uv-ips"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/uv/ips/StructureDefinition/Media-observation-uv-ips> ;
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHOULD" ]
+         ] )
+       ] )
+     ] [
+       fhir:type [ fhir:v "Medication" ] ;
+       fhir:profile [
+         fhir:v "http://hl7.org/fhir/StructureDefinition/Medication"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/StructureDefinition/Medication>
+       ] ;
+       fhir:supportedProfile ( [
+         fhir:v "http://hl7.org/fhir/uv/ips/StructureDefinition/Medication-uv-ips"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/uv/ips/StructureDefinition/Medication-uv-ips> ;
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHOULD" ]
+         ] )
+       ] )
+     ] [
+       fhir:type [ fhir:v "MedicationRequest" ] ;
+       fhir:profile [
+         fhir:v "http://hl7.org/fhir/StructureDefinition/MedicationRequest"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/StructureDefinition/MedicationRequest>
+       ] ;
+       fhir:supportedProfile ( [
+         fhir:v "http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationRequest-uv-ips"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationRequest-uv-ips> ;
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHOULD" ]
+         ] )
+       ] )
+     ] [
+       fhir:type [ fhir:v "MedicationStatement" ] ;
+       fhir:profile [
+         fhir:v "http://hl7.org/fhir/StructureDefinition/MedicationStatement"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/StructureDefinition/MedicationStatement>
+       ] ;
+       fhir:supportedProfile ( [
+         fhir:v "http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationStatement-uv-ips"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationStatement-uv-ips> ;
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHOULD" ]
+         ] )
+       ] )
+     ] [
+       fhir:type [ fhir:v "Observation" ] ;
+       fhir:profile [
+         fhir:v "http://hl7.org/fhir/StructureDefinition/Observation"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/StructureDefinition/Observation>
+       ] ;
+       fhir:supportedProfile ( [
+         fhir:v "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pregnancy-edd-uv-ips"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pregnancy-edd-uv-ips> ;
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHOULD" ]
+         ] )
+       ] [
+         fhir:v "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pregnancy-status-uv-ips"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pregnancy-status-uv-ips> ;
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHOULD" ]
+         ] )
+       ] [
+         fhir:v "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-alcoholuse-uv-ips"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-alcoholuse-uv-ips> ;
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHOULD" ]
+         ] )
+       ] [
+         fhir:v "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-tobaccouse-uv-ips"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-tobaccouse-uv-ips> ;
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHOULD" ]
+         ] )
+       ] [
+         fhir:v "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-uv-ips"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-uv-ips> ;
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHOULD" ]
+         ] )
+       ] [
+         fhir:v "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-laboratory-uv-ips"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-laboratory-uv-ips> ;
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHOULD" ]
+         ] )
+       ] [
+         fhir:v "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-pathology-uv-ips"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-pathology-uv-ips> ;
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHOULD" ]
+         ] )
+       ] )
+     ] [
+       fhir:type [ fhir:v "Organization" ] ;
+       fhir:profile [
+         fhir:v "http://hl7.org/fhir/StructureDefinition/Organization"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/StructureDefinition/Organization>
+       ] ;
+       fhir:supportedProfile ( [
+         fhir:v "http://hl7.org/fhir/uv/ips/StructureDefinition/Organization-uv-ips"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/uv/ips/StructureDefinition/Organization-uv-ips> ;
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHOULD" ]
+         ] )
+       ] )
+     ] [
+       fhir:type [ fhir:v "Practitioner" ] ;
+       fhir:profile [
+         fhir:v "http://hl7.org/fhir/StructureDefinition/Practitioner"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/StructureDefinition/Practitioner>
+       ] ;
+       fhir:supportedProfile ( [
+         fhir:v "http://hl7.org/fhir/uv/ips/StructureDefinition/Practitioner-uv-ips"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/uv/ips/StructureDefinition/Practitioner-uv-ips> ;
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHOULD" ]
+         ] )
+       ] )
+     ] [
+       fhir:type [ fhir:v "PractitionerRole" ] ;
+       fhir:profile [
+         fhir:v "http://hl7.org/fhir/StructureDefinition/PractitionerRole"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/StructureDefinition/PractitionerRole>
+       ] ;
+       fhir:supportedProfile ( [
+         fhir:v "http://hl7.org/fhir/uv/ips/StructureDefinition/PractitionerRole-uv-ips"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/uv/ips/StructureDefinition/PractitionerRole-uv-ips> ;
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHOULD" ]
+         ] )
+       ] )
+     ] [
+       fhir:type [ fhir:v "Procedure" ] ;
+       fhir:profile [
+         fhir:v "http://hl7.org/fhir/StructureDefinition/Procedure"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/StructureDefinition/Procedure>
+       ] ;
+       fhir:supportedProfile ( [
+         fhir:v "http://hl7.org/fhir/uv/ips/StructureDefinition/Procedure-uv-ips"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/uv/ips/StructureDefinition/Procedure-uv-ips> ;
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHOULD" ]
+         ] )
+       ] )
+     ] [
+       fhir:type [ fhir:v "Specimen" ] ;
+       fhir:profile [
+         fhir:v "http://hl7.org/fhir/StructureDefinition/Specimen"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/StructureDefinition/Specimen>
+       ] ;
+       fhir:supportedProfile ( [
+         fhir:v "http://hl7.org/fhir/uv/ips/StructureDefinition/Specimen-uv-ips"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/uv/ips/StructureDefinition/Specimen-uv-ips> ;
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHOULD" ]
+         ] )
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SHOULD" ]
+       ] ) ;
+       fhir:type [ fhir:v "DocumentReference" ] ;
+       fhir:profile [
+         fhir:v "http://hl7.org/fhir/StructureDefinition/DocumentReference"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/StructureDefinition/DocumentReference>
+       ] ;
+       fhir:operation ( [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHOULD" ]
+         ] ) ;
+         fhir:name [ fhir:v "docref" ] ;
+         fhir:definition [
+           fhir:v "http://build.fhir.org/ig/HL7/fhir-ipa/OperationDefinition-docref"^^xsd:anyURI ;
+           fhir:link <http://build.fhir.org/ig/HL7/fhir-ipa/OperationDefinition-docref>
+         ]
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SHOULD" ]
+       ] ) ;
+       fhir:type [ fhir:v "OperationDefinition" ] ;
+       fhir:profile [
+         fhir:v "http://hl7.org/fhir/StructureDefinition/OperationDefinition"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/StructureDefinition/OperationDefinition>
+       ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
