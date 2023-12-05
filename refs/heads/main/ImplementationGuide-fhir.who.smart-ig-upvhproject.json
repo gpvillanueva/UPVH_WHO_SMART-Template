@@ -3,12 +3,12 @@
   "id" : "fhir.who.smart-ig-upvhproject",
   "text" : {
     "status" : "extensions",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>smartigupvhproject</h2><p>The official URL for this implementation guide is: </p><pre>http://worldhealthorganization.github.io/smart-ig-upvhproject/ImplementationGuide/fhir.who.smart-ig-upvhproject</pre><div><p>This is a FHIR Implementation Guide for the project of University of the Philippines Manila entitled Monitoring the Chronic Viral Hepatitis Treatment Cascade Through Electronic Medical Records in the Philippines which is being funded by Gilead Sciences, coursed through the UP Manila Development Fund</p>\n</div></div>"
   },
   "url" : "http://worldhealthorganization.github.io/smart-ig-upvhproject/ImplementationGuide/fhir.who.smart-ig-upvhproject",
   "version" : "0.2.1",
   "name" : "smartigupvhproject",
-  "title" : "Philippine Country Core Profile",
+  "title" : "University of the Philippines Manila Viral Hepatitis Project Implementation Guide",
   "status" : "draft",
   "date" : "2022-10-25",
   "publisher" : "UP Manila Viral Hepatitis Project",
@@ -19,7 +19,7 @@
       "value" : "http://ehealth4hepatitis.ph"
     }]
   }],
-  "description" : "This is a fraft version of the Philippine Country Core Profile FHIR Implementation Guide",
+  "description" : "This is a FHIR Implementation Guide for the project of University of the Philippines Manila entitled Monitoring the Chronic Viral Hepatitis Treatment Cascade Through Electronic Medical Records in the Philippines which is being funded by Gilead Sciences, coursed through the UP Manila Development Fund",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
@@ -607,14 +607,123 @@
     "resource" : [{
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
+        "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/AllergyIntolerance-uv-ips"
+        "reference" : "Observation/2281"
       },
-      "name" : "Allergy Intolerance (IPS)",
-      "description" : "This profile represents the constraints applied to the AllergyIntolerance resource by the International Patient Summary (IPS) FHIR Implementation Guide. A record of an allergy or intolerance is represented in the patient summary as an instance of an AllergyIntolerance resource constrained by this profile.\r\n\r\nIt documents the relevant allergies or intolerances (conditions) for a patient, describing the kind of reaction (e.g. rash, anaphylaxis,..); preferably the agents that cause it; and optionally the criticality and the certainty of the allergy.",
-      "exampleBoolean" : false
+      "name" : "2281",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/2284"
+      },
+      "name" : "2284",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/2287"
+      },
+      "name" : "2287",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/2289"
+      },
+      "name" : "2289",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/2291"
+      },
+      "name" : "2291",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/2295"
+      },
+      "name" : "2295",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/2297"
+      },
+      "name" : "2297",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/2299"
+      },
+      "name" : "2299",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/2312"
+      },
+      "name" : "2312",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/2317"
+      },
+      "name" : "2317",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/2319"
+      },
+      "name" : "2319",
+      "exampleBoolean" : true
     },
     {
       "extension" : [{
@@ -622,154 +731,10 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/Bundle-uv-ips"
+        "reference" : "StructureDefinition/2158"
       },
-      "name" : "Bundle - IPS",
-      "description" : "This profile represents the constraints applied to the Bundle resource by the International Patient Summary (IPS) FHIR Implementation Guide.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:complex-type"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/CodeableConcept-uv-ips"
-      },
-      "name" : "Codeable Concept (IPS)",
-      "description" : "This profile represents the constraint applied to the CodeableConcept data type by the International Patient Summary (IPS) FHIR Implementation Guide to use the Coding-uv-ips data type profile.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:complex-type"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/Coding-uv-ips"
-      },
-      "name" : "Coding with translations",
-      "description" : "This profile extends the capabilities of the coding data type to support multi-language designations (display).\r\nIt relies on the Translation extension.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/Composition-uv-ips"
-      },
-      "name" : "Composition (IPS)",
-      "description" : "Clinical document used to represent the International Patient Summary (IPS) data set. \r\nAn International Patient Summary (IPS) document is an electronic health record extract containing essential healthcare information about a subject of care. \r\nThe IPS dataset is minimal and non-exhaustive; specialty-agnostic and condition-independent; but still clinically relevant. As specified in EN 17269 and ISO 27269, it is designed for supporting the use case scenario for ‘unplanned, cross border care’, but it is not limited to it. It is intended to be international, i.e., to provide generic solutions for global application beyond a particular region or country.\r\n\r\nThis profile is based on the ClinicalDocument profile.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/Condition-uv-ips"
-      },
-      "name" : "Condition (IPS)",
-      "description" : "This profile represents the constraints applied to the Condition resource by the International Patient Summary (IPS) FHIR Implementation Guide. A record of a problem is represented in the patient summary as an instance of the Condition resource constrained by this profile.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/Device-uv-ips"
-      },
-      "name" : "Device (IPS)",
-      "description" : "This profile represents the constraints applied to the Device resource by the International Patient Summary (IPS) FHIR Implementation Guide, based on FHIR R4. A device used by or implanted on the patient is described in the patient summary as an instance of a Device resource constrained by this profile.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/Device-observer-uv-ips"
-      },
-      "name" : "Device - performer, observer",
-      "description" : "This profile represents the constraints applied to the Device resource by the IPS project, which specifies an international patient summary based on the FHIR standard R4.;\r\n\r\nThis profile describes a device that plays the role of observer or performer.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/DeviceUseStatement-uv-ips"
-      },
-      "name" : "Device Use Statement (IPS)",
-      "description" : "This profile represents the constraints applied to the DeviceUseStatement resource by the International Patient Summary (IPS) FHIR Implementation Guide, based on FHIR R4. A statement about a device used by or implanted on the patient is described in the patient summary as an instance of a DeviceUseStatement resource constrained by this profile.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/DiagnosticReport-uv-ips"
-      },
-      "name" : "DiagnosticReport (IPS)",
-      "description" : "This profile constrains the DiagnosticReport resource to represent diagnostic test and procedure reports in a patient summary.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/ImagingStudy-uv-ips"
-      },
-      "name" : "Imaging Study (IPS)",
-      "description" : "This profile represents the constraints applied to the ImagingStudy resource by the IPS project, which specifies the information on a DICOM imaging study this imaging result is part of.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/Immunization-uv-ips"
-      },
-      "name" : "Immunization (IPS)",
-      "description" : "This profile represents the constraints applied to the Immunization resource by the International Patient Summary (IPS) FHIR Implementation Guide. A record of an immunization is represented in the patient summary as an instance of an Immunization resource constrained by this profile.\r\n\r\nIt describes the event of a patient being administered a vaccination or a record of a vaccination as reported by a patient, a clinician or another party.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CapabilityStatement"
-      }],
-      "reference" : {
-        "reference" : "CapabilityStatement/ips-server"
-      },
-      "name" : "IPS Server Capability Statement",
-      "description" : "This section describes the expected capabilities of the IPS Server actor which is responsible for providing responses to the queries submitted for IPS documents. The list of FHIR profiles and operations supported by IPS Servers are defined.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "OperationDefinition"
-      }],
-      "reference" : {
-        "reference" : "OperationDefinition/summary"
-      },
-      "name" : "IPS Summary",
-      "description" : "This operation is used to return a patient summary using the IPS profile.",
+      "name" : "ConditionHepB",
+      "description" : "Hepatitis B surface antigen test result",
       "exampleBoolean" : false
     },
     {
@@ -778,10 +743,10 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/Media-observation-uv-ips"
+        "reference" : "StructureDefinition/2159"
       },
-      "name" : "Media observation (Results: laboratory, media)",
-      "description" : "This profile constrains the Media resource (which is a specialized observation).",
+      "name" : "ConditionHepC",
+      "description" : "Hepatitis C antibody test result",
       "exampleBoolean" : false
     },
     {
@@ -790,10 +755,9 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/Medication-uv-ips"
+        "reference" : "StructureDefinition/Daclatasvir"
       },
-      "name" : "Medication (IPS)",
-      "description" : "This profile represents the constraints applied to the Medication resource by the International Patient Summary (IPS) FHIR Implementation Guide, based on FHIR R4. A medication is described in the patient summary as an instance of a Medication resource constrained by this profile.",
+      "name" : "Daclatasvir",
       "exampleBoolean" : false
     },
     {
@@ -802,10 +766,9 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/MedicationRequest-uv-ips"
+        "reference" : "StructureDefinition/DaclatasvirDispense"
       },
-      "name" : "Medication Request (IPS)",
-      "description" : "This profile represents the constraints applied to the MedicationRequest resource by the International Patient Summary (IPS) FHIR Implementation Guide, based on FHIR R4. A record of a medication request is represented in the patient summary as an instance of a MedicationRequest resource constrained by this profile.",
+      "name" : "DaclatasvirDispense",
       "exampleBoolean" : false
     },
     {
@@ -814,10 +777,9 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/MedicationStatement-uv-ips"
+        "reference" : "StructureDefinition/FamilyMemberHistoryVHcase34"
       },
-      "name" : "Medication Statement (IPS)",
-      "description" : "This profile represents the constraints applied to the MedicationStatement resource by the International Patient Summary (IPS) FHIR Implementation Guide, based on FHIR R4. A record of a medication statement is represented in the patient summary as an instance of a MedicationStatement resource constrained by this profile.",
+      "name" : "FamilyMemberHistoryVHcase34",
       "exampleBoolean" : false
     },
     {
@@ -826,10 +788,20 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/Observation-pregnancy-edd-uv-ips"
+        "reference" : "StructureDefinition/FamilyMemberHistoryVHcase35"
       },
-      "name" : "Observation - Pregnancy: EDD",
-      "description" : "This profile constrains the Observation resource to represent the pregnancy expected delivery date.",
+      "name" : "FamilyMemberHistoryVHcase35",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/FatherName"
+      },
+      "name" : "FatherName",
       "exampleBoolean" : false
     },
     {
@@ -838,10 +810,9 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/Observation-pregnancy-outcome-uv-ips"
+        "reference" : "StructureDefinition/HepatocellularCarcinomaFollowingTreatment"
       },
-      "name" : "Observation - Pregnancy: outcome",
-      "description" : "This profile constrains the Observation resource to represent the history of pregnancy outcomes (summary).",
+      "name" : "HepatocellularCarcinomaFollowingTreatment",
       "exampleBoolean" : false
     },
     {
@@ -850,10 +821,9 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/Observation-pregnancy-status-uv-ips"
+        "reference" : "StructureDefinition/HepBInfection"
       },
-      "name" : "Observation - Pregnancy: status",
-      "description" : "This profile constrains the Observation resource to represent the pregnancy status.",
+      "name" : "HepBInfection",
       "exampleBoolean" : false
     },
     {
@@ -862,10 +832,9 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/Observation-alcoholuse-uv-ips"
+        "reference" : "StructureDefinition/HepCInfection"
       },
-      "name" : "Observation - SH: alcohol use",
-      "description" : "This profile constrains the Observation resource to represent alcohol use assessment in a patient summary.",
+      "name" : "HepCInfection",
       "exampleBoolean" : false
     },
     {
@@ -874,10 +843,9 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/Observation-tobaccouse-uv-ips"
+        "reference" : "StructureDefinition/HIVcoInfection"
       },
-      "name" : "Observation - SH: tobacco use",
-      "description" : "This profile constrains the Observation resource to represent Tobacco use assessment in a patient summary.",
+      "name" : "HIVcoInfection",
       "exampleBoolean" : false
     },
     {
@@ -886,10 +854,20 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/Observation-results-uv-ips"
+        "reference" : "StructureDefinition/LiverCirrhosisFollowingTreatment"
       },
-      "name" : "Observation Results (IPS)",
-      "description" : "This profile constrains the Observation resource to represent various types of results and associated observations in a patient summary.  This is the base profile from which the other results profiles are derived.",
+      "name" : "LiverCirrhosisFollowingTreatment",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/MotherName"
+      },
+      "name" : "MotherName",
       "exampleBoolean" : false
     },
     {
@@ -898,10 +876,9 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/Observation-results-laboratory-uv-ips"
+        "reference" : "StructureDefinition/ObservationVHcase13"
       },
-      "name" : "Observation Results: laboratory (IPS)",
-      "description" : "This profile constrains the Observation resource to represent results produced by laboratory tests or panels/studies in a patient summary.\r\n\r\nThis observation may represent the result of a simple laboratory test such as hematocrit or it may group the set of results produced by a multi-test study or panel such as a complete blood count, a dynamic function test, a urine specimen study. In the latter case, the observation carries the overall conclusion of the study and or a global interpretation by the producer of the study, in the comment element; and references the atomic results of the study as \"has-member\" child observations.",
+      "name" : "ObservationVHcase13",
       "exampleBoolean" : false
     },
     {
@@ -910,10 +887,9 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/Observation-results-pathology-uv-ips"
+        "reference" : "StructureDefinition/ObservationVHcase48"
       },
-      "name" : "Observation Results: pathology (IPS)",
-      "description" : "This profile constrains the Observation resource to represent results produced by pathology studies in a patient summary.",
+      "name" : "ObservationVHcase48",
       "exampleBoolean" : false
     },
     {
@@ -922,10 +898,9 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/Observation-results-radiology-uv-ips"
+        "reference" : "StructureDefinition/ObservationVHcase49"
       },
-      "name" : "Observation Results: radiology (IPS)",
-      "description" : "This profile represents the constraints applied to the Observation resource by the IPS project, which specifies a radiology observation for the international patient summary based on the FHIR standard R4. \r\n\r\nThis observation may represent the conclusions of a diagnostic procedure such a Chest RX, or it may group the set of results produced by that single or multi-modality procedure. \r\n\r\nIn the latter case, the main observation (this one) carries the overall conclusion of the study and/or a global interpretation by the observer of the study as value of this observation; and may references the atomic results of the study as \"child observations\".\r\n\r\nIt allows also providing details about the related study using the partOf element referring to an ImagingStudy resource.",
+      "name" : "ObservationVHcase49",
       "exampleBoolean" : false
     },
     {
@@ -934,10 +909,9 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/Organization-uv-ips"
+        "reference" : "StructureDefinition/ObservationVHcase50"
       },
-      "name" : "Organization (IPS)",
-      "description" : "This profile constrains the Organization resource to represent an organization that acts as performer or observer for a result observation (laboratory, pathology or imaging), or as performer for a procedure.",
+      "name" : "ObservationVHcase50",
       "exampleBoolean" : false
     },
     {
@@ -946,10 +920,9 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/patient"
+        "reference" : "StructureDefinition/ObservationVHcase51"
       },
-      "name" : "patient",
-      "description" : "This is a patient profile in the Philippine Setting",
+      "name" : "ObservationVHcase51",
       "exampleBoolean" : false
     },
     {
@@ -958,10 +931,9 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/Patient-uv-ips"
+        "reference" : "StructureDefinition/ObservationVHcase55"
       },
-      "name" : "Patient (IPS)",
-      "description" : "This profile represents the constraints applied to the Patient resource by the International Patient Summary (IPS) FHIR Implementation Guide and describes the minimum expectations for the Patient resource when used in the IPS composition or in one of the referred resources.",
+      "name" : "ObservationVHcase55",
       "exampleBoolean" : false
     },
     {
@@ -970,10 +942,9 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/Practitioner-uv-ips"
+        "reference" : "StructureDefinition/ObservationVHcase56"
       },
-      "name" : "Practitioner (IPS)",
-      "description" : "This profile constrains the practitioner resource to represent a practitioner acting as observer for these imaging results.",
+      "name" : "ObservationVHcase56",
       "exampleBoolean" : false
     },
     {
@@ -982,10 +953,9 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/PractitionerRole-uv-ips"
+        "reference" : "StructureDefinition/OthercoInfection"
       },
-      "name" : "PractitionerRole (IPS)",
-      "description" : "This profile constrains the PractitionerRole resource to represent a practitioner acting as observer for observation results for a specified organization.",
+      "name" : "OthercoInfection",
       "exampleBoolean" : false
     },
     {
@@ -994,245 +964,9 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/Procedure-uv-ips"
+        "reference" : "StructureDefinition/OtherRegimen"
       },
-      "name" : "Procedure (IPS)",
-      "description" : "This profile represents the constraints applied to the Procedure resource by the IPS project, which specifies an entry of the History of Procedure for the international patient summary based on the FHIR standard R4.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/d6777e0f-e48d-4d7a-81bc-0f868fc94ac0"
-      },
-      "name" : "PSGC - FRAGMENT - BRMM",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/3b392c94-b4c8-487a-a9ef-22c56c2f6979"
-      },
-      "name" : "PSGC - FRAGMENT - CAR",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/235ffd4c-6ebe-4bed-af3a-1e130c620ffa"
-      },
-      "name" : "PSGC - FRAGMENT - NCR",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/1d160789-65c0-47bc-a874-dc2dfd0a87f1"
-      },
-      "name" : "PSGC - FRAGMENT - REGION I",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/9b08be51-61ed-4fb0-89b1-28956af23653"
-      },
-      "name" : "PSGC - FRAGMENT - REGION II",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/978c4066-1a18-483c-904f-0b77f28415b7"
-      },
-      "name" : "PSGC - FRAGMENT - REGION III",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/c767ab11-70c7-4e46-9a4a-55364d9784f1"
-      },
-      "name" : "PSGC - FRAGMENT - REGION IVA",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/0043e898-2e3a-4285-946a-5ae37e78fa8e"
-      },
-      "name" : "PSGC - FRAGMENT - REGION IVB",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/20a1ac6b-8007-432a-8e91-20437e29277f"
-      },
-      "name" : "PSGC - FRAGMENT - REGION IX",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/49bf4e83-71e2-4aa7-b3cb-138f2c7a416a"
-      },
-      "name" : "PSGC - FRAGMENT - REGION V",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/40bd5d06-7f39-43e5-9393-d97711924233"
-      },
-      "name" : "PSGC - FRAGMENT - REGION VI",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/cd7db9f5-9ec3-4e93-8ef4-d299b685cae8"
-      },
-      "name" : "PSGC - FRAGMENT - REGION VII",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/1ab7a522-13d9-47c4-b70b-3f9a00fed13b"
-      },
-      "name" : "PSGC - FRAGMENT - REGION VIII",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/f69a0c8a-dded-4d0a-8fbf-36f713f707f6"
-      },
-      "name" : "PSGC - FRAGMENT - REGION X",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/0dc9cd73-922c-45c3-b97b-e88499091fb7"
-      },
-      "name" : "PSGC - FRAGMENT - REGION XI",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/c3798377-894f-4495-b813-862b5e74ddb5"
-      },
-      "name" : "PSGC - FRAGMENT - REGION XII",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/881ef5c4-e344-4a6b-b04c-76d8c78f6531"
-      },
-      "name" : "PSGC - FRAGMENT - REGION XIII",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:complex-type"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/Quantity-uv-ips"
-      },
-      "name" : "Quantity (IPS)",
-      "description" : "Data type Quantity constrained to use UCUM as the code system for units",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:complex-type"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/Range-uv-ips"
-      },
-      "name" : "Range (IPS)",
-      "description" : "Range constrained to UCUM as the code system for units.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:complex-type"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/Ratio-uv-ips"
-      },
-      "name" : "Ratio (IPS)",
-      "description" : "Ratio data type, constrained to use UCUM as the code system for units.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:complex-type"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/SimpleQuantity-uv-ips"
-      },
-      "name" : "SimpleQuantity (IPS)",
-      "description" : "Data type profile SimpleQuantity constrained to use UCUM as the code system for units",
+      "name" : "OtherRegimen",
       "exampleBoolean" : false
     },
     {
@@ -1241,10 +975,543 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/Specimen-uv-ips"
+        "reference" : "StructureDefinition/OtherRegimenDispense"
       },
-      "name" : "Specimen (IPS)",
-      "description" : "This profile constrains the Specimen resource to represent the characteristics of a biological specimens in the context of laboratory results integrated to a patient summary.",
+      "name" : "OtherRegimenDispense",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/PillsExpectedRefillDate"
+      },
+      "name" : "PillsExpectedRefillDate",
+      "description" : "Expected date of refill of Pills",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/Pillsmissed"
+      },
+      "name" : "Pillsmissed",
+      "description" : "pills missed (past 30 days)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/PillsOnHand"
+      },
+      "name" : "PillsOnHand",
+      "description" : "pills on hand",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/Ribavirin"
+      },
+      "name" : "Ribavirin",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/RibavirinDispense"
+      },
+      "name" : "RibavirinDispense",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/Sofosbuvir"
+      },
+      "name" : "Sofosbuvir",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/SofosbuvirAndVelpatasvir"
+      },
+      "name" : "SofosbuvirAndVelpatasvir",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/SofosbuvirAndVelpatasvirDispense"
+      },
+      "name" : "SofosbuvirAndVelpatasvirDispense",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/SofosbuvirDispense"
+      },
+      "name" : "SofosbuvirDispense",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/Tenofovir"
+      },
+      "name" : "Tenofovir",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/TenofovirDispense"
+      },
+      "name" : "TenofovirDispense",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/TreatmentCarePlanVH"
+      },
+      "name" : "TreatmentCarePlanVH",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ViralHepatitisCareFormModel"
+      },
+      "name" : "VH Care Form Logical Model",
+      "description" : "Viral Hepatitis Care Form Information model",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ViralHepatitisCaseReportFormModel"
+      },
+      "name" : "VH Case Report Form Logical Model",
+      "description" : "Viral Hepatitis Case Report Form Logical Model",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/VHcarealbumin"
+      },
+      "name" : "VHcarealbumin",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/VHcareALT"
+      },
+      "name" : "VHcareALT",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/VHcareaminotransferaseScore"
+      },
+      "name" : "VHcareaminotransferaseScore",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/VHcareAntiHCV"
+      },
+      "name" : "VHcareAntiHCV",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/VHcareAscites"
+      },
+      "name" : "VHcareAscites",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/VHcareAST"
+      },
+      "name" : "VHcareAST",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/VHcarechildTurcottePugh"
+      },
+      "name" : "VHcarechildTurcottePugh",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/VHcarecoagulopathy"
+      },
+      "name" : "VHcarecoagulopathy",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/VHCareEligibilityHepB"
+      },
+      "name" : "VHCareEligibilityHepB",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/VHCareEligibilityHepC"
+      },
+      "name" : "VHCareEligibilityHepC",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/VHcarefatigue"
+      },
+      "name" : "VHcarefatigue",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/VHcarefibrosis"
+      },
+      "name" : "VHcarefibrosis",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/VHcareHBeAg"
+      },
+      "name" : "VHcareHBeAg",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/VHcareHBsAg"
+      },
+      "name" : "VHcareHBsAg",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/VHcareHBVDNA"
+      },
+      "name" : "VHcareHBVDNA",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/VHcareHCVRNAQuali"
+      },
+      "name" : "VHcareHCVRNAQuali",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/VHcareHCVRNAQuanti"
+      },
+      "name" : "VHcareHCVRNAQuanti",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/VHcareheight"
+      },
+      "name" : "VHcareheight",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/VHcarehepatomegaly"
+      },
+      "name" : "VHcarehepatomegaly",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/VHcarehepBInfection"
+      },
+      "name" : "VHcarehepBInfection",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/VHcareImaging"
+      },
+      "name" : "VHcareImaging",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/VHcareotherInfection"
+      },
+      "name" : "VHcareotherInfection",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/VHcareotherSignAndSymptoms"
+      },
+      "name" : "VHcareotherSignAndSymptoms",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/VHcarepalmarErythema"
+      },
+      "name" : "VHcarepalmarErythema",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/VHcareplateletCount"
+      },
+      "name" : "VHcareplateletCount",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/VHcarepruritus"
+      },
+      "name" : "VHcarepruritus",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/VHcarePTINR"
+      },
+      "name" : "VHcarePTINR",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/VHcaresplenomegaly"
+      },
+      "name" : "VHcaresplenomegaly",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/VHcaretotalBilirubin"
+      },
+      "name" : "VHcaretotalBilirubin",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/VHcaretransientElastography"
+      },
+      "name" : "VHcaretransientElastography",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/VHcareweight"
+      },
+      "name" : "VHcareweight",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/2156"
+      },
+      "name" : "VHCEncounter",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/VHhcarejaundice"
+      },
+      "name" : "VHhcarejaundice",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/VHPatient2"
+      },
+      "name" : "VHPatient2",
+      "description" : "VH Patient",
       "exampleBoolean" : false
     }],
     "page" : {

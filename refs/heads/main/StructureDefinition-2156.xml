@@ -22,7 +22,7 @@
   <version value="0.2.1"/>
   <name value="VHCEncounter"/>
   <status value="draft"/>
-  <date value="2023-06-26T10:28:50+00:00"/>
+  <date value="2023-12-05T11:15:19+00:00"/>
   <publisher value="UP Manila Viral Hepatitis Project"/>
   <contact>
     <name value="UP Manila Viral Hepatitis Project"/>
@@ -241,9 +241,6 @@
         </extension>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="Language"/>
-        </extension>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
-          <valueBoolean value="true"/>
         </extension>
         <strength value="preferred"/>
         <description value="A human language."/>
@@ -484,9 +481,6 @@
       </mapping>
     </element>
     <element id="Encounter.statusHistory">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
-        <valueString value="StatusHistory"/>
-      </extension>
       <path value="Encounter.statusHistory"/>
       <short value="List of past encounter statuses"/>
       <definition value="The status history permits the encounter resource to contain the status history without needing to read through the historical versions of the resource, or even have the server store them."/>
@@ -1007,9 +1001,6 @@
       </mapping>
     </element>
     <element id="Encounter.classHistory">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
-        <valueString value="ClassHistory"/>
-      </extension>
       <path value="Encounter.classHistory"/>
       <short value="List of past encounter classes"/>
       <definition value="The class history permits the tracking of the encounters transitions without needing to go  through the resource history.  This would be used for a case where an admission starts of as an emergency encounter, then transitions into an inpatient scenario. Doing this and not restarting a new encounter ensures that any lab/diagnostic results can more easily follow the patient and not require re-processing and not get lost or cancelled during a kind of discharge from emergency to inpatient."/>
@@ -1965,9 +1956,6 @@
       </mapping>
     </element>
     <element id="Encounter.diagnosis">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
-        <valueString value="Diagnosis"/>
-      </extension>
       <path value="Encounter.diagnosis"/>
       <short value="The list of diagnosis relevant to this encounter"/>
       <definition value="The list of diagnosis relevant to this encounter."/>
@@ -2178,9 +2166,6 @@
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="DiagnosisRole"/>
-        </extension>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
-          <valueBoolean value="true"/>
         </extension>
         <strength value="preferred"/>
         <description value="The type of diagnosis this condition represents."/>

@@ -19,7 +19,7 @@
   <version value="0.2.1"/>
   <name value="VHcarecoagulopathy"/>
   <status value="draft"/>
-  <date value="2023-06-26T10:28:50+00:00"/>
+  <date value="2023-12-05T11:15:19+00:00"/>
   <publisher value="UP Manila Viral Hepatitis Project"/>
   <contact>
     <name value="UP Manila Viral Hepatitis Project"/>
@@ -285,9 +285,6 @@
         </extension>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="Language"/>
-        </extension>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
-          <valueBoolean value="true"/>
         </extension>
         <strength value="preferred"/>
         <description value="A human language."/>

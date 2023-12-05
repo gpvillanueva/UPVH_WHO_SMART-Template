@@ -9,7 +9,7 @@
   "version" : "0.2.1",
   "name" : "RibavirinDispense",
   "status" : "draft",
-  "date" : "2023-06-26T10:28:50+00:00",
+  "date" : "2023-12-05T11:15:19+00:00",
   "publisher" : "UP Manila Viral Hepatitis Project",
   "contact" : [{
     "name" : "UP Manila Viral Hepatitis Project",
@@ -250,10 +250,6 @@
         {
           "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
           "valueString" : "Language"
-        },
-        {
-          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
-          "valueBoolean" : true
         }],
         "strength" : "preferred",
         "description" : "A human language.",
