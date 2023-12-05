@@ -3,183 +3,224 @@
   "version": "0.2.1",
   "fhirVersion": "4.0.1",
   "jurisdiction": "001",
-  "extensions": [],
+  "extensions": [
+    {
+      "url": "https://example.org/fhir/StructureDefinition/PillsExpectedRefillDate",
+      "title": "PillsExpectedRefillDate",
+      "types": [
+        "date"
+      ]
+    },
+    {
+      "url": "https://example.org/fhir/StructureDefinition/PillsOnHand",
+      "title": "PillsOnHand",
+      "types": [
+        "integer"
+      ]
+    },
+    {
+      "url": "https://example.org/fhir/StructureDefinition/VHCareEligibilityHepB",
+      "title": "VHCareEligibilityHepB",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "https://example.org/fhir/StructureDefinition/VHCareEligibilityHepC",
+      "title": "VHCareEligibilityHepC",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "https://example.org/fhir/StructureDefinition/pillsmissed",
+      "title": "Pillsmissed",
+      "types": [
+        "integer"
+      ]
+    },
+    {
+      "url": "https://up.smilecdr.com:8000/StructureDefinition/2131",
+      "title": "FatherName",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "https://up.smilecdr.com:8000/StructureDefinition/2132",
+      "title": "MotherName",
+      "types": [
+        "string"
+      ]
+    }
+  ],
   "profiles": {
-    "AllergyIntolerance": [
+    "Encounter": [
       {
-        "url": "http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance-uv-ips",
-        "title": "Allergy Intolerance (IPS)"
-      }
-    ],
-    "Bundle": [
-      {
-        "url": "http://hl7.org/fhir/uv/ips/StructureDefinition/Bundle-uv-ips",
-        "title": "Bundle - IPS"
-      }
-    ],
-    "Composition": [
-      {
-        "url": "http://hl7.org/fhir/uv/ips/StructureDefinition/Composition-uv-ips",
-        "title": "Composition (IPS)"
+        "url": "http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/2156",
+        "title": "VHCEncounter"
       }
     ],
     "Condition": [
       {
-        "url": "http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips",
-        "title": "Condition (IPS)"
-      }
-    ],
-    "Device": [
-      {
-        "url": "http://hl7.org/fhir/uv/ips/StructureDefinition/Device-observer-uv-ips",
-        "title": "Device - performer, observer"
+        "url": "https://example.org/fhir/StructureDefinition/vhcareAscites",
+        "title": "VHcareAscites"
       },
       {
-        "url": "http://hl7.org/fhir/uv/ips/StructureDefinition/Device-uv-ips",
-        "title": "Device (IPS)"
-      }
-    ],
-    "DeviceUseStatement": [
+        "url": "https://example.org/fhir/StructureDefinition/vhcarecoagulopathy",
+        "title": "VHcarecoagulopathy"
+      },
       {
-        "url": "http://hl7.org/fhir/uv/ips/StructureDefinition/DeviceUseStatement-uv-ips",
-        "title": "Device Use Statement (IPS)"
-      }
-    ],
-    "DiagnosticReport": [
+        "url": "https://example.org/fhir/StructureDefinition/vhcarefatigue",
+        "title": "VHcarefatigue"
+      },
       {
-        "url": "http://hl7.org/fhir/uv/ips/StructureDefinition/DiagnosticReport-uv-ips",
-        "title": "DiagnosticReport (IPS)"
-      }
-    ],
-    "ImagingStudy": [
+        "url": "https://example.org/fhir/StructureDefinition/vhcarehepBInfection",
+        "title": "VHcarehepBInfection"
+      },
       {
-        "url": "http://hl7.org/fhir/uv/ips/StructureDefinition/ImagingStudy-uv-ips",
-        "title": "Imaging Study (IPS)"
-      }
-    ],
-    "Immunization": [
+        "url": "https://example.org/fhir/StructureDefinition/vhcarehepatomegaly",
+        "title": "VHcarehepatomegaly"
+      },
       {
-        "url": "http://hl7.org/fhir/uv/ips/StructureDefinition/Immunization-uv-ips",
-        "title": "Immunization (IPS)"
-      }
-    ],
-    "Media": [
+        "url": "https://example.org/fhir/StructureDefinition/vhcarejaundice",
+        "title": "VHhcarejaundice"
+      },
       {
-        "url": "http://hl7.org/fhir/uv/ips/StructureDefinition/Media-observation-uv-ips",
-        "title": "Media observation (Results: laboratory, media)"
-      }
-    ],
-    "Medication": [
+        "url": "https://example.org/fhir/StructureDefinition/vhcareotherInfection",
+        "title": "VHcareotherInfection"
+      },
       {
-        "url": "http://hl7.org/fhir/uv/ips/StructureDefinition/Medication-uv-ips",
-        "title": "Medication (IPS)"
-      }
-    ],
-    "MedicationRequest": [
+        "url": "https://example.org/fhir/StructureDefinition/vhcareotherSignAndSymptoms",
+        "title": "VHcareotherSignAndSymptoms"
+      },
       {
-        "url": "http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationRequest-uv-ips",
-        "title": "Medication Request (IPS)"
+        "url": "https://example.org/fhir/StructureDefinition/vhcarepalmarErythema",
+        "title": "VHcarepalmarErythema"
+      },
+      {
+        "url": "https://example.org/fhir/StructureDefinition/vhcarepruritus",
+        "title": "VHcarepruritus"
+      },
+      {
+        "url": "https://example.org/fhir/StructureDefinition/vhcaresplenomegaly",
+        "title": "VHcaresplenomegaly"
       }
     ],
     "MedicationStatement": [
       {
-        "url": "http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationStatement-uv-ips",
-        "title": "Medication Statement (IPS)"
+        "url": "https://example.org/fhir/StructureDefinition/Tenofovir",
+        "title": "Tenofovir"
+      }
+    ],
+    "MedicationDispense": [
+      {
+        "url": "https://example.org/fhir/StructureDefinition/Tenofovir",
+        "title": "TenofovirDispense"
+      }
+    ],
+    "FamilyMemberHistory": [
+      {
+        "url": "https://example.org/fhir/StructureDefinition/FamilyMemberHistoryVHcase34",
+        "title": "FamilyMemberHistoryVHcase34"
+      },
+      {
+        "url": "https://example.org/fhir/StructureDefinition/FamilyMemberHistoryVHcase35",
+        "title": "FamilyMemberHistoryVHcase35"
       }
     ],
     "Observation": [
       {
-        "url": "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-alcoholuse-uv-ips",
-        "title": "Observation - SH: alcohol use"
+        "url": "https://example.org/fhir/StructureDefinition/VHcareALT",
+        "title": "VHcareALT"
       },
       {
-        "url": "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pregnancy-edd-uv-ips",
-        "title": "Observation - Pregnancy: EDD"
+        "url": "https://example.org/fhir/StructureDefinition/VHcareAST",
+        "title": "VHcareAST"
       },
       {
-        "url": "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pregnancy-outcome-uv-ips",
-        "title": "Observation - Pregnancy: outcome"
+        "url": "https://example.org/fhir/StructureDefinition/VHcareAntiHCV",
+        "title": "VHcareAntiHCV"
       },
       {
-        "url": "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pregnancy-status-uv-ips",
-        "title": "Observation - Pregnancy: status"
+        "url": "https://example.org/fhir/StructureDefinition/VHcareHBVDNA",
+        "title": "VHcareHBVDNA"
       },
       {
-        "url": "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-laboratory-uv-ips",
-        "title": "Observation Results: laboratory (IPS)"
+        "url": "https://example.org/fhir/StructureDefinition/VHcareHBeAg",
+        "title": "VHcareHBeAg"
       },
       {
-        "url": "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-pathology-uv-ips",
-        "title": "Observation Results: pathology (IPS)"
+        "url": "https://example.org/fhir/StructureDefinition/VHcareHBsAg",
+        "title": "VHcareHBsAg"
       },
       {
-        "url": "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-radiology-uv-ips",
-        "title": "Observation Results: radiology (IPS)"
+        "url": "https://example.org/fhir/StructureDefinition/VHcareHCVRNAQuali",
+        "title": "VHcareHCVRNAQuali"
       },
       {
-        "url": "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-uv-ips",
-        "title": "Observation Results (IPS)"
+        "url": "https://example.org/fhir/StructureDefinition/VHcareHCVRNAQuanti",
+        "title": "VHcareHCVRNAQuanti"
       },
       {
-        "url": "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-tobaccouse-uv-ips",
-        "title": "Observation - SH: tobacco use"
+        "url": "https://example.org/fhir/StructureDefinition/VHcareImaging",
+        "title": "VHcareImaging"
+      },
+      {
+        "url": "https://example.org/fhir/StructureDefinition/VHcarePTINR",
+        "title": "VHcarePTINR"
+      },
+      {
+        "url": "https://example.org/fhir/StructureDefinition/VHcarealbumin",
+        "title": "VHcarealbumin"
+      },
+      {
+        "url": "https://example.org/fhir/StructureDefinition/VHcareaminotransferaseScore",
+        "title": "VHcareaminotransferaseScore"
+      },
+      {
+        "url": "https://example.org/fhir/StructureDefinition/VHcarechildTurcottePugh",
+        "title": "VHcarechildTurcottePugh"
+      },
+      {
+        "url": "https://example.org/fhir/StructureDefinition/VHcarefibrosis",
+        "title": "VHcarefibrosis"
+      },
+      {
+        "url": "https://example.org/fhir/StructureDefinition/VHcareheight",
+        "title": "VHcareheight"
+      },
+      {
+        "url": "https://example.org/fhir/StructureDefinition/VHcareplateletCount",
+        "title": "VHcareplateletCount"
+      },
+      {
+        "url": "https://example.org/fhir/StructureDefinition/VHcaretotalBilirubin",
+        "title": "VHcaretotalBilirubin"
+      },
+      {
+        "url": "https://example.org/fhir/StructureDefinition/VHcaretransientElastography",
+        "title": "VHcaretransientElastography"
+      },
+      {
+        "url": "https://example.org/fhir/StructureDefinition/VHcareweight",
+        "title": "VHcareweight"
       }
     ],
-    "Organization": [
+    "CarePlan": [
       {
-        "url": "http://hl7.org/fhir/uv/ips/StructureDefinition/Organization-uv-ips",
-        "title": "Organization (IPS)"
+        "url": "https://example.org/fhir/StructureDefinition/TreatmentCarePlanVH",
+        "title": "TreatmentCarePlanVH"
       }
     ],
     "Patient": [
       {
         "url": "https://up.smilecdr.com:8000/StructureDefinition/2137",
-        "title": "patient"
-      }
-    ],
-    "Practitioner": [
-      {
-        "url": "http://hl7.org/fhir/uv/ips/StructureDefinition/Practitioner-uv-ips",
-        "title": "Practitioner (IPS)"
-      }
-    ],
-    "PractitionerRole": [
-      {
-        "url": "http://hl7.org/fhir/uv/ips/StructureDefinition/PractitionerRole-uv-ips",
-        "title": "PractitionerRole (IPS)"
-      }
-    ],
-    "Procedure": [
-      {
-        "url": "http://hl7.org/fhir/uv/ips/StructureDefinition/Procedure-uv-ips",
-        "title": "Procedure (IPS)"
-      }
-    ],
-    "Specimen": [
-      {
-        "url": "http://hl7.org/fhir/uv/ips/StructureDefinition/Specimen-uv-ips",
-        "title": "Specimen (IPS)"
+        "title": "VHPatient2"
       }
     ]
   },
   "usage": {
-    "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation": [
-      "CapabilityStatement.rest.resource",
-      "CapabilityStatement.rest.resource.operation",
-      "CapabilityStatement.rest.resource.supportedProfile"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/composition-clinicaldocument-versionNumber": [
-      "Composition"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/data-absent-reason": [
-      "DeviceUseStatement.timing[x]",
-      "DiagnosticReport.effective[x]",
-      "Immunization.occurrence[x]",
-      "MedicationRequest.dispenseRequest.validityPeriod",
-      "MedicationStatement.effective[x]",
-      "Observation.effective[x]",
-      "Procedure.performed[x]"
-    ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.snapshot.element.constraint"
     ],
@@ -187,35 +228,21 @@
       "StructureDefinition.snapshot.element.constraint"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
-      "StructureDefinition.differential.element.binding",
-      "StructureDefinition.snapshot.element.binding"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding": [
       "StructureDefinition.snapshot.element.binding"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
       "StructureDefinition.snapshot.element.binding"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
-      "StructureDefinition.differential.element",
       "StructureDefinition.snapshot.element"
     ],
-    "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support": [
-      "StructureDefinition.differential.element.type",
-      "StructureDefinition.snapshot.element.type"
+    "http://hl7.org/fhir/StructureDefinition/patient-nationality": [
+      "Patient"
     ],
     "http://hl7.org/fhir/StructureDefinition/regex": [
       "StructureDefinition.snapshot.element.type"
     ],
-    "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
-      "StructureDefinition"
-    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
-      "StructureDefinition.differential.element",
-      "StructureDefinition.snapshot.element"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name": [
-      "StructureDefinition.differential.element",
       "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
@@ -224,18 +251,11 @@
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
       "StructureDefinition.snapshot.element.type"
     ],
-    "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category": [
-      "StructureDefinition"
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version": [
+      "StructureDefinition.differential.element"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
-      "StructureDefinition.snapshot.element"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/translation": [
-      "Coding.display"
-    ],
-    "http://hl7.org/fhir/tools/StructureDefinition/additional-binding": [
-      "StructureDefinition.differential.element.binding",
-      "StructureDefinition.snapshot.element.binding"
+      "StructureDefinition.differential.element"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
       "ImplementationGuide.definition"
@@ -253,8 +273,26 @@
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
     ],
-    "http://hl7.org/fhir/uv/ips/StructureDefinition/abatement-dateTime-uv-ips": [
-      "AllergyIntolerance"
+    "https://example.org/fhir/StructureDefinition/PillsExpectedRefillDate": [
+      "MedicationStatement"
+    ],
+    "https://example.org/fhir/StructureDefinition/PillsOnHand": [
+      "MedicationStatement"
+    ],
+    "https://example.org/fhir/StructureDefinition/VHCareEligibilityHepB": [
+      "CarePlan"
+    ],
+    "https://example.org/fhir/StructureDefinition/VHCareEligibilityHepC": [
+      "CarePlan"
+    ],
+    "https://example.org/fhir/StructureDefinition/pillsmissed": [
+      "MedicationStatement"
+    ],
+    "https://up.smilecdr.com:8000/StructureDefinition/2131": [
+      "Patient"
+    ],
+    "https://up.smilecdr.com:8000/StructureDefinition/2132": [
+      "Patient"
     ]
   }
 }

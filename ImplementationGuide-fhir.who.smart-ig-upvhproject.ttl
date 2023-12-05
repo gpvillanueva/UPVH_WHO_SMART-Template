@@ -10,12 +10,12 @@
   fhir:id [ fhir:v "fhir.who.smart-ig-upvhproject"] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>smartigupvhproject</h2><p>The official URL for this implementation guide is: </p><pre>http://worldhealthorganization.github.io/smart-ig-upvhproject/ImplementationGuide/fhir.who.smart-ig-upvhproject</pre><div><p>This is a FHIR Implementation Guide for the project of University of the Philippines Manila entitled Monitoring the Chronic Viral Hepatitis Treatment Cascade Through Electronic Medical Records in the Philippines which is being funded by Gilead Sciences, coursed through the UP Manila Development Fund</p>\n</div></div>"
   ] ; # 
   fhir:url [ fhir:v "http://worldhealthorganization.github.io/smart-ig-upvhproject/ImplementationGuide/fhir.who.smart-ig-upvhproject"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.2.1"] ; # 
   fhir:name [ fhir:v "smartigupvhproject"] ; # 
-  fhir:title [ fhir:v "Philippine Country Core Profile"] ; # 
+  fhir:title [ fhir:v "University of the Philippines Manila Viral Hepatitis Project Implementation Guide"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:date [ fhir:v "2022-10-25"^^xsd:date] ; # 
   fhir:publisher [ fhir:v "UP Manila Viral Hepatitis Project"] ; # 
@@ -26,7 +26,7 @@
        fhir:value [ fhir:v "http://ehealth4hepatitis.ph" ]
      ] )
   ] ) ; # 
-  fhir:description [ fhir:v "This is a fraft version of the Philippine Country Core Profile FHIR Implementation Guide"] ; # 
+  fhir:description [ fhir:v "This is a FHIR Implementation Guide for the project of University of the Philippines Manila entitled Monitoring the Chronic Viral Hepatitis Treatment Cascade Through Electronic Medical Records in the Philippines which is being funded by Gilead Sciences, coursed through the UP Manila Development Fund"] ; # 
   fhir:jurisdiction ( [
      fhir:coding ( [
        fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
@@ -519,170 +519,135 @@
      fhir:resource ( [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:resource" ]
+         fhir:value [ fhir:v "Observation" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/AllergyIntolerance-uv-ips> ;
-         fhir:reference [ fhir:v "StructureDefinition/AllergyIntolerance-uv-ips" ]
+         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/Observation/2281> ;
+         fhir:reference [ fhir:v "Observation/2281" ]
        ] ;
-       fhir:name [ fhir:v "Allergy Intolerance (IPS)" ] ;
-       fhir:description [ fhir:v "This profile represents the constraints applied to the AllergyIntolerance resource by the International Patient Summary (IPS) FHIR Implementation Guide. A record of an allergy or intolerance is represented in the patient summary as an instance of an AllergyIntolerance resource constrained by this profile.\r\n\r\nIt documents the relevant allergies or intolerances (conditions) for a patient, describing the kind of reaction (e.g. rash, anaphylaxis,..); preferably the agents that cause it; and optionally the criticality and the certainty of the allergy." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
+       fhir:name [ fhir:v "2281" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/Observation/2284> ;
+         fhir:reference [ fhir:v "Observation/2284" ]
+       ] ;
+       fhir:name [ fhir:v "2284" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/Observation/2287> ;
+         fhir:reference [ fhir:v "Observation/2287" ]
+       ] ;
+       fhir:name [ fhir:v "2287" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/Observation/2289> ;
+         fhir:reference [ fhir:v "Observation/2289" ]
+       ] ;
+       fhir:name [ fhir:v "2289" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/Observation/2291> ;
+         fhir:reference [ fhir:v "Observation/2291" ]
+       ] ;
+       fhir:name [ fhir:v "2291" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/Observation/2295> ;
+         fhir:reference [ fhir:v "Observation/2295" ]
+       ] ;
+       fhir:name [ fhir:v "2295" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/Observation/2297> ;
+         fhir:reference [ fhir:v "Observation/2297" ]
+       ] ;
+       fhir:name [ fhir:v "2297" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/Observation/2299> ;
+         fhir:reference [ fhir:v "Observation/2299" ]
+       ] ;
+       fhir:name [ fhir:v "2299" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/Observation/2312> ;
+         fhir:reference [ fhir:v "Observation/2312" ]
+       ] ;
+       fhir:name [ fhir:v "2312" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/Observation/2317> ;
+         fhir:reference [ fhir:v "Observation/2317" ]
+       ] ;
+       fhir:name [ fhir:v "2317" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/Observation/2319> ;
+         fhir:reference [ fhir:v "Observation/2319" ]
+       ] ;
+       fhir:name [ fhir:v "2319" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/Bundle-uv-ips> ;
-         fhir:reference [ fhir:v "StructureDefinition/Bundle-uv-ips" ]
+         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/2158> ;
+         fhir:reference [ fhir:v "StructureDefinition/2158" ]
        ] ;
-       fhir:name [ fhir:v "Bundle - IPS" ] ;
-       fhir:description [ fhir:v "This profile represents the constraints applied to the Bundle resource by the International Patient Summary (IPS) FHIR Implementation Guide." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:complex-type" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/CodeableConcept-uv-ips> ;
-         fhir:reference [ fhir:v "StructureDefinition/CodeableConcept-uv-ips" ]
-       ] ;
-       fhir:name [ fhir:v "Codeable Concept (IPS)" ] ;
-       fhir:description [ fhir:v "This profile represents the constraint applied to the CodeableConcept data type by the International Patient Summary (IPS) FHIR Implementation Guide to use the Coding-uv-ips data type profile." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:complex-type" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/Coding-uv-ips> ;
-         fhir:reference [ fhir:v "StructureDefinition/Coding-uv-ips" ]
-       ] ;
-       fhir:name [ fhir:v "Coding with translations" ] ;
-       fhir:description [ fhir:v "This profile extends the capabilities of the coding data type to support multi-language designations (display).\r\nIt relies on the Translation extension." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:resource" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/Composition-uv-ips> ;
-         fhir:reference [ fhir:v "StructureDefinition/Composition-uv-ips" ]
-       ] ;
-       fhir:name [ fhir:v "Composition (IPS)" ] ;
-       fhir:description [ fhir:v "Clinical document used to represent the International Patient Summary (IPS) data set. \r\nAn International Patient Summary (IPS) document is an electronic health record extract containing essential healthcare information about a subject of care. \r\nThe IPS dataset is minimal and non-exhaustive; specialty-agnostic and condition-independent; but still clinically relevant. As specified in EN 17269 and ISO 27269, it is designed for supporting the use case scenario for ‘unplanned, cross border care’, but it is not limited to it. It is intended to be international, i.e., to provide generic solutions for global application beyond a particular region or country.\r\n\r\nThis profile is based on the ClinicalDocument profile." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:resource" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/Condition-uv-ips> ;
-         fhir:reference [ fhir:v "StructureDefinition/Condition-uv-ips" ]
-       ] ;
-       fhir:name [ fhir:v "Condition (IPS)" ] ;
-       fhir:description [ fhir:v "This profile represents the constraints applied to the Condition resource by the International Patient Summary (IPS) FHIR Implementation Guide. A record of a problem is represented in the patient summary as an instance of the Condition resource constrained by this profile." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:resource" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/Device-uv-ips> ;
-         fhir:reference [ fhir:v "StructureDefinition/Device-uv-ips" ]
-       ] ;
-       fhir:name [ fhir:v "Device (IPS)" ] ;
-       fhir:description [ fhir:v "This profile represents the constraints applied to the Device resource by the International Patient Summary (IPS) FHIR Implementation Guide, based on FHIR R4. A device used by or implanted on the patient is described in the patient summary as an instance of a Device resource constrained by this profile." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:resource" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/Device-observer-uv-ips> ;
-         fhir:reference [ fhir:v "StructureDefinition/Device-observer-uv-ips" ]
-       ] ;
-       fhir:name [ fhir:v "Device - performer, observer" ] ;
-       fhir:description [ fhir:v "This profile represents the constraints applied to the Device resource by the IPS project, which specifies an international patient summary based on the FHIR standard R4.;\r\n\r\nThis profile describes a device that plays the role of observer or performer." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:resource" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/DeviceUseStatement-uv-ips> ;
-         fhir:reference [ fhir:v "StructureDefinition/DeviceUseStatement-uv-ips" ]
-       ] ;
-       fhir:name [ fhir:v "Device Use Statement (IPS)" ] ;
-       fhir:description [ fhir:v "This profile represents the constraints applied to the DeviceUseStatement resource by the International Patient Summary (IPS) FHIR Implementation Guide, based on FHIR R4. A statement about a device used by or implanted on the patient is described in the patient summary as an instance of a DeviceUseStatement resource constrained by this profile." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:resource" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/DiagnosticReport-uv-ips> ;
-         fhir:reference [ fhir:v "StructureDefinition/DiagnosticReport-uv-ips" ]
-       ] ;
-       fhir:name [ fhir:v "DiagnosticReport (IPS)" ] ;
-       fhir:description [ fhir:v "This profile constrains the DiagnosticReport resource to represent diagnostic test and procedure reports in a patient summary." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:resource" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/ImagingStudy-uv-ips> ;
-         fhir:reference [ fhir:v "StructureDefinition/ImagingStudy-uv-ips" ]
-       ] ;
-       fhir:name [ fhir:v "Imaging Study (IPS)" ] ;
-       fhir:description [ fhir:v "This profile represents the constraints applied to the ImagingStudy resource by the IPS project, which specifies the information on a DICOM imaging study this imaging result is part of." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:resource" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/Immunization-uv-ips> ;
-         fhir:reference [ fhir:v "StructureDefinition/Immunization-uv-ips" ]
-       ] ;
-       fhir:name [ fhir:v "Immunization (IPS)" ] ;
-       fhir:description [ fhir:v "This profile represents the constraints applied to the Immunization resource by the International Patient Summary (IPS) FHIR Implementation Guide. A record of an immunization is represented in the patient summary as an instance of an Immunization resource constrained by this profile.\r\n\r\nIt describes the event of a patient being administered a vaccination or a record of a vaccination as reported by a patient, a clinician or another party." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "CapabilityStatement" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/CapabilityStatement/ips-server> ;
-         fhir:reference [ fhir:v "CapabilityStatement/ips-server" ]
-       ] ;
-       fhir:name [ fhir:v "IPS Server Capability Statement" ] ;
-       fhir:description [ fhir:v "This section describes the expected capabilities of the IPS Server actor which is responsible for providing responses to the queries submitted for IPS documents. The list of FHIR profiles and operations supported by IPS Servers are defined." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "OperationDefinition" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/OperationDefinition/summary> ;
-         fhir:reference [ fhir:v "OperationDefinition/summary" ]
-       ] ;
-       fhir:name [ fhir:v "IPS Summary" ] ;
-       fhir:description [ fhir:v "This operation is used to return a patient summary using the IPS profile." ] ;
+       fhir:name [ fhir:v "ConditionHepB" ] ;
+       fhir:description [ fhir:v "Hepatitis B surface antigen test result" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -690,11 +655,11 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/Media-observation-uv-ips> ;
-         fhir:reference [ fhir:v "StructureDefinition/Media-observation-uv-ips" ]
+         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/2159> ;
+         fhir:reference [ fhir:v "StructureDefinition/2159" ]
        ] ;
-       fhir:name [ fhir:v "Media observation (Results: laboratory, media)" ] ;
-       fhir:description [ fhir:v "This profile constrains the Media resource (which is a specialized observation)." ] ;
+       fhir:name [ fhir:v "ConditionHepC" ] ;
+       fhir:description [ fhir:v "Hepatitis C antibody test result" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -702,11 +667,10 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/Medication-uv-ips> ;
-         fhir:reference [ fhir:v "StructureDefinition/Medication-uv-ips" ]
+         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/Daclatasvir> ;
+         fhir:reference [ fhir:v "StructureDefinition/Daclatasvir" ]
        ] ;
-       fhir:name [ fhir:v "Medication (IPS)" ] ;
-       fhir:description [ fhir:v "This profile represents the constraints applied to the Medication resource by the International Patient Summary (IPS) FHIR Implementation Guide, based on FHIR R4. A medication is described in the patient summary as an instance of a Medication resource constrained by this profile." ] ;
+       fhir:name [ fhir:v "Daclatasvir" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -714,11 +678,10 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/MedicationRequest-uv-ips> ;
-         fhir:reference [ fhir:v "StructureDefinition/MedicationRequest-uv-ips" ]
+         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/DaclatasvirDispense> ;
+         fhir:reference [ fhir:v "StructureDefinition/DaclatasvirDispense" ]
        ] ;
-       fhir:name [ fhir:v "Medication Request (IPS)" ] ;
-       fhir:description [ fhir:v "This profile represents the constraints applied to the MedicationRequest resource by the International Patient Summary (IPS) FHIR Implementation Guide, based on FHIR R4. A record of a medication request is represented in the patient summary as an instance of a MedicationRequest resource constrained by this profile." ] ;
+       fhir:name [ fhir:v "DaclatasvirDispense" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -726,11 +689,10 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/MedicationStatement-uv-ips> ;
-         fhir:reference [ fhir:v "StructureDefinition/MedicationStatement-uv-ips" ]
+         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/FamilyMemberHistoryVHcase34> ;
+         fhir:reference [ fhir:v "StructureDefinition/FamilyMemberHistoryVHcase34" ]
        ] ;
-       fhir:name [ fhir:v "Medication Statement (IPS)" ] ;
-       fhir:description [ fhir:v "This profile represents the constraints applied to the MedicationStatement resource by the International Patient Summary (IPS) FHIR Implementation Guide, based on FHIR R4. A record of a medication statement is represented in the patient summary as an instance of a MedicationStatement resource constrained by this profile." ] ;
+       fhir:name [ fhir:v "FamilyMemberHistoryVHcase34" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -738,11 +700,21 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/Observation-pregnancy-edd-uv-ips> ;
-         fhir:reference [ fhir:v "StructureDefinition/Observation-pregnancy-edd-uv-ips" ]
+         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/FamilyMemberHistoryVHcase35> ;
+         fhir:reference [ fhir:v "StructureDefinition/FamilyMemberHistoryVHcase35" ]
        ] ;
-       fhir:name [ fhir:v "Observation - Pregnancy: EDD" ] ;
-       fhir:description [ fhir:v "This profile constrains the Observation resource to represent the pregnancy expected delivery date." ] ;
+       fhir:name [ fhir:v "FamilyMemberHistoryVHcase35" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/FatherName> ;
+         fhir:reference [ fhir:v "StructureDefinition/FatherName" ]
+       ] ;
+       fhir:name [ fhir:v "FatherName" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -750,11 +722,10 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/Observation-pregnancy-outcome-uv-ips> ;
-         fhir:reference [ fhir:v "StructureDefinition/Observation-pregnancy-outcome-uv-ips" ]
+         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/HepatocellularCarcinomaFollowingTreatment> ;
+         fhir:reference [ fhir:v "StructureDefinition/HepatocellularCarcinomaFollowingTreatment" ]
        ] ;
-       fhir:name [ fhir:v "Observation - Pregnancy: outcome" ] ;
-       fhir:description [ fhir:v "This profile constrains the Observation resource to represent the history of pregnancy outcomes (summary)." ] ;
+       fhir:name [ fhir:v "HepatocellularCarcinomaFollowingTreatment" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -762,11 +733,10 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/Observation-pregnancy-status-uv-ips> ;
-         fhir:reference [ fhir:v "StructureDefinition/Observation-pregnancy-status-uv-ips" ]
+         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/HepBInfection> ;
+         fhir:reference [ fhir:v "StructureDefinition/HepBInfection" ]
        ] ;
-       fhir:name [ fhir:v "Observation - Pregnancy: status" ] ;
-       fhir:description [ fhir:v "This profile constrains the Observation resource to represent the pregnancy status." ] ;
+       fhir:name [ fhir:v "HepBInfection" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -774,11 +744,10 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/Observation-alcoholuse-uv-ips> ;
-         fhir:reference [ fhir:v "StructureDefinition/Observation-alcoholuse-uv-ips" ]
+         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/HepCInfection> ;
+         fhir:reference [ fhir:v "StructureDefinition/HepCInfection" ]
        ] ;
-       fhir:name [ fhir:v "Observation - SH: alcohol use" ] ;
-       fhir:description [ fhir:v "This profile constrains the Observation resource to represent alcohol use assessment in a patient summary." ] ;
+       fhir:name [ fhir:v "HepCInfection" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -786,11 +755,10 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/Observation-tobaccouse-uv-ips> ;
-         fhir:reference [ fhir:v "StructureDefinition/Observation-tobaccouse-uv-ips" ]
+         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/HIVcoInfection> ;
+         fhir:reference [ fhir:v "StructureDefinition/HIVcoInfection" ]
        ] ;
-       fhir:name [ fhir:v "Observation - SH: tobacco use" ] ;
-       fhir:description [ fhir:v "This profile constrains the Observation resource to represent Tobacco use assessment in a patient summary." ] ;
+       fhir:name [ fhir:v "HIVcoInfection" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -798,11 +766,21 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/Observation-results-uv-ips> ;
-         fhir:reference [ fhir:v "StructureDefinition/Observation-results-uv-ips" ]
+         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/LiverCirrhosisFollowingTreatment> ;
+         fhir:reference [ fhir:v "StructureDefinition/LiverCirrhosisFollowingTreatment" ]
        ] ;
-       fhir:name [ fhir:v "Observation Results (IPS)" ] ;
-       fhir:description [ fhir:v "This profile constrains the Observation resource to represent various types of results and associated observations in a patient summary.  This is the base profile from which the other results profiles are derived." ] ;
+       fhir:name [ fhir:v "LiverCirrhosisFollowingTreatment" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/MotherName> ;
+         fhir:reference [ fhir:v "StructureDefinition/MotherName" ]
+       ] ;
+       fhir:name [ fhir:v "MotherName" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -810,11 +788,10 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/Observation-results-laboratory-uv-ips> ;
-         fhir:reference [ fhir:v "StructureDefinition/Observation-results-laboratory-uv-ips" ]
+         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/ObservationVHcase13> ;
+         fhir:reference [ fhir:v "StructureDefinition/ObservationVHcase13" ]
        ] ;
-       fhir:name [ fhir:v "Observation Results: laboratory (IPS)" ] ;
-       fhir:description [ fhir:v "This profile constrains the Observation resource to represent results produced by laboratory tests or panels/studies in a patient summary.\r\n\r\nThis observation may represent the result of a simple laboratory test such as hematocrit or it may group the set of results produced by a multi-test study or panel such as a complete blood count, a dynamic function test, a urine specimen study. In the latter case, the observation carries the overall conclusion of the study and or a global interpretation by the producer of the study, in the comment element; and references the atomic results of the study as \"has-member\" child observations." ] ;
+       fhir:name [ fhir:v "ObservationVHcase13" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -822,11 +799,10 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/Observation-results-pathology-uv-ips> ;
-         fhir:reference [ fhir:v "StructureDefinition/Observation-results-pathology-uv-ips" ]
+         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/ObservationVHcase48> ;
+         fhir:reference [ fhir:v "StructureDefinition/ObservationVHcase48" ]
        ] ;
-       fhir:name [ fhir:v "Observation Results: pathology (IPS)" ] ;
-       fhir:description [ fhir:v "This profile constrains the Observation resource to represent results produced by pathology studies in a patient summary." ] ;
+       fhir:name [ fhir:v "ObservationVHcase48" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -834,11 +810,10 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/Observation-results-radiology-uv-ips> ;
-         fhir:reference [ fhir:v "StructureDefinition/Observation-results-radiology-uv-ips" ]
+         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/ObservationVHcase49> ;
+         fhir:reference [ fhir:v "StructureDefinition/ObservationVHcase49" ]
        ] ;
-       fhir:name [ fhir:v "Observation Results: radiology (IPS)" ] ;
-       fhir:description [ fhir:v "This profile represents the constraints applied to the Observation resource by the IPS project, which specifies a radiology observation for the international patient summary based on the FHIR standard R4. \r\n\r\nThis observation may represent the conclusions of a diagnostic procedure such a Chest RX, or it may group the set of results produced by that single or multi-modality procedure. \r\n\r\nIn the latter case, the main observation (this one) carries the overall conclusion of the study and/or a global interpretation by the observer of the study as value of this observation; and may references the atomic results of the study as \"child observations\".\r\n\r\nIt allows also providing details about the related study using the partOf element referring to an ImagingStudy resource." ] ;
+       fhir:name [ fhir:v "ObservationVHcase49" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -846,11 +821,10 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/Organization-uv-ips> ;
-         fhir:reference [ fhir:v "StructureDefinition/Organization-uv-ips" ]
+         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/ObservationVHcase50> ;
+         fhir:reference [ fhir:v "StructureDefinition/ObservationVHcase50" ]
        ] ;
-       fhir:name [ fhir:v "Organization (IPS)" ] ;
-       fhir:description [ fhir:v "This profile constrains the Organization resource to represent an organization that acts as performer or observer for a result observation (laboratory, pathology or imaging), or as performer for a procedure." ] ;
+       fhir:name [ fhir:v "ObservationVHcase50" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -858,11 +832,10 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/patient> ;
-         fhir:reference [ fhir:v "StructureDefinition/patient" ]
+         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/ObservationVHcase51> ;
+         fhir:reference [ fhir:v "StructureDefinition/ObservationVHcase51" ]
        ] ;
-       fhir:name [ fhir:v "patient" ] ;
-       fhir:description [ fhir:v "This is a patient profile in the Philippine Setting" ] ;
+       fhir:name [ fhir:v "ObservationVHcase51" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -870,11 +843,10 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/Patient-uv-ips> ;
-         fhir:reference [ fhir:v "StructureDefinition/Patient-uv-ips" ]
+         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/ObservationVHcase55> ;
+         fhir:reference [ fhir:v "StructureDefinition/ObservationVHcase55" ]
        ] ;
-       fhir:name [ fhir:v "Patient (IPS)" ] ;
-       fhir:description [ fhir:v "This profile represents the constraints applied to the Patient resource by the International Patient Summary (IPS) FHIR Implementation Guide and describes the minimum expectations for the Patient resource when used in the IPS composition or in one of the referred resources." ] ;
+       fhir:name [ fhir:v "ObservationVHcase55" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -882,11 +854,10 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/Practitioner-uv-ips> ;
-         fhir:reference [ fhir:v "StructureDefinition/Practitioner-uv-ips" ]
+         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/ObservationVHcase56> ;
+         fhir:reference [ fhir:v "StructureDefinition/ObservationVHcase56" ]
        ] ;
-       fhir:name [ fhir:v "Practitioner (IPS)" ] ;
-       fhir:description [ fhir:v "This profile constrains the practitioner resource to represent a practitioner acting as observer for these imaging results." ] ;
+       fhir:name [ fhir:v "ObservationVHcase56" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -894,11 +865,10 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/PractitionerRole-uv-ips> ;
-         fhir:reference [ fhir:v "StructureDefinition/PractitionerRole-uv-ips" ]
+         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/OthercoInfection> ;
+         fhir:reference [ fhir:v "StructureDefinition/OthercoInfection" ]
        ] ;
-       fhir:name [ fhir:v "PractitionerRole (IPS)" ] ;
-       fhir:description [ fhir:v "This profile constrains the PractitionerRole resource to represent a practitioner acting as observer for observation results for a specified organization." ] ;
+       fhir:name [ fhir:v "OthercoInfection" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -906,246 +876,10 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/Procedure-uv-ips> ;
-         fhir:reference [ fhir:v "StructureDefinition/Procedure-uv-ips" ]
+         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/OtherRegimen> ;
+         fhir:reference [ fhir:v "StructureDefinition/OtherRegimen" ]
        ] ;
-       fhir:name [ fhir:v "Procedure (IPS)" ] ;
-       fhir:description [ fhir:v "This profile represents the constraints applied to the Procedure resource by the IPS project, which specifies an entry of the History of Procedure for the international patient summary based on the FHIR standard R4." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "CodeSystem" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/CodeSystem/d6777e0f-e48d-4d7a-81bc-0f868fc94ac0> ;
-         fhir:reference [ fhir:v "CodeSystem/d6777e0f-e48d-4d7a-81bc-0f868fc94ac0" ]
-       ] ;
-       fhir:name [ fhir:v "PSGC - FRAGMENT - BRMM" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "CodeSystem" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/CodeSystem/3b392c94-b4c8-487a-a9ef-22c56c2f6979> ;
-         fhir:reference [ fhir:v "CodeSystem/3b392c94-b4c8-487a-a9ef-22c56c2f6979" ]
-       ] ;
-       fhir:name [ fhir:v "PSGC - FRAGMENT - CAR" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "CodeSystem" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/CodeSystem/235ffd4c-6ebe-4bed-af3a-1e130c620ffa> ;
-         fhir:reference [ fhir:v "CodeSystem/235ffd4c-6ebe-4bed-af3a-1e130c620ffa" ]
-       ] ;
-       fhir:name [ fhir:v "PSGC - FRAGMENT - NCR" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "CodeSystem" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/CodeSystem/1d160789-65c0-47bc-a874-dc2dfd0a87f1> ;
-         fhir:reference [ fhir:v "CodeSystem/1d160789-65c0-47bc-a874-dc2dfd0a87f1" ]
-       ] ;
-       fhir:name [ fhir:v "PSGC - FRAGMENT - REGION I" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "CodeSystem" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/CodeSystem/9b08be51-61ed-4fb0-89b1-28956af23653> ;
-         fhir:reference [ fhir:v "CodeSystem/9b08be51-61ed-4fb0-89b1-28956af23653" ]
-       ] ;
-       fhir:name [ fhir:v "PSGC - FRAGMENT - REGION II" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "CodeSystem" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/CodeSystem/978c4066-1a18-483c-904f-0b77f28415b7> ;
-         fhir:reference [ fhir:v "CodeSystem/978c4066-1a18-483c-904f-0b77f28415b7" ]
-       ] ;
-       fhir:name [ fhir:v "PSGC - FRAGMENT - REGION III" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "CodeSystem" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/CodeSystem/c767ab11-70c7-4e46-9a4a-55364d9784f1> ;
-         fhir:reference [ fhir:v "CodeSystem/c767ab11-70c7-4e46-9a4a-55364d9784f1" ]
-       ] ;
-       fhir:name [ fhir:v "PSGC - FRAGMENT - REGION IVA" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "CodeSystem" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/CodeSystem/0043e898-2e3a-4285-946a-5ae37e78fa8e> ;
-         fhir:reference [ fhir:v "CodeSystem/0043e898-2e3a-4285-946a-5ae37e78fa8e" ]
-       ] ;
-       fhir:name [ fhir:v "PSGC - FRAGMENT - REGION IVB" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "CodeSystem" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/CodeSystem/20a1ac6b-8007-432a-8e91-20437e29277f> ;
-         fhir:reference [ fhir:v "CodeSystem/20a1ac6b-8007-432a-8e91-20437e29277f" ]
-       ] ;
-       fhir:name [ fhir:v "PSGC - FRAGMENT - REGION IX" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "CodeSystem" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/CodeSystem/49bf4e83-71e2-4aa7-b3cb-138f2c7a416a> ;
-         fhir:reference [ fhir:v "CodeSystem/49bf4e83-71e2-4aa7-b3cb-138f2c7a416a" ]
-       ] ;
-       fhir:name [ fhir:v "PSGC - FRAGMENT - REGION V" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "CodeSystem" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/CodeSystem/40bd5d06-7f39-43e5-9393-d97711924233> ;
-         fhir:reference [ fhir:v "CodeSystem/40bd5d06-7f39-43e5-9393-d97711924233" ]
-       ] ;
-       fhir:name [ fhir:v "PSGC - FRAGMENT - REGION VI" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "CodeSystem" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/CodeSystem/cd7db9f5-9ec3-4e93-8ef4-d299b685cae8> ;
-         fhir:reference [ fhir:v "CodeSystem/cd7db9f5-9ec3-4e93-8ef4-d299b685cae8" ]
-       ] ;
-       fhir:name [ fhir:v "PSGC - FRAGMENT - REGION VII" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "CodeSystem" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/CodeSystem/1ab7a522-13d9-47c4-b70b-3f9a00fed13b> ;
-         fhir:reference [ fhir:v "CodeSystem/1ab7a522-13d9-47c4-b70b-3f9a00fed13b" ]
-       ] ;
-       fhir:name [ fhir:v "PSGC - FRAGMENT - REGION VIII" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "CodeSystem" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/CodeSystem/f69a0c8a-dded-4d0a-8fbf-36f713f707f6> ;
-         fhir:reference [ fhir:v "CodeSystem/f69a0c8a-dded-4d0a-8fbf-36f713f707f6" ]
-       ] ;
-       fhir:name [ fhir:v "PSGC - FRAGMENT - REGION X" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "CodeSystem" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/CodeSystem/0dc9cd73-922c-45c3-b97b-e88499091fb7> ;
-         fhir:reference [ fhir:v "CodeSystem/0dc9cd73-922c-45c3-b97b-e88499091fb7" ]
-       ] ;
-       fhir:name [ fhir:v "PSGC - FRAGMENT - REGION XI" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "CodeSystem" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/CodeSystem/c3798377-894f-4495-b813-862b5e74ddb5> ;
-         fhir:reference [ fhir:v "CodeSystem/c3798377-894f-4495-b813-862b5e74ddb5" ]
-       ] ;
-       fhir:name [ fhir:v "PSGC - FRAGMENT - REGION XII" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "CodeSystem" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/CodeSystem/881ef5c4-e344-4a6b-b04c-76d8c78f6531> ;
-         fhir:reference [ fhir:v "CodeSystem/881ef5c4-e344-4a6b-b04c-76d8c78f6531" ]
-       ] ;
-       fhir:name [ fhir:v "PSGC - FRAGMENT - REGION XIII" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:complex-type" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/Quantity-uv-ips> ;
-         fhir:reference [ fhir:v "StructureDefinition/Quantity-uv-ips" ]
-       ] ;
-       fhir:name [ fhir:v "Quantity (IPS)" ] ;
-       fhir:description [ fhir:v "Data type Quantity constrained to use UCUM as the code system for units" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:complex-type" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/Range-uv-ips> ;
-         fhir:reference [ fhir:v "StructureDefinition/Range-uv-ips" ]
-       ] ;
-       fhir:name [ fhir:v "Range (IPS)" ] ;
-       fhir:description [ fhir:v "Range constrained to UCUM as the code system for units." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:complex-type" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/Ratio-uv-ips> ;
-         fhir:reference [ fhir:v "StructureDefinition/Ratio-uv-ips" ]
-       ] ;
-       fhir:name [ fhir:v "Ratio (IPS)" ] ;
-       fhir:description [ fhir:v "Ratio data type, constrained to use UCUM as the code system for units." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:complex-type" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/SimpleQuantity-uv-ips> ;
-         fhir:reference [ fhir:v "StructureDefinition/SimpleQuantity-uv-ips" ]
-       ] ;
-       fhir:name [ fhir:v "SimpleQuantity (IPS)" ] ;
-       fhir:description [ fhir:v "Data type profile SimpleQuantity constrained to use UCUM as the code system for units" ] ;
+       fhir:name [ fhir:v "OtherRegimen" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1153,11 +887,544 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/Specimen-uv-ips> ;
-         fhir:reference [ fhir:v "StructureDefinition/Specimen-uv-ips" ]
+         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/OtherRegimenDispense> ;
+         fhir:reference [ fhir:v "StructureDefinition/OtherRegimenDispense" ]
        ] ;
-       fhir:name [ fhir:v "Specimen (IPS)" ] ;
-       fhir:description [ fhir:v "This profile constrains the Specimen resource to represent the characteristics of a biological specimens in the context of laboratory results integrated to a patient summary." ] ;
+       fhir:name [ fhir:v "OtherRegimenDispense" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/PillsExpectedRefillDate> ;
+         fhir:reference [ fhir:v "StructureDefinition/PillsExpectedRefillDate" ]
+       ] ;
+       fhir:name [ fhir:v "PillsExpectedRefillDate" ] ;
+       fhir:description [ fhir:v "Expected date of refill of Pills" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/Pillsmissed> ;
+         fhir:reference [ fhir:v "StructureDefinition/Pillsmissed" ]
+       ] ;
+       fhir:name [ fhir:v "Pillsmissed" ] ;
+       fhir:description [ fhir:v "pills missed (past 30 days)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/PillsOnHand> ;
+         fhir:reference [ fhir:v "StructureDefinition/PillsOnHand" ]
+       ] ;
+       fhir:name [ fhir:v "PillsOnHand" ] ;
+       fhir:description [ fhir:v "pills on hand" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/Ribavirin> ;
+         fhir:reference [ fhir:v "StructureDefinition/Ribavirin" ]
+       ] ;
+       fhir:name [ fhir:v "Ribavirin" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/RibavirinDispense> ;
+         fhir:reference [ fhir:v "StructureDefinition/RibavirinDispense" ]
+       ] ;
+       fhir:name [ fhir:v "RibavirinDispense" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/Sofosbuvir> ;
+         fhir:reference [ fhir:v "StructureDefinition/Sofosbuvir" ]
+       ] ;
+       fhir:name [ fhir:v "Sofosbuvir" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/SofosbuvirAndVelpatasvir> ;
+         fhir:reference [ fhir:v "StructureDefinition/SofosbuvirAndVelpatasvir" ]
+       ] ;
+       fhir:name [ fhir:v "SofosbuvirAndVelpatasvir" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/SofosbuvirAndVelpatasvirDispense> ;
+         fhir:reference [ fhir:v "StructureDefinition/SofosbuvirAndVelpatasvirDispense" ]
+       ] ;
+       fhir:name [ fhir:v "SofosbuvirAndVelpatasvirDispense" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/SofosbuvirDispense> ;
+         fhir:reference [ fhir:v "StructureDefinition/SofosbuvirDispense" ]
+       ] ;
+       fhir:name [ fhir:v "SofosbuvirDispense" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/Tenofovir> ;
+         fhir:reference [ fhir:v "StructureDefinition/Tenofovir" ]
+       ] ;
+       fhir:name [ fhir:v "Tenofovir" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/TenofovirDispense> ;
+         fhir:reference [ fhir:v "StructureDefinition/TenofovirDispense" ]
+       ] ;
+       fhir:name [ fhir:v "TenofovirDispense" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/TreatmentCarePlanVH> ;
+         fhir:reference [ fhir:v "StructureDefinition/TreatmentCarePlanVH" ]
+       ] ;
+       fhir:name [ fhir:v "TreatmentCarePlanVH" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:logical" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/ViralHepatitisCareFormModel> ;
+         fhir:reference [ fhir:v "StructureDefinition/ViralHepatitisCareFormModel" ]
+       ] ;
+       fhir:name [ fhir:v "VH Care Form Logical Model" ] ;
+       fhir:description [ fhir:v "Viral Hepatitis Care Form Information model" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:logical" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/ViralHepatitisCaseReportFormModel> ;
+         fhir:reference [ fhir:v "StructureDefinition/ViralHepatitisCaseReportFormModel" ]
+       ] ;
+       fhir:name [ fhir:v "VH Case Report Form Logical Model" ] ;
+       fhir:description [ fhir:v "Viral Hepatitis Case Report Form Logical Model" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/VHcarealbumin> ;
+         fhir:reference [ fhir:v "StructureDefinition/VHcarealbumin" ]
+       ] ;
+       fhir:name [ fhir:v "VHcarealbumin" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/VHcareALT> ;
+         fhir:reference [ fhir:v "StructureDefinition/VHcareALT" ]
+       ] ;
+       fhir:name [ fhir:v "VHcareALT" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/VHcareaminotransferaseScore> ;
+         fhir:reference [ fhir:v "StructureDefinition/VHcareaminotransferaseScore" ]
+       ] ;
+       fhir:name [ fhir:v "VHcareaminotransferaseScore" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/VHcareAntiHCV> ;
+         fhir:reference [ fhir:v "StructureDefinition/VHcareAntiHCV" ]
+       ] ;
+       fhir:name [ fhir:v "VHcareAntiHCV" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/VHcareAscites> ;
+         fhir:reference [ fhir:v "StructureDefinition/VHcareAscites" ]
+       ] ;
+       fhir:name [ fhir:v "VHcareAscites" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/VHcareAST> ;
+         fhir:reference [ fhir:v "StructureDefinition/VHcareAST" ]
+       ] ;
+       fhir:name [ fhir:v "VHcareAST" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/VHcarechildTurcottePugh> ;
+         fhir:reference [ fhir:v "StructureDefinition/VHcarechildTurcottePugh" ]
+       ] ;
+       fhir:name [ fhir:v "VHcarechildTurcottePugh" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/VHcarecoagulopathy> ;
+         fhir:reference [ fhir:v "StructureDefinition/VHcarecoagulopathy" ]
+       ] ;
+       fhir:name [ fhir:v "VHcarecoagulopathy" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/VHCareEligibilityHepB> ;
+         fhir:reference [ fhir:v "StructureDefinition/VHCareEligibilityHepB" ]
+       ] ;
+       fhir:name [ fhir:v "VHCareEligibilityHepB" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/VHCareEligibilityHepC> ;
+         fhir:reference [ fhir:v "StructureDefinition/VHCareEligibilityHepC" ]
+       ] ;
+       fhir:name [ fhir:v "VHCareEligibilityHepC" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/VHcarefatigue> ;
+         fhir:reference [ fhir:v "StructureDefinition/VHcarefatigue" ]
+       ] ;
+       fhir:name [ fhir:v "VHcarefatigue" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/VHcarefibrosis> ;
+         fhir:reference [ fhir:v "StructureDefinition/VHcarefibrosis" ]
+       ] ;
+       fhir:name [ fhir:v "VHcarefibrosis" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/VHcareHBeAg> ;
+         fhir:reference [ fhir:v "StructureDefinition/VHcareHBeAg" ]
+       ] ;
+       fhir:name [ fhir:v "VHcareHBeAg" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/VHcareHBsAg> ;
+         fhir:reference [ fhir:v "StructureDefinition/VHcareHBsAg" ]
+       ] ;
+       fhir:name [ fhir:v "VHcareHBsAg" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/VHcareHBVDNA> ;
+         fhir:reference [ fhir:v "StructureDefinition/VHcareHBVDNA" ]
+       ] ;
+       fhir:name [ fhir:v "VHcareHBVDNA" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/VHcareHCVRNAQuali> ;
+         fhir:reference [ fhir:v "StructureDefinition/VHcareHCVRNAQuali" ]
+       ] ;
+       fhir:name [ fhir:v "VHcareHCVRNAQuali" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/VHcareHCVRNAQuanti> ;
+         fhir:reference [ fhir:v "StructureDefinition/VHcareHCVRNAQuanti" ]
+       ] ;
+       fhir:name [ fhir:v "VHcareHCVRNAQuanti" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/VHcareheight> ;
+         fhir:reference [ fhir:v "StructureDefinition/VHcareheight" ]
+       ] ;
+       fhir:name [ fhir:v "VHcareheight" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/VHcarehepatomegaly> ;
+         fhir:reference [ fhir:v "StructureDefinition/VHcarehepatomegaly" ]
+       ] ;
+       fhir:name [ fhir:v "VHcarehepatomegaly" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/VHcarehepBInfection> ;
+         fhir:reference [ fhir:v "StructureDefinition/VHcarehepBInfection" ]
+       ] ;
+       fhir:name [ fhir:v "VHcarehepBInfection" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/VHcareImaging> ;
+         fhir:reference [ fhir:v "StructureDefinition/VHcareImaging" ]
+       ] ;
+       fhir:name [ fhir:v "VHcareImaging" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/VHcareotherInfection> ;
+         fhir:reference [ fhir:v "StructureDefinition/VHcareotherInfection" ]
+       ] ;
+       fhir:name [ fhir:v "VHcareotherInfection" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/VHcareotherSignAndSymptoms> ;
+         fhir:reference [ fhir:v "StructureDefinition/VHcareotherSignAndSymptoms" ]
+       ] ;
+       fhir:name [ fhir:v "VHcareotherSignAndSymptoms" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/VHcarepalmarErythema> ;
+         fhir:reference [ fhir:v "StructureDefinition/VHcarepalmarErythema" ]
+       ] ;
+       fhir:name [ fhir:v "VHcarepalmarErythema" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/VHcareplateletCount> ;
+         fhir:reference [ fhir:v "StructureDefinition/VHcareplateletCount" ]
+       ] ;
+       fhir:name [ fhir:v "VHcareplateletCount" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/VHcarepruritus> ;
+         fhir:reference [ fhir:v "StructureDefinition/VHcarepruritus" ]
+       ] ;
+       fhir:name [ fhir:v "VHcarepruritus" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/VHcarePTINR> ;
+         fhir:reference [ fhir:v "StructureDefinition/VHcarePTINR" ]
+       ] ;
+       fhir:name [ fhir:v "VHcarePTINR" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/VHcaresplenomegaly> ;
+         fhir:reference [ fhir:v "StructureDefinition/VHcaresplenomegaly" ]
+       ] ;
+       fhir:name [ fhir:v "VHcaresplenomegaly" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/VHcaretotalBilirubin> ;
+         fhir:reference [ fhir:v "StructureDefinition/VHcaretotalBilirubin" ]
+       ] ;
+       fhir:name [ fhir:v "VHcaretotalBilirubin" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/VHcaretransientElastography> ;
+         fhir:reference [ fhir:v "StructureDefinition/VHcaretransientElastography" ]
+       ] ;
+       fhir:name [ fhir:v "VHcaretransientElastography" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/VHcareweight> ;
+         fhir:reference [ fhir:v "StructureDefinition/VHcareweight" ]
+       ] ;
+       fhir:name [ fhir:v "VHcareweight" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/2156> ;
+         fhir:reference [ fhir:v "StructureDefinition/2156" ]
+       ] ;
+       fhir:name [ fhir:v "VHCEncounter" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/VHhcarejaundice> ;
+         fhir:reference [ fhir:v "StructureDefinition/VHhcarejaundice" ]
+       ] ;
+       fhir:name [ fhir:v "VHhcarejaundice" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://worldhealthorganization.github.io/smart-ig-upvhproject/StructureDefinition/VHPatient2> ;
+         fhir:reference [ fhir:v "StructureDefinition/VHPatient2" ]
+       ] ;
+       fhir:name [ fhir:v "VHPatient2" ] ;
+       fhir:description [ fhir:v "VH Patient" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] ) ;
      fhir:page [

@@ -14,7 +14,7 @@
   "version" : "0.2.1",
   "name" : "VHCEncounter",
   "status" : "draft",
-  "date" : "2023-06-26T10:28:50+00:00",
+  "date" : "2023-12-05T11:15:19+00:00",
   "publisher" : "UP Manila Viral Hepatitis Project",
   "contact" : [{
     "name" : "UP Manila Viral Hepatitis Project",
@@ -243,10 +243,6 @@
         {
           "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
           "valueString" : "Language"
-        },
-        {
-          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
-          "valueBoolean" : true
         }],
         "strength" : "preferred",
         "description" : "A human language.",
@@ -495,10 +491,6 @@
     },
     {
       "id" : "Encounter.statusHistory",
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
-        "valueString" : "StatusHistory"
-      }],
       "path" : "Encounter.statusHistory",
       "short" : "List of past encounter statuses",
       "definition" : "The status history permits the encounter resource to contain the status history without needing to read through the historical versions of the resource, or even have the server store them.",
@@ -1038,10 +1030,6 @@
     },
     {
       "id" : "Encounter.classHistory",
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
-        "valueString" : "ClassHistory"
-      }],
       "path" : "Encounter.classHistory",
       "short" : "List of past encounter classes",
       "definition" : "The class history permits the tracking of the encounters transitions without needing to go  through the resource history.  This would be used for a case where an admission starts of as an emergency encounter, then transitions into an inpatient scenario. Doing this and not restarting a new encounter ensures that any lab/diagnostic results can more easily follow the patient and not require re-processing and not get lost or cancelled during a kind of discharge from emergency to inpatient.",
@@ -2029,10 +2017,6 @@
     },
     {
       "id" : "Encounter.diagnosis",
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
-        "valueString" : "Diagnosis"
-      }],
       "path" : "Encounter.diagnosis",
       "short" : "The list of diagnosis relevant to this encounter",
       "definition" : "The list of diagnosis relevant to this encounter.",
@@ -2250,10 +2234,6 @@
         "extension" : [{
           "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
           "valueString" : "DiagnosisRole"
-        },
-        {
-          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
-          "valueBoolean" : true
         }],
         "strength" : "preferred",
         "description" : "The type of diagnosis this condition represents.",

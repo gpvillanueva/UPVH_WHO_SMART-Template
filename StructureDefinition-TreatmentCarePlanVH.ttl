@@ -16,7 +16,7 @@
   fhir:version [ fhir:v "0.2.1"] ; # 
   fhir:name [ fhir:v "TreatmentCarePlanVH"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-06-26T10:28:50+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-12-05T11:15:19+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "UP Manila Viral Hepatitis Project"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "UP Manila Viral Hepatitis Project" ] ;
@@ -260,9 +260,6 @@
          ] [
            fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
            fhir:value [ fhir:v "Language" ]
-         ] [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding"^^xsd:anyURI ] ;
-           fhir:value [ fhir:v "true"^^xsd:boolean ]
          ] ) ;
          fhir:strength [ fhir:v "preferred" ] ;
          fhir:description [ fhir:v "A human language." ] ;
