@@ -23,4 +23,5 @@ email: info@ehealth4hepainformatics.ph
 jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001
 # experimental: true
 dependencies:
+theme: jekyll-theme-minimal
  
